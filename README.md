@@ -11,14 +11,14 @@ amberdata-derivatives is a Python library to access the [Amberdata Derivatives A
 ## Install
 
 ```bash
-pip install amberdata-derivatives
+pip install git+https://github.com/amberdata/amberdata-derivatives-sdk.git
 ```
 
 ## Demo
 
 ```python
-from amberdata_derivatives import Amberdata
+from amberdata_derivatives import AmberdataDerivatives
 
-amberdata_client = Amberdata(api_key="ENTER YOUR AD API KEY HERE")
+amberdata_client = AmberdataDerivatives(api_key="ENTER YOUR AD API KEY HERE")
 amberdata_client.get_term_structure(currency='BTC', exchange='deribit')
 ```
