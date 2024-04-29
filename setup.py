@@ -8,9 +8,7 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     author='Amberdata',
-    author_email='fabio.bassani@amberdata.io',
-    #url='https://github.com/tuo_username/amberdata-derivatives',
-    url='https://github.com/gravity5ucks/amberdata-derivatives-py',
+    url='https://github.com/amberdata/amberdata-derivatives-sdk',
     install_requires=[
         'requests',
     ],
