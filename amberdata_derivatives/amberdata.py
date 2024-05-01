@@ -24,7 +24,7 @@ class AmberdataDerivatives:
         """
 
         query_params = {
-        **kwargs 
+                        **kwargs 
         }
         
         query_string = '&'.join([f"{key}={value}" for key, value in query_params.items()])
@@ -43,9 +43,9 @@ class AmberdataDerivatives:
         """
 
         query_params = {
-        'exchange': exchange,
-        'currency': currency,
-        **kwargs 
+                        'exchange': exchange,
+                        'currency': currency,
+                        **kwargs 
         }
 
         query_string = '&'.join([f"{key}={value}" for key, value in query_params.items()])
@@ -64,9 +64,9 @@ class AmberdataDerivatives:
         """
 
         query_params = {
-        'exchange': exchange,
-        'currency': currency,
-        **kwargs 
+                        'exchange': exchange,
+                        'currency': currency,
+                        **kwargs 
         }
 
         query_string = '&'.join([f"{key}={value}" for key, value in query_params.items()])
@@ -93,9 +93,9 @@ class AmberdataDerivatives:
         """
         
         query_params = {
-        'exchange': exchange,
-        'currency': currency,
-        **kwargs 
+                        'exchange': exchange,
+                        'currency': currency,
+                        **kwargs 
         }
     
         query_string = '&'.join([f"{key}={value}" for key, value in query_params.items()])
@@ -126,9 +126,9 @@ class AmberdataDerivatives:
         """
 
         query_params = {
-        'exchange': exchange,
-        'currency': currency,
-        **kwargs 
+                        'exchange': exchange,
+                        'currency': currency,
+                        **kwargs 
         }
     
         query_string = '&'.join([f"{key}={value}" for key, value in query_params.items()])
@@ -159,9 +159,9 @@ class AmberdataDerivatives:
         """
 
         query_params = {
-        'exchange': exchange,
-        'currency': currency,
-        **kwargs 
+                        'exchange': exchange,
+                        'currency': currency,
+                        **kwargs 
         }
     
         query_string = '&'.join([f"{key}={value}" for key, value in query_params.items()])
@@ -172,5 +172,5 @@ class AmberdataDerivatives:
     def _make_request(self, url: str):
         """Helper method to make HTTP GET requests and parse the JSON response into a DataFrame."""
         response = requests.get(url, headers=self._headers)
-        data = response.json()
-        return data
+        return response.json()
+    
