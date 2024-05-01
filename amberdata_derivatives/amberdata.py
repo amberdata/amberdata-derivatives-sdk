@@ -38,8 +38,7 @@ class AmberdataDerivatives:
         QUERY PARAMS:
         - exchange (string) [Required] [Examples] deribit | okex | bybit
         - currency (string) [Required] [Examples] BTC | SOL_USDC
-        - startDate (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timestamp (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
         - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr |
         """
 
@@ -50,9 +49,30 @@ class AmberdataDerivatives:
         }
 
         query_string = '&'.join([f"{key}={value}" for key, value in query_params.items()])
-        url = f"{self._base_url}/markets/derivatives/analytics/term-structure/forward-volatility?{query_string}"
+        url = f"{self._base_url}/markets/derivatives/analytics/term-structure/forward-volatility/floating?{query_string}"
         return self._make_request(url)
+    
+    def get_term_structure_constant(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the term structure (for exchange listed expirations) with forward volatility calculations.
+        
+        QUERY PARAMS:
+        - exchange (string) [Required] [Examples] deribit | okex | bybit
+        - currency (string) [Required] [Examples] BTC | SOL_USDC
+        - timestamp (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr |
+        """
 
+        query_params = {
+        'exchange': exchange,
+        'currency': currency,
+        **kwargs 
+        }
+
+        query_string = '&'.join([f"{key}={value}" for key, value in query_params.items()])
+        url = f"{self._base_url}/markets/derivatives/analytics/term-structure/forward-volatility/constant?{query_string}"
+        return self._make_request(url)
+    
     def get_tickers(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the “Level 1” option chain with associated volatilities, greeks and underlying prices. This is the core underlying options data for many analytics.
