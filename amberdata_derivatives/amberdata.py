@@ -99,7 +99,7 @@ class AmberdataDerivatives:
         }
     
         query_string = '&'.join([f"{key}={value}" for key, value in query_params.items()])
-        url = f"{self._base_url}/markets/derivatives/analytics/tickers_1m?{query_string}"
+        url = f"{self._base_url}/markets/derivatives/analytics/level-1-quotes?{query_string}"
         return self._make_request(url)
 
     def get_delta_surfaces_constant(self, exchange: str, currency: str, **kwargs):
