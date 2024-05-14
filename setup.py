@@ -11,6 +11,7 @@ setup(
     url='https://github.com/amberdata/amberdata-derivatives-sdk',
     install_requires=[
         'requests',
+        'deprecation'
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
