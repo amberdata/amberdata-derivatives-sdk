@@ -10,8 +10,14 @@ amberdata-derivatives is a Python library to access the [Amberdata Derivatives A
 
 ## Installation
 
+To install the latest version:
 ```bash
 pip install git+https://github.com/amberdata/amberdata-derivatives-sdk.git
+```
+
+To install a specific branch:
+```bash
+pip install git+https://github.com/amberdata/amberdata-derivatives-sdk@1.0.1
 ```
 
 ## Integration
