@@ -1,0 +1,7 @@
+{
+  "description": "Server is currently unable to handle this request. Please try again soon",
+  "error": true,
+  "message": "",
+  "status": 500,
+  "title": "INTERNAL SERVER ERROR"
+}

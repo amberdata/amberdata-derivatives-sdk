@@ -1,0 +1,9 @@
+# Environment file
+/.env
+
+# IDEs
+/.idea/
+/.bak/
+
+# Python
+/amberdata_derivatives/__pycache__/
