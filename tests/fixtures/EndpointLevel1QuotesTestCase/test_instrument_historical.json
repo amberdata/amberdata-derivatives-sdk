@@ -32,7 +32,8 @@
         "theta": -53.78123,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 73029.77,
-        "volume": 43.4
+        "volume": 43.4,
+        "volumeUSD": 3094580.146
       },
       {
         "ask": 0.0095,
@@ -64,7 +65,8 @@
         "theta": -53.34358,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 72936.5,
-        "volume": 57.9
+        "volume": 57.9,
+        "volumeUSD": 4123263.3869999996
       },
       {
         "ask": 0.0095,
@@ -96,7 +98,8 @@
         "theta": -53.64365,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 72985.16,
-        "volume": 57.9
+        "volume": 57.9,
+        "volumeUSD": 4124117.9909999995
       },
       {
         "ask": 0.0095,
@@ -128,7 +131,8 @@
         "theta": -53.3366,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 72922.41,
-        "volume": 71.7
+        "volume": 71.7,
+        "volumeUSD": 5103651.888
       },
       {
         "ask": 0.0095,
@@ -160,7 +164,8 @@
         "theta": -53.63347,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 72984.56,
-        "volume": 71.7
+        "volume": 71.7,
+        "volumeUSD": 5108361.8610000005
       },
       {
         "ask": 0.0095,
@@ -192,7 +197,8 @@
         "theta": -53.64834,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 72985.02,
-        "volume": 71.7
+        "volume": 71.7,
+        "volumeUSD": 5107851.357000001
       },
       {
         "ask": 0.0095,
@@ -224,7 +230,8 @@
         "theta": -53.38184,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 72954.03,
-        "volume": 71.7
+        "volume": 71.7,
+        "volumeUSD": 5104026.879
       },
       {
         "ask": 0.0095,
@@ -256,7 +263,8 @@
         "theta": -53.08444,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 72906.12,
-        "volume": 71.7
+        "volume": 71.7,
+        "volumeUSD": 5103772.3440000005
       },
       {
         "ask": 0.0095,
@@ -288,7 +296,8 @@
         "theta": -53.1489,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 72910.55,
-        "volume": 71.7
+        "volume": 71.7,
+        "volumeUSD": 5103786.684
       },
       {
         "ask": 0.0095,
@@ -320,7 +329,8 @@
         "theta": -53.19813,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 72905.58,
-        "volume": 71.7
+        "volume": 71.7,
+        "volumeUSD": 5103246.783000001
       }
     ],
     "metadata": {

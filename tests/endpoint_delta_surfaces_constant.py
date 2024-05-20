@@ -1,7 +1,8 @@
 # ======================================================================================================================
 
-from .base_test_case import BaseTestCase
 import unittest
+
+from .base_test_case import BaseTestCase
 
 
 # ======================================================================================================================
@@ -9,17 +10,17 @@ import unittest
 class EndpointDeltaSurfaceConstantTestCase(BaseTestCase):
     def setUp(self):
         super().setUp()
-        self.schema = self.load_schema('endpoint.delta_surface_constant.json')
+        self.schema = self.load_schema('endpoint.delta_surfaces_constant.json')
 
     # ==================================================================================================================
 
     def test_default(self):
         response = self.amberdata_client.get_delta_surfaces_constant(exchange='deribit', currency='BTC')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=10)
+        self.validate_response_200(response, min_elements=10)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'timestamp', isIso=True) # TODO: this should be 'isMilliseconds=True'
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
     def test_timestamp(self):
         response = self.amberdata_client.get_delta_surfaces_constant(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00')
@@ -28,52 +29,52 @@ class EndpointDeltaSurfaceConstantTestCase(BaseTestCase):
         self.validate_response_200(response, num_elements=14400)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'timestamp', isIso=True) # TODO: this should be 'isMilliseconds=True'
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_timestamp_timeFormat_hr(self):
+    def test_timestamp_timeformat_hr(self):
         response = self.amberdata_client.get_delta_surfaces_constant(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', timeFormat='hr')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=14400)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'timestamp', isHr=True, isMinutely=True)
+        self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_minutely=True)
 
-    def test_timestamp_timeFormat_iso(self):
+    def test_timestamp_timeformat_iso(self):
         response = self.amberdata_client.get_delta_surfaces_constant(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', timeFormat='iso')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=14400)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'timestamp', isIso=True, isMinutely=True)
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True, is_minutely=True)
 
-    def test_timestamp_timeInterval_days(self):
+    def test_timestamp_timeinterval_days(self):
         response = self.amberdata_client.get_delta_surfaces_constant(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', timeFormat='hr', timeInterval='d')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=10)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'timestamp', isHr=True, isDaily=True)
+        self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_daily=True)
 
-    def test_timestamp_timeInterval_hours(self):
+    def test_timestamp_timeinterval_hours(self):
         response = self.amberdata_client.get_delta_surfaces_constant(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', timeFormat='hr', timeInterval='h')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=240)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'timestamp', isHr=True, isHourly=True)
+        self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_hourly=True)
 
-    def test_timestamp_timeInterval_minutes(self):
+    def test_timestamp_timeinterval_minutes(self):
         response = self.amberdata_client.get_delta_surfaces_constant(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', timeFormat='hr', timeInterval='m')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=14400)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'timestamp', isHr=True, isMinutely=True)
+        self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_minutely=True)
 
     # ==================================================================================================================
 

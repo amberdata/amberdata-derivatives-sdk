@@ -1,7 +1,8 @@
 # ======================================================================================================================
 
-from .base_test_case import BaseTestCase
 import unittest
+
+from .base_test_case import BaseTestCase
 
 
 # ======================================================================================================================
@@ -19,7 +20,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_200(response, min_elements=500)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'timestamp', isIso=True) # TODO: this should be 'isMilliseconds=True'
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
     def test_instrument_historical(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', instrument='BTC-26APR24-100000-C', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00')
@@ -29,9 +30,9 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field(response, 'instrument', 'BTC-26APR24-100000-C')
-        self.validate_response_field_timestamp(response, 'timestamp', isIso=True) # TODO: this should be 'isMilliseconds=True'
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_isAtm_historical(self):
+    def test_isatm_historical(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', isAtm=True, startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -39,18 +40,18 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field(response, 'isAtm', True)
-        self.validate_response_field_timestamp(response, 'timestamp', isIso=True) # TODO: this should be 'isMilliseconds=True'
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_isAtm_realtime(self):
+    def test_isatm_realtime(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', isAtm=False)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=200)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field(response, 'isAtm', False)
-        self.validate_response_field_timestamp(response, 'timestamp', isIso=True) # TODO: this should be 'isMilliseconds=True'
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_putCall_historical(self):
+    def test_putcall_historical(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', putCall='C', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -58,16 +59,16 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field(response, 'putCall', 'C')
-        self.validate_response_field_timestamp(response, 'timestamp', isIso=True) # TODO: this should be 'isMilliseconds=True'
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_putCall_realtime(self):
+    def test_putcall_realtime(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', putCall='P')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=200)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field(response, 'putCall', 'P')
-        self.validate_response_field_timestamp(response, 'timestamp', isIso=True) # TODO: this should be 'isMilliseconds=True'
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
     def test_strike_historical(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', strike=50000, startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00')
@@ -77,7 +78,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field(response, 'strike', 50000)
-        self.validate_response_field_timestamp(response, 'timestamp', isIso=True) # TODO: this should be 'isMilliseconds=True'
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
     def test_strike_realtime(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', strike=50000)
@@ -86,7 +87,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field(response, 'strike', 50000)
-        self.validate_response_field_timestamp(response, 'timestamp', isIso=True) # TODO: this should be 'isMilliseconds=True'
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
     def test_timestamp(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00')
@@ -95,52 +96,52 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_200(response, num_elements=10640)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'timestamp', isIso=True) # TODO: this should be 'isMilliseconds=True'
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_timestamp_timeFormat_hr(self):
+    def test_timestamp_timeformat_hr(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', timeFormat='hr')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=10640)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'timestamp', isHr=True, isMinutely=True)
+        self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_minutely=True)
 
-    def test_timestamp_timeFormat_iso(self):
+    def test_timestamp_timeformat_iso(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', timeFormat='iso')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=10640)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'timestamp', isIso=True, isMinutely=True)
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True, is_minutely=True)
 
-    def test_timestamp_timeInterval_days(self):
+    def test_timestamp_timeinterval_days(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', timeFormat='hr', timeInterval='d')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=1064)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'timestamp', isHr=True, isDaily=True)
+        self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_daily=True)
 
-    def test_timestamp_timeInterval_hours(self):
+    def test_timestamp_timeinterval_hours(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', timeFormat='hr', timeInterval='h')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=1064)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'timestamp', isHr=True, isHourly=True)
+        self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_hourly=True)
 
-    def test_timestamp_timeInterval_minutes(self):
+    def test_timestamp_timeinterval_minutes(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', timeFormat='hr', timeInterval='m')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=10640)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'timestamp', isHr=True, isMinutely=True)
+        self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_minutely=True)
 
     # ==================================================================================================================
 
@@ -151,16 +152,16 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
 
     # TODO: This test should fail - validation is missing in data-api
     @unittest.skip("Missing validation")
-    def test_invalid_isAtm(self):
+    def test_invalid_isatm(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', isAtm='<is_atm>')
         self.validate_response_data(response)
         self.validate_response_200(response, min_elements=200)
 
     # TODO: This test should fail - validation is missing in data-api
-    def test_invalid_putCall(self):
+    def test_invalid_putcall(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', putCall='<put_call>')
         self.validate_response_data(response)
-        self.validate_response_200(response, num_elements=0)
+        self.validate_response_400(response, "Invalid argument putCall: expected one of [ALL,P,p,put,Put,C,c,call,Call], found '<put_call>'.")
 
     # TODO: This test should fail, and not return a 500 - validation is missing in data-api
     @unittest.skip("Missing validation")

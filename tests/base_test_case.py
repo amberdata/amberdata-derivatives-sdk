@@ -1,13 +1,15 @@
 # ======================================================================================================================
 
-from amberdata_derivatives import AmberdataDerivatives
+import os
+import pathlib
+import unittest
+
 import inspect
 import json
 import jsonschema
 from dotenv import load_dotenv
-import os
-import pathlib
-import unittest
+
+from amberdata_derivatives import AmberdataDerivatives
 
 load_dotenv()
 
@@ -24,7 +26,7 @@ class BaseTestCase(unittest.TestCase):
         pathlib.Path(self.schemata_directory).mkdir(parents=True, exist_ok=True)
 
     def load_schema(self, filename: str):
-        with open(self.schemata_directory + "/" + filename, 'r') as f:
+        with open(self.schemata_directory + "/" + filename, 'r', encoding='utf-8') as f:
             schema = json.load(f)
         return schema
 
@@ -33,7 +35,7 @@ class BaseTestCase(unittest.TestCase):
 
         file = self.__ensure_fixture_file(self.fixtures_directory, inspect.stack()[1].function, file)
 
-        with open(file, 'r') as f:
+        with open(file, 'r', encoding='utf-8') as f:
             expected = json.load(f)
 
         self.assertEqual(expected, response)
@@ -42,7 +44,7 @@ class BaseTestCase(unittest.TestCase):
         if schema is None:
             file = self.__ensure_fixture_file(self.schemata_directory, inspect.stack()[1].function, file)
 
-            with open(file, 'r') as f:
+            with open(file, 'r', encoding='utf-8') as f:
                 schema = json.load(f)
 
         jsonschema.validate(response, schema)
@@ -79,31 +81,41 @@ class BaseTestCase(unittest.TestCase):
         for element in data:
             self.assertEqual(element[field_name], field_value)
 
-    def validate_response_field_timestamp(self, response, field_name: str, isHr=False, isIso=False, isMilliseconds=False, isMinutely=False, isHourly=False, isDaily=False):
+    def validate_response_field_timestamp(
+        self,
+        response,
+        field_name: str,
+        is_hr=False,
+        is_iso=False,
+        is_milliseconds=False,
+        is_minutely=False,
+        is_hourly=False,
+        is_daily=False
+    ):
         data = response['payload']['data']
 
         # Match timestamps with format: 2024-04-01 02:59:00 000
-        if isHr:
+        if is_hr:
             regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9] [0-2][0-9]:[0-5][0-9]:[0-5][0-9] [0-9]{3}$'
-            regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9] [0-2][0-9]:[0-5][0-9]:00 000$' if isMinutely else regex
-            regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9] [0-2][0-9]:00:00 000$' if isHourly else regex
-            regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9] 00:00:00 000$' if isDaily else regex
+            regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9] [0-2][0-9]:[0-5][0-9]:00 000$' if is_minutely else regex
+            regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9] [0-2][0-9]:00:00 000$' if is_hourly else regex
+            regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9] 00:00:00 000$' if is_daily else regex
 
             for element in data:
                 self.assertRegex(element[field_name], regex)
 
         # Match timestamps with format: 2024-04-01T02:59:00.000Z
-        if isIso:
+        if is_iso:
             regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-5][0-9]:[0-5][0-9]\.[0-9]{3}Z$'
-            regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-5][0-9]:00\.000Z$' if isMinutely else regex
-            regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:00:00\.000Z$' if isHourly else regex
-            regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]T00:00:00\.000Z$' if isDaily else regex
+            regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-5][0-9]:00\.000Z$' if is_minutely else regex
+            regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:00:00\.000Z$' if is_hourly else regex
+            regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]T00:00:00\.000Z$' if is_daily else regex
 
             for element in data:
                 self.assertRegex(element[field_name], regex)
 
         # Match timestamps expressed as milliseconds
-        if isMilliseconds:
+        if is_milliseconds:
             for element in data:
                 # Slow implementation requiring a conversion from int to string.
                 # Milliseconds start with 1, followed by 12 digits
@@ -131,10 +143,10 @@ class BaseTestCase(unittest.TestCase):
 
         # Implementation requiring only one call/comparison
         if not isinstance(x, int):
-            raise AssertionError('%r is not an integer' % x)
+            raise AssertionError(f'{x} is not an integer')
 
-        if not (low <= x <= high):
-            raise AssertionError('%r not between %r and %r' % (x, low, high))
+        if not low <= x <= high:
+            raise AssertionError(f'{x} not between {low} and {high}')
 
     def __record_response_data(self, response, file=None):
         if not self.record_api_calls:
@@ -142,7 +154,7 @@ class BaseTestCase(unittest.TestCase):
 
         file = self.__ensure_fixture_file(self.fixtures_directory, inspect.stack()[2].function, file)
 
-        with open(file, 'w') as f:
+        with open(file, 'w', encoding='utf-8') as f:
             json.dump(response, f, indent=2, sort_keys=True)
 
 # ======================================================================================================================

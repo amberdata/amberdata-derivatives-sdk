@@ -2,10 +2,10 @@ from setuptools import setup, find_packages
 
 setup(
     name='amberdata-derivatives',
-    version='1.0.0',
+    version='1.0.2',
     packages=find_packages(),
     description='Python client for Amberdata API for derivatives analytics.',
-    long_description=open('README.md').read(),
+    long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
     author='Amberdata',
     url='https://github.com/amberdata/amberdata-derivatives-sdk',
