@@ -17,7 +17,7 @@ pip install git+https://github.com/amberdata/amberdata-derivatives-sdk.git
 
 To install a specific branch:
 ```bash
-pip install git+https://github.com/amberdata/amberdata-derivatives-sdk@1.0.1
+pip install git+https://github.com/amberdata/amberdata-derivatives-sdk@1.0.2
 ```
 
 ## Integration
@@ -25,7 +25,7 @@ pip install git+https://github.com/amberdata/amberdata-derivatives-sdk@1.0.1
 ```python
 from amberdata_derivatives import AmberdataDerivatives
 
-amberdata_client = AmberdataDerivatives(api_key="ENTER YOUR AD API KEY HERE")
+amberdata_client = AmberdataDerivatives(api_key="<Enter your API key here>")
 amberdata_client.get_term_structure_constant(currency='BTC', exchange='deribit')
 ```
 
@@ -43,11 +43,18 @@ from dotenv import load_dotenv
 load_dotenv()
 
 amberdata_client = AmberdataDerivatives(api_key=os.getenv("API_KEY"))
-amberdata_client.get_term_structure_constant(currency='BTC', exchange='deribit')
+amberdata_client.get_term_structures_constant(currency='BTC', exchange='deribit')
 ```
 
 ## Unit tests
 
 ```python
 python3 -m unittest -v tests/*.py
+```
+
+## Linting
+
+```python
+pylint --generate-rcfile > .pylintrc
+pylint $(git ls-files '*.py')
 ```

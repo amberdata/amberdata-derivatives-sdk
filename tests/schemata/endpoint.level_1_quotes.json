@@ -40,9 +40,10 @@
               "timestamp"                : { "type": ["integer", "string"] },
               "underlyingPrice"          : { "type": "number"  },
               "vega"                     : { "type": "number"  },
-              "volume"                   : { "type": ["null",    "number"] }
+              "volume"                   : { "type": ["null",    "number"] },
+              "volumeUSD"                : { "type": ["null",    "number"] }
             },
-            "required": ["ask", "askIv", "askVolume", "bid", "bidIv", "bidVolume", "currency", "delta", "exchange", "exchangeTimestamp", "expirationTimestamp", "gamma", "indexPrice", "instrument", "instrumentNormalized", "isAtm", "isCarryForward", "isExchangeProvidedGreeks", "markIv", "markPrice", "multiplier", "openInterest", "openInterestUSD", "putCall", "rho", "strike", "theta", "timestamp", "underlyingPrice", "volume"],
+            "required": ["ask", "askIv", "askVolume", "bid", "bidIv", "bidVolume", "currency", "delta", "exchange", "exchangeTimestamp", "expirationTimestamp", "gamma", "indexPrice", "instrument", "instrumentNormalized", "isAtm", "isCarryForward", "isExchangeProvidedGreeks", "markIv", "markPrice", "multiplier", "openInterest", "openInterestUSD", "putCall", "rho", "strike", "theta", "timestamp", "underlyingPrice", "volume", "volumeUSD"],
             "additionalProperties": false
           }
         },
