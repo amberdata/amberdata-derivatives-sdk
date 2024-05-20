@@ -17,8 +17,8 @@ class AmberdataDerivatives:
 
         :param api_key: The key granting access to the API.
         """
-        self._base_url = "https://api.amberdata.com"
-        self._headers = {
+        self.__base_url = "https://api.amberdata.com"
+        self.__headers = {
             "accept":          "application/json",
             "Accept-Encoding": "gzip",
             "x-api-key":       api_key
@@ -47,7 +47,7 @@ class AmberdataDerivatives:
         )
 
     @deprecation.deprecated(details="Use get_term_structures_floating(...) instead")
-    def get_term_structure_floating(self, exchange: str, currency: str, **kwargs):
+    def __get_term_structure_floating(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the term structure (for exchange listed expirations) with forward volatility calculations.
 
@@ -80,7 +80,7 @@ class AmberdataDerivatives:
         )
 
     @deprecation.deprecated(details="Use get_term_structures_constant(...) instead")
-    def get_term_structure_constant(self, exchange: str, currency: str, **kwargs):
+    def __get_term_structure_constant(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the term structure (for exchange listed expirations) with forward volatility calculations.
 
@@ -113,7 +113,7 @@ class AmberdataDerivatives:
         )
 
     @deprecation.deprecated(details="Use get_level_1_quotes(...) instead")
-    def get_tickers(self, exchange: str, currency: str, **kwargs):
+    def __get_tickers(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the “Level 1” option chain with associated volatilities, greeks and underlying prices.
         This is the core underlying options data for many analytics.
@@ -242,8 +242,8 @@ class AmberdataDerivatives:
     def __make_request(self, url_path: str, query_params: dict):
         """Helper method to make HTTP GET requests and parse the JSON response into a DataFrame."""
         query_string = '&'.join([f"{key}={value}" for key, value in query_params.items()])
-        url = f"{self._base_url}/{url_path}?{query_string}"
-        response = requests.get(url, headers=self._headers, timeout=30)
+        url = f"{self.__base_url}/{url_path}?{query_string}"
+        response = requests.get(url, headers=self.__headers, timeout=30)
         return response.json()
 
 # ======================================================================================================================
