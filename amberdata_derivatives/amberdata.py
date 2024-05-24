@@ -33,14 +33,13 @@ class AmberdataDerivatives:
         QUERY PARAMS:
         - exchange     (string)    [Required] [Examples] deribit | okex | bybit
         - currency     (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate    (date-time) [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - blockTradeId (boolean)   [Optional] [Examples] True | False
         - expiration   (string)    [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
         - instrument   (string)    [Optional] [Examples] BTC-14JUN24-84000-C
         - putCall      (string)    [Optional] [Examples] C | P
-        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - strike       (int32)     [Optional] [Examples] 100000 | 3500
-        - timeInterval (string)    [Optional] [Examples] minute | hour | day
         - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr |
         """
 
