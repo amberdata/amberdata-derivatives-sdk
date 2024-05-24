@@ -26,7 +26,9 @@ class AmberdataDerivatives:
 
     def get_decorated_trades(self, exchange: str, currency: str, **kwargs):
         """
-        Retrieve trades "decorated" with pre and post quotes information (such as: open interest, prices, IVs...)
+        This endpoint returns option "times and sales" data that's decorated with pre-trade level-1 orderbook data and post-trdae level-1 data. 
+        This is the core dataset of the Amberdata direction and GEX "Gamma Exposure" analysis. 
+        We use this orderbook impact to analyze the true aggressor of every trade, while assuming that market-makers (aka "dealers") are typically the passive trade participants
         
         QUERY PARAMS:
         - exchange     (string)    [Required] [Examples] deribit | okex | bybit
