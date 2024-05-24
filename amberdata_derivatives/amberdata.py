@@ -26,10 +26,7 @@ class AmberdataDerivatives:
 
     def get_decorated_trades(self, exchange: str, currency: str, **kwargs):
         """
-        Given an exchange parameter and underlying currency (ex: deribit, BTC) this endpoint retrieves a list of all
-        available active instruments.
-        Users can pass a “timestamp” parameter to view the available active instruments at some point in the past.
-        Users can also pass additional parameters to filter to a more narrow subset of tradable instruments.
+        Retrieve trades decorated with pre and post quotes information.
         
         QUERY PARAMS:
         - exchange     (string)    [Required] [Examples] deribit | okex | bybit
