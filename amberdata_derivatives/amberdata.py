@@ -26,7 +26,7 @@ class AmberdataDerivatives:
 
     def get_decorated_trades(self, exchange: str, currency: str, **kwargs):
         """
-        Retrieve trades decorated with pre and post quotes information.
+        Retrieve trades "decorated" with pre and post quotes information (such as: open interest, prices, IVs...)
         
         QUERY PARAMS:
         - exchange     (string)    [Required] [Examples] deribit | okex | bybit
