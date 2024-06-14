@@ -567,6 +567,7 @@ class AmberdataDerivatives:
     def get_top_trades(self, exchange: str, currency: str, startDate: str, endDate: str, **kwargs):
         """
         This endpoint contains all the relevant information about the most important trades both on screen and blocked. Besides the usual information this endpoint have some proprietary nuances that helps market watchers to read the flow deeply. Among the others: - "Amberdata Direction" is the metrics we developed for gauging the real initiator of a trade - "Delta Hedge" highlight is a block trade contained a futures leg - The information of the orderbook prior to the trade ("pre" columns) and post ("post" columns ).
+        It returns only active instruments.
 
         QUERY PARAMS:
         - exchange            (string)    [Required] [Examples] deribit | okex | bybit
