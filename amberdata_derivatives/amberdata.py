@@ -24,13 +24,41 @@ class AmberdataDerivatives:
             "x-api-key":       api_key
         }
 
+    def get_decorated_trades(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns option "times and sales" data that's decorated with pre-trade level-1 orderbook data and post-trdae level-1 data. 
+        This is the core dataset of the Amberdata direction and GEX "Gamma Exposure" analysis. 
+        We use this orderbook impact to analyze the true aggressor of every trade, while assuming that market-makers (aka "dealers") are typically the passive trade participants
+        
+        QUERY PARAMS:
+        - exchange     (string)    [Required] [Examples] deribit | okex | bybit
+        - currency     (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate    (date-time) [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - blockTradeId (boolean)   [Optional] [Examples] True | False
+        - expiration   (string)    [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - instrument   (string)    [Optional] [Examples] BTC-14JUN24-84000-C
+        - putCall      (string)    [Optional] [Examples] C | P
+        - strike       (int32)     [Optional] [Examples] 100000 | 3500
+        - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr |
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/decorated-trades',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
+
     def get_instrument_information(self, **kwargs):
         """
         Given an exchange parameter and underlying currency (ex: deribit, BTC) this endpoint retrieves a list of all
         available active instruments.
         Users can pass a “timestamp” parameter to view the available active instruments at some point in the past.
         Users can also pass additional parameters to filter to a more narrow subset of tradable instruments.
-        
+
         QUERY PARAMS:
         - exchange  (string)    [Optional] [Examples] deribit | okex | bybit
         - currency  (string)    [Optional] [Examples] BTC | SOL_USDC
@@ -182,6 +210,96 @@ class AmberdataDerivatives:
             {
                 'exchange': exchange,
                 'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_term_structures_richness(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the term structure richness.
+        The “Term Structure Richness” is the relative “level” of the Contango or Backwardation shape. 
+        A reading of 1.00 would be a perfectly flat term structure - as measured by our method - while readings below/above represent Contango/Backwardation respectively. 
+        Using the term structure levels enables us to quantify how extended the term structure pricing currently is, at any point in time.
+
+        QUERY PARAMS:
+        - exchange     (string)    [Required] [Examples] deribit | okex | bybit
+        - currency     (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeInterval (string)    [Optional] [Examples] minute | hour | day
+        - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr |
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/term-structures/richness',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_cones(self, exchange: str, pair: str, **kwargs):
+        """
+        TThe endpoint returns the percentile distribution of realized volatility for a specific spot trading pair. 
+        We can see the RV distribution for multiple measurement windows compared to the end date.
+
+        QUERY PARAMS:
+        - exchange     (string)    [Required] [Examples] gdax
+        - pair         (string)    [Required] [Examples] btc_usd
+        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeInterval (string)    [Optional] [Examples] minute | hour | day
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/volatility-cones',
+            {
+                'exchange': exchange,
+                'pair': pair,
+                **kwargs
+            }
+        )
+
+    def get_volatility_index(self, **kwargs):
+        """
+        This endpoint returns the value of the BTC (or other altcoin) VIX. 
+        The methodology of this index is similar to the VIX but for the underlying crypto. 
+        Deribit developed their Bitcoin VIX called the DVOL index.
+
+        QUERY PARAMS:
+        - exchange     (string)    [Optional] [Examples] deribit | okex | bybit
+        - currency     (string)    [Optional] [Examples] BTC | SOL_USDC
+        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeInterval (string)    [Optional] [Examples] minute | hour | day
+        - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr |
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/volatility-index',
+            {
+                **kwargs
+            }
+        )
+
+    def get_volatility_index_decorated(self, **kwargs):
+        """
+        This endpoint returns the value of the BTC (or other altcoin) VIX. 
+        Along with the volatility index we are also returned underlying volatility surface datapoints (such as skew) and underlying spot prices.
+
+        QUERY PARAMS:
+        - exchange     (string)    [Optional] [Examples] deribit | okex | bybit
+        - currency     (string)    [Optional] [Examples] BTC | SOL_USDC
+        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeInterval (string)    [Optional] [Examples] minute | hour | day
+        - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr |
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/volatility-index-decorated',
+            {
                 **kwargs
             }
         )

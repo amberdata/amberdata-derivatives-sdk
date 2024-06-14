@@ -17,7 +17,7 @@ pip install git+https://github.com/amberdata/amberdata-derivatives-sdk.git
 
 To install a specific branch:
 ```bash
-pip install git+https://github.com/amberdata/amberdata-derivatives-sdk@1.0.3
+pip install git+https://github.com/amberdata/amberdata-derivatives-sdk@1.0.4
 ```
 
 ## Integration
