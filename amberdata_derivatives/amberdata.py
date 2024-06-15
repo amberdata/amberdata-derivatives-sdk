@@ -43,15 +43,15 @@ class AmberdataDerivatives:
         We use this orderbook impact to analyze the true aggressor of every trade, while assuming that market-makers (aka "dealers") are typically the passive trade participants.
 
         QUERY PARAMS:
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
         - currency       (string)    [Required] [Examples] BTC | SOL_USDC
+        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
+        - blockTradeId   (boolean)   [Optional] [Examples] 144117
         - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         - instrument     (string)    [Optional] [Examples] BTC-26APR24-100000-C
         - putCall        (string)    [Optional] [Examples] C | P
         - strike         (int32)     [Optional] [Examples] 100000 | 3500
-        - blockTradeId   (boolean)   [Optional] [Examples] 144117
         """
 
         return self.__make_request(
