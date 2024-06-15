@@ -18,15 +18,15 @@ load_dotenv()
 
 class BaseTestCase(unittest.TestCase):
     def setUp(self):
-        self.record_api_calls = os.getenv("RECORD_API_CALLS", "false") == "true"
-        self.amberdata_client = AmberdataDerivatives(api_key=os.getenv("API_KEY"))
-        self.fixtures_directory = "tests/fixtures"
-        self.schemata_directory = "tests/schemata"
+        self.record_api_calls = os.getenv('RECORD_API_CALLS', 'false') == 'true'
+        self.amberdata_client = AmberdataDerivatives(api_key=os.getenv('API_KEY'))
+        self.fixtures_directory = 'tests/fixtures'
+        self.schemata_directory = 'tests/schemata'
         pathlib.Path(self.fixtures_directory).mkdir(parents=True, exist_ok=True)
         pathlib.Path(self.schemata_directory).mkdir(parents=True, exist_ok=True)
 
     def load_schema(self, filename: str):
-        with open(self.schemata_directory + "/" + filename, 'r', encoding='utf-8') as f:
+        with open(self.schemata_directory + '/' + filename, 'r', encoding='utf-8') as f:
             schema = json.load(f)
         return schema
 
@@ -52,10 +52,10 @@ class BaseTestCase(unittest.TestCase):
     def validate_response_200(self, response, num_elements=None, min_elements=None, max_elements=None):
         payload = response['payload']
 
-        self.assertEqual("Successful request", response['description'])
+        self.assertEqual('Successful request', response['description'])
         self.assertEqual(200,                  response['status'])
-        self.assertEqual("OK",                 response['title'])
-        self.assertEqual("2023-09-30",         payload['metadata']['api-version'])
+        self.assertEqual('OK',                 response['title'])
+        self.assertEqual('2023-09-30',         payload['metadata']['api-version'])
 
         if num_elements is not None:
             self.assertEqual(len(payload['data']), num_elements)
@@ -67,11 +67,11 @@ class BaseTestCase(unittest.TestCase):
             self.assertLessEqual(len(payload['data']), max_elements)
 
     def validate_response_400(self, response, message: str):
-        description = "Request was invalid or cannot be served. See message for details"
+        description = 'Request was invalid or cannot be served. See message for details'
 
         self.assertEqual(description,   response['description'])
         self.assertEqual(400,           response['status'])
-        self.assertEqual("BAD REQUEST", response['title'])
+        self.assertEqual('BAD REQUEST', response['title'])
         self.assertEqual(True,          response['error'])
         self.assertEqual(message,       response['message'])
 
@@ -130,9 +130,9 @@ class BaseTestCase(unittest.TestCase):
 
     def __ensure_fixture_file(self, directory: str, filename: str, file):
         if file is None:
-            path = directory + "/" + type(self).__name__
+            path = directory + '/' + type(self).__name__
             pathlib.Path(path).mkdir(parents=True, exist_ok=True)
-            file = path + "/" + filename + ".json"
+            file = path + '/' + filename + '.json'
         return file
 
     @staticmethod

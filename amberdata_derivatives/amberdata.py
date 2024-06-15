@@ -1,5 +1,9 @@
 # ======================================================================================================================
 
+from dotenv import load_dotenv
+load_dotenv()
+
+import os
 import requests
 import sys
 
@@ -23,12 +27,12 @@ class AmberdataDerivatives:
         - api_key     (string) [Required] The key granting access to the API.
         - time_format (string) [Optional] The default time format for all the endpoints (ms | iso | hr).
         """
-        self.__base_url = "https://api.amberdata.com"
+        self.__base_url = os.getenv('API_URL', 'https://api.amberdata.com')
         self.__headers = {
-            "accept":             "application/json",
-            "Accept-Encoding":    "gzip",
-            "x-api-key":          api_key,
-            "x-amberdata-client": "python-sdk-" + __version__,
+            'accept':             'application/json',
+            'Accept-Encoding':    'gzip',
+            'x-api-key':          api_key,
+            'x-amberdata-client': 'python-sdk-' + __version__,
         }
         self.__time_format = time_format
 
