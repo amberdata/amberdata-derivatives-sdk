@@ -238,6 +238,70 @@ class AmberdataDerivatives:
             }
         )
 
+    def get_volatility_cones(self, exchange: str, pair: str, **kwargs):
+        """
+        The endpoint returns the percentile distribution of realized volatility for a specific spot trading pair. We can see the RV distribution for multiple measurement windows compared to the end date.
+
+        QUERY PARAMS:
+        - exchange    (string)    [Required] [Examples] gdax
+        - pair        (string)    [Required] [Examples] btc_usd
+        - startDate   (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate     (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat  (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+        return self.__make_request(
+            'markets/derivatives/analytics/volatility-cones',
+            {
+                'exchange': exchange,
+                'pair': pair,
+                **kwargs
+            }
+        )
+
+    def get_volatility_index(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the value of the BTC (or other altcoin) VIX. The methodology of this index is similar to the VIX but for the underlying crypto. Deribit developed their Bitcoin VIX called the DVOL index.
+
+        QUERY PARAMS:
+        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
+        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timestamp      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/volatility-index',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_index_decorated(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the value of the BTC (or other altcoin) VIX. The methodology of this index is similar to the VIX but for the underlying crypto. Deribit developed their Bitcoin VIX called the DVOL index.
+
+        QUERY PARAMS:
+        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
+        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
+        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timestamp      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/volatility-index-decorated',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
+
     def get_pair_information(self, exchange: str, **kwargs):
         """
         This information endpoint returns the available spot data for realized volatility and price calculations provided for each specific exchange. (AVAILABLE EXCHANGE: binance, bithumb, bitstamp, gdax, gemini, kraken, okex, poloniex)
@@ -332,26 +396,6 @@ class AmberdataDerivatives:
             }
         )
 
-    def get_volatility_cones(self, exchange: str, pair: str, **kwargs):
-        """
-        The endpoint returns the percentile distribution of realized volatility for a specific spot trading pair. We can see the RV distribution for multiple measurement windows compared to the end date.
-
-        QUERY PARAMS:
-        - exchange    (string)    [Required] [Examples] gdax
-        - pair        (string)    [Required] [Examples] btc_usd
-        - startDate   (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate     (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat  (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
-        """
-        return self.__make_request(
-            'markets/derivatives/analytics/volatility-cones',
-            {
-                'exchange': exchange,
-                'pair': pair,
-                **kwargs
-            }
-        )
-
     def get_implied_vs_realized(self, exchange: str, currency: str, daysToExpiration: str, startDate: str, endDate: str, **kwargs):
         """
         This endpoint returns the close-to-close hourly realized volatility for 7-days and 30-days. Using the daysToExpiration parameter, users can choose which "at-the-money" implied volatility to compare.
@@ -372,50 +416,6 @@ class AmberdataDerivatives:
                 'daysToExpiration': daysToExpiration,
                 'startDate': startDate,
                 'endDate': endDate,
-                **kwargs
-            }
-        )
-
-    def get_volatility_index(self, exchange: str, currency: str, **kwargs):
-        """
-        This endpoint returns the value of the BTC (or other altcoin) VIX. The methodology of this index is similar to the VIX but for the underlying crypto. Deribit developed their Bitcoin VIX called the DVOL index.
-
-        QUERY PARAMS:
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timestamp      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
-        """
-
-        return self.__make_request(
-            'markets/derivatives/analytics/volatility-index',
-            {
-                'exchange': exchange,
-                'currency': currency,
-                **kwargs
-            }
-        )
-
-    def get_volatility_index_decorated(self, exchange: str, currency: str, **kwargs):
-        """
-        This endpoint returns the value of the BTC (or other altcoin) VIX. The methodology of this index is similar to the VIX but for the underlying crypto. Deribit developed their Bitcoin VIX called the DVOL index.
-
-        QUERY PARAMS:
-        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timestamp      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
-        """
-
-        return self.__make_request(
-            'markets/derivatives/analytics/volatility-index-decorated',
-            {
-                'exchange': exchange,
-                'currency': currency,
                 **kwargs
             }
         )
