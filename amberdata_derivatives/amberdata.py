@@ -2,6 +2,7 @@
 
 import requests
 
+
 # ======================================================================================================================
 
 class AmberdataDerivatives:
@@ -27,7 +28,9 @@ class AmberdataDerivatives:
 
     def get_decorated_trades(self, exchange: str, currency: str, **kwargs):
         """
-        This endpoint returns option "times and sales" data that's decorated with pre-trade level-1 orderbook data and post-trade level-1 data. This is the core dataset of the Amberdata direction and GEX "Gamma Exposure" analysis. We use this orderbook impact to analyze the true aggressor of every trade, while assuming that market-makers (aka "dealers") are typically the passive trade participants.
+        This endpoint returns option "times and sales" data that's decorated with pre-trade level-1 orderbook data and post-trade level-1 data.
+        This is the core dataset of the Amberdata direction and GEX "Gamma Exposure" analysis.
+        We use this orderbook impact to analyze the true aggressor of every trade, while assuming that market-makers (aka "dealers") are typically the passive trade participants.
 
         QUERY PARAMS:
         - exchange       (string)    [Required] [Examples] deribit | okex | bybit
@@ -213,6 +216,28 @@ class AmberdataDerivatives:
             }
         )
 
+    def get_term_structures_richness(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the term structure richness. The “Term Structure Richness” is the relative “level” of the Contango or Backwardation shape. A reading of 1.00 would be a perfectly flat term structure - as measured by our method - while readings below/above represent Contango/Backwardation respectively. Using the term structure levels enables us to quantify how extended the term structure pricing currently is, at any point in time. The calculation take a ratio of 7-day ATM IV versus, 30-day, 60-day. 90-day and 180-days.
+
+        QUERY PARAMS:
+        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
+        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timestamp      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/term-structures/richness',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
+
     def get_pair_information(self, exchange: str, **kwargs):
         """
         This information endpoint returns the available spot data for realized volatility and price calculations provided for each specific exchange. (AVAILABLE EXCHANGE: binance, bithumb, bitstamp, gdax, gemini, kraken, okex, poloniex)
@@ -347,28 +372,6 @@ class AmberdataDerivatives:
                 'daysToExpiration': daysToExpiration,
                 'startDate': startDate,
                 'endDate': endDate,
-                **kwargs
-            }
-        )
-
-    def get_term_structures_richness(self, exchange: str, currency: str, **kwargs):
-        """
-        This endpoint returns the term structure richness. The “Term Structure Richness” is the relative “level” of the Contango or Backwardation shape. A reading of 1.00 would be a perfectly flat term structure - as measured by our method - while readings below/above represent Contango/Backwardation respectively. Using the term structure levels enables us to quantify how extended the term structure pricing currently is, at any point in time. The calculation take a ratio of 7-day ATM IV versus, 30-day, 60-day. 90-day and 180-days.
-
-        QUERY PARAMS:
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timestamp      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
-        """
-
-        return self.__make_request(
-            'markets/derivatives/analytics/term-structures/richness',
-            {
-                'exchange': exchange,
-                'currency': currency,
                 **kwargs
             }
         )
