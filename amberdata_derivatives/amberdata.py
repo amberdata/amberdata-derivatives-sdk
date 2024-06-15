@@ -218,7 +218,9 @@ class AmberdataDerivatives:
 
     def get_term_structures_richness(self, exchange: str, currency: str, **kwargs):
         """
-        This endpoint returns the term structure richness. The “Term Structure Richness” is the relative “level” of the Contango or Backwardation shape. A reading of 1.00 would be a perfectly flat term structure - as measured by our method - while readings below/above represent Contango/Backwardation respectively. Using the term structure levels enables us to quantify how extended the term structure pricing currently is, at any point in time. The calculation take a ratio of 7-day ATM IV versus, 30-day, 60-day. 90-day and 180-days.
+        This endpoint returns the term structure richness.
+        The “Term Structure Richness” is the relative “level” of the Contango or Backwardation shape. A reading of 1.00 would be a perfectly flat term structure - as measured by our method - while readings below/above represent Contango/Backwardation respectively.
+        Using the term structure levels enables us to quantify how extended the term structure pricing currently is, at any point in time. The calculation take a ratio of 7-day ATM IV versus, 30-day, 60-day. 90-day and 180-days.
 
         QUERY PARAMS:
         - exchange       (string)    [Required] [Examples] deribit | okex | bybit
@@ -240,7 +242,8 @@ class AmberdataDerivatives:
 
     def get_volatility_cones(self, exchange: str, pair: str, **kwargs):
         """
-        The endpoint returns the percentile distribution of realized volatility for a specific spot trading pair. We can see the RV distribution for multiple measurement windows compared to the end date.
+        The endpoint returns the percentile distribution of realized volatility for a specific spot trading pair.
+        We can see the RV distribution for multiple measurement windows compared to the end date.
 
         QUERY PARAMS:
         - exchange    (string)    [Required] [Examples] gdax
@@ -260,7 +263,9 @@ class AmberdataDerivatives:
 
     def get_volatility_index(self, exchange: str, currency: str, **kwargs):
         """
-        This endpoint returns the value of the BTC (or other altcoin) VIX. The methodology of this index is similar to the VIX but for the underlying crypto. Deribit developed their Bitcoin VIX called the DVOL index.
+        This endpoint returns the value of the BTC (or other altcoin) VIX.
+        The methodology of this index is similar to the VIX but for the underlying crypto.
+        Deribit developed their Bitcoin VIX called the DVOL index.
 
         QUERY PARAMS:
         - exchange       (string)    [Required] [Examples] deribit | okex | bybit
@@ -282,7 +287,10 @@ class AmberdataDerivatives:
 
     def get_volatility_index_decorated(self, exchange: str, currency: str, **kwargs):
         """
-        This endpoint returns the value of the BTC (or other altcoin) VIX. The methodology of this index is similar to the VIX but for the underlying crypto. Deribit developed their Bitcoin VIX called the DVOL index.
+        This endpoint returns the value of the BTC (or other altcoin) VIX.
+        The methodology of this index is similar to the VIX but for the underlying crypto.
+        Deribit developed their Bitcoin VIX called the DVOL index.
+        Along with the volatility index we are also returned underlying volatility surface datapoints (such as skew) and underlying spot prices.
 
         QUERY PARAMS:
         - currency       (string)    [Required] [Examples] BTC | SOL_USDC
