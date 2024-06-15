@@ -39,7 +39,7 @@
               "theta"                    : { "type": ["null",    "number"] },
               "timestamp"                : { "type": ["integer", "string"] },
               "underlyingPrice"          : { "type": "number"  },
-              "vega"                     : { "type": "number"  },
+              "vega"                     : { "type": ["null",    "number"] },
               "volume"                   : { "type": ["null",    "number"] },
               "volumeUSD"                : { "type": ["null",    "number"] }
             },

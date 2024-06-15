@@ -1,6 +1,11 @@
 # ======================================================================================================================
 
 import requests
+import sys
+
+sys.path[0:0] = ['amberdata_derivatives']
+
+from version import __version__
 
 
 # ======================================================================================================================
@@ -19,9 +24,10 @@ class AmberdataDerivatives:
         """
         self.__base_url = "https://api.amberdata.com"
         self.__headers = {
-            "accept":          "application/json",
-            "Accept-Encoding": "gzip",
-            "x-api-key":       api_key
+            "accept":             "application/json",
+            "Accept-Encoding":    "gzip",
+            "x-api-key":          api_key,
+            "x-amberdata-client": "python-sdk-" + __version__,
         }
 
     def get_decorated_trades(self, exchange: str, currency: str, **kwargs):
