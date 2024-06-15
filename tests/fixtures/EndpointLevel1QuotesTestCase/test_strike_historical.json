@@ -32,6 +32,7 @@
         "theta": -5.50608,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 71751.42,
+        "vega": 0.41418,
         "volume": null,
         "volumeUSD": null
       },
@@ -65,6 +66,7 @@
         "theta": -4.39839,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 71757.14,
+        "vega": 0.41344,
         "volume": 16.4,
         "volumeUSD": 1169175.1879999998
       },
@@ -98,6 +100,7 @@
         "theta": -12.78081,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 72236.68,
+        "vega": 3.15801,
         "volume": null,
         "volumeUSD": null
       },
@@ -131,6 +134,7 @@
         "theta": -12.76967,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 72241.62,
+        "vega": 3.15523,
         "volume": 4,
         "volumeUSD": 285164.68
       },
@@ -164,6 +168,7 @@
         "theta": -22.37766,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 73024,
+        "vega": 13.76444,
         "volume": null,
         "volumeUSD": null
       },
@@ -197,6 +202,7 @@
         "theta": -22.36623,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 73029.55,
+        "vega": 13.7572,
         "volume": 10.8,
         "volumeUSD": 769944.636
       },
@@ -230,6 +236,7 @@
         "theta": -29.51708,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 74706.67,
+        "vega": 44.9696,
         "volume": null,
         "volumeUSD": null
       },
@@ -263,6 +270,7 @@
         "theta": -29.51708,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 74706.67,
+        "vega": 44.9696,
         "volume": null,
         "volumeUSD": null
       },
@@ -296,6 +304,7 @@
         "theta": -30.48069,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 76029.73,
+        "vega": 67.3154,
         "volume": 1.2,
         "volumeUSD": 85564.428
       },
@@ -329,6 +338,7 @@
         "theta": -30.48282,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 76027.32,
+        "vega": 67.32011,
         "volume": 0.3,
         "volumeUSD": 21390.351
       },
@@ -362,6 +372,7 @@
         "theta": -27.35416,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 79336.29,
+        "vega": 121.39006,
         "volume": null,
         "volumeUSD": null
       },
@@ -395,6 +406,7 @@
         "theta": -27.35416,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 79336.29,
+        "vega": 121.39006,
         "volume": 0.7,
         "volumeUSD": 49903.818999999996
       },
@@ -428,6 +440,7 @@
         "theta": -24.23975,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 81359.01,
+        "vega": 161.56114,
         "volume": 0.4,
         "volumeUSD": 28519.136
       },
@@ -461,6 +474,7 @@
         "theta": -24.23975,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 81359.01,
+        "vega": 161.56114,
         "volume": 0.2,
         "volumeUSD": 14259.568
       },
@@ -494,6 +508,7 @@
         "theta": -22.25059,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 83144.57,
+        "vega": 194.30252,
         "volume": null,
         "volumeUSD": null
       },
@@ -527,6 +542,7 @@
         "theta": -22.25064,
         "timestamp": "2024-04-01T00:00:00.000Z",
         "underlyingPrice": 83140.94,
+        "vega": 194.30436,
         "volume": 5.5,
         "volumeUSD": 392138.12
       },
@@ -560,6 +576,7 @@
         "theta": -5.65859,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 71662.02,
+        "vega": 0.42559,
         "volume": null,
         "volumeUSD": null
       },
@@ -593,6 +610,7 @@
         "theta": -4.54333,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 71661.66,
+        "vega": 0.42563,
         "volume": 16.4,
         "volumeUSD": 1167901.892
       },
@@ -626,6 +644,7 @@
         "theta": -12.90964,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 72144.13,
+        "vega": 3.1934,
         "volume": null,
         "volumeUSD": null
       },
@@ -659,6 +678,7 @@
         "theta": -12.91049,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 72143.78,
+        "vega": 3.19361,
         "volume": 4,
         "volumeUSD": 284855.72
       },
@@ -692,6 +712,7 @@
         "theta": -22.59869,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 72936.01,
+        "vega": 13.89733,
         "volume": null,
         "volumeUSD": null
       },
@@ -725,6 +746,7 @@
         "theta": -22.59634,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 72937.13,
+        "vega": 13.89584,
         "volume": 10.8,
         "volumeUSD": 769110.444
       },
@@ -758,6 +780,7 @@
         "theta": -29.65727,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 74614.68,
+        "vega": 45.17202,
         "volume": null,
         "volumeUSD": null
       },
@@ -791,6 +814,7 @@
         "theta": -29.65572,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 74616.57,
+        "vega": 45.16908,
         "volume": null,
         "volumeUSD": null
       },
@@ -824,6 +848,7 @@
         "theta": -30.54,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 75933.87,
+        "vega": 67.47277,
         "volume": 1.2,
         "volumeUSD": 85455.3
       },
@@ -857,6 +882,7 @@
         "theta": -30.53939,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 75933.95,
+        "vega": 67.472,
         "volume": 0.3,
         "volumeUSD": 21364.284
       },
@@ -890,6 +916,7 @@
         "theta": -27.38087,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 79251.78,
+        "vega": 121.50991,
         "volume": null,
         "volumeUSD": null
       },
@@ -923,6 +950,7 @@
         "theta": -27.38087,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 79251.78,
+        "vega": 121.50991,
         "volume": 0.7,
         "volumeUSD": 49849.75099999999
       },
@@ -956,6 +984,7 @@
         "theta": -24.24597,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 81283.85,
+        "vega": 161.62643,
         "volume": 0.4,
         "volumeUSD": 28485.712
       },
@@ -989,6 +1018,7 @@
         "theta": -24.24591,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 81283.33,
+        "vega": 161.6267,
         "volume": 0.2,
         "volumeUSD": 14242.676000000001
       },
@@ -1022,6 +1052,7 @@
         "theta": -22.26088,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 83067.21,
+        "vega": 194.35516,
         "volume": null,
         "volumeUSD": null
       },
@@ -1055,6 +1086,7 @@
         "theta": -22.26088,
         "timestamp": "2024-04-01T00:01:00.000Z",
         "underlyingPrice": 83067.21,
+        "vega": 194.35516,
         "volume": 5.5,
         "volumeUSD": 391678.54
       },
@@ -1088,6 +1120,7 @@
         "theta": -5.60584,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 71690.19,
+        "vega": 0.42155,
         "volume": null,
         "volumeUSD": null
       },
@@ -1121,6 +1154,7 @@
         "theta": -4.48959,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 71702.35,
+        "vega": 0.41995,
         "volume": 16.4,
         "volumeUSD": 1168143.9559999998
       },
@@ -1154,6 +1188,7 @@
         "theta": -12.83854,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 72169.01,
+        "vega": 3.17598,
         "volume": null,
         "volumeUSD": null
       },
@@ -1187,6 +1222,7 @@
         "theta": -12.80989,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 72181.06,
+        "vega": 3.16888,
         "volume": 4,
         "volumeUSD": 284913.16
       },
@@ -1220,6 +1256,7 @@
         "theta": -22.53312,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 72972.44,
+        "vega": 13.8536,
         "volume": null,
         "volumeUSD": null
       },
@@ -1253,6 +1290,7 @@
         "theta": -22.52968,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 72974.1,
+        "vega": 13.85142,
         "volume": 10.8,
         "volumeUSD": 769284.108
       },
@@ -1286,6 +1324,7 @@
         "theta": -29.60103,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 74649.55,
+        "vega": 45.09165,
         "volume": null,
         "volumeUSD": null
       },
@@ -1319,6 +1358,7 @@
         "theta": -29.60159,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 74649.49,
+        "vega": 45.09221,
         "volume": null,
         "volumeUSD": null
       },
@@ -1352,6 +1392,7 @@
         "theta": -30.48259,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 75965.71,
+        "vega": 67.37626,
         "volume": 1.2,
         "volumeUSD": 85476.01199999999
       },
@@ -1385,6 +1426,7 @@
         "theta": -30.48084,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 75967.26,
+        "vega": 67.37279,
         "volume": 0.3,
         "volumeUSD": 21372.117
       },
@@ -1418,6 +1460,7 @@
         "theta": -27.37979,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 79280.87,
+        "vega": 121.48137,
         "volume": null,
         "volumeUSD": null
       },
@@ -1451,6 +1494,7 @@
         "theta": -27.37618,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 79292.84,
+        "vega": 121.46463,
         "volume": 0.7,
         "volumeUSD": 49859.80299999999
       },
@@ -1484,6 +1528,7 @@
         "theta": -24.24219,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 81271.28,
+        "vega": 161.62853,
         "volume": 0.4,
         "volumeUSD": 28491.408000000003
       },
@@ -1517,6 +1562,7 @@
         "theta": -24.2425,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 81266.08,
+        "vega": 161.63285,
         "volume": 0.2,
         "volumeUSD": 14244.956
       },
@@ -1550,6 +1596,7 @@
         "theta": -22.2609,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 83087.17,
+        "vega": 194.34535,
         "volume": null,
         "volumeUSD": null
       },
@@ -1583,6 +1630,7 @@
         "theta": -22.26078,
         "timestamp": "2024-04-01T00:02:00.000Z",
         "underlyingPrice": 83085.17,
+        "vega": 194.34614,
         "volume": 5.5,
         "volumeUSD": 391736.29
       },
@@ -1616,6 +1664,7 @@
         "theta": -5.68992,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 71640.6,
+        "vega": 0.4278,
         "volume": null,
         "volumeUSD": null
       },
@@ -1649,6 +1698,7 @@
         "theta": -4.56885,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 71642.42,
+        "vega": 0.42756,
         "volume": 16.4,
         "volumeUSD": 1167320.184
       },
@@ -1682,6 +1732,7 @@
         "theta": -12.96197,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 72116.54,
+        "vega": 3.20641,
         "volume": null,
         "volumeUSD": null
       },
@@ -1715,6 +1766,7 @@
         "theta": -12.96522,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 72115.23,
+        "vega": 3.20722,
         "volume": 4,
         "volumeUSD": 284722.56
       },
@@ -1748,6 +1800,7 @@
         "theta": -22.66626,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 72922.41,
+        "vega": 13.93242,
         "volume": null,
         "volumeUSD": null
       },
@@ -1781,6 +1834,7 @@
         "theta": -22.66286,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 72923.87,
+        "vega": 13.93032,
         "volume": 10.8,
         "volumeUSD": 768750.912
       },
@@ -1814,6 +1868,7 @@
         "theta": -29.67028,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 74594.87,
+        "vega": 45.19883,
         "volume": null,
         "volumeUSD": null
       },
@@ -1847,6 +1902,7 @@
         "theta": -29.66561,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 74598.66,
+        "vega": 45.19147,
         "volume": null,
         "volumeUSD": null
       },
@@ -1880,6 +1936,7 @@
         "theta": -30.5206,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 75905.94,
+        "vega": 67.47548,
         "volume": 1.2,
         "volumeUSD": 85415.01599999999
       },
@@ -1913,6 +1970,7 @@
         "theta": -30.52121,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 75905.15,
+        "vega": 67.47693,
         "volume": 0.3,
         "volumeUSD": 21354.192
       },
@@ -1946,6 +2004,7 @@
         "theta": -27.40741,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 79216.94,
+        "vega": 121.58391,
         "volume": null,
         "volumeUSD": null
       },
@@ -1979,6 +2038,7 @@
         "theta": -27.40741,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 79216.94,
+        "vega": 121.58391,
         "volume": 0.7,
         "volumeUSD": 49826.448
       },
@@ -2012,6 +2072,7 @@
         "theta": -24.24341,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 81227.71,
+        "vega": 161.662,
         "volume": 0.4,
         "volumeUSD": 28471.672
       },
@@ -2045,6 +2106,7 @@
         "theta": -24.24269,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 81231.65,
+        "vega": 161.65785,
         "volume": 0.2,
         "volumeUSD": 14236.254
       },
@@ -2078,6 +2140,7 @@
         "theta": -22.26673,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 83045.35,
+        "vega": 194.37403,
         "volume": null,
         "volumeUSD": null
       },
@@ -2111,6 +2174,7 @@
         "theta": -22.26713,
         "timestamp": "2024-04-01T00:03:00.000Z",
         "underlyingPrice": 83045.51,
+        "vega": 194.37455,
         "volume": 5.5,
         "volumeUSD": 391479.32999999996
       },
@@ -2144,6 +2208,7 @@
         "theta": -5.57467,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 71704.33,
+        "vega": 0.41907,
         "volume": null,
         "volumeUSD": null
       },
@@ -2177,6 +2242,7 @@
         "theta": -4.45765,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 71706.49,
+        "vega": 0.41879,
         "volume": 16.4,
         "volumeUSD": 1168338.4599999997
       },
@@ -2210,6 +2276,7 @@
         "theta": -12.69094,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 72180.31,
+        "vega": 3.14376,
         "volume": null,
         "volumeUSD": null
       },
@@ -2243,6 +2310,7 @@
         "theta": -12.68008,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 72182.24,
+        "vega": 3.14132,
         "volume": 4,
         "volumeUSD": 284960.6
       },
@@ -2276,6 +2344,7 @@
         "theta": -22.5349,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 72982.24,
+        "vega": 13.84999,
         "volume": null,
         "volumeUSD": null
       },
@@ -2309,6 +2378,7 @@
         "theta": -22.52971,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 72984.85,
+        "vega": 13.84667,
         "volume": 10.8,
         "volumeUSD": 769464.5760000001
       },
@@ -2342,6 +2412,7 @@
         "theta": -29.58851,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 74661.97,
+        "vega": 45.06899,
         "volume": null,
         "volumeUSD": null
       },
@@ -2375,6 +2446,7 @@
         "theta": -29.58937,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 74661.86,
+        "vega": 45.06987,
         "volume": null,
         "volumeUSD": null
       },
@@ -2408,6 +2480,7 @@
         "theta": -30.46024,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 75953.41,
+        "vega": 67.36087,
         "volume": 1.2,
         "volumeUSD": 85493.364
       },
@@ -2441,6 +2514,7 @@
         "theta": -30.46008,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 75953.99,
+        "vega": 67.36014,
         "volume": 0.3,
         "volumeUSD": 21373.490999999998
       },
@@ -2474,6 +2548,7 @@
         "theta": -27.37989,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 79282.86,
+        "vega": 121.47891,
         "volume": null,
         "volumeUSD": null
       },
@@ -2507,6 +2582,7 @@
         "theta": -27.37989,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 79282.86,
+        "vega": 121.47891,
         "volume": 0.7,
         "volumeUSD": 49871.129
       },
@@ -2540,6 +2616,7 @@
         "theta": -24.23598,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 81260.14,
+        "vega": 161.62496,
         "volume": 0.4,
         "volumeUSD": 28498.688000000002
       },
@@ -2573,6 +2650,7 @@
         "theta": -24.236,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 81260.03,
+        "vega": 161.62507,
         "volume": 0.2,
         "volumeUSD": 14249.266000000001
       },
@@ -2606,6 +2684,7 @@
         "theta": -22.26056,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 83105.59,
+        "vega": 194.33549,
         "volume": null,
         "volumeUSD": null
       },
@@ -2639,6 +2718,7 @@
         "theta": -22.26115,
         "timestamp": "2024-04-01T00:04:00.000Z",
         "underlyingPrice": 83104.67,
+        "vega": 194.33682,
         "volume": 5.5,
         "volumeUSD": 391856.355
       },
@@ -2672,6 +2752,7 @@
         "theta": -5.57082,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 71704.68,
+        "vega": 0.41872,
         "volume": null,
         "volumeUSD": null
       },
@@ -2705,6 +2786,7 @@
         "theta": -4.43182,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 71704.68,
+        "vega": 0.41872,
         "volume": 16.4,
         "volumeUSD": 1168295
       },
@@ -2738,6 +2820,7 @@
         "theta": -12.57005,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 72181.83,
+        "vega": 3.11823,
         "volume": null,
         "volumeUSD": null
       },
@@ -2771,6 +2854,7 @@
         "theta": -12.57005,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 72181.83,
+        "vega": 3.11823,
         "volume": 4,
         "volumeUSD": 284950
       },
@@ -2804,6 +2888,7 @@
         "theta": -22.55662,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 72983.49,
+        "vega": 13.8591,
         "volume": null,
         "volumeUSD": null
       },
@@ -2837,6 +2922,7 @@
         "theta": -22.55422,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 72985.02,
+        "vega": 13.85745,
         "volume": 10.8,
         "volumeUSD": 769383.4680000001
       },
@@ -2870,6 +2956,7 @@
         "theta": -29.57076,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 74660.52,
+        "vega": 45.05326,
         "volume": null,
         "volumeUSD": null
       },
@@ -2903,6 +2990,7 @@
         "theta": -29.56769,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 74661.86,
+        "vega": 45.04935,
         "volume": null,
         "volumeUSD": null
       },
@@ -2936,6 +3024,7 @@
         "theta": -30.4403,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 75953.27,
+        "vega": 67.33742,
         "volume": 1.2,
         "volumeUSD": 85485
       },
@@ -2969,6 +3058,7 @@
         "theta": -30.44163,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 75950.3,
+        "vega": 67.34174,
         "volume": 0.3,
         "volumeUSD": 21371.763000000003
       },
@@ -3002,6 +3092,7 @@
         "theta": -27.37459,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 79285.82,
+        "vega": 121.46717,
         "volume": null,
         "volumeUSD": null
       },
@@ -3035,6 +3126,7 @@
         "theta": -27.37459,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 79285.82,
+        "vega": 121.46717,
         "volume": 0.7,
         "volumeUSD": 49866.25
       },
@@ -3068,6 +3160,7 @@
         "theta": -24.23306,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 81247.34,
+        "vega": 161.62876,
         "volume": 0.4,
         "volumeUSD": 28495.684000000005
       },
@@ -3101,6 +3194,7 @@
         "theta": -24.23306,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 81247.34,
+        "vega": 161.62876,
         "volume": 0.2,
         "volumeUSD": 14247.842000000002
       },
@@ -3134,6 +3228,7 @@
         "theta": -22.26314,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 83087.5,
+        "vega": 194.34784,
         "volume": null,
         "volumeUSD": null
       },
@@ -3167,6 +3262,7 @@
         "theta": -22.26346,
         "timestamp": "2024-04-01T00:05:00.000Z",
         "underlyingPrice": 83082.7,
+        "vega": 194.35063,
         "volume": 5.5,
         "volumeUSD": 391806.25
       },
@@ -3200,6 +3296,7 @@
         "theta": -5.58826,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 71692.81,
+        "vega": 0.41996,
         "volume": null,
         "volumeUSD": null
       },
@@ -3233,6 +3330,7 @@
         "theta": -4.45232,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 71704.63,
+        "vega": 0.41841,
         "volume": 16.4,
         "volumeUSD": 1168169.704
       },
@@ -3266,6 +3364,7 @@
         "theta": -12.5426,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 72165.13,
+        "vega": 3.11385,
         "volume": null,
         "volumeUSD": null
       },
@@ -3299,6 +3398,7 @@
         "theta": -12.57976,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 72150.18,
+        "vega": 3.12301,
         "volume": 4,
         "volumeUSD": 284743.48
       },
@@ -3332,6 +3432,7 @@
         "theta": -22.61193,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 72968.98,
+        "vega": 13.88931,
         "volume": null,
         "volumeUSD": null
       },
@@ -3365,6 +3466,7 @@
         "theta": -22.58432,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 72980.71,
+        "vega": 13.8724,
         "volume": 10.8,
         "volumeUSD": 769282.488
       },
@@ -3398,6 +3500,7 @@
         "theta": -29.56162,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 74654.47,
+        "vega": 45.04915,
         "volume": null,
         "volumeUSD": null
       },
@@ -3431,6 +3534,7 @@
         "theta": -29.56173,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 74654.62,
+        "vega": 45.04913,
         "volume": null,
         "volumeUSD": null
       },
@@ -3464,6 +3568,7 @@
         "theta": -30.43563,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 75938.18,
+        "vega": 67.3456,
         "volume": 1.2,
         "volumeUSD": 85475.832
       },
@@ -3497,6 +3602,7 @@
         "theta": -30.44342,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 75928.65,
+        "vega": 67.36353,
         "volume": 0.3,
         "volumeUSD": 21366.177
       },
@@ -3530,6 +3636,7 @@
         "theta": -27.36963,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 79291.94,
+        "vega": 121.45311,
         "volume": null,
         "volumeUSD": null
       },
@@ -3563,6 +3670,7 @@
         "theta": -27.36963,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 79291.94,
+        "vega": 121.45311,
         "volume": 0.7,
         "volumeUSD": 49860.901999999995
       },
@@ -3596,6 +3704,7 @@
         "theta": -24.23017,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 81231.84,
+        "vega": 161.63457,
         "volume": 0.4,
         "volumeUSD": 28488.236
       },
@@ -3629,6 +3738,7 @@
         "theta": -24.23017,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 81231.84,
+        "vega": 161.63457,
         "volume": 0.2,
         "volumeUSD": 14244.118
       },
@@ -3662,6 +3772,7 @@
         "theta": -22.26077,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 83064.33,
+        "vega": 194.35513,
         "volume": null,
         "volumeUSD": null
       },
@@ -3695,6 +3806,7 @@
         "theta": -22.26011,
         "timestamp": "2024-04-01T00:06:00.000Z",
         "underlyingPrice": 83073.23,
+        "vega": 194.34985,
         "volume": 5.5,
         "volumeUSD": 391713.245
       },
@@ -3728,6 +3840,7 @@
         "theta": -5.70718,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 71623.47,
+        "vega": 0.42883,
         "volume": null,
         "volumeUSD": null
       },
@@ -3761,6 +3874,7 @@
         "theta": -4.5829,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 71624.36,
+        "vega": 0.42871,
         "volume": 16.4,
         "volumeUSD": 1167266.72
       },
@@ -3794,6 +3908,7 @@
         "theta": -12.64155,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 72103.94,
+        "vega": 3.14006,
         "volume": null,
         "volumeUSD": null
       },
@@ -3827,6 +3942,7 @@
         "theta": -12.63218,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 72108.09,
+        "vega": 3.13771,
         "volume": 4,
         "volumeUSD": 284729.28
       },
@@ -3860,6 +3976,7 @@
         "theta": -22.79554,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 72901.7,
+        "vega": 13.99751,
         "volume": null,
         "volumeUSD": null
       },
@@ -3893,6 +4010,7 @@
         "theta": -22.79397,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 72902.18,
+        "vega": 13.99662,
         "volume": 10.8,
         "volumeUSD": 768681.9
       },
@@ -3926,6 +4044,7 @@
         "theta": -29.67841,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 74575.03,
+        "vega": 45.22004,
         "volume": null,
         "volumeUSD": null
       },
@@ -3959,6 +4078,7 @@
         "theta": -29.67841,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 74575.03,
+        "vega": 45.22004,
         "volume": null,
         "volumeUSD": null
       },
@@ -3992,6 +4112,7 @@
         "theta": -30.47443,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 75886.81,
+        "vega": 67.43799,
         "volume": 1.2,
         "volumeUSD": 85409.09999999999
       },
@@ -4025,6 +4146,7 @@
         "theta": -30.47482,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 75886.34,
+        "vega": 67.43889,
         "volume": 0.3,
         "volumeUSD": 21352.274999999998
       },
@@ -4058,6 +4180,7 @@
         "theta": -27.39335,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 79210.18,
+        "vega": 121.56554,
         "volume": null,
         "volumeUSD": null
       },
@@ -4091,6 +4214,7 @@
         "theta": -27.39335,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 79210.18,
+        "vega": 121.56554,
         "volume": 0.7,
         "volumeUSD": 49821.975
       },
@@ -4124,6 +4248,7 @@
         "theta": -24.22959,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 81211.4,
+        "vega": 161.64806,
         "volume": 0.4,
         "volumeUSD": 28471.432
       },
@@ -4157,6 +4282,7 @@
         "theta": -24.22959,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 81211.4,
+        "vega": 161.64806,
         "volume": 0.2,
         "volumeUSD": 14235.716
       },
@@ -4190,6 +4316,7 @@
         "theta": -22.27961,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 83014.03,
+        "vega": 194.40747,
         "volume": null,
         "volumeUSD": null
       },
@@ -4223,6 +4350,7 @@
         "theta": -22.27961,
         "timestamp": "2024-04-01T00:07:00.000Z",
         "underlyingPrice": 83014.03,
+        "vega": 194.40747,
         "volume": 5.5,
         "volumeUSD": 391461.4
       },
@@ -4256,6 +4384,7 @@
         "theta": -5.66994,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 71642.61,
+        "vega": 0.42596,
         "volume": null,
         "volumeUSD": null
       },
@@ -4289,6 +4418,7 @@
         "theta": -4.5482,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 71642.61,
+        "vega": 0.42596,
         "volume": 16.4,
         "volumeUSD": 1167377.2559999998
       },
@@ -4322,6 +4452,7 @@
         "theta": -12.64761,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 72116.12,
+        "vega": 3.13989,
         "volume": null,
         "volumeUSD": null
       },
@@ -4355,6 +4486,7 @@
         "theta": -12.65123,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 72115.32,
+        "vega": 3.14072,
         "volume": 4,
         "volumeUSD": 284739.88
       },
@@ -4388,6 +4520,7 @@
         "theta": -22.79615,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 72913.81,
+        "vega": 13.99296,
         "volume": null,
         "volumeUSD": null
       },
@@ -4421,6 +4554,7 @@
         "theta": -22.8001,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 72912.68,
+        "vega": 13.99519,
         "volume": 10.8,
         "volumeUSD": 768797.6760000001
       },
@@ -4454,6 +4588,7 @@
         "theta": -29.67537,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 74586.22,
+        "vega": 45.20763,
         "volume": null,
         "volumeUSD": null
       },
@@ -4487,6 +4622,7 @@
         "theta": -29.67866,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 74584.01,
+        "vega": 45.21244,
         "volume": null,
         "volumeUSD": null
       },
@@ -4520,6 +4656,7 @@
         "theta": -30.45874,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 75906.37,
+        "vega": 67.401,
         "volume": 1.2,
         "volumeUSD": 85422.12000000001
       },
@@ -4553,6 +4690,7 @@
         "theta": -30.46094,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 75904.03,
+        "vega": 67.40574,
         "volume": 0.3,
         "volumeUSD": 21355.131
       },
@@ -4586,6 +4724,7 @@
         "theta": -27.39764,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 79217.89,
+        "vega": 121.56512,
         "volume": null,
         "volumeUSD": null
       },
@@ -4619,6 +4758,7 @@
         "theta": -27.39711,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 79217.97,
+        "vega": 121.56418,
         "volume": 0.7,
         "volumeUSD": 49829.352999999996
       },
@@ -4652,6 +4792,7 @@
         "theta": -24.22698,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 81228.23,
+        "vega": 161.6309,
         "volume": 0.4,
         "volumeUSD": 28473.988
       },
@@ -4685,6 +4826,7 @@
         "theta": -24.22717,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 81226.97,
+        "vega": 161.63214,
         "volume": 0.2,
         "volumeUSD": 14236.754
       },
@@ -4718,6 +4860,7 @@
         "theta": -22.29491,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 82980.75,
+        "vega": 194.44609,
         "volume": null,
         "volumeUSD": null
       },
@@ -4751,6 +4894,7 @@
         "theta": -22.29491,
         "timestamp": "2024-04-01T00:08:00.000Z",
         "underlyingPrice": 82980.75,
+        "vega": 194.44609,
         "volume": 5.5,
         "volumeUSD": 391517.335
       },
@@ -4784,6 +4928,7 @@
         "theta": -5.68451,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 71632.53,
+        "vega": 0.42699,
         "volume": null,
         "volumeUSD": null
       },
@@ -4817,6 +4962,7 @@
         "theta": -4.56679,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 71632.53,
+        "vega": 0.42699,
         "volume": 16.4,
         "volumeUSD": 1167269.836
       },
@@ -4850,6 +4996,7 @@
         "theta": -12.69634,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 72107.88,
+        "vega": 3.15057,
         "volume": null,
         "volumeUSD": null
       },
@@ -4883,6 +5030,7 @@
         "theta": -12.69369,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 72108.78,
+        "vega": 3.14993,
         "volume": 4,
         "volumeUSD": 284699.96
       },
@@ -4916,6 +5064,7 @@
         "theta": -22.8395,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 72904.69,
+        "vega": 14.01571,
         "volume": null,
         "volumeUSD": null
       },
@@ -4949,6 +5098,7 @@
         "theta": -22.84224,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 72903.52,
+        "vega": 14.01739,
         "volume": 10.8,
         "volumeUSD": 768677.2560000002
       },
@@ -4982,6 +5132,7 @@
         "theta": -29.6979,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 74575.18,
+        "vega": 45.23666,
         "volume": null,
         "volumeUSD": null
       },
@@ -5015,6 +5166,7 @@
         "theta": -29.6979,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 74575.18,
+        "vega": 45.23666,
         "volume": null,
         "volumeUSD": null
       },
@@ -5048,6 +5200,7 @@
         "theta": -30.46827,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 75896.09,
+        "vega": 67.4211,
         "volume": 1.2,
         "volumeUSD": 85409.988
       },
@@ -5081,6 +5234,7 @@
         "theta": -30.46052,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 75904.85,
+        "vega": 67.40394,
         "volume": 0.3,
         "volumeUSD": 21355.257
       },
@@ -5114,6 +5268,7 @@
         "theta": -27.38967,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 79204.89,
+        "vega": 121.56353,
         "volume": null,
         "volumeUSD": null
       },
@@ -5147,6 +5302,7 @@
         "theta": -27.38935,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 79204.78,
+        "vega": 121.5631,
         "volume": 0.7,
         "volumeUSD": 49821.674
       },
@@ -5180,6 +5336,7 @@
         "theta": -24.2283,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 81213.35,
+        "vega": 161.64373,
         "volume": 0.4,
         "volumeUSD": 28469.996000000003
       },
@@ -5213,6 +5370,7 @@
         "theta": -24.22691,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 81222.43,
+        "vega": 161.63467,
         "volume": 0.2,
         "volumeUSD": 14236.838000000002
       },
@@ -5246,6 +5404,7 @@
         "theta": -22.31612,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 82936.87,
+        "vega": 194.49838,
         "volume": null,
         "volumeUSD": null
       },
@@ -5279,6 +5438,7 @@
         "theta": -22.31593,
         "timestamp": "2024-04-01T00:09:00.000Z",
         "underlyingPrice": 82938.87,
+        "vega": 194.49716,
         "volume": 5.5,
         "volumeUSD": 391462.445
       }

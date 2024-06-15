@@ -161,7 +161,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
     def test_invalid_putcall(self):
         response = self.amberdata_client.get_level_1_quotes(exchange='deribit', currency='BTC', putCall='<put_call>')
         self.validate_response_data(response)
-        self.validate_response_400(response, "Invalid argument putCall: expected one of [ALL,P,p,put,Put,C,c,call,Call], found '<put_call>'.")
+        self.validate_response_400(response, "Invalid argument putCall: expected one of [ALL,P,p,put,Put,PUT,C,c,call,Call,CALL], found '<put_call>'.")
 
     # TODO: This test should fail, and not return a 500 - validation is missing in data-api
     @unittest.skip("Missing validation")

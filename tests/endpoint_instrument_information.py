@@ -84,7 +84,7 @@ class EndpointInstrumentTestCase(BaseTestCase):
     def test_invalid_putcall(self):
         response = self.amberdata_client.get_instrument_information(putCall='<putcall>')
         self.validate_response_data(response)
-        self.validate_response_400(response, "Invalid argument putCall: expected one of [ALL,P,p,put,Put,C,c,call,Call], found '<putcall>'.")
+        self.validate_response_400(response, "Invalid argument putCall: expected one of [ALL,P,p,put,Put,PUT,C,c,call,Call,CALL], found '<putcall>'.")
 
     # TODO: This test should fail, and not return a 500 - validation is missing in data-api
     @unittest.skip("Missing validation")
