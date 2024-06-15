@@ -476,10 +476,10 @@ class AmberdataDerivatives:
         QUERY PARAMS:
         - exchange       (string)    [Required] [Examples] deribit | okex | bybit
         - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - startDate      (date-time) [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate        (date-time) [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         - blockTradeId   (boolean)   [Optional] [Examples] 144117
+        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
