@@ -90,7 +90,8 @@ class BaseTestCase(unittest.TestCase):
         is_milliseconds=False,
         is_minutely=False,
         is_hourly=False,
-        is_daily=False
+        is_daily=False,
+        is_nullable=False
     ):
         data = response['payload']['data']
 
@@ -124,7 +125,11 @@ class BaseTestCase(unittest.TestCase):
                 # Better implementation comparing numbers.
                 # 1293840000000 = 2011-01-01 00:00:00
                 # 1893456000000 = 2030-01-01 00:00:00
-                self.__assert_between(element[field_name], 1293840000000, 1893456000000)
+                if element[field_name] is None:
+                    if not is_nullable:
+                        raise AssertionError(f'Timestamp field \'{field_name}\' in record is null ({element}).')
+                else:
+                    self.__assert_between(element[field_name], 1293840000000, 1893456000000)
 
     # ==================================================================================================================
 
