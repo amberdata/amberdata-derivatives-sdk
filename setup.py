@@ -1,8 +1,13 @@
 from setuptools import setup, find_packages
 
+import sys
+sys.path[0:0] = ['amberdata_derivatives']
+
+from version import __version__
+
 setup(
     name='amberdata-derivatives',
-    version='1.0.4',
+    version=__version__,
     packages=find_packages(),
     description='Python client for Amberdata API for derivatives analytics.',
     long_description=open('README.md', encoding='utf-8').read(),
