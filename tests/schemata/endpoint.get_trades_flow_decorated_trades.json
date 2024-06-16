@@ -1,0 +1,87 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "amberdataDirection"          : { "type": "number" },
+              "blockTradeId"                : { "type": ["null", "string"] },
+              "currency"                    : { "type": "string" },
+              "delta"                       : { "type": "number" },
+              "exchange"                    : { "type": "string" },
+              "exchangeDirection"           : { "type": "number" },
+              "exchangeTimestamp"           : { "type": ["integer", "string"] },
+              "expirationTimestamp"         : { "type": ["integer", "string"] },
+              "gamma"                       : { "type": "number" },
+              "indexPrice"                  : { "type": "number" },
+              "instrument"                  : { "type": "string" },
+              "instrumentNormalized"        : { "type": "string" },
+              "liquidation"                 : { "type": ["null", "number"] },
+              "numberOfLegs"                : { "type": "number" },
+              "openInterestChange"          : { "type": "number" },
+              "postTradeAskIv"              : { "type": "number" },
+              "postTradeAskPrice"           : { "type": "number" },
+              "postTradeAskVolume"          : { "type": "number" },
+              "postTradeBidIv"              : { "type": "number" },
+              "postTradeBidPrice"           : { "type": "number" },
+              "postTradeBidVolume"          : { "type": "number" },
+              "postTradeMarkIv"             : { "type": "number" },
+              "postTradeMarkPrice"          : { "type": "number" },
+              "postTradeMidIv"              : { "type": "number" },
+              "postTradeMidPrice"           : { "type": "number" },
+              "postTradeOpenInterest"       : { "type": "number" },
+              "postTradeOrderbookTimestamp" : { "type": ["integer", "string"] },
+              "preTradeAskIv"               : { "type": "number" },
+              "preTradeAskPrice"            : { "type": "number" },
+              "preTradeAskVolume"           : { "type": "number" },
+              "preTradeBidIv"               : { "type": "number" },
+              "preTradeBidPrice"            : { "type": "number" },
+              "preTradeBidVolume"           : { "type": "number" },
+              "preTradeMarkIv"              : { "type": "number" },
+              "preTradeMarkPrice"           : { "type": "number" },
+              "preTradeMidIv"               : { "type": "number" },
+              "preTradeMidPrice"            : { "type": "number" },
+              "preTradeOpenInterest"        : { "type": "number" },
+              "preTradeOrderbookTimestamp"  : { "type": ["integer", "string"] },
+              "price"                       : { "type": "number" },
+              "priceHigh24h"                : { "type": ["null", "number"] },
+              "priceLow24h"                 : { "type": ["null", "number"] },
+              "priceUsd"                    : { "type": "number" },
+              "putCall"                     : { "type": "string" },
+              "rho"                         : { "type": "number" },
+              "strike"                      : { "type": "number" },
+              "theta"                       : { "type": "number" },
+              "tickDirection"               : { "type": "string" },
+              "tradeAmount"                 : { "type": "number" },
+              "tradeId"                     : { "type": "string" },
+              "tradeIv"                     : { "type": "number" },
+              "underlyingPrice"             : { "type": "number" },
+              "vega"                        : { "type": "number" },
+              "volume24h"                   : { "type": "number" }
+            },
+            "required": ["blockTradeId", "currency", "delta", "exchange", "exchangeTimestamp", "expirationTimestamp", "gamma", "indexPrice", "instrument", "instrumentNormalized", "liquidation", "numberOfLegs", "openInterestChange", "postTradeAskIv", "postTradeAskPrice", "postTradeAskVolume", "postTradeBidIv", "postTradeBidPrice", "postTradeBidVolume", "postTradeMarkIv", "postTradeMarkPrice", "postTradeMidIv", "postTradeMidPrice", "postTradeOpenInterest", "postTradeOrderbookTimestamp", "preTradeAskIv", "preTradeAskPrice", "preTradeAskVolume", "preTradeBidIv", "preTradeBidPrice", "preTradeBidVolume", "preTradeMarkIv", "preTradeMarkPrice", "preTradeMidIv", "preTradeMidPrice", "preTradeOpenInterest", "preTradeOrderbookTimestamp", "price", "priceHigh24h", "priceLow24h", "priceUsd", "putCall", "rho", "strike", "theta", "tickDirection", "tradeAmount", "tradeId", "tradeIv", "underlyingPrice", "vega", "volume24h"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}
