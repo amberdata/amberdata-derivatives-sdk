@@ -27,9 +27,9 @@ class BaseTestCase(unittest.TestCase):
     Class to handle all the uni tests common functionalities and helper functions.
     """
 
-    def setUp(self, function_name: str = None):
+    def setUp(self, function_name: str = None, time_format: str = None):
         self.record_api_calls = os.getenv('RECORD_API_CALLS', 'false') == 'true'
-        self.amberdata_client = AmberdataDerivatives(api_key=os.getenv('API_KEY'))
+        self.amberdata_client = AmberdataDerivatives(api_key=os.getenv('API_KEY'), time_format=time_format)
         self.function_name = function_name
         self.fixtures_directory = 'tests/fixtures'
         self.schemata_directory = 'tests/schemata'
