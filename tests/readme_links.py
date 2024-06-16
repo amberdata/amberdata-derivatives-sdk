@@ -29,7 +29,7 @@ class ValidateLinksTestCase(unittest.TestCase):
         # if match is not None:
         #     print(match.group("url"))
 
-        # This handles multiple links in the same string, but requires to fist split it.
+        # This handles multiple links in the same string, but requires to first split it.
         # lines = [item for item in content.split(" ")]
         # for item in lines:
         #     match = re.search("(?P<url>https?://[^\s]+)", item)

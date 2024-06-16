@@ -1,9 +1,9 @@
+# ======================================================================================================================
+
+from amberdata_derivatives.version import __version__
 from setuptools import setup, find_packages
 
-import sys
-sys.path[0:0] = ['amberdata_derivatives']
-
-from version import __version__
+# ======================================================================================================================
 
 setup(
     name='amberdata-derivatives',
@@ -15,6 +15,7 @@ setup(
     author='Amberdata',
     url='https://github.com/amberdata/amberdata-derivatives-sdk',
     install_requires=[
+        'deprecation',
         'requests'
     ],
     classifiers=[
@@ -25,3 +26,5 @@ setup(
         'Programming Language :: Python :: 3.7',
     ],
 )
+
+# ======================================================================================================================

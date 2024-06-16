@@ -1,15 +1,13 @@
 # ======================================================================================================================
 
-from dotenv import load_dotenv
-load_dotenv()
-
+import deprecation
+import dotenv
 import os
 import requests
-import sys
 
-sys.path[0:0] = ['amberdata_derivatives']
+from amberdata_derivatives.version import __version__
 
-from version import __version__
+dotenv.load_dotenv()
 
 
 # ======================================================================================================================
@@ -40,56 +38,15 @@ class AmberdataDerivatives:
     # DEPRECATED ENDPOINTS
     # ==================================================================================================================
 
+    @deprecation.deprecated(details="Use get_trades_flow_decorated_trades(...) instead")
     def get_decorated_trades(self, exchange: str, currency: str, **kwargs):
-        """
-        This endpoint returns option "times and sales" data that's decorated with pre-trade level-1 orderbook data and post-trade level-1 data.
-        This is the core dataset of the Amberdata direction and GEX "Gamma Exposure" analysis.
-        We use this orderbook impact to analyze the true aggressor of every trade, while assuming that market-makers (aka "dealers") are typically the passive trade participants.
+        return self.get_trades_flow_decorated_trades(exchange, currency, **kwargs)
 
-        QUERY PARAMS:
-        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - blockTradeId   (boolean)   [Optional] [Examples] 144117
-        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
-        - instrument     (string)    [Optional] [Examples] BTC-26APR24-100000-C
-        - putCall        (string)    [Optional] [Examples] C | P
-        - strike         (int32)     [Optional] [Examples] 100000 | 3500
-        """
-
-        return self.__make_request(
-            'markets/derivatives/analytics/decorated-trades',
-            {
-                'exchange': exchange,
-                'currency': currency,
-                **kwargs
-            }
-        )
-
+    @deprecation.deprecated(details="Use get_instruments_information(...) instead")
     def get_instrument_information(self, **kwargs):
-        """
-        Given an exchange parameter and underlying currency (ex: deribit, BTC) this endpoint retrieves a list of all
-        available active instruments.
-        Users can pass a “timestamp” parameter to view the available active instruments at some point in the past.
-        Users can also pass additional parameters to filter to a more narrow subset of tradable instruments.
+        return self.get_instruments_information(**kwargs)
 
-        QUERY PARAMS:
-        - exchange   (string)    [Optional] [Examples] deribit | okex | bybit
-        - currency   (string)    [Optional] [Examples] BTC | SOL_USDC
-        - putCall    (string)    [Optional] [Examples] C | P
-        - strike     (int32)     [Optional] [Examples] 100000 | 3500
-        - timestamp  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
-        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
-        """
-
-        return self.__make_request(
-            'markets/derivatives/analytics/instruments/information',
-            {
-                **kwargs
-            }
-        )
-
+    @deprecation.deprecated(details="Use get_instruments_information(...) instead")
     def get_level_1_quotes(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the “Level 1” option chain with associated volatilities, greeks and underlying prices.
@@ -122,6 +79,7 @@ class AmberdataDerivatives:
             }
         )
 
+    @deprecation.deprecated(details="Use get_volatility_delta_surfaces_constant(...) instead")
     def get_delta_surfaces_constant(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the option delta surface with constant maturities.
@@ -156,6 +114,7 @@ class AmberdataDerivatives:
             }
         )
 
+    @deprecation.deprecated(details="Use get_volatility_delta_surfaces_floating(...) instead")
     def get_delta_surfaces_floating(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the option delta surface with floating maturities (exchange listed expirations).
@@ -190,6 +149,7 @@ class AmberdataDerivatives:
             }
         )
 
+    @deprecation.deprecated(details="Use get_volatility_term_structures_constant(...) instead")
     def get_term_structures_constant(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the term structure (for exchange listed expirations) with forward volatility calculations.
@@ -210,6 +170,7 @@ class AmberdataDerivatives:
             }
         )
 
+    @deprecation.deprecated(details="Use get_volatility_term_structures_floating(...) instead")
     def get_term_structures_floating(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the term structure (for exchange listed expirations) with forward volatility calculations.
@@ -230,6 +191,7 @@ class AmberdataDerivatives:
             }
         )
 
+    @deprecation.deprecated(details="Use get_volatility_term_structures_richness(...) instead")
     def get_term_structures_richness(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the term structure richness.
@@ -254,6 +216,7 @@ class AmberdataDerivatives:
             }
         )
 
+    @deprecation.deprecated(details="Use get_realized_volatility_cones(...) instead")
     def get_volatility_cones(self, exchange: str, pair: str, **kwargs):
         """
         The endpoint returns the percentile distribution of realized volatility for a specific spot trading pair.
@@ -275,61 +238,32 @@ class AmberdataDerivatives:
             }
         )
 
-    def get_volatility_index(self, exchange: str, currency: str, **kwargs):
-        """
-        This endpoint returns the value of the BTC (or other altcoin) VIX.
-        The methodology of this index is similar to the VIX but for the underlying crypto.
-        Deribit developed their Bitcoin VIX called the DVOL index.
-
-        QUERY PARAMS:
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timestamp      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
-        """
-
-        return self.__make_request(
-            'markets/derivatives/analytics/volatility-index',
-            {
-                'exchange': exchange,
-                'currency': currency,
-                **kwargs
-            }
-        )
-
-    def get_volatility_index_decorated(self, exchange: str, currency: str, **kwargs):
-        """
-        This endpoint returns the value of the BTC (or other altcoin) VIX.
-        The methodology of this index is similar to the VIX but for the underlying crypto.
-        Deribit developed their Bitcoin VIX called the DVOL index.
-        Along with the volatility index we are also returned underlying volatility surface datapoints (such as skew) and underlying spot prices.
-
-        QUERY PARAMS:
-        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timestamp      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
-        """
-
-        return self.__make_request(
-            'markets/derivatives/analytics/volatility-index-decorated',
-            {
-                'exchange': exchange,
-                'currency': currency,
-                **kwargs
-            }
-        )
-
     # ==================================================================================================================
     # NEW ENDPOINTS
     # ==================================================================================================================
 
     def get_instruments_information(self, **kwargs):
-        return self.get_instrument_information(**kwargs)
+        """
+        Given an exchange parameter and underlying currency (ex: deribit, BTC) this endpoint retrieves a list of all
+        available active instruments.
+        Users can pass a “timestamp” parameter to view the available active instruments at some point in the past.
+        Users can also pass additional parameters to filter to a more narrow subset of tradable instruments.
+
+        QUERY PARAMS:
+        - exchange   (string)    [Optional] [Examples] deribit | okex | bybit
+        - currency   (string)    [Optional] [Examples] BTC | SOL_USDC
+        - putCall    (string)    [Optional] [Examples] C | P
+        - strike     (int32)     [Optional] [Examples] 100000 | 3500
+        - timestamp  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/instruments/information',
+            {
+                **kwargs
+            }
+        )
 
     def get_instruments_most_traded(self, exchange: str, currency: str, startDate: str, endDate: str, **kwargs):
         """
@@ -528,7 +462,31 @@ class AmberdataDerivatives:
         )
 
     def get_trades_flow_decorated_trades(self, exchange: str, currency: str, **kwargs):
-        return self.get_decorated_trades(exchange, currency, **kwargs)
+        """
+        This endpoint returns option "times and sales" data that's decorated with pre-trade level-1 orderbook data and post-trade level-1 data.
+        This is the core dataset of the Amberdata direction and GEX "Gamma Exposure" analysis.
+        We use this orderbook impact to analyze the true aggressor of every trade, while assuming that market-makers (aka "dealers") are typically the passive trade participants.
+
+        QUERY PARAMS:
+        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
+        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
+        - blockTradeId   (boolean)   [Optional] [Examples] 144117
+        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - instrument     (string)    [Optional] [Examples] BTC-26APR24-100000-C
+        - putCall        (string)    [Optional] [Examples] C | P
+        - strike         (int32)     [Optional] [Examples] 100000 | 3500
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/decorated-trades',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
 
     def get_trades_flow_gamma_exposures_snapshots(self, exchange: str, currency: str, **kwargs):
         """
@@ -648,9 +606,54 @@ class AmberdataDerivatives:
     def get_volatility_delta_surfaces_floating(self, exchange: str, currency: str, **kwargs):
         return self.get_delta_surfaces_floating(exchange, currency, **kwargs)
 
-    # def get_volatility_index(self, exchange: str, currency: str, **kwargs):
+    def get_volatility_index(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the value of the BTC (or other altcoin) VIX.
+        The methodology of this index is similar to the VIX but for the underlying crypto.
+        Deribit developed their Bitcoin VIX called the DVOL index.
 
-    # def get_volatility_index_decorated(self, exchange: str, currency: str, **kwargs):
+        QUERY PARAMS:
+        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
+        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timestamp      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/volatility-index',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_index_decorated(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the value of the BTC (or other altcoin) VIX.
+        The methodology of this index is similar to the VIX but for the underlying crypto.
+        Deribit developed their Bitcoin VIX called the DVOL index.
+        Along with the volatility index we are also returned underlying volatility surface datapoints (such as skew) and underlying spot prices.
+
+        QUERY PARAMS:
+        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
+        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
+        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timestamp      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/volatility-index-decorated',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
 
     def get_volatility_level_1_quotes(self, exchange: str, currency: str, **kwargs):
         return self.get_level_1_quotes(exchange, currency, **kwargs)
