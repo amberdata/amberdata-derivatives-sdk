@@ -2,27 +2,27 @@
 
 import unittest
 
-from .base_test_case import BaseTestCase
+from tests.base_test_case import BaseTestCase
+from tests.error_message import ErrorMessage
 
 
 # ======================================================================================================================
 
-class EndpointInstrumentTestCase(BaseTestCase):
-    def setUp(self):
-        super().setUp()
-        self.schema = self.load_schema('endpoint.instrument_information.json')
+class EndpointInstrumentInformationTestCase(BaseTestCase):
+    def setUp(self, function_name='get_instrument_information'):
+        super().setUp(function_name)
 
     # ==================================================================================================================
 
     def test_default(self):
-        response = self.amberdata_client.get_instrument_information()
+        response = self.call_endpoint()
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=1500)
         self.validate_response_field_timestamp(response, 'endDate', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'expiration', is_milliseconds=True)
 
     def test_exchange(self):
-        response = self.amberdata_client.get_instrument_information(exchange='deribit')
+        response = self.call_endpoint(exchange='deribit')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response)
         self.validate_response_field(response, 'exchange', 'deribit')
@@ -30,7 +30,7 @@ class EndpointInstrumentTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'expiration', is_milliseconds=True)
 
     def test_currency(self):
-        response = self.amberdata_client.get_instrument_information(currency='ETH')
+        response = self.call_endpoint(currency='ETH')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response)
         self.validate_response_field(response, 'currency', 'ETH')
@@ -38,7 +38,7 @@ class EndpointInstrumentTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'expiration', is_milliseconds=True)
 
     def test_putcall(self):
-        response = self.amberdata_client.get_instrument_information(putCall='P')
+        response = self.call_endpoint(putCall='P')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response)
         self.validate_response_field(response, 'putCall', 'P')
@@ -46,7 +46,7 @@ class EndpointInstrumentTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'expiration', is_milliseconds=True)
 
     def test_strike(self):
-        response = self.amberdata_client.get_instrument_information(strike=5000)
+        response = self.call_endpoint(strike=5000)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response)
         self.validate_response_field(response, 'strike', 5000)
@@ -54,21 +54,21 @@ class EndpointInstrumentTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'expiration', is_milliseconds=True)
 
     def test_timestamp(self):
-        response = self.amberdata_client.get_instrument_information(timestamp='2024-04-01T03:00:00')
+        response = self.call_endpoint(timestamp='2024-04-01T03:00:00')
         self.validate_response_data(response)
         self.validate_response_200(response, num_elements=2952)
         self.validate_response_field_timestamp(response, 'endDate', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'expiration', is_milliseconds=True)
 
     def test_timestamp_timeformat_hr(self):
-        response = self.amberdata_client.get_instrument_information(timestamp='2024-04-01T03:00:00', timeFormat='hr')
+        response = self.call_endpoint(timestamp='2024-04-01T03:00:00', timeFormat='hr')
         self.validate_response_data(response)
         self.validate_response_200(response, num_elements=2952)
         self.validate_response_field_timestamp(response, 'endDate', is_hr=True)
         self.validate_response_field_timestamp(response, 'expiration', is_hr=True)
 
     def test_timestamp_timeformat_iso(self):
-        response = self.amberdata_client.get_instrument_information(timestamp='2024-04-01T03:00:00', timeFormat='iso')
+        response = self.call_endpoint(timestamp='2024-04-01T03:00:00', timeFormat='iso')
         self.validate_response_data(response)
         self.validate_response_200(response, num_elements=2952)
         self.validate_response_field_timestamp(response, 'endDate', is_iso=True)
@@ -77,39 +77,39 @@ class EndpointInstrumentTestCase(BaseTestCase):
     # ==================================================================================================================
 
     def test_invalid_parameter(self):
-        response = self.amberdata_client.get_instrument_information(invalid='parameter')
+        response = self.call_endpoint(invalid='parameter')
         self.validate_response_data(response)
-        self.validate_response_400(response, "Parameter 'invalid' is not supported.")
+        self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER)
 
     def test_invalid_putcall(self):
-        response = self.amberdata_client.get_instrument_information(putCall='<putcall>')
+        response = self.call_endpoint(putCall='<put_call>')
         self.validate_response_data(response)
-        self.validate_response_400(response, "Invalid argument putCall: expected one of [ALL,P,p,put,Put,PUT,C,c,call,Call,CALL], found '<putcall>'.")
+        self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER_PUT_CALL)
 
     # TODO: This test should fail, and not return a 500 - validation is missing in data-api
     @unittest.skip("Missing validation")
     def test_invalid_strike(self):
-        response = self.amberdata_client.get_instrument_information(strike='<strike>')
+        response = self.call_endpoint(strike='<strike>')
         self.validate_response_data(response)
         self.validate_response_200(response, num_elements=0)
 
     def test_invalid_timestamp(self):
-        response = self.amberdata_client.get_instrument_information(timestamp='<timestamp>')
+        response = self.call_endpoint(timestamp='<timestamp>')
         self.validate_response_data(response)
-        self.validate_response_400(response, "Invalid timestamp value: '<timestamp>'.")
+        self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER_TIMESTAMP)
 
     def test_invalid_timeformat(self):
-        response = self.amberdata_client.get_instrument_information(timeFormat='<time_format>')
+        response = self.call_endpoint(timeFormat='<time_format>')
         self.validate_response_data(response)
-        self.validate_response_400(response, "Invalid argument timeFormat: expected one of [nanoseconds,ns,milliseconds,ms,iso,iso8601,iso8611,human,human_readable,humanReadable,hr], found '<time_format>'.")
+        self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER_TIME_FORMAT)
 
     def test_unknown_currency(self):
-        response = self.amberdata_client.get_instrument_information(currency='<currency>')
+        response = self.call_endpoint(currency='<currency>')
         self.validate_response_data(response)
         self.validate_response_200(response, num_elements=0)
 
     def test_unknown_exchange(self):
-        response = self.amberdata_client.get_instrument_information(exchange='<exchange>')
+        response = self.call_endpoint(exchange='<exchange>')
         self.validate_response_data(response)
         self.validate_response_200(response, num_elements=0)
 

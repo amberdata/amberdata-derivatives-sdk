@@ -17,18 +17,32 @@ load_dotenv()
 # ======================================================================================================================
 
 class BaseTestCase(unittest.TestCase):
-    def setUp(self):
+    def setUp(self, function_name: str = None):
         self.record_api_calls = os.getenv('RECORD_API_CALLS', 'false') == 'true'
         self.amberdata_client = AmberdataDerivatives(api_key=os.getenv('API_KEY'))
+        self.function_name = function_name
         self.fixtures_directory = 'tests/fixtures'
         self.schemata_directory = 'tests/schemata'
+        self.schema = self.load_schema()
+
         pathlib.Path(self.fixtures_directory).mkdir(parents=True, exist_ok=True)
         pathlib.Path(self.schemata_directory).mkdir(parents=True, exist_ok=True)
 
-    def load_schema(self, filename: str):
+    # ==================================================================================================================
+
+    def load_schema(self, filename: str = None):
+        if filename is None:
+            filename = 'endpoint.' + self.function_name + '.json'
+
         with open(self.schemata_directory + '/' + filename, 'r', encoding='utf-8') as f:
             schema = json.load(f)
+
         return schema
+
+    def call_endpoint(self, **kwargs):
+        return getattr(self.amberdata_client, self.function_name)(**kwargs)
+
+    # ==================================================================================================================
 
     def validate_response_data(self, response, file=None):
         self.__record_response_data(response)
