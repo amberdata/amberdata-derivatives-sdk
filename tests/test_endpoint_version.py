@@ -1,5 +1,7 @@
 # ======================================================================================================================
 
+# pylint: disable=missing-class-docstring, missing-function-docstring, missing-module-docstring
+
 import unittest
 
 from amberdata_derivatives.version import __version__

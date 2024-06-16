@@ -1,5 +1,7 @@
 # ======================================================================================================================
 
+# pylint: disable=missing-class-docstring, missing-function-docstring, missing-module-docstring
+
 import re
 import unittest
 from urllib.parse import urlparse
@@ -10,6 +12,10 @@ import requests
 # ======================================================================================================================
 
 def is_valid_url(url):
+    """
+    Verifies if a URL is well formatted.
+    """
+
     try:
         result = urlparse(url)
         return all([result.scheme, result.netloc])

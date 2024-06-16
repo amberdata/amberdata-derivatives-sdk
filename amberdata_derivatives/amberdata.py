@@ -1,5 +1,11 @@
 # ======================================================================================================================
 
+"""
+Module to handle Amberdata's API calls.
+"""
+
+# ======================================================================================================================
+
 import os
 
 import deprecation
@@ -13,9 +19,10 @@ dotenv.load_dotenv()
 
 # ======================================================================================================================
 
+# pylint: disable=too-many-public-methods
 class AmberdataDerivatives:
     """
-    SDK main class to handle Amberdata's API calls.
+    Main class to handle Amberdata's API calls.
     """
 
     def __init__(self, api_key: str, time_format: str = None):
@@ -26,6 +33,7 @@ class AmberdataDerivatives:
         - api_key     (string) [Required] The key granting access to the API.
         - time_format (string) [Optional] The default time format for all the endpoints (ms | iso | hr).
         """
+
         self.__base_url = os.getenv('API_URL', 'https://api.amberdata.com')
         self.__headers = {
             'accept':             'application/json',
@@ -42,38 +50,186 @@ class AmberdataDerivatives:
 
     @deprecation.deprecated(details="Use get_trades_flow_decorated_trades(...) instead")
     def get_decorated_trades(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns option "times and sales" data that's decorated with pre-trade level-1 orderbook data and
+        post-trade level-1 data.
+
+        This is the core dataset of the Amberdata direction and GEX "Gamma Exposure" analysis.
+
+        We use this orderbook impact to analyze the true aggressor of every trade, while assuming that market-makers
+        (aka "dealers") are typically the passive trade participants.
+
+        QUERY PARAMS:
+        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
+        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
+        - blockTradeId   (boolean)   [Optional] [Examples] 144117
+        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - instrument     (string)    [Optional] [Examples] BTC-26APR24-100000-C
+        - putCall        (string)    [Optional] [Examples] C | P
+        - strike         (int32)     [Optional] [Examples] 100000 | 3500
+        """
         return self.get_trades_flow_decorated_trades(exchange, currency, **kwargs)
 
     @deprecation.deprecated(details="Use get_volatility_delta_surfaces_constant(...) instead")
     def get_delta_surfaces_constant(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the option delta surface with constant maturities.
+
+        Time Range Limit: The timeInterval supports minute, hour, day.
+        Due to the density of data, historical time ranges (difference between startDate and endDate) are limited to the
+        following call sizes:
+          - 1 year of daily data
+          - 90 days of hourly data
+          - 1 hour of minutely data
+
+        In order to get more than the maximum allowed, you can use the startDate & endDate parameters to move the time
+        frame window to get the next n days/hours/minutes of data.
+
+        QUERY PARAMS:
+        - exchange              (string)    [Required] [Examples] deribit | okex | bybit
+        - currency              (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate               (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - daysToExpirationStart (int32)     [Optional] [Examples] 0 | 7 | 60
+        - daysToExpirationEnd   (int32)     [Optional] [Examples] 1 | 30 | 180
+        - timeInterval          (string)    [Optional] [Examples] minute | hour | day
+        - timeFormat            (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
         return self.get_volatility_delta_surfaces_constant(exchange, currency, **kwargs)
 
     @deprecation.deprecated(details="Use get_volatility_delta_surfaces_floating(...) instead")
     def get_delta_surfaces_floating(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the option delta surface with floating maturities (exchange listed expirations).
+
+        Time Range Limit: The timeInterval supports minute, hour, day.
+        Due to the density of data, historical time ranges (difference between startDate and endDate) are limited to the
+        following call sizes:
+          - 1 year of daily data
+          - 90 days of hourly data
+          - 1 hour of minutely data
+
+        In order to get more than the maximum allowed, you can use the startDate & endDate parameters to move the time
+        frame window to get the next n days/hours/minutes of data.
+
+        QUERY PARAMS:
+        - exchange              (string)    [Required] [Examples] deribit | okex | bybit
+        - currency              (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate               (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - daysToExpirationStart (int32)     [Optional] [Examples] 0 | 7 | 60
+        - daysToExpirationEnd   (int32)     [Optional] [Examples] 1 | 30 | 180
+        - timeInterval          (string)    [Optional] [Examples] minute | hour | day
+        - timeFormat            (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
         return self.get_volatility_delta_surfaces_floating(exchange, currency, **kwargs)
 
     @deprecation.deprecated(details="Use get_instruments_information(...) instead")
     def get_instrument_information(self, **kwargs):
+        """
+        Given an exchange parameter and underlying currency (ex: deribit, BTC) this endpoint retrieves a list of all
+        available active instruments.
+        Users can pass a “timestamp” parameter to view the available active instruments at some point in the past.
+        Users can also pass additional parameters to filter to a more narrow subset of tradable instruments.
+
+        QUERY PARAMS:
+        - exchange   (string)    [Optional] [Examples] deribit | okex | bybit
+        - currency   (string)    [Optional] [Examples] BTC | SOL_USDC
+        - putCall    (string)    [Optional] [Examples] C | P
+        - strike     (int32)     [Optional] [Examples] 100000 | 3500
+        - timestamp  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
         return self.get_instruments_information(**kwargs)
 
     @deprecation.deprecated(details="Use get_volatility_level_1_quotes(...) instead")
     def get_level_1_quotes(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the “Level 1” option chain with associated volatilities, greeks and underlying prices.
+        This is the core underlying options data for many analytics.
+        Although this data streams to Amberdata every 100ms this endpoint returns the first observation for each
+        instrument in 1-minute, 1-hour or 1-day intervals.
+
+        Note: Due to the density of data historical date ranges are limited to 60x 1-minute or 24x 1 hour intervals,
+        per call. If no date range is passed, the most recent option chain will be returned.
+
+        QUERY PARAMS:
+        - exchange     (string)    [Required] [Examples] deribit | okex | bybit
+        - currency     (string)    [Required] [Examples] BTC | SOL_USDC
+        - instrument   (string)    [Optional] [Examples] BTC-26APR24-100000-C
+        - isAtm        (boolean)   [Optional] [Examples] TRUE | FALSE
+        - putCall      (string)    [Optional] [Examples] C | P
+        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - strike       (int32)     [Optional] [Examples] 100000 | 3500
+        - timeInterval (string)    [Optional] [Examples] minute | hour | day
+        - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
         return self.get_volatility_level_1_quotes(exchange, currency, **kwargs)
 
     @deprecation.deprecated(details="Use get_volatility_term_structures_constant(...) instead")
     def get_term_structures_constant(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the term structure (for exchange listed expirations) with forward volatility calculations.
+
+        QUERY PARAMS:
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - timestamp  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
         return self.get_volatility_term_structures_constant(exchange, currency, **kwargs)
 
     @deprecation.deprecated(details="Use get_volatility_term_structures_floating(...) instead")
     def get_term_structures_floating(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the term structure (for exchange listed expirations) with forward volatility calculations.
+
+        QUERY PARAMS:
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - timestamp  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
         return self.get_volatility_term_structures_floating(exchange, currency, **kwargs)
 
     @deprecation.deprecated(details="Use get_volatility_term_structures_richness(...) instead")
     def get_term_structures_richness(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the term structure richness.
+
+        The “Term Structure Richness” is the relative “level” of the Contango or Backwardation shape. A reading of 1.00
+        would be a perfectly flat term structure - as measured by our method - while readings below/above represent
+        Contango/Backwardation respectively.
+
+        Using the term structure levels enables us to quantify how extended the term structure pricing currently is,
+        at any point in time. The calculation take a ratio of 7-day ATM IV versus, 30-day, 60-day. 90-day and 180-days.
+
+        QUERY PARAMS:
+        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
+        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timestamp      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
         return self.get_volatility_term_structures_richness(exchange, currency, **kwargs)
 
     @deprecation.deprecated(details="Use get_realized_volatility_cones(...) instead")
     def get_volatility_cones(self, exchange: str, pair: str, **kwargs):
+        """
+        The endpoint returns the percentile distribution of realized volatility for a specific spot trading pair.
+        We can see the RV distribution for multiple measurement windows compared to the end date.
+
+        QUERY PARAMS:
+        - exchange    (string)    [Required] [Examples] gdax
+        - pair        (string)    [Required] [Examples] btc_usd
+        - startDate   (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate     (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat  (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
         return self.get_realized_volatility_cones(exchange, pair, **kwargs)
 
     # ==================================================================================================================
@@ -81,6 +237,10 @@ class AmberdataDerivatives:
     # ==================================================================================================================
 
     def get_version(self):
+        """
+        Retrieves the version of the SDK.
+        """
+
         return self.__version
 
     # ==================================================================================================================
@@ -134,7 +294,7 @@ class AmberdataDerivatives:
 
     # ==================================================================================================================
 
-    def get_options_scanner_top_trades(self, exchange: str, currency: str, startDate: str, endDate: str, **kwargs):
+    def get_options_scanner_top_trades(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint contains all the relevant information about the most important trades both on screen and blocked.
 
@@ -151,8 +311,8 @@ class AmberdataDerivatives:
         QUERY PARAMS:
         - exchange            (string)    [Required] [Examples] deribit | okex | bybit
         - currency            (string)    [Required] [Examples] BTC | SOL_USDC
-        - startDate           (date-time) [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate             (date-time) [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - startDate           (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat          (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
@@ -161,8 +321,6 @@ class AmberdataDerivatives:
             {
                 'exchange': exchange,
                 'currency': currency,
-                'startDate': startDate,
-                'endDate': endDate,
                 **kwargs
             }
         )
@@ -198,7 +356,7 @@ class AmberdataDerivatives:
         (AVAILABLE EXCHANGE: binance, bithumb, bitstamp, gdax, gemini, kraken, okex, poloniex)
 
         QUERY PARAMS:
-        - exchange   (string) [Required] [Examples] binance | bithumb | bitstamp | gdax | gemini | kraken | okex | poloniex
+        - exchange   (string) [Required] [Examples] binance | bithumb | ...
         - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.__make_request(
@@ -464,7 +622,7 @@ class AmberdataDerivatives:
             }
         )
 
-    def get_trades_flow_put_call_trade_distribution(self, exchange: str, currency: str, startDate: str, endDate: str, **kwargs):
+    def get_trades_flow_put_call_trade_distribution(self, exchange: str, currency: str, **kwargs):
         """
         Using proprietary algorithm (Amberdata direction) that assess real initiator of a trade, we sum by the amounts
         of contracts and premium of the last 24 hours (default) according to put/call/bought/sold metrics.
@@ -472,8 +630,8 @@ class AmberdataDerivatives:
         QUERY PARAMS:
         - exchange            (string)    [Required] [Examples] deribit | okex | bybit
         - currency            (string)    [Required] [Examples] BTC | SOL_USDC
-        - startDate           (date-time) [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate             (date-time) [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - startDate           (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - strike              (int32)     [Optional] [Examples] 100000 | 3500
         - expirationTimestamp (string)    [Optional] [Examples] 1578531600
         - timeFormat          (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
@@ -485,13 +643,11 @@ class AmberdataDerivatives:
             {
                 'exchange': exchange,
                 'currency': currency,
-                'startDate': startDate,
-                'endDate': endDate,
                 **kwargs
             }
         )
 
-    def get_trades_flow_volume_aggregates(self, exchange: str, currency: str, startDate: str, endDate: str, **kwargs):
+    def get_trades_flow_volume_aggregates(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the total traded options volume for a selected exchange and a selected underlying
         currency.
@@ -502,8 +658,8 @@ class AmberdataDerivatives:
         QUERY PARAMS:
         - exchange            (string)    [Required] [Examples] deribit | okex | bybit
         - currency            (string)    [Required] [Examples] BTC | SOL_USDC
-        - startDate           (date-time) [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate             (date-time) [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - startDate           (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat          (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         - timeInterval        (string)    [Optional] [Examples] minute | hour | day
         """
@@ -513,8 +669,6 @@ class AmberdataDerivatives:
             {
                 'exchange': exchange,
                 'currency': currency,
-                'startDate': startDate,
-                'endDate': endDate,
                 **kwargs
             }
         )
@@ -771,9 +925,9 @@ class AmberdataDerivatives:
         """Helper method to make HTTP GET requests and parse the JSON response into a DataFrame."""
 
         # Add default parameters
-        # if self.__time_format is not None:
-        #     if query_params['timeFormat'] is None:
-        #         query_params['timeFormat'] = self.__time_format
+        if self.__time_format is not None:
+            if query_params['timeFormat'] is None:
+                query_params['timeFormat'] = self.__time_format
 
         # Build query and URL
         query_string = '&'.join([f"{key}={value}" for key, value in query_params.items()])

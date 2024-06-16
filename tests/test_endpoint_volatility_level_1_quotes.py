@@ -1,5 +1,7 @@
 # ======================================================================================================================
 
+# pylint: disable=line-too-long, missing-class-docstring, missing-function-docstring, missing-module-docstring, too-many-public-methods
+
 import unittest
 
 from tests.base_test_case import BaseTestCase

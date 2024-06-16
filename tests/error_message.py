@@ -1,6 +1,14 @@
 # ======================================================================================================================
 
+"""Module containing all the different error messages returned by the API."""
+
+
+# ======================================================================================================================
+
+# pylint: disable=line-too-long,too-few-public-methods
 class ErrorMessage:
+    """Class containing all the different error messages returned by the API."""
+
     INVALID_PARAMETER = "Parameter 'invalid' is not supported."
     INVALID_PARAMETER_PUT_CALL = "Invalid argument putCall: expected one of [ALL,P,p,put,Put,PUT,C,c,call,Call,CALL], found '<put_call>'."
     INVALID_PARAMETER_TIMESTAMP = "Invalid timestamp value: '<timestamp>'."
