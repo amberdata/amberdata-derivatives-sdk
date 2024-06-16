@@ -33,6 +33,7 @@ class AmberdataDerivatives:
             'x-amberdata-client': 'python-sdk-' + __version__,
         }
         self.__time_format = time_format
+        self.__version = __version__
 
     # ==================================================================================================================
     # DEPRECATED ENDPOINTS
@@ -79,7 +80,7 @@ class AmberdataDerivatives:
     # ==================================================================================================================
 
     def get_version(self):
-        return __version__
+        return self.__version
 
     # ==================================================================================================================
 
@@ -106,7 +107,7 @@ class AmberdataDerivatives:
             }
         )
 
-    def get_instruments_most_traded(self, exchange: str, currency: str, startDate: str, endDate: str, **kwargs):
+    def get_instruments_most_traded(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the most traded instruments on a selected exchange for a selected underlying currency, for a given date range. Users can filter out select trade types: "ALL" trades, "Block" trades and "Non-Block" trades.
 
@@ -124,8 +125,6 @@ class AmberdataDerivatives:
             {
                 'exchange': exchange,
                 'currency': currency,
-                'startDate': startDate,
-                'endDate': endDate,
                 **kwargs
             }
         )
