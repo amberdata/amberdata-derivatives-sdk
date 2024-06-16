@@ -171,7 +171,7 @@ class AmberdataDerivatives:
         - timeFormat  (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.__make_request(
-            'markets/derivatives/analytics/volatility-cones',
+            'markets/derivatives/analytics/realized-volatility/cones',
             {
                 'exchange': exchange,
                 'pair': pair,
@@ -228,7 +228,7 @@ class AmberdataDerivatives:
         - timeFormat        (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.__make_request(
-            'markets/derivatives/analytics/volatility/implied-vs-realized',
+            'markets/derivatives/analytics/realized-volatility/implied-vs-realized',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -339,7 +339,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/decorated-trades',
+            'markets/derivatives/analytics/trades-flow/decorated-trades',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -423,7 +423,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/gamma-exposures/put-call-distribution',
+            'markets/derivatives/analytics/trades-flow/gamma-exposures/put-call-distribution',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -447,7 +447,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/volume-aggregates',
+            'markets/derivatives/analytics/trades-flow/volume-aggregates',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -485,7 +485,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/delta-surfaces/constant',
+            'markets/derivatives/analytics/volatility/delta-surfaces/constant',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -519,7 +519,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/delta-surfaces/floating',
+            'markets/derivatives/analytics/volatility/delta-surfaces/floating',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -543,7 +543,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/volatility-index',
+            'markets/derivatives/analytics/volatility/index',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -568,7 +568,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/volatility-index-decorated',
+            'markets/derivatives/analytics/volatility/index-decorated',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -600,7 +600,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/level-1-quotes',
+            'markets/derivatives/analytics/volatility/level-1-quotes',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -620,7 +620,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/volatility-metrics',
+            'markets/derivatives/analytics/volatility/metrics',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -640,7 +640,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/term-structures/forward-volatility/constant',
+            'markets/derivatives/analytics/volatility/term-structures/forward-volatility/constant',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -660,7 +660,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/term-structures/forward-volatility/floating',
+            'markets/derivatives/analytics/volatility/term-structures/forward-volatility/floating',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -684,7 +684,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/term-structures/richness',
+            'markets/derivatives/analytics/volatility/term-structures/richness',
             {
                 'exchange': exchange,
                 'currency': currency,
