@@ -1,17 +1,16 @@
 # ======================================================================================================================
 
+import dotenv
+import inspect
+import json
+import jsonschema
 import os
 import pathlib
 import unittest
 
-import inspect
-import json
-import jsonschema
-from dotenv import load_dotenv
-
 from amberdata_derivatives import AmberdataDerivatives
 
-load_dotenv()
+dotenv.load_dotenv()
 
 
 # ======================================================================================================================
