@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "timestamp"                : { "type" : ["number", "string"] },
+              "pairOne"                  : { "type" : "string" },
+              "closeOne"                 : { "type" : "number" },
+              "returnOne"                : { "type" : "number" },
+              "realizedVolatility30One"  : { "type" : "number" },
+              "realizedVolatility90One"  : { "type" : "number" },
+              "realizedVolatility180One" : { "type" : "number" },
+              "pairTwo"                  : { "type" : "string" },
+              "closeTwo"                 : { "type" : "number" },
+              "returnTwo"                : { "type" : "number" },
+              "realizedVolatility30Two"  : { "type" : "number" },
+              "realizedVolatility90Two"  : { "type" : "number" },
+              "realizedVolatility180Two" : { "type" : "number" },
+              "correlation30"            : { "type" : "number" },
+              "correlation90"            : { "type" : "number" },
+              "correlation180"           : { "type" : "number" },
+              "beta30"                   : { "type" : "number" },
+              "beta90"                   : { "type" : "number" },
+              "beta180"                  : { "type" : "number" }
+            },
+            "required": ["timestamp", "pairOne", "closeOne", "returnOne", "realizedVolatility30One", "realizedVolatility90One", "realizedVolatility180One", "pairTwo", "closeTwo", "returnTwo", "realizedVolatility30Two", "realizedVolatility90Two", "realizedVolatility180Two", "correlation30", "correlation90", "correlation180", "beta30", "beta90", "beta180"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}
