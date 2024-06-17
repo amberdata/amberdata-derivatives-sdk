@@ -1,0 +1,7 @@
+{
+  "description": "Request was invalid or cannot be served. See message for details",
+  "error": true,
+  "message": "Invalid argument putCall: expected one of [ALL,P,p,put,Put,PUT,C,c,call,Call,CALL], found '<put_call>'.",
+  "status": 400,
+  "title": "BAD REQUEST"
+}

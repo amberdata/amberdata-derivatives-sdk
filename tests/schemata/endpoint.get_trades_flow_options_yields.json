@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "absoluteYield"        : { "type": ["null",   "number"] },
+              "annualization"        : { "type": "number" },
+              "annualizedYield"      : { "type": ["null",   "number"] },
+              "expirationTimestamp"  : { "type": ["number", "string"] },
+              "indexPrice"           : { "type": "number" },
+              "instrumentNormalized" : { "type": "string" },
+              "markPrice"            : { "type": ["null",   "number"] },
+              "putCall"              : { "type": "string" },
+              "strike"               : { "type": "number" },
+              "timestamp"            : { "type": ["number", "string"] },
+              "yieldStrategy"        : { "type": "string" }
+            },
+            "required": ["absoluteYield", "annualization", "annualizedYield", "expirationTimestamp", "indexPrice", "instrumentNormalized", "markPrice", "putCall", "strike", "timestamp", "yieldStrategy"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}

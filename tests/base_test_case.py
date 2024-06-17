@@ -1,36 +1,62 @@
 # ======================================================================================================================
 
+"""
+Module to handle all the uni tests common functionalities and helper functions.
+"""
+
+# ======================================================================================================================
+
+import inspect
+import json
 import os
 import pathlib
 import unittest
 
-import inspect
-import json
+import dotenv
 import jsonschema
-from dotenv import load_dotenv
 
 from amberdata_derivatives import AmberdataDerivatives
 
-load_dotenv()
+dotenv.load_dotenv()
 
 
 # ======================================================================================================================
 
 class BaseTestCase(unittest.TestCase):
-    def setUp(self):
-        self.record_api_calls = os.getenv("RECORD_API_CALLS", "false") == "true"
-        self.amberdata_client = AmberdataDerivatives(api_key=os.getenv("API_KEY"))
-        self.fixtures_directory = "tests/fixtures"
-        self.schemata_directory = "tests/schemata"
+    """
+    Class to handle all the uni tests common functionalities and helper functions.
+    """
+
+    def setUp(self, function_name: str = None, time_format: str = None):
+        self.record_api_calls = os.getenv('RECORD_API_CALLS', 'false') == 'true'
+        self.amberdata_client = AmberdataDerivatives(api_key=os.getenv('API_KEY'), time_format=time_format)
+        self.function_name = function_name
+        self.fixtures_directory = 'tests/fixtures'
+        self.schemata_directory = 'tests/schemata'
+        self.schema = self.__load_schema()
+
         pathlib.Path(self.fixtures_directory).mkdir(parents=True, exist_ok=True)
         pathlib.Path(self.schemata_directory).mkdir(parents=True, exist_ok=True)
 
-    def load_schema(self, filename: str):
-        with open(self.schemata_directory + "/" + filename, 'r', encoding='utf-8') as f:
-            schema = json.load(f)
-        return schema
+    # ==================================================================================================================
+
+    def call_endpoint(self, **kwargs):
+        """
+        Calls the function on the amberdata_client as specified by the function name passed in the constructor.
+
+        :param kwargs:  Arguments to pass to the function call
+        """
+        return getattr(self.amberdata_client, self.function_name)(**kwargs)
+
+    # ==================================================================================================================
 
     def validate_response_data(self, response, file=None):
+        """
+        Validates that the response payload matches the expected fixture.
+
+        :param response:  The response payload
+        :param file:      The file from which to load the fixture - or the name of the calling function if not specified
+        """
         self.__record_response_data(response)
 
         file = self.__ensure_fixture_file(self.fixtures_directory, inspect.stack()[1].function, file)
@@ -41,6 +67,13 @@ class BaseTestCase(unittest.TestCase):
         self.assertEqual(expected, response)
 
     def validate_response_schema(self, response, file=None, schema=None):
+        """
+        Validates that the response payload follows the expected schema.
+
+        :param response:  The response payload
+        :param file:      The file from which to load the schema (only of schema is not specified)
+        :param schema:    The schema against which to validate the response
+        """
         if schema is None:
             file = self.__ensure_fixture_file(self.schemata_directory, inspect.stack()[1].function, file)
 
@@ -50,12 +83,20 @@ class BaseTestCase(unittest.TestCase):
         jsonschema.validate(response, schema)
 
     def validate_response_200(self, response, num_elements=None, min_elements=None, max_elements=None):
+        """
+        Validates that the response payload succeeded with a 200 (Success).
+
+        :param response:      The response payload
+        :param num_elements:  If specified, the response should have exactly  this number of elements
+        :param min_elements:  If specified, the response should have at least this number of elements
+        :param max_elements:  If specified, the response should have at most  this number of elements
+        """
         payload = response['payload']
 
-        self.assertEqual("Successful request", response['description'])
+        self.assertEqual('Successful request', response['description'])
         self.assertEqual(200,                  response['status'])
-        self.assertEqual("OK",                 response['title'])
-        self.assertEqual("2023-09-30",         payload['metadata']['api-version'])
+        self.assertEqual('OK',                 response['title'])
+        self.assertEqual('2023-09-30',         payload['metadata']['api-version'])
 
         if num_elements is not None:
             self.assertEqual(len(payload['data']), num_elements)
@@ -67,15 +108,28 @@ class BaseTestCase(unittest.TestCase):
             self.assertLessEqual(len(payload['data']), max_elements)
 
     def validate_response_400(self, response, message: str):
-        description = "Request was invalid or cannot be served. See message for details"
+        """
+        Validates that the response payload is a 404 (Not Found).
+
+        :param response:  The response payload
+        :param message:   The message associated with the response
+        """
+        description = 'Request was invalid or cannot be served. See message for details'
 
         self.assertEqual(description,   response['description'])
         self.assertEqual(400,           response['status'])
-        self.assertEqual("BAD REQUEST", response['title'])
+        self.assertEqual('BAD REQUEST', response['title'])
         self.assertEqual(True,          response['error'])
         self.assertEqual(message,       response['message'])
 
     def validate_response_field(self, response, field_name: str, field_value):
+        """
+        Validates that the field with name `field_name` has the value `field_value`.
+
+        :param response:     The response payload
+        :param field_name:   The name of the field to validate
+        :param field_value:  The value expected for the field
+        """
         data = response['payload']['data']
 
         for element in data:
@@ -93,6 +147,19 @@ class BaseTestCase(unittest.TestCase):
         is_daily=False,
         is_nullable=False
     ):
+        """
+        Validates a timestamp field in the response payload.
+
+        :param response:         The response payload
+        :param field_name:       The name of the field to validate
+        :param is_hr:            The timestamp field should be written in Human Readable format
+        :param is_iso:           The timestamp field should be written in ISO format
+        :param is_milliseconds:  The timestamp field should be written in Milliseconds format
+        :param is_minutely:      The timestamp field is expressed in minutes (no seconds)
+        :param is_hourly:        The timestamp field is expressed in hours (no seconds and no minutes)
+        :param is_daily:         The timestamp field is expressed in days (no seconds, no minutes and no hours)
+        :param is_nullable:      The timestamp field could be null
+        """
         data = response['payload']['data']
 
         # Match timestamps with format: 2024-04-01 02:59:00 000
@@ -133,11 +200,20 @@ class BaseTestCase(unittest.TestCase):
 
     # ==================================================================================================================
 
+    def __load_schema(self, filename: str = None):
+        if filename is None:
+            filename = 'endpoint.' + self.function_name + '.json'
+
+        with open(self.schemata_directory + '/' + filename, 'r', encoding='utf-8') as f:
+            schema = json.load(f)
+
+        return schema
+
     def __ensure_fixture_file(self, directory: str, filename: str, file):
         if file is None:
-            path = directory + "/" + type(self).__name__
+            path = directory + '/' + type(self).__name__
             pathlib.Path(path).mkdir(parents=True, exist_ok=True)
-            file = path + "/" + filename + ".json"
+            file = path + '/' + filename + '.json'
         return file
 
     @staticmethod
@@ -148,10 +224,10 @@ class BaseTestCase(unittest.TestCase):
 
         # Implementation requiring only one call/comparison
         if not isinstance(x, int):
-            raise AssertionError(f'{x} is not an integer.')
+            raise AssertionError(f'{x} is not an integer')
 
         if not low <= x <= high:
-            raise AssertionError(f'{x} not between {low} and {high}.')
+            raise AssertionError(f'{x} not between {low} and {high}')
 
     def __record_response_data(self, response, file=None):
         if not self.record_api_calls:

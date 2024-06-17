@@ -1,0 +1,120 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "atm": 34.977558031320584,
+        "currency": "BTC",
+        "daysToExpiration": 0.20833333333333334,
+        "exchange": "deribit",
+        "expirationTimestamp": "2024-04-01 08:00:00 000",
+        "fwdAtm": null,
+        "timestamp": "2024-04-01 03:00:00 000"
+      },
+      {
+        "atm": 58.806519990427596,
+        "currency": "BTC",
+        "daysToExpiration": 1.2083333333333333,
+        "exchange": "deribit",
+        "expirationTimestamp": "2024-04-02 08:00:00 000",
+        "fwdAtm": 62.64012597734387,
+        "timestamp": "2024-04-01 03:00:00 000"
+      },
+      {
+        "atm": 63.702467005493595,
+        "currency": "BTC",
+        "daysToExpiration": 2.2083333333333335,
+        "exchange": "deribit",
+        "expirationTimestamp": "2024-04-03 08:00:00 000",
+        "fwdAtm": 69.15749869829305,
+        "timestamp": "2024-04-01 03:00:00 000"
+      },
+      {
+        "atm": 66.89451153049853,
+        "currency": "BTC",
+        "daysToExpiration": 4.208333333333333,
+        "exchange": "deribit",
+        "expirationTimestamp": "2024-04-05 08:00:00 000",
+        "fwdAtm": 70.25077326476055,
+        "timestamp": "2024-04-01 03:00:00 000"
+      },
+      {
+        "atm": 68.93292748961123,
+        "currency": "BTC",
+        "daysToExpiration": 11.208333333333334,
+        "exchange": "deribit",
+        "expirationTimestamp": "2024-04-12 08:00:00 000",
+        "fwdAtm": 70.12989230290935,
+        "timestamp": "2024-04-01 03:00:00 000"
+      },
+      {
+        "atm": 71.64412688459537,
+        "currency": "BTC",
+        "daysToExpiration": 18.208333333333332,
+        "exchange": "deribit",
+        "expirationTimestamp": "2024-04-19 08:00:00 000",
+        "fwdAtm": 75.78355049588208,
+        "timestamp": "2024-04-01 03:00:00 000"
+      },
+      {
+        "atm": 75.33066283993523,
+        "currency": "BTC",
+        "daysToExpiration": 25.208333333333332,
+        "exchange": "deribit",
+        "expirationTimestamp": "2024-04-26 08:00:00 000",
+        "fwdAtm": 84.16713253319136,
+        "timestamp": "2024-04-01 03:00:00 000"
+      },
+      {
+        "atm": 77.584658260767,
+        "currency": "BTC",
+        "daysToExpiration": 60.208333333333336,
+        "exchange": "deribit",
+        "expirationTimestamp": "2024-05-31 08:00:00 000",
+        "fwdAtm": 79.16832683576722,
+        "timestamp": "2024-04-01 03:00:00 000"
+      },
+      {
+        "atm": 78.57527177361082,
+        "currency": "BTC",
+        "daysToExpiration": 88.20833333333333,
+        "exchange": "deribit",
+        "expirationTimestamp": "2024-06-28 08:00:00 000",
+        "fwdAtm": 80.664191364326,
+        "timestamp": "2024-04-01 03:00:00 000"
+      },
+      {
+        "atm": 81.07472245950645,
+        "currency": "BTC",
+        "daysToExpiration": 179.20833333333334,
+        "exchange": "deribit",
+        "expirationTimestamp": "2024-09-27 08:00:00 000",
+        "fwdAtm": 83.42605337041893,
+        "timestamp": "2024-04-01 03:00:00 000"
+      },
+      {
+        "atm": 81.69344226998885,
+        "currency": "BTC",
+        "daysToExpiration": 270.2083333333333,
+        "exchange": "deribit",
+        "expirationTimestamp": "2024-12-27 08:00:00 000",
+        "fwdAtm": 82.8984004916553,
+        "timestamp": "2024-04-01 03:00:00 000"
+      },
+      {
+        "atm": 82.96856342941463,
+        "currency": "BTC",
+        "daysToExpiration": 361.2083333333333,
+        "exchange": "deribit",
+        "expirationTimestamp": "2025-03-28 08:00:00 000",
+        "fwdAtm": 86.6442920039901,
+        "timestamp": "2024-04-01 03:00:00 000"
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}
