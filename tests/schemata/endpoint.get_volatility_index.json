@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "close"             : { "type" : "number" },
+              "currency"          : { "type" : "string" },
+              "exchange"          : { "type" : "string" },
+              "exchangeTimestamp" : { "type" : ["integer", "string"] },
+              "high"              : { "type" : "number" },
+              "instrument"        : { "type" : "string" },
+              "low"               : { "type" : "number" },
+              "open"              : { "type" : "number" }
+            },
+            "required": ["close", "currency", "exchange", "exchangeTimestamp", "high", "instrument", "low", "open"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}
