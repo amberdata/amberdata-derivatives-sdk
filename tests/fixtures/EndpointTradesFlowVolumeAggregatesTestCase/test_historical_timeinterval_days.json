@@ -1,0 +1,122 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "contractVolumeBlocked": 9294.600000000002,
+        "contractVolumeOnScreen": 12235.300000001338,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "notionalVolumeBlocked": 641055129.057,
+        "notionalVolumeOnScreen": 845147088.8360057,
+        "premiumVolumeBlocked": 26878410.981306132,
+        "premiumVolumeOnScreen": 20211801.711468805,
+        "timestamp": "2024-04-10 00:00:00 000"
+      },
+      {
+        "contractVolumeBlocked": 2568.7,
+        "contractVolumeOnScreen": 12065.700000001312,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "notionalVolumeBlocked": 180274217.084,
+        "notionalVolumeOnScreen": 845493092.9629973,
+        "premiumVolumeBlocked": 9229964.023720074,
+        "premiumVolumeOnScreen": 23225058.854303747,
+        "timestamp": "2024-04-09 00:00:00 000"
+      },
+      {
+        "contractVolumeBlocked": 7979,
+        "contractVolumeOnScreen": 14998.100000000879,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "notionalVolumeBlocked": 571705848.0349998,
+        "notionalVolumeOnScreen": 1071318023.723004,
+        "premiumVolumeBlocked": 32064562.886353496,
+        "premiumVolumeOnScreen": 38206430.254397474,
+        "timestamp": "2024-04-08 00:00:00 000"
+      },
+      {
+        "contractVolumeBlocked": 1030.4,
+        "contractVolumeOnScreen": 6886.100000000229,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "notionalVolumeBlocked": 71865480.81799999,
+        "notionalVolumeOnScreen": 478587110.7120001,
+        "premiumVolumeBlocked": 3133633.2737701,
+        "premiumVolumeOnScreen": 11466766.623721074,
+        "timestamp": "2024-04-07 00:00:00 000"
+      },
+      {
+        "contractVolumeBlocked": 296,
+        "contractVolumeOnScreen": 5645.500000000239,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "notionalVolumeBlocked": 20208890.259999998,
+        "notionalVolumeOnScreen": 385015578.0739992,
+        "premiumVolumeBlocked": 711012.4560974999,
+        "premiumVolumeOnScreen": 8719855.629840085,
+        "timestamp": "2024-04-06 00:00:00 000"
+      },
+      {
+        "contractVolumeBlocked": 7625.6,
+        "contractVolumeOnScreen": 15041.60000000097,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "notionalVolumeBlocked": 514364181.14400005,
+        "notionalVolumeOnScreen": 1012802930.783004,
+        "premiumVolumeBlocked": 29672459.620742626,
+        "premiumVolumeOnScreen": 22646908.727958106,
+        "timestamp": "2024-04-05 00:00:00 000"
+      },
+      {
+        "contractVolumeBlocked": 2940.4,
+        "contractVolumeOnScreen": 11956.400000001217,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "notionalVolumeBlocked": 200455735.68999997,
+        "notionalVolumeOnScreen": 806476717.8289934,
+        "premiumVolumeBlocked": 10630466.32259875,
+        "premiumVolumeOnScreen": 19534082.575788148,
+        "timestamp": "2024-04-04 00:00:00 000"
+      },
+      {
+        "contractVolumeBlocked": 4252,
+        "contractVolumeOnScreen": 11713.70000000094,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "notionalVolumeBlocked": 280703948.36,
+        "notionalVolumeOnScreen": 773479772.3910007,
+        "premiumVolumeBlocked": 16569065.058595495,
+        "premiumVolumeOnScreen": 20240251.06822867,
+        "timestamp": "2024-04-03 00:00:00 000"
+      },
+      {
+        "contractVolumeBlocked": 7262.299999999998,
+        "contractVolumeOnScreen": 19605.699999999637,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "notionalVolumeBlocked": 479348760.2319997,
+        "notionalVolumeOnScreen": 1298109500.263001,
+        "premiumVolumeBlocked": 19765427.951618258,
+        "premiumVolumeOnScreen": 40308640.50894353,
+        "timestamp": "2024-04-02 00:00:00 000"
+      },
+      {
+        "contractVolumeBlocked": 4671.9,
+        "contractVolumeOnScreen": 11209.500000000862,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "notionalVolumeBlocked": 326335848.09199995,
+        "notionalVolumeOnScreen": 778448773.1759995,
+        "premiumVolumeBlocked": 18748194.604962576,
+        "premiumVolumeOnScreen": 23812776.789918583,
+        "timestamp": "2024-04-01 00:00:00 000"
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}
