@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "butterfly15"           : { "type" : "number" },
+              "butterfly15Change"     : { "type" : "number" },
+              "butterfly25"           : { "type" : "number" },
+              "butterfly25Change"     : { "type" : "number" },
+              "currency"              : { "type" : "string" },
+              "daysToExpiration"      : { "type" : "number" },
+              "exchange"              : { "type" : "string" },
+              "expirationTimestamp"   : { "type" : ["integer", "string"] },
+              "riskReversal15"        : { "type" : "number" },
+              "riskReversal15Change"  : { "type" : "number" },
+              "riskReversal25"        : { "type" : "number" },
+              "riskReversal25Change"  : { "type" : "number" },
+              "underlyingPrice"       : { "type" : "number" },
+              "underlyingPriceChange" : { "type" : "number" }
+            },
+            "required": ["butterfly15", "butterfly15Change", "butterfly25", "butterfly25Change", "currency", "daysToExpiration", "exchange", "expirationTimestamp", "riskReversal15", "riskReversal15Change", "riskReversal25", "riskReversal25Change", "underlyingPrice", "underlyingPriceChange"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}
