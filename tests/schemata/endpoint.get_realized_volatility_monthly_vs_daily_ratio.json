@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "dailyClose"                      : { "type" : "number" },
+              "dailyHigh"                       : { "type" : "number" },
+              "dailyHistoricalVolatility30Days" : { "type" : "number" },
+              "dailyLow"                        : { "type" : "number" },
+              "dailyOpen"                       : { "type" : "number" },
+              "monthlyHigh"                     : { "type" : "number" },
+              "monthlyHistoricalVolatility"     : { "type" : "number" },
+              "monthlyLow"                      : { "type" : "number" },
+              "timestamp"                       : { "type" : ["number", "string"] }
+            }, 
+            "required": ["dailyClose", "dailyHigh", "dailyHistoricalVolatility30Days", "dailyLow", "dailyOpen", "monthlyHigh", "monthlyHistoricalVolatility", "monthlyLow", "timestamp"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}
