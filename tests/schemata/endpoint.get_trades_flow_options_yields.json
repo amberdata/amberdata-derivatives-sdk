@@ -13,6 +13,8 @@
               "absoluteYield"        : { "type": ["null",   "number"] },
               "annualization"        : { "type": "number" },
               "annualizedYield"      : { "type": ["null",   "number"] },
+              "currency"             : { "type": "string" },
+              "exchange"             : { "type": "string" },
               "expirationTimestamp"  : { "type": ["number", "string"] },
               "indexPrice"           : { "type": "number" },
               "instrumentNormalized" : { "type": "string" },
@@ -22,7 +24,7 @@
               "timestamp"            : { "type": ["number", "string"] },
               "yieldStrategy"        : { "type": "string" }
             },
-            "required": ["absoluteYield", "annualization", "annualizedYield", "expirationTimestamp", "indexPrice", "instrumentNormalized", "markPrice", "putCall", "strike", "timestamp", "yieldStrategy"],
+            "required": ["absoluteYield", "annualization", "annualizedYield", "currency", "exchange", "expirationTimestamp", "indexPrice", "instrumentNormalized", "markPrice", "putCall", "strike", "timestamp", "yieldStrategy"],
             "additionalProperties": false
           }
         },

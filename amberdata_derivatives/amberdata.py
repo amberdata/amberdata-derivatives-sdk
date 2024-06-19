@@ -538,6 +538,26 @@ class AmberdataDerivatives:
             }
         )
 
+    def get_trades_flow_gamma_exposures_normalized_usd(self, exchange: str, currency: str, **kwargs):
+        """
+        This chart depicts the overall impact of "gamma exposure" (GEX) in terms of notional in the underlying for
+        a 1% move in spot prices.
+
+        QUERY PARAMS:
+        - exchange            (string)    [Required] [Examples] deribit | okex | bybit
+        - currency            (string)    [Required] [Examples] BTC | SOL_USDC
+        - timeFormat          (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/trades-flow/gamma-exposures/normalized-usd',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
+
     def get_trades_flow_gamma_exposures_snapshots(self, exchange: str, currency: str, **kwargs):
         """
         GEX aims to calculate the gamma exposure of Market Markers (MMs) and the resulting number of underlying
@@ -560,26 +580,6 @@ class AmberdataDerivatives:
 
         return self.__make_request(
             'markets/derivatives/analytics/trades-flow/gamma-exposures-snapshots',
-            {
-                'exchange': exchange,
-                'currency': currency,
-                **kwargs
-            }
-        )
-
-    def get_trades_flow_gamma_exposures_normalized_usd(self, exchange: str, currency: str, **kwargs):
-        """
-        This chart depicts the overall impact of "gamma exposure" (GEX) in terms of notional in the underlying for
-        a 1% move in spot prices.
-
-        QUERY PARAMS:
-        - exchange            (string)    [Required] [Examples] deribit | okex | bybit
-        - currency            (string)    [Required] [Examples] BTC | SOL_USDC
-        - timeFormat          (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
-        """
-
-        return self.__make_request(
-            'markets/derivatives/analytics/trades-flow/gamma-exposures/normalized-usd',
             {
                 'exchange': exchange,
                 'currency': currency,
