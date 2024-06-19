@@ -10,10 +10,10 @@
           "items": {
             "type": "object",
             "properties": {
-              "endTimestamp"   : { "type" : ["number", "string"] },
+              "endTimestamp"   : { "type" : ["integer", "string"] },
               "exchange"       : { "type" : "string" },
               "pair"           : { "type" : "string" },
-              "startTimestamp" : { "type" : ["number", "string"] }
+              "startTimestamp" : { "type" : ["integer", "string"] }
             },
             "required": ["endTimestamp", "exchange", "pair", "startTimestamp"],
             "additionalProperties": false

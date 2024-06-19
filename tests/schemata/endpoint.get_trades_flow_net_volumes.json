@@ -16,7 +16,7 @@
               "cumulativeTradeVega"   : { "type" : "number" },
               "indexPrice"            : { "type" : "number" },
               "strike"                : { "type" : "number" },
-              "timestamp"             : { "type" : ["number", "string"] }
+              "timestamp"             : { "type" : ["integer", "string"] }
             },
             "required": ["cumulativeTradeAmount", "cumulativeTradeDelta", "cumulativeTradeGamma", "cumulativeTradeVega", "indexPrice", "strike", "timestamp"],
             "additionalProperties": false

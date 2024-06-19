@@ -16,7 +16,7 @@
               "indexPrice"           : { "type" : "number" },
               "realizedVolatility30" : { "type" : "number" },
               "realizedVolatility7"  : { "type" : "number" },
-              "timestamp"            : { "type" : ["number", "string"] }
+              "timestamp"            : { "type" : ["integer", "string"] }
             },
             "required": ["atm", "currency", "exchange", "indexPrice", "realizedVolatility30", "realizedVolatility7", "timestamp"],
             "additionalProperties": false

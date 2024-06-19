@@ -18,7 +18,7 @@
               "monthlyHigh"                     : { "type" : "number" },
               "monthlyHistoricalVolatility"     : { "type" : "number" },
               "monthlyLow"                      : { "type" : "number" },
-              "timestamp"                       : { "type" : ["number", "string"] }
+              "timestamp"                       : { "type" : ["integer", "string"] }
             }, 
             "required": ["dailyClose", "dailyHigh", "dailyHistoricalVolatility30Days", "dailyLow", "dailyOpen", "monthlyHigh", "monthlyHistoricalVolatility", "monthlyLow", "timestamp"],
             "additionalProperties": false

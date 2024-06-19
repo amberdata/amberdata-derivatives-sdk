@@ -10,18 +10,18 @@
           "items": {
             "type": "object",
             "properties": {
-              "absoluteYield"        : { "type": ["null",   "number"] },
+              "absoluteYield"        : { "type": ["null",    "number"] },
               "annualization"        : { "type": "number" },
-              "annualizedYield"      : { "type": ["null",   "number"] },
+              "annualizedYield"      : { "type": ["null",    "number"] },
               "currency"             : { "type": "string" },
               "exchange"             : { "type": "string" },
-              "expirationTimestamp"  : { "type": ["number", "string"] },
+              "expirationTimestamp"  : { "type": ["integer", "string"] },
               "indexPrice"           : { "type": "number" },
               "instrumentNormalized" : { "type": "string" },
-              "markPrice"            : { "type": ["null",   "number"] },
+              "markPrice"            : { "type": ["null",    "number"] },
               "putCall"              : { "type": "string" },
               "strike"               : { "type": "number" },
-              "timestamp"            : { "type": ["number", "string"] },
+              "timestamp"            : { "type": ["integer", "string"] },
               "yieldStrategy"        : { "type": "string" }
             },
             "required": ["absoluteYield", "annualization", "annualizedYield", "currency", "exchange", "expirationTimestamp", "indexPrice", "instrumentNormalized", "markPrice", "putCall", "strike", "timestamp", "yieldStrategy"],
