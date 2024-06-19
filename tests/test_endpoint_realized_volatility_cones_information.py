@@ -24,7 +24,7 @@ class EndpointRealizedVolatilityConesInformationTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'startTimestamp', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'endTimestamp', is_milliseconds=True)
 
-    def test_timestamp(self):
+    def test_timeformat_default(self):
         response = self.call_endpoint(exchange='gdax')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=200)
@@ -32,7 +32,7 @@ class EndpointRealizedVolatilityConesInformationTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'startTimestamp', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'endTimestamp', is_milliseconds=True)
 
-    def test_timestamp_timeformat_hr(self):
+    def test_timeformat_hr(self):
         response = self.call_endpoint(exchange='gdax', timeFormat='hr')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=200)
@@ -40,7 +40,7 @@ class EndpointRealizedVolatilityConesInformationTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'startTimestamp', is_hr=True)
         self.validate_response_field_timestamp(response, 'endTimestamp', is_hr=True)
 
-    def test_timestamp_timeformat_iso(self):
+    def test_timeformat_iso(self):
         response = self.call_endpoint(exchange='gdax', timeFormat='iso')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=200)

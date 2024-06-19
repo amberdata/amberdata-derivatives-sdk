@@ -26,7 +26,7 @@ pip install git+https://github.com/amberdata/amberdata-derivatives-sdk@1.0.4
 from amberdata_derivatives import AmberdataDerivatives
 
 amberdata_client = AmberdataDerivatives(api_key='<Enter your API key here>')
-amberdata_client.get_term_structure_constant(currency='BTC', exchange='deribit')
+amberdata_client.get_volatility_term_structures_constant(currency='BTC', exchange='deribit')
 ```
 
 Rather than hardcoding the API key, it can be stored in an environment file and loaded dynamically at runtime.
@@ -43,7 +43,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 amberdata_client = AmberdataDerivatives(api_key=os.getenv('API_KEY'))
-amberdata_client.get_term_structures_constant(currency='BTC', exchange='deribit')
+amberdata_client.get_volatility_term_structures_constant(currency='BTC', exchange='deribit')
 ```
 
 The default time format for timestamp fields can also be configured globally (so it does not have to be specified with each call).
@@ -54,7 +54,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 amberdata_client = AmberdataDerivatives(api_key=os.getenv('API_KEY'), time_format='iso')
-amberdata_client.get_term_structures_constant(currency='BTC', exchange='deribit')
+amberdata_client.get_volatility_term_structures_constant(currency='BTC', exchange='deribit')
 ```
 
 ## Unit tests

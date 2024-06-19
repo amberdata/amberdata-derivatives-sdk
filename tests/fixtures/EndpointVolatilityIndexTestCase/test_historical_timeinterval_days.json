@@ -1,0 +1,22 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "close": 76.66999816894531,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 00:00:00 000",
+        "high": 76.83,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 76.63,
+        "open": 76.63999938964844
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}

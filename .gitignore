@@ -6,4 +6,6 @@
 /.bak/
 
 # Python
+.venv/
 /amberdata_derivatives/__pycache__/
+/build/

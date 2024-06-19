@@ -24,7 +24,7 @@ class EndpointTermStructureFloatingTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_timestamp(self):
+    def test_historical_timeformat_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', timestamp='2024-04-01T03:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -33,7 +33,7 @@ class EndpointTermStructureFloatingTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_timestamp_timeformat_hr(self):
+    def test_historical_timeformat_hr(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', timestamp='2024-04-01T03:00:00', timeFormat='hr')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -42,7 +42,7 @@ class EndpointTermStructureFloatingTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True)
 
-    def test_timestamp_timeformat_iso(self):
+    def test_historical_timeformat_iso(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', timestamp='2024-04-01T03:00:00', timeFormat='iso')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)

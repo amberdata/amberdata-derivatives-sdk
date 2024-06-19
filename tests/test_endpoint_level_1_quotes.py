@@ -24,7 +24,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_instrument_historical(self):
+    def test_historical(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', instrument='BTC-26APR24-100000-C', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -34,7 +34,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'instrument', 'BTC-26APR24-100000-C')
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_isatm_historical(self):
+    def test_historical_isatm(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', isAtm=True, startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -44,7 +44,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'isAtm', True)
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_isatm_realtime(self):
+    def test_realtime_isatm(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', isAtm=False)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=200)
@@ -53,7 +53,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'isAtm', False)
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_putcall_historical(self):
+    def test_historical_putcall(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', putCall='C', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -63,7 +63,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'putCall', 'C')
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_putcall_realtime(self):
+    def test_realtime_putcall(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', putCall='P')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=200)
@@ -72,7 +72,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'putCall', 'P')
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_strike_historical(self):
+    def test_historical_strike(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', strike=50000, startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -82,7 +82,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'strike', 50000)
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_strike_realtime(self):
+    def test_realtime_strike(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', strike=50000)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=1)
@@ -91,7 +91,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'strike', 50000)
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_timestamp(self):
+    def test_historical_timeformat_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -100,7 +100,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_timestamp_timeformat_hr(self):
+    def test_historical_timeformat_hr(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', timeFormat='hr')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -109,7 +109,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_minutely=True)
 
-    def test_timestamp_timeformat_iso(self):
+    def test_historical_timeformat_iso(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', timeFormat='iso')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -118,7 +118,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True, is_minutely=True)
 
-    def test_timestamp_timeinterval_days(self):
+    def test_historical_timeinterval_days(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', timeFormat='hr', timeInterval='d')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -127,7 +127,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_daily=True)
 
-    def test_timestamp_timeinterval_hours(self):
+    def test_historical_timeinterval_hours(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', timeFormat='hr', timeInterval='h')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -136,7 +136,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_hourly=True)
 
-    def test_timestamp_timeinterval_minutes(self):
+    def test_historical_timeinterval_minutes(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', timeFormat='hr', timeInterval='m')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)

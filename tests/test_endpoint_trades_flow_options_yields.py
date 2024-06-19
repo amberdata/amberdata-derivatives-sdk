@@ -20,39 +20,35 @@ class EndpointTradesFlowOptionsYieldsTestCase(BaseTestCase):
         response = self.call_endpoint(exchange='deribit', currency='BTC')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=300)
-        # TODO: Fields exchange & currency should be added to the response payload
-        # self.validate_response_field(response, 'exchange', 'deribit')
-        # self.validate_response_field(response, 'currency', 'BTC')
+        self.validate_response_field(response, 'exchange', 'deribit')
+        self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_milliseconds=True)
 
-    def test_timestamp(self):
+    def test_timeformat_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=300)
-        # TODO: Fields exchange & currency should be added to the response payload
-        # self.validate_response_field(response, 'exchange', 'deribit')
-        # self.validate_response_field(response, 'currency', 'BTC')
+        self.validate_response_field(response, 'exchange', 'deribit')
+        self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_milliseconds=True)
 
-    def test_timestamp_timeformat_hr(self):
+    def test_timeformat_hr(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', timeFormat='hr')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=300)
-        # TODO: Fields exchange & currency should be added to the response payload
-        # self.validate_response_field(response, 'exchange', 'deribit')
-        # self.validate_response_field(response, 'currency', 'BTC')
+        self.validate_response_field(response, 'exchange', 'deribit')
+        self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_hr=True)
 
-    def test_timestamp_timeformat_iso(self):
+    def test_timeformat_iso(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', timeFormat='iso')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=300)
-        # TODO: Fields exchange & currency should be added to the response payload
-        # self.validate_response_field(response, 'exchange', 'deribit')
-        # self.validate_response_field(response, 'currency', 'BTC')
+        self.validate_response_field(response, 'exchange', 'deribit')
+        self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_iso=True)
 

@@ -1,0 +1,27 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "atm": 75.78391439765258,
+        "close": 76.66,
+        "currency": "BTC",
+        "daysAgo": 79,
+        "delta25RrSkew": 3.2828744232556204,
+        "delta50": 76.07909402424839,
+        "deltaCall25": 78.68985013401743,
+        "deltaPut25": 75.40697571076181,
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 00:00:00 000",
+        "indexPrice": 71297.04733333334,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "underlyingPrice": 73252.92337998126
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}

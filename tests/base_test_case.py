@@ -145,6 +145,8 @@ class BaseTestCase(unittest.TestCase):
         is_minutely=False,
         is_hourly=False,
         is_daily=False,
+        is_weekly=False,
+        is_yearly=False,
         is_nullable=False
     ):
         """
@@ -158,6 +160,8 @@ class BaseTestCase(unittest.TestCase):
         :param is_minutely:      The timestamp field is expressed in minutes (no seconds)
         :param is_hourly:        The timestamp field is expressed in hours (no seconds and no minutes)
         :param is_daily:         The timestamp field is expressed in days (no seconds, no minutes and no hours)
+        :param is_weekly:        The timestamp field is expressed in weeks (no seconds, no minutes and no hours)
+        :param is_yearly:        The timestamp field is expressed in years (no seconds, no minutes, no hours, no days and no months)
         :param is_nullable:      The timestamp field could be null
         """
         data = response['payload']['data']
@@ -168,6 +172,8 @@ class BaseTestCase(unittest.TestCase):
             regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9] [0-2][0-9]:[0-5][0-9]:00 000$' if is_minutely else regex
             regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9] [0-2][0-9]:00:00 000$' if is_hourly else regex
             regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9] 00:00:00 000$' if is_daily else regex
+            regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9] 00:00:00 000$' if is_weekly else regex # TODO: this could be improved
+            regex = r'^[1-2][0-9]{3}-01-01 00:00:00 000$' if is_yearly else regex
 
             for element in data:
                 self.assertRegex(element[field_name], regex)
@@ -178,6 +184,8 @@ class BaseTestCase(unittest.TestCase):
             regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-5][0-9]:00\.000Z$' if is_minutely else regex
             regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:00:00\.000Z$' if is_hourly else regex
             regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]T00:00:00\.000Z$' if is_daily else regex
+            regex = r'^[1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]T00:00:00\.000Z$' if is_weekly else regex # TODO: this could be improved
+            regex = r'^[1-2][0-9]{3}-01-01T00:00:00\.000Z$' if is_yearly else regex
 
             for element in data:
                 self.assertRegex(element[field_name], regex)

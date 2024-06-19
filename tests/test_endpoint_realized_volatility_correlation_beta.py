@@ -26,7 +26,7 @@ class EndpointRealizedVolatilityCorrelationBetaTestCase(BaseTestCase):
         self.validate_response_field(response, 'pairTwo', 'eth_usd')
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
-    def test_timestamp(self):
+    def test_timeformat_default(self):
         response = self.call_endpoint(exchange='gdax', pair='btc_usd', pair2='eth_usd')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=200)
@@ -36,7 +36,7 @@ class EndpointRealizedVolatilityCorrelationBetaTestCase(BaseTestCase):
         self.validate_response_field(response, 'pairTwo', 'eth_usd')
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
-    def test_timestamp_timeformat_hr(self):
+    def test_timeformat_hr(self):
         response = self.call_endpoint(exchange='gdax', pair='btc_usd', pair2='eth_usd', timeFormat='hr')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=200)
@@ -46,7 +46,7 @@ class EndpointRealizedVolatilityCorrelationBetaTestCase(BaseTestCase):
         self.validate_response_field(response, 'pairTwo', 'eth_usd')
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True)
 
-    def test_timestamp_timeformat_iso(self):
+    def test_timeformat_iso(self):
         response = self.call_endpoint(exchange='gdax', pair='btc_usd', pair2='eth_usd', timeFormat='iso')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=200)

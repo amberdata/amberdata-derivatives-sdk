@@ -62,7 +62,7 @@ class AmberdataDerivatives:
         QUERY PARAMS:
         - currency       (string)    [Required] [Examples] BTC | SOL_USDC
         - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - blockTradeId   (boolean)   [Optional] [Examples] 144117
+        - blockTradeId   (boolean)   [Optional] [Examples] true
         - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
@@ -277,7 +277,7 @@ class AmberdataDerivatives:
         QUERY PARAMS:
         - exchange       (string)    [Required] [Examples] deribit | okex | bybit
         - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - blockTradeId   (boolean)   [Optional] [Examples] 144117
+        - blockTradeId   (boolean)   [Optional] [Examples] true
         - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
@@ -450,7 +450,7 @@ class AmberdataDerivatives:
         - timeFormat  (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.__make_request(
-            'markets/derivatives/analytics/realized-volatility/day-of-week',
+            'markets/derivatives/analytics/realized-volatility/seasonality/day-of-week',
             {
                 'exchange': exchange,
                 'pair': pair,
@@ -473,7 +473,7 @@ class AmberdataDerivatives:
         - timeFormat  (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.__make_request(
-            'markets/derivatives/analytics/realized-volatility/month-of-year',
+            'markets/derivatives/analytics/realized-volatility/seasonality/month-of-year',
             {
                 'exchange': exchange,
                 'pair': pair,
@@ -520,7 +520,7 @@ class AmberdataDerivatives:
         QUERY PARAMS:
         - currency       (string)    [Required] [Examples] BTC | SOL_USDC
         - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - blockTradeId   (boolean)   [Optional] [Examples] 144117
+        - blockTradeId   (boolean)   [Optional] [Examples] true
         - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
@@ -531,6 +531,26 @@ class AmberdataDerivatives:
 
         return self.__make_request(
             'markets/derivatives/analytics/trades-flow/decorated-trades',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_trades_flow_gamma_exposures_normalized_usd(self, exchange: str, currency: str, **kwargs):
+        """
+        This chart depicts the overall impact of "gamma exposure" (GEX) in terms of notional in the underlying for
+        a 1% move in spot prices.
+
+        QUERY PARAMS:
+        - exchange            (string)    [Required] [Examples] deribit | okex | bybit
+        - currency            (string)    [Required] [Examples] BTC | SOL_USDC
+        - timeFormat          (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/trades-flow/gamma-exposures/normalized-usd',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -567,19 +587,22 @@ class AmberdataDerivatives:
             }
         )
 
-    def get_trades_flow_gamma_exposures_normalized_usd(self, exchange: str, currency: str, **kwargs):
+    def get_trades_flow_net_volumes(self, exchange: str, currency: str, **kwargs):
         """
-        This chart depicts the overall impact of "gamma exposure" (GEX) in terms of notional in the underlying for
-        a 1% move in spot prices.
+        This endpoint returns the historical net volumes.
 
         QUERY PARAMS:
-        - exchange            (string)    [Required] [Examples] deribit | okex | bybit
-        - currency            (string)    [Required] [Examples] BTC | SOL_USDC
-        - timeFormat          (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange              (string)    [Required] [Examples] deribit | okex | bybit
+        - currency              (string)    [Required] [Examples] BTC | SOL_USDC
+        - blockTradeId          (boolean)   [Optional] [Examples] true
+        - showActiveExpirations (boolean)   [Optional] [Examples] true
+        - startDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate               (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat            (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/trades-flow/gamma-exposures/normalized-usd',
+            'markets/derivatives/analytics/trades-flow/net-volumes',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -630,12 +653,12 @@ class AmberdataDerivatives:
         QUERY PARAMS:
         - exchange            (string)    [Required] [Examples] deribit | okex | bybit
         - currency            (string)    [Required] [Examples] BTC | SOL_USDC
+        - blockTradeId        (boolean)   [Optional] [Examples] true
         - startDate           (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - strike              (int32)     [Optional] [Examples] 100000 | 3500
         - expirationTimestamp (string)    [Optional] [Examples] 1578531600
         - timeFormat          (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
-        - blockTradeId        (boolean)   [Optional] [Examples] 144117
         """
 
         return self.__make_request(

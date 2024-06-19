@@ -24,7 +24,7 @@ class EndpointVolatilityDeltaSurfaceConstantTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_timestamp(self):
+    def test_historical_timeformat_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -33,7 +33,7 @@ class EndpointVolatilityDeltaSurfaceConstantTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    def test_timestamp_timeformat_hr(self):
+    def test_historical_timeformat_hr(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', timeFormat='hr')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -42,7 +42,7 @@ class EndpointVolatilityDeltaSurfaceConstantTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_minutely=True)
 
-    def test_timestamp_timeformat_iso(self):
+    def test_historical_timeformat_iso(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', timeFormat='iso')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -51,7 +51,7 @@ class EndpointVolatilityDeltaSurfaceConstantTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True, is_minutely=True)
 
-    def test_timestamp_timeinterval_days(self):
+    def test_historical_timeinterval_days(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', timeFormat='hr', timeInterval='d')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -60,7 +60,7 @@ class EndpointVolatilityDeltaSurfaceConstantTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_daily=True)
 
-    def test_timestamp_timeinterval_hours(self):
+    def test_historical_timeinterval_hours(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', timeFormat='hr', timeInterval='h')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
@@ -69,7 +69,7 @@ class EndpointVolatilityDeltaSurfaceConstantTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_hourly=True)
 
-    def test_timestamp_timeinterval_minutes(self):
+    def test_historical_timeinterval_minutes(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', timeFormat='hr', timeInterval='m')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)

@@ -10,7 +10,7 @@
           "items": {
             "type": "object",
             "properties": {
-              "timestamp"                : { "type" : ["number", "string"] },
+              "timestamp"                : { "type" : ["integer", "string"] },
               "pairOne"                  : { "type" : "string" },
               "closeOne"                 : { "type" : "number" },
               "returnOne"                : { "type" : "number" },

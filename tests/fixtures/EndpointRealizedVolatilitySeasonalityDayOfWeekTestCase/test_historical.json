@@ -1,0 +1,24 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "historicalVolatility1day": 53.664186618970355,
+        "weekday": "TUES"
+      },
+      {
+        "historicalVolatility1day": 88.75819857115685,
+        "weekday": "WED"
+      },
+      {
+        "historicalVolatility1day": 42.67314561111731,
+        "weekday": "THURS"
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}

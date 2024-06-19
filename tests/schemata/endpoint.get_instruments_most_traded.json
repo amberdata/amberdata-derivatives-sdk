@@ -12,9 +12,10 @@
             "properties": {
               "contractVolume" : { "type" : "number" },
               "currency"       : { "type" : "string" },
+              "exchange"       : { "type" : "string" },
               "instrument"     : { "type" : "string" }
             },
-            "required": ["contractVolume", "currency", "instrument"],
+            "required": ["contractVolume", "currency", "exchange", "instrument"],
             "additionalProperties": false
           }
         },
