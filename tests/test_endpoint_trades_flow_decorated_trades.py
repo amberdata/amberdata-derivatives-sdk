@@ -27,11 +27,11 @@ class EndpointTradesFlowDecoratedTradesTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'postTradeOrderbookTimestamp', is_milliseconds=True, is_nullable=True)
         self.validate_response_field_timestamp(response, 'preTradeOrderbookTimestamp', is_milliseconds=True, is_nullable=True)
 
-    def test_instrument_historical(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00')
+    def test_historical(self):
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T02:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=163)
+        self.validate_response_200(response, num_elements=1055)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
@@ -39,11 +39,23 @@ class EndpointTradesFlowDecoratedTradesTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'postTradeOrderbookTimestamp', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'preTradeOrderbookTimestamp', is_milliseconds=True)
 
-    def test_blocktradeid_historical(self):
+    def test_blocktradeid_true(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', blockTradeId=True, startDate='2024-04-01T00:00:00', endDate='2024-04-01T02:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=23)
+        self.validate_response_field(response, 'exchange', 'deribit')
+        self.validate_response_field(response, 'currency', 'BTC')
+        self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
+        self.validate_response_field_timestamp(response, 'expirationTimestamp', is_milliseconds=True)
+        self.validate_response_field_timestamp(response, 'postTradeOrderbookTimestamp', is_milliseconds=True)
+        self.validate_response_field_timestamp(response, 'preTradeOrderbookTimestamp', is_milliseconds=True)
+
+    def test_blocktradeid_false(self):
+        response = self.call_endpoint(exchange='deribit', currency='BTC', blockTradeId=False, startDate='2024-04-01T00:00:00', endDate='2024-04-01T02:00:00')
+        self.validate_response_data(response)
+        self.validate_response_schema(response, schema=self.schema)
+        self.validate_response_200(response, num_elements=1032)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)

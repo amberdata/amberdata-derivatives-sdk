@@ -21,7 +21,7 @@ class EndpointRealizedVolatilitySeasonalityDayOfWeekTestCase(BaseTestCase):
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=7)
 
-    def test_instrument_historical(self):
+    def test_historical(self):
         response = self.call_endpoint(exchange='gdax', pair='btc_usd', startDate='2024-04-01T00:00:00', endDate='2024-04-03T00:10:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)

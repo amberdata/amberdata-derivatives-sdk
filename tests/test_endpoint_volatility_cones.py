@@ -23,7 +23,7 @@ class EndpointVolatilityConesTestCase(BaseTestCase):
         self.validate_response_field(response, 'exchange', 'gdax')
         self.validate_response_field(response, 'pair', 'btc_usd')
 
-    def test_instrument_historical(self):
+    def test_historical(self):
         response = self.call_endpoint(exchange='gdax', pair='btc_usd', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)

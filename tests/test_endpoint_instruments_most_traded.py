@@ -21,7 +21,7 @@ class EndpointInstrumentsMostTradedTestCase(BaseTestCase):
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=200)
 
-    def test_instrument_historical(self):
+    def test_historical(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
