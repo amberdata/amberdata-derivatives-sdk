@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "atm180days": { "type" : ["null",   "number"] },
+              "atm30days" : { "type" : "number" },
+              "atm60days" : { "type" : "number" },
+              "atm7days"  : { "type" : "number" },
+              "atm90days" : { "type" : "number" },
+              "counter"   : { "type" : "number" },
+              "currency"  : { "type" : "string" },
+              "exchange"  : { "type" : "string" },
+              "ratio"     : { "type" : "number" },
+              "richness"  : { "type" : "number" },
+              "timestamp" : { "type": ["integer", "string"] }
+            },
+            "required": ["atm180days", "atm30days", "atm60days", "atm7days", "atm90days", "counter", "currency", "exchange", "ratio", "richness", "timestamp"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}
