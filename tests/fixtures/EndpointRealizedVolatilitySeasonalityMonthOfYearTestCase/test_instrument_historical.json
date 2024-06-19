@@ -1,0 +1,60 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "historicalVolatility1day": 51.183948061494554,
+        "month": "JAN"
+      },
+      {
+        "historicalVolatility1day": 41.85144043786965,
+        "month": "FEB"
+      },
+      {
+        "historicalVolatility1day": 65.86559525322295,
+        "month": "MARCH"
+      },
+      {
+        "historicalVolatility1day": 54.918243754533506,
+        "month": "APR"
+      },
+      {
+        "historicalVolatility1day": 41.79908501202176,
+        "month": "MAY"
+      },
+      {
+        "historicalVolatility1day": 40.80852036501102,
+        "month": "JUNE"
+      },
+      {
+        "historicalVolatility1day": 25.363561439992946,
+        "month": "JULY"
+      },
+      {
+        "historicalVolatility1day": 31.746448821132034,
+        "month": "AUG"
+      },
+      {
+        "historicalVolatility1day": 25.90580471777141,
+        "month": "SEP"
+      },
+      {
+        "historicalVolatility1day": 38.844010505708226,
+        "month": "OCT"
+      },
+      {
+        "historicalVolatility1day": 38.444209237203424,
+        "month": "NOV"
+      },
+      {
+        "historicalVolatility1day": 42.294840917699396,
+        "month": "DEC"
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}
