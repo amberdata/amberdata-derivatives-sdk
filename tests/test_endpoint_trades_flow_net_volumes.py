@@ -29,35 +29,35 @@ class EndpointTradesFlowNetVolumesTestCase(BaseTestCase):
         self.validate_response_200(response, num_elements=1488)
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
-    def test_blocktradeid_true(self):
+    def test_historical_blocktradeid_true(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', blockTradeId=True, startDate='2024-04-01T00:00:00', endDate='2024-04-01T02:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=96)
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
-    def test_blocktradeid_false(self):
+    def test_historical_blocktradeid_false(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', blockTradeId=False, startDate='2024-04-01T00:00:00', endDate='2024-04-01T02:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=1488)
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
-    def test_timestamp(self):
+    def test_historical_timeformat_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=1488)
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
-    def test_timestamp_timeformat_hr(self):
+    def test_historical_timeformat_hr(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', timeFormat='hr')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=1488)
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True)
 
-    def test_timestamp_timeformat_iso(self):
+    def test_historical_timeformat_iso(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', timeFormat='iso')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
