@@ -10,7 +10,7 @@ from tests.error_message import ErrorMessage
 
 # ======================================================================================================================
 
-class EndpointVolatilityTermStructureConstantTestCase(BaseTestCase):
+class EndpointVolatilityTermStructuresConstantTestCase(BaseTestCase):
     def setUp(self, function_name='get_volatility_term_structures_constant'):
         super().setUp(function_name)
 
