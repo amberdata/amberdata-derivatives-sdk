@@ -926,7 +926,7 @@ class AmberdataDerivatives:
 
         # Add default parameters
         if self.__time_format is not None:
-            if query_params['timeFormat'] is None:
+            if 'timeFormat' not in query_params:
                 query_params['timeFormat'] = self.__time_format
 
         # Build query and URL
