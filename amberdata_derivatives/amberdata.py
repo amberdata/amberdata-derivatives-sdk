@@ -62,7 +62,7 @@ class AmberdataDerivatives:
         QUERY PARAMS:
         - currency       (string)    [Required] [Examples] BTC | SOL_USDC
         - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - blockTradeId   (boolean)   [Optional] [Examples] 144117
+        - blockTradeId   (boolean)   [Optional] [Examples] true
         - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
@@ -277,7 +277,7 @@ class AmberdataDerivatives:
         QUERY PARAMS:
         - exchange       (string)    [Required] [Examples] deribit | okex | bybit
         - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - blockTradeId   (boolean)   [Optional] [Examples] 144117
+        - blockTradeId   (boolean)   [Optional] [Examples] true
         - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
@@ -450,7 +450,7 @@ class AmberdataDerivatives:
         - timeFormat  (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.__make_request(
-            'markets/derivatives/analytics/realized-volatility/day-of-week',
+            'markets/derivatives/analytics/realized-volatility/seasonality/day-of-week',
             {
                 'exchange': exchange,
                 'pair': pair,
@@ -473,7 +473,7 @@ class AmberdataDerivatives:
         - timeFormat  (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.__make_request(
-            'markets/derivatives/analytics/realized-volatility/month-of-year',
+            'markets/derivatives/analytics/realized-volatility/seasonality/month-of-year',
             {
                 'exchange': exchange,
                 'pair': pair,
@@ -520,7 +520,7 @@ class AmberdataDerivatives:
         QUERY PARAMS:
         - currency       (string)    [Required] [Examples] BTC | SOL_USDC
         - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - blockTradeId   (boolean)   [Optional] [Examples] 144117
+        - blockTradeId   (boolean)   [Optional] [Examples] true
         - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
@@ -587,6 +587,29 @@ class AmberdataDerivatives:
             }
         )
 
+    def get_trades_flow_net_volumes(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the historical net volumes.
+
+        QUERY PARAMS:
+        - exchange              (string)    [Required] [Examples] deribit | okex | bybit
+        - currency              (string)    [Required] [Examples] BTC | SOL_USDC
+        - blockTradeId          (boolean)   [Optional] [Examples] true
+        - showActiveExpirations (boolean)   [Optional] [Examples] true
+        - startDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate               (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat            (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/trades-flow/net-volumes',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
+
     def get_trades_flow_options_yields(self, exchange: str, currency: str, **kwargs):
         """
         The “Covered Call” strategy assumes the trader is long exactly one unit of underlying asset after proceeds from
@@ -630,12 +653,12 @@ class AmberdataDerivatives:
         QUERY PARAMS:
         - exchange            (string)    [Required] [Examples] deribit | okex | bybit
         - currency            (string)    [Required] [Examples] BTC | SOL_USDC
+        - blockTradeId        (boolean)   [Optional] [Examples] true
         - startDate           (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - strike              (int32)     [Optional] [Examples] 100000 | 3500
         - expirationTimestamp (string)    [Optional] [Examples] 1578531600
         - timeFormat          (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
-        - blockTradeId        (boolean)   [Optional] [Examples] 144117
         """
 
         return self.__make_request(

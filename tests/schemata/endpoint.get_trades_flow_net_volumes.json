@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "cumulativeTradeAmount" : { "type" : "number" },
+              "cumulativeTradeDelta"  : { "type" : "number" },
+              "cumulativeTradeGamma"  : { "type" : "number" },
+              "cumulativeTradeVega"   : { "type" : "number" },
+              "indexPrice"            : { "type" : "number" },
+              "strike"                : { "type" : "number" },
+              "timestamp"             : { "type" : ["number", "string"] }
+            },
+            "required": ["cumulativeTradeAmount", "cumulativeTradeDelta", "cumulativeTradeGamma", "cumulativeTradeVega", "indexPrice", "strike", "timestamp"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}
