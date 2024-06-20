@@ -941,6 +941,117 @@ class AmberdataDerivatives:
                 **kwargs
             }
         )
+    
+    ==================================================================================================================
+    # SAMNEET ENDPOINTS
+ # ==================================================================================================================
+
+    def get_apr_basis_constant_maturity(self, asset: str, interval: str, startDate: str, endDate: str, **kwargs):
+        """
+        This endpoint returns the quoted futures basis, for the various exchanges, interpolated to represent a constant DTE (days to expiration). The data is returned with 15min granularity.
+
+        QUERY PARAMS:
+        - asset            (string)    [Required] [Examples] BTC | ETH
+        - interval         (string)    [Required] [Examples] 7D | 30D | 90D |180D
+        - startDate        (string)    [Required] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - endDate          (string)    [Required] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - timeFormat       (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr 
+        """
+    
+        return self.__make_request(
+            'markets/derivatives/analytics/futures-perpetuals/apr-basis',
+            {
+                'asset': asset,
+                'interval': interval,
+                'startDate': startDate,
+                'endDate': endDate,
+                **kwargs
+            }
+        )
+    
+    def get_basis_live_term_structure(self, asset: str, marginType: str, **kwargs):
+        """
+        This endpoint returns the current quoted futures prices along with the differential to spot and the annualized apr of the spot differential.
+
+        QUERY PARAMS:
+        - asset            (string)    [Required] [Examples] BTC | ETH
+        - marginType       (string)    [Required] [Examples] coins | stables
+        - timeFormat       (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr 
+        """
+    
+        return self.__make_request(
+            'markets/derivatives/analytics/futures-perpetuals/apr-live',
+            {
+                'asset': asset,
+                'marginType': marginType,
+                **kwargs
+            }
+        )
+    
+    def get_funding_realized_accumulated(self, asset: str, marginType: str, startDate: str, endDate: str, **kwargs):
+        """
+        This endpoint returns the total asset open interest for both futures and perpetuals across the various exchanges. The open interest is returned in raw coin amounts and millions of dollars.
+
+        QUERY PARAMS:
+        - asset            (string)    [Required] [Examples] BTC | ETH
+        - marginType       (string)    [Required] [Examples] coins | stables
+        - startDate        (string)    [Required] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - endDate          (string)    [Required] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - timeFormat       (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr 
+        """
+    
+        return self.__make_request(
+            'markets/derivatives/analytics/futures-perpetuals/realized-funding-rates-cumulated',
+            {
+                'asset': asset,
+                'marginType': marginType,
+                'startDate': startDate,
+                'endDate': endDate,
+                **kwargs
+            }
+        )
+    
+    def get_futures_open_interest(self, asset: str, startDate: str, endDate: str, **kwargs):
+        """
+        This endpoint returns the total asset open interest for both futures and perpetuals across the various exchanges. The open interest is returned in raw coin amounts and millions of dollars.
+
+        QUERY PARAMS:
+        - asset            (string)    [Required] [Examples] BTC | ETH
+        - startDate        (string)    [Required] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - endDate          (string)    [Required] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - timeFormat       (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr 
+        """
+    
+        return self.__make_request(
+            'markets/derivatives/analytics/futures-perpetuals/open-interest-total',
+            {
+                'asset': asset,
+                'startDate': startDate,
+                'endDate': endDate,
+                **kwargs
+            }
+        )    
+    
+    def get_futures_volumes(self, asset: str, startDate: str, endDate: str, **kwargs):
+        """
+        This endpoint returns the rolling 24h volume for both futures and perpetuals of the underlying asset. The endpoint returns the USD volume in millions of dollars and the volume in units of underlying coins.
+
+        QUERY PARAMS:
+        - asset            (string)    [Required] [Examples] BTC | ETH
+        - startDate        (string)    [Required] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - endDate          (string)    [Required] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - timeFormat       (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr 
+        """
+    
+        return self.__make_request(
+            'markets/derivatives/analytics/futures-perpetuals/volumes',
+            {
+                'asset': asset,
+                'startDate': startDate,
+                'endDate': endDate,
+                **kwargs
+            }
+        )
 
     # ==================================================================================================================
 
