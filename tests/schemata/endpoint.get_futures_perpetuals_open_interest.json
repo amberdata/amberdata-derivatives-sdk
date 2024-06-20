@@ -10,14 +10,12 @@
           "items": {
             "type": "object",
             "properties": {
-              "exchange"               : { "type" : "string" },
-              "timestamp"              : { "type" : ["integer", "string"] },
-              "totalDailyVolume"       : { "type" : "number" },
-              "totalDailyVolumeMilUSD" : { "type" : "number" },
-              "totalDailyVolumeNative" : { "type" : "number" },
-              "underlying"             : { "type" : "string" }
+              "coin"      : { "type" : "number" },
+              "exchange"  : { "type" : "string" },
+              "timestamp" : { "type" : ["integer", "string"] },
+              "usd"       : { "type" : "number" }
             },
-            "required": ["exchange", "timestamp", "totalDailyVolume", "totalDailyVolumeMilUSD", "totalDailyVolumeNative", "underlying"],
+            "required": ["coin", "exchange", "timestamp", "usd"],
             "additionalProperties": false
           }
         },
