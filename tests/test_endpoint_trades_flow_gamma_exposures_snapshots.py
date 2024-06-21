@@ -72,6 +72,16 @@ class EndpointTradesFlowGammaExposuresSnapshotsTestCase(BaseTestCase):
         self.validate_response_data(response)
         self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER)
 
+    def test_invalid_timeinterval(self):
+        response = self.call_endpoint(exchange='deribit', currency='BTC', timeInterval='<time_interval>')
+        self.validate_response_data(response)
+        self.validate_response_400(response, 'Invalid time interval: <time_interval>.')
+
+    def test_invalid_timeinterval_minutes(self):
+        response = self.call_endpoint(exchange='deribit', currency='BTC', timeInterval='m')
+        self.validate_response_data(response)
+        self.validate_response_400(response, 'Invalid time interval: m.')
+
     def test_invalid_timestamp(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='<timestamp>')
         self.validate_response_data(response)
