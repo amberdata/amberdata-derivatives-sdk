@@ -1,0 +1,11 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}
