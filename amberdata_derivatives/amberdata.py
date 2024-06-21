@@ -296,7 +296,6 @@ class AmberdataDerivatives:
 
     # ==================================================================================================================
 
-    #
     def get_futures_perpetuals_apr_basis_constant_maturity(self, asset: str, interval: str, **kwargs):
         """
         This endpoint returns the quoted futures basis, for the various exchanges, interpolated to represent a constant
@@ -321,8 +320,7 @@ class AmberdataDerivatives:
             }
         )
 
-    #
-    def get_futures_perpetuals_basis_live_term_structure(self, asset: str, marginType: str, **kwargs):
+    def get_futures_perpetuals_apr_basis_live_term_structure(self, asset: str, marginType: str, **kwargs):
         """
         This endpoint returns the current quoted futures prices along with the differential to spot and the annualized
         APR of the spot differential.
@@ -342,8 +340,7 @@ class AmberdataDerivatives:
             }
         )
 
-    #
-    def get_futures_perpetuals_realized_funding_realized_cumulated(self, asset: str, marginType: str, **kwargs):
+    def get_futures_perpetuals_realized_funding_rates_cumulated(self, asset: str, marginType: str, **kwargs):
         """
         This endpoint returns the total asset open interest for both futures and perpetuals across all the exchanges.
 
@@ -366,7 +363,6 @@ class AmberdataDerivatives:
             }
         )
 
-    #
     def get_futures_perpetuals_open_interest(self, asset: str, **kwargs):
         """
         This endpoint returns the total asset open interest for both futures and perpetuals across all the exchanges.
