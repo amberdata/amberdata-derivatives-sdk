@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "contractVolume"      : { "type" : "number" },
+              "currency"            : { "type" : "string" },
+              "exchange"            : { "type" : "string" },
+              "expirationTimestamp" : { "type" : ["integer", "string"] },
+              "premiumVolume"       : { "type" : "number" },
+              "putCall"             : { "type" : "string" },
+              "strike"              : { "type" : "number" }
+            },
+            "required": ["contractVolume", "currency", "exchange", "expirationTimestamp", "premiumVolume", "putCall", "strike"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}

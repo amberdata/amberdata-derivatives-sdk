@@ -34,8 +34,8 @@ def extract_version(filename: str):
 
     if version_groups:
         return version_groups.group(1)
-    else:
-        raise RuntimeError(f"Unable to find version string in file '{filename}'.")
+
+    raise RuntimeError(f"Unable to find version string in file '{filename}'.")
 
 
 # ======================================================================================================================
@@ -43,7 +43,7 @@ def extract_version(filename: str):
 setup(
     name='amberdata-derivatives',
     version=extract_version('amberdata_derivatives/version.py'),
-    packages=find_packages(exclude=('tests')),
+    packages=find_packages(exclude='tests'),
     description='Python client for Amberdata API for derivatives analytics.',
     long_description=load_data('README.md'),
     long_description_content_type='text/markdown',

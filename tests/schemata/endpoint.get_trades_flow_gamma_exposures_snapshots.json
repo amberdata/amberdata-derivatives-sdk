@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "currency"             : { "type" : "string" },
+              "dealerNetInventory"   : { "type" : "number" },
+              "dealerTotalInventory" : { "type" : "number" },
+              "exchange"             : { "type" : "string" },
+              "expirationTimestamp"  : { "type" : ["integer", "string"] },
+              "gammaLevel"           : { "type" : "number" },
+              "indexPrice"           : { "type" : "number" },
+              "instrumentNormalized" : { "type" : "string" },
+              "putCall"              : { "type" : "string" },
+              "snapshotTimestamp"    : { "type" : ["integer", "string"] }
+            },
+            "required": ["currency", "dealerNetInventory", "dealerTotalInventory", "exchange", "expirationTimestamp", "gammaLevel", "indexPrice", "instrumentNormalized", "putCall", "snapshotTimestamp"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}
