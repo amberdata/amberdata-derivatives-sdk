@@ -16,27 +16,31 @@ class EndpointFuturesPerpetualsRealizedFundingRatesCumulatedTestCase(BaseTestCas
 
     # ==================================================================================================================
 
-    def test_default_coins(self):
+    def test_default_margintype_coins(self):
         response = self.call_endpoint(asset='BTC', marginType='coins')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=200)
+        self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True, is_minutely=True)
 
-    def test_default_stables(self):
+    def test_default_margintype_stables(self):
         response = self.call_endpoint(asset='BTC', marginType='coins')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=200)
+        self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True, is_minutely=True)
 
-    def test_historical_coins(self):
+    def test_historical_margintype_coins(self):
         response = self.call_endpoint(asset='BTC', marginType='coins', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=2697)
+        self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True, is_minutely=True)
 
-    def test_historical_stables(self):
+    def test_historical_margintype_stables(self):
         response = self.call_endpoint(asset='BTC', marginType='stables', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=2232)
+        self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True, is_minutely=True)
 
     def test_historical_timeformat_default(self):
         response = self.call_endpoint(asset='BTC', marginType='coins', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00')
