@@ -340,6 +340,27 @@ class AmberdataDerivatives:
             }
         )
 
+    def get_futures_perpetuals_open_interest(self, asset: str, **kwargs):
+        """
+        This endpoint returns the total asset open interest for both futures and perpetuals across all the exchanges.
+
+        The open interest is returned in raw coin amounts and millions of dollars.
+
+        QUERY PARAMS:
+        - asset            (string)    [Required] [Examples] BTC | ETH
+        - startDate        (string)    [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - endDate          (string)    [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - timeFormat       (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/futures-perpetuals/open-interest-total',
+            {
+                'asset': asset,
+                **kwargs
+            }
+        )
+
     def get_futures_perpetuals_realized_funding_rates_cumulated(self, asset: str, marginType: str, **kwargs):
         """
         This endpoint returns the total asset open interest for both futures and perpetuals across all the exchanges.
@@ -359,27 +380,6 @@ class AmberdataDerivatives:
             {
                 'asset': asset,
                 'marginType': marginType,
-                **kwargs
-            }
-        )
-
-    def get_futures_perpetuals_open_interest(self, asset: str, **kwargs):
-        """
-        This endpoint returns the total asset open interest for both futures and perpetuals across all the exchanges.
-
-        The open interest is returned in raw coin amounts and millions of dollars.
-
-        QUERY PARAMS:
-        - asset            (string)    [Required] [Examples] BTC | ETH
-        - startDate        (string)    [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
-        - endDate          (string)    [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
-        - timeFormat       (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
-        """
-
-        return self.__make_request(
-            'markets/derivatives/analytics/futures-perpetuals/open-interest-total',
-            {
-                'asset': asset,
                 **kwargs
             }
         )
