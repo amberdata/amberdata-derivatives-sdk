@@ -10,8 +10,8 @@ from tests.error_message import ErrorMessage
 
 # ======================================================================================================================
 
-class EndpointFuturesPerpetualsAPRBasisLiveTermStructureTestCase(BaseTestCase):
-    def setUp(self, function_name='get_futures_perpetuals_apr_basis_live_term_structure'):
+class EndpointFuturesPerpetualsAPRBasisLiveTermStructuresTestCase(BaseTestCase):
+    def setUp(self, function_name='get_futures_perpetuals_apr_basis_live_term_structures'):
         super().setUp(function_name)
 
     # ==================================================================================================================

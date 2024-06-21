@@ -296,7 +296,7 @@ class AmberdataDerivatives:
 
     # ==================================================================================================================
 
-    def get_futures_perpetuals_apr_basis_constant_maturity(self, asset: str, interval: str, **kwargs):
+    def get_futures_perpetuals_apr_basis_constant_maturities(self, asset: str, interval: str, **kwargs):
         """
         This endpoint returns the quoted futures basis, for the various exchanges, interpolated to represent a constant
         DTE (days to expiration).
@@ -312,7 +312,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/futures-perpetuals/apr-basis',
+            'markets/derivatives/analytics/futures-perpetuals/apr-basis/constant-maturities',
             {
                 'asset': asset,
                 'interval': interval,
@@ -320,7 +320,7 @@ class AmberdataDerivatives:
             }
         )
 
-    def get_futures_perpetuals_apr_basis_live_term_structure(self, asset: str, marginType: str, **kwargs):
+    def get_futures_perpetuals_apr_basis_live_term_structures(self, asset: str, marginType: str, **kwargs):
         """
         This endpoint returns the current quoted futures prices along with the differential to spot and the annualized
         APR of the spot differential.
@@ -332,7 +332,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/futures-perpetuals/apr-live',
+            'markets/derivatives/analytics/futures-perpetuals/apr-basis/live-term-structures',
             {
                 'asset': asset,
                 'marginType': marginType,
@@ -439,6 +439,8 @@ class AmberdataDerivatives:
         )
 
     # ==================================================================================================================
+
+    # /derivatives/analytics/realized-volatility/annual-performance
 
     def get_realized_volatility_cones(self, exchange: str, pair: str, **kwargs):
         """
@@ -549,6 +551,8 @@ class AmberdataDerivatives:
             }
         )
 
+    # /derivatives/analytics/realized-volatility/performance-comparison
+
     def get_realized_volatility_seasonality_day_of_week(self, exchange: str, pair: str, **kwargs):
         """
         This endpoint returns the average realized volatility, for a select date range, grouped by the day-of-the-week.
@@ -596,6 +600,7 @@ class AmberdataDerivatives:
 
     # ==================================================================================================================
 
+    #
     def get_trades_flow_block_volumes(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the total block traded options volume for a selected exchange and a selected underlying
@@ -651,6 +656,7 @@ class AmberdataDerivatives:
             }
         )
 
+    #
     def get_trades_flow_gamma_exposures_normalized_usd(self, exchange: str, currency: str, **kwargs):
         """
         This chart depicts the overall impact of "gamma exposure" (GEX) in terms of notional in the underlying for
@@ -671,6 +677,7 @@ class AmberdataDerivatives:
             }
         )
 
+    #
     def get_trades_flow_gamma_exposures_snapshots(self, exchange: str, currency: str, **kwargs):
         """
         GEX aims to calculate the gamma exposure of Market Markers (MMs) and the resulting number of underlying
@@ -758,6 +765,7 @@ class AmberdataDerivatives:
             }
         )
 
+    #
     def get_trades_flow_put_call_trade_distribution(self, exchange: str, currency: str, **kwargs):
         """
         Using proprietary algorithm (Amberdata direction) that assess real initiator of a trade, we sum by the amounts
