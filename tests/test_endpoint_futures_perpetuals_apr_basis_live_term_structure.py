@@ -53,16 +53,16 @@ class EndpointFuturesPerpetualsAPRBasisLiveTermStructureTestCase(BaseTestCase):
         self.validate_response_data(response)
         self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER)
 
+    def test_invalid_margintype(self):
+        response = self.call_endpoint(asset='BTC', marginType='<margin_type>')
+        self.validate_response_data(response)
+        self.validate_response_400(response, message=ErrorMessage.INVALID_PARAMETER_MARGIN_TYPE)
+
     # TODO: this endpoint should return 404 instead
     def test_unknown_asset(self):
         response = self.call_endpoint(asset='<asset>', marginType='coins')
         self.validate_response_data(response)
         self.validate_response_200(response, num_elements=0)
-
-    def test_unknown_margintype(self):
-        response = self.call_endpoint(asset='BTC', marginType='<margin_type>')
-        self.validate_response_data(response)
-        self.validate_response_400(response, message=ErrorMessage.INVALID_PARAMETER_MARGIN_TYPE)
 
 
 # ======================================================================================================================
