@@ -19,7 +19,7 @@ dotenv.load_dotenv()
 
 # ======================================================================================================================
 
-# pylint: disable=too-many-public-methods
+# pylint: disable=too-many-lines, too-many-public-methods
 class AmberdataDerivatives:
     """
     Main class to handle Amberdata's API calls.
@@ -320,6 +320,7 @@ class AmberdataDerivatives:
             }
         )
 
+    # pylint: disable=invalid-name # Disable warning about `marginType` because this is the name as expected in the API
     def get_futures_perpetuals_apr_basis_live_term_structures(self, asset: str, marginType: str, **kwargs):
         """
         This endpoint returns the current quoted futures prices along with the differential to spot and the annualized
@@ -361,6 +362,7 @@ class AmberdataDerivatives:
             }
         )
 
+    # pylint: disable=invalid-name # Disable warning about `marginType` because this is the name as expected in the API
     def get_futures_perpetuals_realized_funding_rates_cumulated(self, asset: str, marginType: str, **kwargs):
         """
         This endpoint returns the total asset open interest for both futures and perpetuals across all the exchanges.
@@ -600,7 +602,6 @@ class AmberdataDerivatives:
 
     # ==================================================================================================================
 
-    #
     def get_trades_flow_block_volumes(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the total block traded options volume for a selected exchange and a selected underlying
@@ -656,7 +657,6 @@ class AmberdataDerivatives:
             }
         )
 
-    #
     def get_trades_flow_gamma_exposures_normalized_usd(self, exchange: str, currency: str, **kwargs):
         """
         This chart depicts the overall impact of "gamma exposure" (GEX) in terms of notional in the underlying for
@@ -677,7 +677,6 @@ class AmberdataDerivatives:
             }
         )
 
-    #
     def get_trades_flow_gamma_exposures_snapshots(self, exchange: str, currency: str, **kwargs):
         """
         GEX aims to calculate the gamma exposure of Market Markers (MMs) and the resulting number of underlying
@@ -765,8 +764,7 @@ class AmberdataDerivatives:
             }
         )
 
-    #
-    def get_trades_flow_put_call_trade_distribution(self, exchange: str, currency: str, **kwargs):
+    def get_trades_flow_put_call_distribution(self, exchange: str, currency: str, **kwargs):
         """
         Using proprietary algorithm (Amberdata direction) that assess real initiator of a trade, we sum by the amounts
         of contracts and premium of the last 24 hours (default) according to put/call/bought/sold metrics.
@@ -783,7 +781,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/trades-flow/gamma-exposures/put-call-distribution',
+            'markets/derivatives/analytics/trades-flow/put-call-distribution',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -1065,7 +1063,7 @@ class AmberdataDerivatives:
                 **kwargs
             }
         )
-    
+
     # ==================================================================================================================
 
     def __make_request(self, url_path: str, query_params: dict):
