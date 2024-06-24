@@ -312,7 +312,7 @@ class AmberdataDerivatives:
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/futures-perpetuals/apr-basis/constant-maturities',
+            'markets/derivatives/analytics/futures-perpetuals/apr-basis',
             {
                 'asset': asset,
                 'interval': interval,
