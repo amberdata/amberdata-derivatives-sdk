@@ -10,6 +10,8 @@
           "items": {
             "type": "object",
             "properties": {
+              "atm"                   : { "type" : "number" },
+              "atmChange"             : { "type" : "number" },
               "butterfly15"           : { "type" : "number" },
               "butterfly15Change"     : { "type" : "number" },
               "butterfly25"           : { "type" : "number" },
@@ -25,7 +27,7 @@
               "underlyingPrice"       : { "type" : "number" },
               "underlyingPriceChange" : { "type" : "number" }
             },
-            "required": ["butterfly15", "butterfly15Change", "butterfly25", "butterfly25Change", "currency", "daysToExpiration", "exchange", "expirationTimestamp", "riskReversal15", "riskReversal15Change", "riskReversal25", "riskReversal25Change", "underlyingPrice", "underlyingPriceChange"],
+            "required": ["atm", "atmChange" ,"butterfly15", "butterfly15Change", "butterfly25", "butterfly25Change", "currency", "daysToExpiration", "exchange", "expirationTimestamp", "riskReversal15", "riskReversal15Change", "riskReversal25", "riskReversal25Change", "underlyingPrice", "underlyingPriceChange"],
             "additionalProperties": false
           }
         },
