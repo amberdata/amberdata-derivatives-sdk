@@ -11,15 +11,15 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointRealizedVolatilityImpliedVsRealizedTestCase(BaseTestCase):
-    def setUp(self, function_name='get_realized_volatility_implied_vs_realized'):
-        super().setUp(function_name)
+    def setUp(self, function_name: str = None, time_format: str = None, ignore_fields: list = None):
+        super().setUp(function_name='get_realized_volatility_implied_vs_realized')
 
     # ==================================================================================================================
 
     def test_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=744)
+        self.validate_response_200(response, num_elements=8760)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)

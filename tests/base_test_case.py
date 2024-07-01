@@ -12,7 +12,9 @@ import os
 import pathlib
 import unittest
 
+import copy
 import dotenv
+import jsonpath_ng as jp
 import jsonschema
 
 from amberdata_derivatives import AmberdataDerivatives
@@ -27,13 +29,14 @@ class BaseTestCase(unittest.TestCase):
     Class to handle all the uni tests common functionalities and helper functions.
     """
 
-    def setUp(self, function_name: str = None, time_format: str = None):
+    def setUp(self, function_name: str = None, time_format: str = None, ignore_fields: list = None):
         self.record_api_calls = os.getenv('RECORD_API_CALLS', 'false') == 'true'
         self.amberdata_client = AmberdataDerivatives(api_key=os.getenv('API_KEY'), time_format=time_format)
         self.function_name = function_name
         self.fixtures_directory = 'tests/fixtures'
         self.schemata_directory = 'tests/schemata'
         self.schema = self.__load_schema()
+        self.ignore_fields = ignore_fields
 
         pathlib.Path(self.fixtures_directory).mkdir(parents=True, exist_ok=True)
         pathlib.Path(self.schemata_directory).mkdir(parents=True, exist_ok=True)
@@ -59,12 +62,21 @@ class BaseTestCase(unittest.TestCase):
         """
         self.__record_response_data(response)
 
+        # Load fixture
         file = self.__ensure_fixture_file(self.fixtures_directory, inspect.stack()[1].function, file)
-
         with open(file, 'r', encoding='utf-8') as f:
             expected = json.load(f)
 
-        self.assertEqual(expected, response)
+        # Remove fields to ignore if any
+        actual = copy.deepcopy(response)
+        if self.ignore_fields is not None:
+            for field in self.ignore_fields:
+                query = jp.parse(field)
+                query.filter(lambda d: True, expected)
+                query.filter(lambda d: True, actual)
+
+        # Check data
+        self.assertEqual(expected, actual)
 
     def validate_response_schema(self, response, file=None, schema=None):
         """

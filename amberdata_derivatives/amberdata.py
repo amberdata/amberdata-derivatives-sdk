@@ -516,8 +516,7 @@ class AmberdataDerivatives:
 
         QUERY PARAMS:
         - exchange          (string)    [Required] [Examples] deribit
-        - currency          (string)    [Required] [Examples] BTC | SOL_USDC
-        - daysToExpiration  (int32)     [Optional] [Examples] 1 | 2 | 3 | 7* | 14 | 21 | 30 | 60 | 90 | 180
+        - currency          (string)    [Required] [Examples] BTC | SOL_USDC 
         - startDate         (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate           (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat        (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
