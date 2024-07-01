@@ -11,8 +11,8 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointRealizedVolatilityImpliedVsRealizedTestCase(BaseTestCase):
-    def setUp(self, function_name='get_realized_volatility_implied_vs_realized'):
-        super().setUp(function_name)
+    def setUp(self, function_name: str = None, time_format: str = None, ignore_fields: list = None):
+        super().setUp(function_name='get_realized_volatility_implied_vs_realized')
 
     # ==================================================================================================================
 
