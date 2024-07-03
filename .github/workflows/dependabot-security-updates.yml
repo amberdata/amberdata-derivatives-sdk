@@ -3,6 +3,7 @@ on:
   pull_request:
     branches:
     - main
+    - master
 jobs:
   notify:
     if: startsWith(github.head_ref, 'dependabot/')
