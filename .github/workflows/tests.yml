@@ -2,14 +2,16 @@ name: Derivatives SDK Tests
 env:
     REPOSITORY: ${{ github.event.repository.name }}
 on:
+    pull_request:
+        branches:
+        - main
+        - master
     workflow_dispatch:
         inputs:
             environment:
                 type: choice
                 options:
                 - "/production/001"
-    schedule:
-    - cron: "*/30 * * * *"
 
 jobs:
   test:
