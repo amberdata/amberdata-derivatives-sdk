@@ -5,21 +5,15 @@ on:
         branches:
         - main
         - master
-    workflow_dispatch:
-        inputs:
-            environment:
-                type: choice
-                options:
-                - "/production/001"
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: [ "self-hosted", "linux", "x64", "ubuntu-2204" ]
 
     steps:
     - name: Checkout Repository
       uses: amberdata/cicd@checkout_v4.1.6
-
+      
     - name: Set up Python
       uses: amberdata/cicd@setup-python_v4.7.0
 
