@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: [ "self-hosted", "linux", "x64", "ubuntu-2204" ]
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Repository
