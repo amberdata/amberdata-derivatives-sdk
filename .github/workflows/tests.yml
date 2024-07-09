@@ -18,10 +18,10 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v3
+      uses: amberdata/actions-checkout@v3
 
     - name: Set up Python
-      uses: actions/setup-python@v3
+      uses: amberdata/actions-setup-python@v3
       with:
           python-version: 3.10
 
