@@ -1,0 +1,104 @@
+name: Derivatives SDK Tests
+env:
+    REPOSITORY: ${{ github.event.repository.name }}
+on:
+    workflow_dispatch:
+        inputs:
+            environment:
+                type: choice
+                options:
+                - "/production/001"
+    schedule:
+    - cron: "*/30 * * * *"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run unit tests
+      run: |
+        python3 -m unittest -v tests/*.py
+
+    - name: Set Slack Webhook
+      id: set-slack-webhook
+      if: failure()
+      run: |
+        SLACK_WEBHOOK=$(aws ssm get-parameter --name "${{ steps.set-env.outputs.ENVIRONMENT }}/${{ github.event.repository.name }}/env/SDK_SLACK_WEBHOOK" --with-decryption --query 'Parameter.Value' --output text)
+        GHA_WORKFLOW_URL="${{ github.event.repository.html_url }}/actions/runs/${{ github.run_id }}"
+        echo "SLACK_WEBHOOK=${SLACK_WEBHOOK}" >> "$GITHUB_OUTPUT"
+        echo "GHA_WORKFLOW_URL=${GHA_WORKFLOW_URL}" >> "$GITHUB_OUTPUT"
+
+    - name: Send Slack Notification
+      id: slack
+      uses: amberdata/slackapi-slack-github-action@v1.24.0
+      if: failure()
+      env:
+        SLACK_WEBHOOK_URL: ${{ steps.set-slack-webhook.outputs.SLACK_WEBHOOK }}
+        SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+      with:
+        payload: |
+            {
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "Python Tests completed *${{ env.TOTAL }}* successfully! :tada:"
+                  },
+                  "accessory": {
+                    "type": "button",
+                    "text": {
+                      "type": "plain_text",
+                      "text": "Test Results",
+                      "emoji": true
+                    },
+                    "value": "results",
+                    "url": "${{ steps.set-slack-webhook.outputs.GHA_WORKFLOW_URL }}",
+                    "action_id": "button-action"
+                  }
+                },
+                {
+                  "type": "section",
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Env:* ${{ steps.set-env.outputs.ENVIRONMENT }}"
+                    }
+                  ]
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "type": "context",
+                  "elements": [
+                    {
+                      "type": "mrkdwn",
+                      "text": ":white_check_mark: *Passed:* "
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": ":red_circle: *Failed:* "
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": ":large_yellow_circle: *Skipped:* "
+                    }
+                  ]
+                }
+              ]
+            }
+
