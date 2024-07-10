@@ -10,15 +10,20 @@
           "items": {
             "type": "object",
             "properties": {
-              "atm"                  : { "type" : "number" },
+              "atm180"               : { "type" : "number" },
+              "atm30"                : { "type" : "number" },
+              "atm60"                : { "type" : "number" },
+              "atm7"                 : { "type" : "number" },
+              "atm90"                : { "type" : "number" },
               "currency"             : { "type" : "string" },
               "exchange"             : { "type" : "string" },
               "indexPrice"           : { "type" : "number" },
+              "lnReturn"             : { "type" : "number" },
               "realizedVolatility30" : { "type" : "number" },
               "realizedVolatility7"  : { "type" : "number" },
               "timestamp"            : { "type" : ["integer", "string"] }
             },
-            "required": ["atm", "currency", "exchange", "indexPrice", "realizedVolatility30", "realizedVolatility7", "timestamp"],
+            "required": ["atm180", "atm30", "atm60", "atm7", "atm90", "currency", "exchange", "indexPrice", "realizedVolatility30", "realizedVolatility7", "timestamp"],
             "additionalProperties": false
           }
         },

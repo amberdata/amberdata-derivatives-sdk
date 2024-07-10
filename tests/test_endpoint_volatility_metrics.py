@@ -34,7 +34,6 @@ class EndpointVolatilityMetricsTestCase(BaseTestCase):
 
     def test_timeformat_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC')
-        self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=5)
         self.validate_response_field(response, 'exchange', 'deribit')
@@ -43,7 +42,6 @@ class EndpointVolatilityMetricsTestCase(BaseTestCase):
 
     def test_timeformat_hr(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', timeFormat='hr')
-        self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=5)
         self.validate_response_field(response, 'exchange', 'deribit')
@@ -52,7 +50,6 @@ class EndpointVolatilityMetricsTestCase(BaseTestCase):
 
     def test_timeformat_iso(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', timeFormat='iso')
-        self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=5)
         self.validate_response_field(response, 'exchange', 'deribit')

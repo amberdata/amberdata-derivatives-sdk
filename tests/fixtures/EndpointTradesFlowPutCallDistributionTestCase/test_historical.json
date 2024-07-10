@@ -3,16 +3,16 @@
   "payload": {
     "data": [
       {
-        "callsContractsBought": 57.00000000000001,
-        "callsContractsBoughtExchangeDirection": 33.8,
-        "callsContractsSold": 13.499999999999998,
-        "callsContractsSoldExchangeDirection": 36.699999999999996,
+        "callsContractsBought": 57,
+        "callsContractsBoughtExchangeDirection": 33.800000000000004,
+        "callsContractsSold": 13.5,
+        "callsContractsSoldExchangeDirection": 36.7,
         "callsPremiumBought": 160666.22483173,
         "callsPremiumBoughtExchangeDirection": 47089.3167083,
         "callsPremiumSold": 37508.948414995,
         "callsPremiumSoldExchangeDirection": 151085.85653842503,
         "putContractsBought": 33.3,
-        "putContractsBoughtExchangeDirection": 41.79999999999999,
+        "putContractsBoughtExchangeDirection": 41.8,
         "putContractsSold": 32.19999999999999,
         "putContractsSoldExchangeDirection": 23.7,
         "putPremiumBought": 22503.366990815,
