@@ -28,7 +28,8 @@ jobs:
     - name: Run unit tests
       run: python3 -m unittest -v tests/*.py
 
-    - if: failure()
+    - name: Notify Opsgenie on failure
+      if: failure()
       uses: cdqag/opsgenie-create-alert@v1
       with:
         apiKey: ${{ secrets.OPSGENIE_API_KEY }}
