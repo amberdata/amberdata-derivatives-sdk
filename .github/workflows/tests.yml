@@ -1,8 +1,13 @@
 name: Derivatives SDK Tests
 
+# on:
+#     schedule:
+#       - cron: "*/30 * * * *"
 on:
-    schedule:
-      - cron: "*/30 * * * *"
+    pull_request:
+        branches:
+        - main
+        - master
 
 jobs:
   test:
