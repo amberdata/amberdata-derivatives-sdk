@@ -35,7 +35,13 @@ jobs:
 
     - name: Notify Opsgenie on failure
       if: failure()
-      uses: cdqag/opsgenie-create-alert@v1
-      with:
-        apiKey: ${{ secrets.OPSGENIE_API_KEY }}
-        message: "Derivatives SDK unit tests failed, see run #${{ github.run_number }} for details."
+      run: |
+        curl -X POST -H "Content-Type: application/json" \
+        -H "Authorization: GenieKey ${{ secrets.OPSGENIE_API_KEY }}" \
+        -d '{
+            "message": "Unit tests failed for the repository ${GITHUB_REPOSITORY} on branch ${GITHUB_REF}",
+            "alias": "unit-test-failure",
+            "description": "Unit tests failed for the repository ${GITHUB_REPOSITORY} on branch ${GITHUB_REF}. Please check the details.",
+            "priority": "P3"
+        }' \
+        https://api.opsgenie.com/v2/alerts
