@@ -1,10 +1,8 @@
 name: Derivatives SDK Tests
 
 on:
-    pull_request:
-        branches:
-        - main
-        - master
+    schedule:
+      - cron: "*/30 * * * *"
 
 jobs:
   test:
@@ -27,6 +25,13 @@ jobs:
 
     - name: Run unit tests
       run: python3 -m unittest -v tests/*.py
+
+    - name: Notify Slack on failure
+      if: failure()
+      run: |
+        curl -X POST -H 'Content-type: application/json' \
+        --data "{\"text\":\"Unit tests failed for ${GITHUB_REPOSITORY}. Please check the details.\", \"username\": \"CI Bot\", \"icon_emoji\": \":robot_face:\"}" \
+        ${{ secrets.SDK_SLACK_WEBHOOK }}
 
     - name: Notify Opsgenie on failure
       if: failure()
