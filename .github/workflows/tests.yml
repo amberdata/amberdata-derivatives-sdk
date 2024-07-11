@@ -28,9 +28,17 @@ jobs:
     - name: Run unit tests
       run: python3 -m unittest -v tests/*.py
 
-    - name: Notify Slack on failure
+
+    - name: Notify Opsgenie on failure
       if: failure()
       run: |
-        curl -X POST -H 'Content-type: application/json' \
-        --data "{\"text\":\"Unit tests failed for ${GITHUB_REPOSITORY}. Please check the details.\", \"username\": \"CI Bot\", \"icon_emoji\": \":robot_face:\"}" \
-        ${{ secrets.SDK_SLACK_WEBHOOK }}
+        curl -X POST -H "Content-Type: application/json" \
+        -H "Authorization: GenieKey ${{
+        secrets.OPSGENIE_API_KEY }}" \
+        -d '{
+            "message": "Unit tests failed for the repository ${GITHUB_REPOSITORY} on branch ${GITHUB_REF}",
+            "alias": "unit-test-failure",
+            "description": "Unit tests failed for the repository ${GITHUB_REPOSITORY} on branch ${GITHUB_REF}. Please check the details.",
+            "priority": "P3"
+        }' \
+        https://api.opsgenie.com/v2/alerts
