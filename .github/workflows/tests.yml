@@ -14,27 +14,22 @@ jobs:
       API_KEY: ${{ secrets.API_KEY }}
 
     steps:
-    # - name: Checkout Repository
-    #   uses: actions/checkout@v3
+    - name: Checkout Repository
+      uses: actions/checkout@v3
       
-    # - name: Set up Python
-    #   uses: actions/setup-python@v3
+    - name: Set up Python
+      uses: actions/setup-python@v3
 
-    # - name: Install dependencies
-    #   run: |
-    #     python -m pip install --upgrade pip
-    #     pip install deprecation python-dotenv requests jsonschema
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install deprecation python-dotenv requests jsonschema
 
-    # - name: Run unit tests
-    #   run: python3 -m unittest -v tests/*.py
+    - name: Run unit tests
+      run: python3 -m unittest -v tests/*.py
 
-
-        - run: |
-            echo "Oh no!"
-            exit 1
-  
-        - if: failure()
-          uses: cdqag/opsgenie-create-alert@v1
-          with:
-            apiKey: ${{ secrets.OPSGENIE_API_KEY }}
-            message: "Derivatives SDK unit tests failed, see run #${{ github.run_number }} for details."
+    - if: failure()
+      uses: cdqag/opsgenie-create-alert@v1
+      with:
+        apiKey: ${{ secrets.OPSGENIE_API_KEY }}
+        message: "Derivatives SDK unit tests failed, see run #${{ github.run_number }} for details."
