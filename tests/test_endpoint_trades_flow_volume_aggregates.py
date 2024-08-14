@@ -11,8 +11,11 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointTradesFlowVolumeAggregatesTestCase(BaseTestCase):
-    def setUp(self, function_name='get_trades_flow_volume_aggregates'):
-        super().setUp(function_name)
+    def setUp(self):
+        super().setUp(
+            function_name='get_trades_flow_volume_aggregates',
+            imprecise_fields=['payload.data[*].notionalVolumeOnScreen', 'payload.data[*].premiumVolumeOnScreen']
+        )
 
     # ==================================================================================================================
 

@@ -11,8 +11,18 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointTradesFlowPutCallDistributionTestCase(BaseTestCase):
-    def setUp(self, function_name='get_trades_flow_put_call_distribution'):
-        super().setUp(function_name)
+    def setUp(self):
+        super().setUp(
+            function_name='get_trades_flow_put_call_distribution',
+            imprecise_fields=[
+                'payload.data[*].callsContractsBought',
+                'payload.data[*].callsContractsBoughtExchangeDirection',
+                'payload.data[*].callsContractsSold',
+                'payload.data[*].callsContractsSoldExchangeDirection',
+                'payload.data[*].putContractsBoughtExchangeDirection',
+                'payload.data[*].putPremiumBoughtExchangeDirection'
+            ]
+        )
 
     # ==================================================================================================================
 

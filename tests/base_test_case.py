@@ -29,7 +29,14 @@ class BaseTestCase(unittest.TestCase):
     Class to handle all the uni tests common functionalities and helper functions.
     """
 
-    def setUp(self, function_name: str = None, time_format: str = None, ignore_fields: list = None):
+    def setUp(
+            self,
+            function_name: str = None,
+            time_format: str = None,
+            ignore_fields: list = None,
+            imprecise_fields: list = None,
+            precision_error: int = 0.000001
+    ):
         self.record_api_calls = os.getenv('RECORD_API_CALLS', 'false') == 'true'
         self.amberdata_client = AmberdataDerivatives(api_key=os.getenv('API_KEY'), time_format=time_format)
         self.function_name = function_name
@@ -37,6 +44,8 @@ class BaseTestCase(unittest.TestCase):
         self.schemata_directory = 'tests/schemata'
         self.schema = self.__load_schema()
         self.ignore_fields = ignore_fields
+        self.imprecise_fields = imprecise_fields
+        self.precision_error = precision_error
 
         pathlib.Path(self.fixtures_directory).mkdir(parents=True, exist_ok=True)
         pathlib.Path(self.schemata_directory).mkdir(parents=True, exist_ok=True)
@@ -72,6 +81,23 @@ class BaseTestCase(unittest.TestCase):
         if self.ignore_fields is not None:
             for field in self.ignore_fields:
                 query = jp.parse(field)
+                query.filter(lambda d: True, expected)
+                query.filter(lambda d: True, actual)
+
+        # Validate & remove imprecise fields if any
+        if self.imprecise_fields is not None:
+            for field in self.imprecise_fields:
+                query = jp.parse(field)
+
+                # Extract & validate field values
+                expected_values = [match.value for match in query.find(expected)]
+                actual_values = [match.value for match in query.find(actual)]
+
+                self.assertEqual(len(expected_values), len(actual_values))
+                for index, expected_value in enumerate(expected_values):
+                    self.assertLessEqual(abs(expected_value - actual_values[index]), self.precision_error)
+
+                # Remove imprecise fields
                 query.filter(lambda d: True, expected)
                 query.filter(lambda d: True, actual)
 
