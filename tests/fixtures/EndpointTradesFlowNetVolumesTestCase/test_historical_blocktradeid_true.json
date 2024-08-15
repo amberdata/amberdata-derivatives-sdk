@@ -3,309 +3,1668 @@
   "payload": {
     "data": [
       {
-        "cumulativeTradeAmount": 200,
-        "cumulativeTradeDelta": -15,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10069,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69863.80866666666,
         "strike": 45000,
         "timestamp": 1712012400000
       },
       {
-        "cumulativeTradeAmount": -200,
-        "cumulativeTradeDelta": -38,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -25255,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 58000,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69863.80866666666,
         "strike": 65000,
         "timestamp": 1712012400000
       },
       {
-        "cumulativeTradeAmount": -175,
-        "cumulativeTradeDelta": -107,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -23843,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 66000,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 67000,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 67500,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 68000,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 69000,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 69500,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69863.80866666666,
         "strike": 70000,
         "timestamp": 1712012400000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 8,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10312,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 71000,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 71500,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 72000,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 72500,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 73000,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 74000,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 69863.80866666666,
         "strike": 75000,
         "timestamp": 1712012400000
       },
       {
-        "cumulativeTradeAmount": 200,
-        "cumulativeTradeDelta": -15,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10069,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 76000,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 78000,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 80000,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 84000,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69863.80866666666,
+        "strike": 86000,
+        "timestamp": 1712012400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69741.5425,
         "strike": 45000,
         "timestamp": 1712008800000
       },
       {
-        "cumulativeTradeAmount": -200,
-        "cumulativeTradeDelta": -38,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -25255,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 58000,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69741.5425,
         "strike": 65000,
         "timestamp": 1712008800000
       },
       {
-        "cumulativeTradeAmount": -175,
-        "cumulativeTradeDelta": -107,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -23843,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 66000,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 67000,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 67500,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 68000,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 69000,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 69500,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69741.5425,
         "strike": 70000,
         "timestamp": 1712008800000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 8,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10312,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 71000,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 71500,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 72000,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 72500,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 73000,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 74000,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 69741.5425,
         "strike": 75000,
         "timestamp": 1712008800000
       },
       {
-        "cumulativeTradeAmount": 200,
-        "cumulativeTradeDelta": -15,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10069,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 76000,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 78000,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 80000,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 84000,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69741.5425,
+        "strike": 86000,
+        "timestamp": 1712008800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69732.18233333333,
         "strike": 45000,
         "timestamp": 1712005200000
       },
       {
-        "cumulativeTradeAmount": -200,
-        "cumulativeTradeDelta": -38,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -25255,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 58000,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69732.18233333333,
         "strike": 65000,
         "timestamp": 1712005200000
       },
       {
-        "cumulativeTradeAmount": -175,
-        "cumulativeTradeDelta": -107,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -23843,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 66000,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 67000,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 67500,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 68000,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 69000,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 69500,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69732.18233333333,
         "strike": 70000,
         "timestamp": 1712005200000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 8,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10312,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 71000,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 71500,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 72000,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 72500,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 73000,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 74000,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 69732.18233333333,
         "strike": 75000,
         "timestamp": 1712005200000
       },
       {
-        "cumulativeTradeAmount": 200,
-        "cumulativeTradeDelta": -15,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10069,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 76000,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 78000,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 80000,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 84000,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69732.18233333333,
+        "strike": 86000,
+        "timestamp": 1712005200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69603.608,
         "strike": 45000,
         "timestamp": 1712001600000
       },
       {
-        "cumulativeTradeAmount": -200,
-        "cumulativeTradeDelta": -38,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -25255,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 58000,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69603.608,
         "strike": 65000,
         "timestamp": 1712001600000
       },
       {
-        "cumulativeTradeAmount": -175,
-        "cumulativeTradeDelta": -107,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -23843,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 66000,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 67000,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 67500,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 68000,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 69000,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 69500,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69603.608,
         "strike": 70000,
         "timestamp": 1712001600000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 8,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10312,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 71000,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 71500,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 72000,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 72500,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 73000,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 74000,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 69603.608,
         "strike": 75000,
         "timestamp": 1712001600000
       },
       {
-        "cumulativeTradeAmount": 200,
-        "cumulativeTradeDelta": -15,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10069,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 76000,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 78000,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 80000,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 84000,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69603.608,
+        "strike": 86000,
+        "timestamp": 1712001600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69364.46766666666,
         "strike": 45000,
         "timestamp": 1711998000000
       },
       {
-        "cumulativeTradeAmount": -200,
-        "cumulativeTradeDelta": -38,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -25255,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 58000,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69364.46766666666,
         "strike": 65000,
         "timestamp": 1711998000000
       },
       {
-        "cumulativeTradeAmount": -175,
-        "cumulativeTradeDelta": -107,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -23843,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 66000,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 67000,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 67500,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 68000,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 69000,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 69500,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69364.46766666666,
         "strike": 70000,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 71000,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 71500,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 72000,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 72500,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 73000,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 74000,
         "timestamp": 1711998000000
       },
       {
         "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 8,
-        "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10312,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 69364.46766666666,
         "strike": 75000,
         "timestamp": 1711998000000
       },
       {
-        "cumulativeTradeAmount": 200,
-        "cumulativeTradeDelta": -15,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10069,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 76000,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 78000,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 80000,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 84000,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69364.46766666666,
+        "strike": 86000,
+        "timestamp": 1711998000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 68769.05866666666,
         "strike": 45000,
         "timestamp": 1711994400000
       },
       {
-        "cumulativeTradeAmount": -200,
-        "cumulativeTradeDelta": -38,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -25255,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 58000,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 68769.05866666666,
         "strike": 65000,
         "timestamp": 1711994400000
       },
       {
-        "cumulativeTradeAmount": -175,
-        "cumulativeTradeDelta": -107,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -23843,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 66000,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 67000,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 67500,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 68000,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 69000,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 69500,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 68769.05866666666,
         "strike": 70000,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 71000,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 71500,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 72000,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 72500,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 73000,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 74000,
         "timestamp": 1711994400000
       },
       {
         "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 8,
-        "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10312,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 68769.05866666666,
         "strike": 75000,
         "timestamp": 1711994400000
       },
       {
-        "cumulativeTradeAmount": 200,
-        "cumulativeTradeDelta": -15,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10069,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 76000,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 78000,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 80000,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 84000,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68769.05866666666,
+        "strike": 86000,
+        "timestamp": 1711994400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 68433.11099999999,
         "strike": 45000,
         "timestamp": 1711990800000
       },
       {
-        "cumulativeTradeAmount": -200,
-        "cumulativeTradeDelta": -38,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -25255,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 58000,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 68433.11099999999,
         "strike": 65000,
         "timestamp": 1711990800000
       },
       {
-        "cumulativeTradeAmount": -175,
-        "cumulativeTradeDelta": -107,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -23843,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 66000,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 67000,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 67500,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 68000,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 69000,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 69500,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 68433.11099999999,
         "strike": 70000,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 71000,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 71500,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 72000,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 72500,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 73000,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 74000,
         "timestamp": 1711990800000
       },
       {
         "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 8,
-        "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10312,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 68433.11099999999,
         "strike": 75000,
         "timestamp": 1711990800000
       },
       {
-        "cumulativeTradeAmount": 200,
-        "cumulativeTradeDelta": -15,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10069,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 76000,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 78000,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 80000,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 84000,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68433.11099999999,
+        "strike": 86000,
+        "timestamp": 1711990800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 68228.81366666667,
         "strike": 45000,
         "timestamp": 1711987200000
       },
       {
-        "cumulativeTradeAmount": -200,
-        "cumulativeTradeDelta": -38,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -25255,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 58000,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 68228.81366666667,
         "strike": 65000,
         "timestamp": 1711987200000
       },
       {
-        "cumulativeTradeAmount": -100,
-        "cumulativeTradeDelta": -61,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -13628,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 66000,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 67000,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 67500,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 68000,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 69000,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 69500,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 68228.81366666667,
         "strike": 70000,
         "timestamp": 1711987200000
       },
       {
-        "cumulativeTradeAmount": 150,
-        "cumulativeTradeDelta": 61,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 24410,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 71000,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 71500,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 72000,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 72500,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 73000,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 74000,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 68228.81366666667,
         "strike": 75000,
         "timestamp": 1711987200000
       },
       {
-        "cumulativeTradeAmount": 200,
-        "cumulativeTradeDelta": -15,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10069,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 76000,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 78000,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 80000,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 84000,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68228.81366666667,
+        "strike": 86000,
+        "timestamp": 1711987200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 68676.31249999999,
         "strike": 45000,
         "timestamp": 1711983600000
       },
       {
-        "cumulativeTradeAmount": -200,
-        "cumulativeTradeDelta": -38,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -25255,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 58000,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 68676.31249999999,
         "strike": 65000,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 66000,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 67000,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 67500,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 68000,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 69000,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 69500,
         "timestamp": 1711983600000
       },
       {
@@ -318,30 +1677,192 @@
         "timestamp": 1711983600000
       },
       {
-        "cumulativeTradeAmount": 150,
-        "cumulativeTradeDelta": 61,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 24410,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 71000,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 71500,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 72000,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 72500,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 73000,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 74000,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 68676.31249999999,
         "strike": 75000,
         "timestamp": 1711983600000
       },
       {
-        "cumulativeTradeAmount": 200,
-        "cumulativeTradeDelta": -15,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10069,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 76000,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 78000,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 80000,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 84000,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 68676.31249999999,
+        "strike": 86000,
+        "timestamp": 1711983600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69707.34066666667,
         "strike": 45000,
         "timestamp": 1711980000000
       },
       {
-        "cumulativeTradeAmount": -100,
-        "cumulativeTradeDelta": 31,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": -12616,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 58000,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
         "indexPrice": 69707.34066666667,
         "strike": 65000,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 66000,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 67000,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 67500,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 68000,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 69000,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 69500,
         "timestamp": 1711980000000
       },
       {
@@ -354,12 +1875,111 @@
         "timestamp": 1711980000000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 7,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10283,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 71000,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 71500,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 72000,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 72500,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 73000,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 74000,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 69707.34066666667,
         "strike": 75000,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 76000,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 78000,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 80000,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 84000,
+        "timestamp": 1711980000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69707.34066666667,
+        "strike": 86000,
         "timestamp": 1711980000000
       },
       {
@@ -377,7 +1997,70 @@
         "cumulativeTradeGamma": 0,
         "cumulativeTradeVega": 0,
         "indexPrice": 69836.655,
+        "strike": 58000,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
         "strike": 65000,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 66000,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 67000,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 67500,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 68000,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 69000,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 69500,
         "timestamp": 1711976400000
       },
       {
@@ -390,12 +2073,111 @@
         "timestamp": 1711976400000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 7,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10283,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 71000,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 71500,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 72000,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 72500,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 73000,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 74000,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 69836.655,
         "strike": 75000,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 76000,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 78000,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 80000,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 84000,
+        "timestamp": 1711976400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69836.655,
+        "strike": 86000,
         "timestamp": 1711976400000
       },
       {
@@ -413,7 +2195,70 @@
         "cumulativeTradeGamma": 0,
         "cumulativeTradeVega": 0,
         "indexPrice": 69504.32116666666,
+        "strike": 58000,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
         "strike": 65000,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 66000,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 67000,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 67500,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 68000,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 69000,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 69500,
         "timestamp": 1711972800000
       },
       {
@@ -426,12 +2271,111 @@
         "timestamp": 1711972800000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 7,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10283,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 71000,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 71500,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 72000,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 72500,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 73000,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 74000,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 69504.32116666666,
         "strike": 75000,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 76000,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 78000,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 80000,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 84000,
+        "timestamp": 1711972800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69504.32116666666,
+        "strike": 86000,
         "timestamp": 1711972800000
       },
       {
@@ -449,7 +2393,70 @@
         "cumulativeTradeGamma": 0,
         "cumulativeTradeVega": 0,
         "indexPrice": 69716.13350000001,
+        "strike": 58000,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
         "strike": 65000,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 66000,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 67000,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 67500,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 68000,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 69000,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 69500,
         "timestamp": 1711969200000
       },
       {
@@ -462,12 +2469,111 @@
         "timestamp": 1711969200000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 7,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10283,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 71000,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 71500,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 72000,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 72500,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 73000,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 74000,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 69716.13350000001,
         "strike": 75000,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 76000,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 78000,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 80000,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 84000,
+        "timestamp": 1711969200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69716.13350000001,
+        "strike": 86000,
         "timestamp": 1711969200000
       },
       {
@@ -485,7 +2591,70 @@
         "cumulativeTradeGamma": 0,
         "cumulativeTradeVega": 0,
         "indexPrice": 69440.95283333333,
+        "strike": 58000,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
         "strike": 65000,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 66000,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 67000,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 67500,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 68000,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 69000,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 69500,
         "timestamp": 1711965600000
       },
       {
@@ -498,12 +2667,111 @@
         "timestamp": 1711965600000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 7,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10283,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 71000,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 71500,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 72000,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 72500,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 73000,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 74000,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 69440.95283333333,
         "strike": 75000,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 76000,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 78000,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 80000,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 84000,
+        "timestamp": 1711965600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69440.95283333333,
+        "strike": 86000,
         "timestamp": 1711965600000
       },
       {
@@ -521,7 +2789,70 @@
         "cumulativeTradeGamma": 0,
         "cumulativeTradeVega": 0,
         "indexPrice": 69488.1945,
+        "strike": 58000,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
         "strike": 65000,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 66000,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 67000,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 67500,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 68000,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 69000,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 69500,
         "timestamp": 1711962000000
       },
       {
@@ -534,12 +2865,111 @@
         "timestamp": 1711962000000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 7,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10283,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 71000,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 71500,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 72000,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 72500,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 73000,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 74000,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 69488.1945,
         "strike": 75000,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 76000,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 78000,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 80000,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 84000,
+        "timestamp": 1711962000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69488.1945,
+        "strike": 86000,
         "timestamp": 1711962000000
       },
       {
@@ -557,7 +2987,70 @@
         "cumulativeTradeGamma": 0,
         "cumulativeTradeVega": 0,
         "indexPrice": 69464.03050000001,
+        "strike": 58000,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
         "strike": 65000,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 66000,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 67000,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 67500,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 68000,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 69000,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 69500,
         "timestamp": 1711958400000
       },
       {
@@ -570,12 +3063,111 @@
         "timestamp": 1711958400000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 7,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10283,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 71000,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 71500,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 72000,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 72500,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 73000,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 74000,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 69464.03050000001,
         "strike": 75000,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 76000,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 78000,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 80000,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 84000,
+        "timestamp": 1711958400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69464.03050000001,
+        "strike": 86000,
         "timestamp": 1711958400000
       },
       {
@@ -593,7 +3185,70 @@
         "cumulativeTradeGamma": 0,
         "cumulativeTradeVega": 0,
         "indexPrice": 69592.67116666667,
+        "strike": 58000,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
         "strike": 65000,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 66000,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 67000,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 67500,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 68000,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 69000,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 69500,
         "timestamp": 1711954800000
       },
       {
@@ -606,12 +3261,111 @@
         "timestamp": 1711954800000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 7,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10283,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 71000,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 71500,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 72000,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 72500,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 73000,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 74000,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 69592.67116666667,
         "strike": 75000,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 76000,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 78000,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 80000,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 84000,
+        "timestamp": 1711954800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69592.67116666667,
+        "strike": 86000,
         "timestamp": 1711954800000
       },
       {
@@ -629,7 +3383,70 @@
         "cumulativeTradeGamma": 0,
         "cumulativeTradeVega": 0,
         "indexPrice": 69146.12716666666,
+        "strike": 58000,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
         "strike": 65000,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 66000,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 67000,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 67500,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 68000,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 69000,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 69500,
         "timestamp": 1711951200000
       },
       {
@@ -642,12 +3459,111 @@
         "timestamp": 1711951200000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 7,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10283,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 71000,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 71500,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 72000,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 72500,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 73000,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 74000,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 69146.12716666666,
         "strike": 75000,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 76000,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 78000,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 80000,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 84000,
+        "timestamp": 1711951200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 69146.12716666666,
+        "strike": 86000,
         "timestamp": 1711951200000
       },
       {
@@ -665,7 +3581,70 @@
         "cumulativeTradeGamma": 0,
         "cumulativeTradeVega": 0,
         "indexPrice": 70449.19666666667,
+        "strike": 58000,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
         "strike": 65000,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 66000,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 67000,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 67500,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 68000,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 69000,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 69500,
         "timestamp": 1711947600000
       },
       {
@@ -678,12 +3657,111 @@
         "timestamp": 1711947600000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 7,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10283,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 71000,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 71500,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 72000,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 72500,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 73000,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 74000,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 70449.19666666667,
         "strike": 75000,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 76000,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 78000,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 80000,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 84000,
+        "timestamp": 1711947600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70449.19666666667,
+        "strike": 86000,
         "timestamp": 1711947600000
       },
       {
@@ -701,7 +3779,70 @@
         "cumulativeTradeGamma": 0,
         "cumulativeTradeVega": 0,
         "indexPrice": 70603.966,
+        "strike": 58000,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
         "strike": 65000,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 66000,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 67000,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 67500,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 68000,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 69000,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 69500,
         "timestamp": 1711944000000
       },
       {
@@ -714,12 +3855,111 @@
         "timestamp": 1711944000000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 7,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10283,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 71000,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 71500,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 72000,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 72500,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 73000,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 74000,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 70603.966,
         "strike": 75000,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 76000,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 78000,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 80000,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 84000,
+        "timestamp": 1711944000000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70603.966,
+        "strike": 86000,
         "timestamp": 1711944000000
       },
       {
@@ -737,7 +3977,70 @@
         "cumulativeTradeGamma": 0,
         "cumulativeTradeVega": 0,
         "indexPrice": 70877.77200000001,
+        "strike": 58000,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
         "strike": 65000,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 66000,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 67000,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 67500,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 68000,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 69000,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 69500,
         "timestamp": 1711940400000
       },
       {
@@ -750,12 +4053,111 @@
         "timestamp": 1711940400000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 7,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10283,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 71000,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 71500,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 72000,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 72500,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 73000,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 74000,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 70877.77200000001,
         "strike": 75000,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 76000,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 78000,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 80000,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 84000,
+        "timestamp": 1711940400000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70877.77200000001,
+        "strike": 86000,
         "timestamp": 1711940400000
       },
       {
@@ -773,7 +4175,70 @@
         "cumulativeTradeGamma": 0,
         "cumulativeTradeVega": 0,
         "indexPrice": 70865.98183333334,
+        "strike": 58000,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
         "strike": 65000,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 66000,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 67000,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 67500,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 68000,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 69000,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 69500,
         "timestamp": 1711936800000
       },
       {
@@ -786,12 +4251,111 @@
         "timestamp": 1711936800000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 7,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10283,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 71000,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 71500,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 72000,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 72500,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 73000,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 74000,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 70865.98183333334,
         "strike": 75000,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 76000,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 78000,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 80000,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 84000,
+        "timestamp": 1711936800000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 70865.98183333334,
+        "strike": 86000,
         "timestamp": 1711936800000
       },
       {
@@ -809,7 +4373,70 @@
         "cumulativeTradeGamma": 0,
         "cumulativeTradeVega": 0,
         "indexPrice": 71048.686,
+        "strike": 58000,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
         "strike": 65000,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 66000,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 67000,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 67500,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 68000,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 69000,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 69500,
         "timestamp": 1711933200000
       },
       {
@@ -822,12 +4449,111 @@
         "timestamp": 1711933200000
       },
       {
-        "cumulativeTradeAmount": 50,
-        "cumulativeTradeDelta": 7,
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
         "cumulativeTradeGamma": 0,
-        "cumulativeTradeVega": 10283,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 71000,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 71500,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 72000,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 72500,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 73000,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 74000,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 50,
+        "cumulativeTradeDelta": 7.159000000000001,
+        "cumulativeTradeGamma": 0.0005,
+        "cumulativeTradeVega": 10283.044249999999,
         "indexPrice": 71048.686,
         "strike": 75000,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 76000,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 78000,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 80000,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 84000,
+        "timestamp": 1711933200000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71048.686,
+        "strike": 86000,
         "timestamp": 1711933200000
       },
       {
@@ -845,7 +4571,70 @@
         "cumulativeTradeGamma": 0,
         "cumulativeTradeVega": 0,
         "indexPrice": 71179.56783333333,
+        "strike": 58000,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
         "strike": 65000,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 66000,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 67000,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 67500,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 68000,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 69000,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 69500,
         "timestamp": 1711929600000
       },
       {
@@ -863,7 +4652,106 @@
         "cumulativeTradeGamma": 0,
         "cumulativeTradeVega": 0,
         "indexPrice": 71179.56783333333,
+        "strike": 71000,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 71500,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 72000,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 72500,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 73000,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 74000,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
         "strike": 75000,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 76000,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 78000,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 80000,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 84000,
+        "timestamp": 1711929600000
+      },
+      {
+        "cumulativeTradeAmount": 0,
+        "cumulativeTradeDelta": 0,
+        "cumulativeTradeGamma": 0,
+        "cumulativeTradeVega": 0,
+        "indexPrice": 71179.56783333333,
+        "strike": 86000,
         "timestamp": 1711929600000
       }
     ],

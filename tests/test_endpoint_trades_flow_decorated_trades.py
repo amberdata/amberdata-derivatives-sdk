@@ -24,8 +24,8 @@ class EndpointTradesFlowDecoratedTradesTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_milliseconds=True)
-        self.validate_response_field_timestamp(response, 'postTradeOrderbookTimestamp', is_milliseconds=True, is_nullable=True)
-        self.validate_response_field_timestamp(response, 'preTradeOrderbookTimestamp', is_milliseconds=True, is_nullable=True)
+        self.validate_response_field_timestamp(response, 'postTradeOrderbookTimestamp', is_milliseconds=True, is_nullable=True, is_zeroable=True)
+        self.validate_response_field_timestamp(response, 'preTradeOrderbookTimestamp', is_milliseconds=True, is_nullable=True, is_zeroable=True)
 
     def test_historical(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T02:00:00')

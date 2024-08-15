@@ -185,7 +185,8 @@ class BaseTestCase(unittest.TestCase):
         is_daily=False,
         is_weekly=False,
         is_yearly=False,
-        is_nullable=False
+        is_nullable=False,
+        is_zeroable=False
     ):
         """
         Validates a timestamp field in the response payload.
@@ -201,6 +202,7 @@ class BaseTestCase(unittest.TestCase):
         :param is_weekly:        The timestamp field is expressed in weeks (seconds=minutes=hours=00)
         :param is_yearly:        The timestamp field is expressed in years (seconds=minutes=hours=days=months=00)
         :param is_nullable:      The timestamp field could be null
+        :param is_zeroable:      The timestamp field could be zero
         """
         data = response['payload']['data']
 
@@ -238,7 +240,10 @@ class BaseTestCase(unittest.TestCase):
                 # Better implementation comparing numbers.
                 # 1293840000000 = 2011-01-01 00:00:00
                 # 1893456000000 = 2030-01-01 00:00:00
-                if element[field_name] is None:
+                if element[field_name] == 0:
+                    if not is_zeroable:
+                        raise AssertionError(f'Timestamp field \'{field_name}\' in record is zero ({element}).')
+                elif element[field_name] is None:
                     if not is_nullable:
                         raise AssertionError(f'Timestamp field \'{field_name}\' in record is null ({element}).')
                 else:
