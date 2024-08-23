@@ -4,19 +4,19 @@
     "data": [
       {
         "callsContractsBought": 57,
-        "callsContractsBoughtExchangeDirection": 33.800000000000004,
+        "callsContractsBoughtExchangeDirection": 33.8,
         "callsContractsSold": 13.5,
-        "callsContractsSoldExchangeDirection": 36.7,
+        "callsContractsSoldExchangeDirection": 36.699999999999996,
         "callsPremiumBought": 160666.22483173,
         "callsPremiumBoughtExchangeDirection": 47089.3167083,
-        "callsPremiumSold": 37508.948414995,
-        "callsPremiumSoldExchangeDirection": 151085.85653842503,
+        "callsPremiumSold": 37508.94841499501,
+        "callsPremiumSoldExchangeDirection": 151085.856538425,
         "putContractsBought": 33.3,
-        "putContractsBoughtExchangeDirection": 41.8,
-        "putContractsSold": 32.19999999999999,
-        "putContractsSoldExchangeDirection": 23.7,
+        "putContractsBoughtExchangeDirection": 41.79999999999999,
+        "putContractsSold": 32.199999999999996,
+        "putContractsSoldExchangeDirection": 23.699999999999996,
         "putPremiumBought": 22503.366990815,
-        "putPremiumBoughtExchangeDirection": 32523.762594855005,
+        "putPremiumBoughtExchangeDirection": 32523.762594854998,
         "putPremiumSold": 36311.294289686004,
         "putPremiumSoldExchangeDirection": 26290.898685646
       }
