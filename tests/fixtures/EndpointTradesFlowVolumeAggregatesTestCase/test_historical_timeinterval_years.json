@@ -8,9 +8,9 @@
         "currency": "BTC",
         "exchange": "deribit",
         "notionalVolumeBlocked": 54570747340.82704,
-        "notionalVolumeOnScreen": 136008914917.57834,
+        "notionalVolumeOnScreen": 136008914917.57832,
         "premiumVolumeBlocked": 2515931284.3069444,
-        "premiumVolumeOnScreen": 3501506114.2765155,
+        "premiumVolumeOnScreen": 3501506114.276516,
         "timestamp": "2024-01-01 00:00:00 000"
       },
       {
@@ -20,7 +20,7 @@
         "exchange": "deribit",
         "notionalVolumeBlocked": 94776963976.82,
         "notionalVolumeOnScreen": 151991538938.37988,
-        "premiumVolumeBlocked": 3165091523.741002,
+        "premiumVolumeBlocked": 3165091523.7410016,
         "premiumVolumeOnScreen": 2971396002.3930526,
         "timestamp": "2023-01-01 00:00:00 000"
       }
