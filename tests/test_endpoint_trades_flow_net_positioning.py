@@ -2,6 +2,7 @@
 
 # pylint: disable=line-too-long, missing-class-docstring, missing-function-docstring, missing-module-docstring
 
+from datetime import datetime, timedelta
 import unittest
 
 from tests.base_test_case import BaseTestCase
@@ -20,14 +21,21 @@ class EndpointTradesFlowNetPositioningTestCase(BaseTestCase):
         response = self.call_endpoint(exchange='deribit', currency='BTC')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=50000)
-        self.validate_response_field_timestamp(response, 'snapshotTimestamp', is_milliseconds=True)
+        self.validate_response_field_timestamp(response, 'snapshotTimestamp', is_milliseconds=True, is_hourly=True)
 
     def test_historical(self):
+        start_date = (datetime.now() - timedelta(days=2)).isoformat()
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate=start_date)
+        self.validate_response_schema(response, schema=self.schema)
+        self.validate_response_200(response, min_elements=1000)
+        self.validate_response_field_timestamp(response, 'snapshotTimestamp', is_milliseconds=True)
+
+    def test_historical_bounded(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T02:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=105)
-        self.validate_response_field_timestamp(response, 'snapshotTimestamp', is_milliseconds=True)
+        self.validate_response_field_timestamp(response, 'snapshotTimestamp', is_milliseconds=True, is_daily=True)
 
     def test_historical_showactiveexpiration_true(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T02:00:00', showActiveExpirations=True)
