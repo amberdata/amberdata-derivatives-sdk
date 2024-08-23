@@ -58,21 +58,21 @@ class EndpointInstrumentInformationTestCase(BaseTestCase):
     def test_historical_timeformat_default(self):
         response = self.call_endpoint(timestamp='2024-04-01T03:00:00')
         self.validate_response_data(response)
-        self.validate_response_200(response, num_elements=2952)
+        self.validate_response_200(response, num_elements=4218)
         self.validate_response_field_timestamp(response, 'endDate', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'expiration', is_milliseconds=True)
 
     def test_historical_timeformat_hr(self):
         response = self.call_endpoint(timestamp='2024-04-01T03:00:00', timeFormat='hr')
         self.validate_response_data(response)
-        self.validate_response_200(response, num_elements=2952)
+        self.validate_response_200(response, num_elements=4218)
         self.validate_response_field_timestamp(response, 'endDate', is_hr=True)
         self.validate_response_field_timestamp(response, 'expiration', is_hr=True)
 
     def test_historical_timeformat_iso(self):
         response = self.call_endpoint(timestamp='2024-04-01T03:00:00', timeFormat='iso')
         self.validate_response_data(response)
-        self.validate_response_200(response, num_elements=2952)
+        self.validate_response_200(response, num_elements=4218)
         self.validate_response_field_timestamp(response, 'endDate', is_iso=True)
         self.validate_response_field_timestamp(response, 'expiration', is_iso=True)
 
