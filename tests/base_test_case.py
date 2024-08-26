@@ -160,18 +160,23 @@ class BaseTestCase(unittest.TestCase):
         self.assertEqual(True,          response['error'])
         self.assertEqual(message,       response['message'])
 
-    def validate_response_field(self, response, field_name: str, field_value):
+    def validate_response_field(self, response, field_name: str, field_value, field_value2=None):
         """
         Validates that the field with name `field_name` has the value `field_value`.
 
-        :param response:     The response payload
-        :param field_name:   The name of the field to validate
-        :param field_value:  The value expected for the field
+        :param response:      The response payload
+        :param field_name:    The name of the field to validate
+        :param field_value:   The value expected for the field (either/or)
+        :param field_value2:  The value expected for the field (either/or)
         """
         data = response['payload']['data']
 
-        for element in data:
-            self.assertEqual(element[field_name], field_value)
+        if field_value2 is None:
+            for element in data:
+                self.assertEqual(element[field_name], field_value)
+        else:
+            for element in data:
+                self.assertTrue(element[field_name] == field_value or element[field_name] == field_value2)
 
     def validate_response_field_timestamp(
         self,

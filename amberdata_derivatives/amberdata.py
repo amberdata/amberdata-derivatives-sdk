@@ -442,7 +442,23 @@ class AmberdataDerivatives:
 
     # ==================================================================================================================
 
-    # /derivatives/analytics/realized-volatility/annual-performance
+    def get_realized_volatility_annual_performance(self, exchange: str, pair: str, **kwargs):
+        """
+        The endpoint returns the PnL of a pair on an exchange.
+
+        QUERY PARAMS:
+        - exchange    (string) [Required] [Examples] gdax
+        - pair        (string) [Required] [Examples] btc_usd
+        - timeFormat  (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+        return self.__make_request(
+            'markets/derivatives/analytics/realized-volatility/annual-performance',
+            {
+                'exchange': exchange,
+                'pair': pair,
+                **kwargs
+            }
+        )
 
     def get_realized_volatility_cones(self, exchange: str, pair: str, **kwargs):
         """
@@ -552,7 +568,27 @@ class AmberdataDerivatives:
             }
         )
 
-    # /derivatives/analytics/realized-volatility/performance-comparison
+    def get_realized_volatility_performance_comparison(self, exchange: str, pair: str, pair2: str, **kwargs):
+        """
+        This endpoint compares PnLs between two pairs.
+
+        QUERY PARAMS:
+        - exchange    (string)    [Required] [Examples] gdax
+        - pair        (string)    [Required] [Examples] btc_usd
+        - pair2       (string)    [Required] [Examples] btc_usd
+        - startDate   (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate     (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat  (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+        return self.__make_request(
+            'markets/derivatives/analytics/realized-volatility/performance-comparison',
+            {
+                'exchange': exchange,
+                'pair': pair,
+                'pair2': pair2,
+                **kwargs
+            }
+        )
 
     def get_realized_volatility_seasonality_day_of_week(self, exchange: str, pair: str, **kwargs):
         """
