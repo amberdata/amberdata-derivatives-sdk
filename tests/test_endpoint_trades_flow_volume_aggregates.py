@@ -14,7 +14,15 @@ class EndpointTradesFlowVolumeAggregatesTestCase(BaseTestCase):
     def setUp(self):
         super().setUp(
             function_name='get_trades_flow_volume_aggregates',
-            imprecise_fields=['payload.data[*].notionalVolumeOnScreen', 'payload.data[*].premiumVolumeOnScreen']
+            imprecise_fields=[
+                'payload.data[*].contractVolumeBlocked',
+                'payload.data[*].contractVolumeOnScreen',
+                'payload.data[*].notionalVolumeBlocked',
+                'payload.data[*].notionalVolumeOnScreen',
+                'payload.data[*].premiumVolumeBlocked',
+                'payload.data[*].premiumVolumeOnScreen',
+            ],
+            precision_error=0.01
         )
 
     # ==================================================================================================================

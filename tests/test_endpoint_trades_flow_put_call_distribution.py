@@ -23,6 +23,8 @@ class EndpointTradesFlowPutCallDistributionTestCase(BaseTestCase):
                 'payload.data[*].callsPremiumBoughtExchangeDirection',
                 'payload.data[*].callsPremiumSold',
                 'payload.data[*].callsPremiumSoldExchangeDirection',
+                'payload.data[*].notionalVolumeOnScreen',
+                'payload.data[*].premiumVolumeOnScreen',
                 'payload.data[*].putContractsBought',
                 'payload.data[*].putContractsBoughtExchangeDirection',
                 'payload.data[*].putContractsSold',

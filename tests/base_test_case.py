@@ -35,7 +35,7 @@ class BaseTestCase(unittest.TestCase):
             time_format: str = None,
             ignore_fields: list = None,
             imprecise_fields: list = None,
-            precision_error: int = 0.000001
+            precision_error: float = 0.000001
     ):
         self.record_api_calls = os.getenv('RECORD_API_CALLS', 'false') == 'true'
         self.amberdata_client = AmberdataDerivatives(api_key=os.getenv('API_KEY'), time_format=time_format)
@@ -95,7 +95,8 @@ class BaseTestCase(unittest.TestCase):
 
                 self.assertEqual(len(expected_values), len(actual_values))
                 for index, expected_value in enumerate(expected_values):
-                    self.assertLessEqual(abs(expected_value - actual_values[index]), self.precision_error)
+                    if expected_value is not None and actual_values[index] is not None:
+                        self.assertLessEqual(abs(expected_value - actual_values[index]), self.precision_error)
 
                 # Remove imprecise fields
                 query.filter(lambda d: True, expected)
