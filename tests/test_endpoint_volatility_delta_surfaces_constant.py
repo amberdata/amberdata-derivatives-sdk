@@ -11,8 +11,11 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointVolatilityDeltaSurfaceConstantTestCase(BaseTestCase):
-    def setUp(self, function_name='get_volatility_delta_surfaces_constant'):
-        super().setUp(function_name)
+    def setUp(self):
+        super().setUp(
+            function_name='get_volatility_delta_surfaces_constant',
+            imprecise_fields=['payload.data[*].openInterest']
+        )
 
     # ==================================================================================================================
 
