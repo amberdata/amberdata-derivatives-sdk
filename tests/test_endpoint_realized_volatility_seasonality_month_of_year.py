@@ -14,7 +14,10 @@ class EndpointRealizedVolatilitySeasonalityMonthOfYearTestCase(BaseTestCase):
     def setUp(self):
         super().setUp(
             function_name='get_realized_volatility_seasonality_month_of_year',
-            imprecise_fields=['payload.data[*].premiumVolume']
+            imprecise_fields=[
+                'payload.data[*].historicalVolatility1day',
+                'payload.data[*].premiumVolume',
+            ]
         )
 
     # ==================================================================================================================
