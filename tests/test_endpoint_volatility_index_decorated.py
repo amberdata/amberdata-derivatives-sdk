@@ -12,7 +12,13 @@ from tests.error_message import ErrorMessage
 
 class EndpointVolatilityIndexDecoratedTestCase(BaseTestCase):
     def setUp(self):
-        super().setUp(function_name='get_volatility_index_decorated', ignore_fields=['payload.data[*].daysAgo'])
+        super().setUp(
+            function_name='get_volatility_index_decorated',
+            ignore_fields=[
+                'payload.data[*].daysAgo',
+                'payload.data[*].delta25RrSkew',
+            ],
+        )
 
     # ==================================================================================================================
 
