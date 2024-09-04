@@ -264,10 +264,12 @@ class BaseTestCase(unittest.TestCase):
                         raise AssertionError(f'Timestamp field \'{field_name}\' in record is null ({element}).')
                 else:
                     self.__assert_between(element[field_name], 1293840000000, 1893456000000)
+                    # pylint: disable=multiple-statements
                     if is_minutely: self.assertTrue(element[field_name] % 60000 == 0)
                     if is_hourly: self.assertTrue(element[field_name] % 3600000 == 0)
                     if is_daily: self.assertTrue(element[field_name] % 86400000 == 0)
                     if is_weekly: self.assertTrue(element[field_name] % 604800000 == 0)
+                    # pylint: enable=multiple-statements
 
     # ==================================================================================================================
 
