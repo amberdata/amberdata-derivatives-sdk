@@ -102,6 +102,9 @@ class BaseTestCase(unittest.TestCase):
                 query.filter(lambda d: True, expected)
                 query.filter(lambda d: True, actual)
 
+        # Special clean-up
+        self.__clean_error_message(actual)
+
         # Check data
         self.assertEqual(expected, actual)
 
@@ -154,6 +157,9 @@ class BaseTestCase(unittest.TestCase):
         :param message:   The message associated with the response
         """
         description = 'Request was invalid or cannot be served. See message for details'
+
+        # Special clean-up
+        self.__clean_error_message(response)
 
         self.assertEqual(description,   response['description'])
         self.assertEqual(400,           response['status'])
@@ -298,5 +304,17 @@ class BaseTestCase(unittest.TestCase):
 
         with open(file, 'w', encoding='utf-8') as f:
             json.dump(response, f, indent=2, sort_keys=True)
+
+    @staticmethod
+    def __clean_error_message(response):
+        # Special case to handle incompatibilities between two different versions of the API
+        # TODO: remove this function once the migration is over
+        if 'message' in response:
+            response['message'] = response['message'].replace(
+                '[ALL,P,p,put,Put,PUT,C,c,call,Call,CALL]',
+                '[P,p,put,Put,PUT,C,c,call,Call,CALL]'
+            )
+        return response
+
 
 # ======================================================================================================================
