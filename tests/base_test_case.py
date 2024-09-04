@@ -106,6 +106,10 @@ class BaseTestCase(unittest.TestCase):
         self.__clean_error_message(actual)
 
         # Check data
+        # with open('expected.json', 'w', encoding='utf-8') as f:
+        #     json.dump(expected, f, indent=2, sort_keys=True)
+        # with open('actual.json', 'w', encoding='utf-8') as f:
+        #     json.dump(actual, f, indent=2, sort_keys=True)
         self.assertEqual(expected, actual)
 
     def validate_response_schema(self, response, file=None, schema=None):

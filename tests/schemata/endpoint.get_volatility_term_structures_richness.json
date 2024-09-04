@@ -10,7 +10,7 @@
           "items": {
             "type": "object",
             "properties": {
-              "atm180days": { "type" : ["null",   "number"] },
+              "atm180days": { "type" : ["null", "number"] },
               "atm30days" : { "type" : "number" },
               "atm60days" : { "type" : "number" },
               "atm7days"  : { "type" : "number" },
