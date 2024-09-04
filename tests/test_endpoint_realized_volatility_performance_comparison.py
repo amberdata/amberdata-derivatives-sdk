@@ -82,17 +82,17 @@ class EndpointRealizedVolatilityPerformanceComparisonTestCase(BaseTestCase):
 
     # TODO: this endpoint should return 404 instead
     def test_unknown_pair(self):
-        response = self.call_endpoint(exchange='gdax', pair='btc_usd', pair2='<pair>')
+        response = self.call_endpoint(exchange='gdax', pair='btc_usd', pair2='<pair>', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00', timeFormat='hr')
         self.validate_response_data(response)
-        self.validate_response_200(response, min_elements=1000)
+        self.validate_response_200(response, num_elements=30)
         self.validate_response_field(response, 'exchange', 'gdax')
         self.validate_response_field(response, 'pair', 'btc_usd')
 
     # TODO: this endpoint should return 404 instead
     def test_unknown_pair2(self):
-        response = self.call_endpoint(exchange='gdax', pair='<pair>', pair2='eth_usd')
+        response = self.call_endpoint(exchange='gdax', pair='<pair>', pair2='eth_usd', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00', timeFormat='hr')
         self.validate_response_data(response)
-        self.validate_response_200(response, min_elements=1000)
+        self.validate_response_200(response, num_elements=30)
         self.validate_response_field(response, 'exchange', 'gdax')
         self.validate_response_field(response, 'pair', 'eth_usd')
 
