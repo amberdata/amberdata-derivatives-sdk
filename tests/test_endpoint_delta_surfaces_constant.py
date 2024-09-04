@@ -11,7 +11,8 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointDeltaSurfaceConstantTestCase(BaseTestCase):
-    def setUp(self, function_name='get_delta_surfaces_constant'):
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
         super().setUp(
             function_name='get_delta_surfaces_constant',
             imprecise_fields=['payload.data[*].openInterest']

@@ -11,8 +11,9 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointTradesFlowDecoratedTradesTestCase(BaseTestCase):
-    def setUp(self, function_name='get_trades_flow_decorated_trades'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(function_name='get_trades_flow_decorated_trades')
 
     # ==================================================================================================================
 

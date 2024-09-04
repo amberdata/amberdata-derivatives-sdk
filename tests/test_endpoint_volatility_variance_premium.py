@@ -11,10 +11,9 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointVolatilityVariancePremiumTestCase(BaseTestCase):
+    # pylint: disable-next=arguments-differ
     def setUp(self):
-        super().setUp(
-            function_name='get_volatility_variance_premium',
-        )
+        super().setUp(function_name='get_volatility_variance_premium')
 
     # ==================================================================================================================
 

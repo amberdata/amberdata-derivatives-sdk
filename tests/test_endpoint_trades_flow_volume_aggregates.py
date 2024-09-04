@@ -11,6 +11,7 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointTradesFlowVolumeAggregatesTestCase(BaseTestCase):
+    # pylint: disable-next=arguments-differ
     def setUp(self):
         super().setUp(
             function_name='get_trades_flow_volume_aggregates',

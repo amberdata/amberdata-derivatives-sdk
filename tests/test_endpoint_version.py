@@ -11,8 +11,9 @@ from tests.base_test_case import BaseTestCase
 # ======================================================================================================================
 
 class EndpointVersionTestCase(BaseTestCase):
-    def setUp(self, function_name='get_version'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(function_name='get_version')
 
     # ==================================================================================================================
 

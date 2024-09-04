@@ -11,8 +11,9 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointInstrumentInformationTestCase(BaseTestCase):
-    def setUp(self, function_name='get_instrument_information'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(function_name='get_instrument_information')
 
     # ==================================================================================================================
 

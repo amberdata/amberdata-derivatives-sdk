@@ -11,6 +11,7 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointVolatilityDeltaSurfaceConstantTestCase(BaseTestCase):
+    # pylint: disable-next=arguments-differ
     def setUp(self):
         super().setUp(
             function_name='get_volatility_delta_surfaces_constant',

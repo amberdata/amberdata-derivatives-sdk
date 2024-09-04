@@ -11,6 +11,7 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointFuturesPerpetualsOpenInterestTestCase(BaseTestCase):
+    # pylint: disable-next=arguments-differ
     def setUp(self):
         super().setUp(
             function_name='get_futures_perpetuals_open_interest',

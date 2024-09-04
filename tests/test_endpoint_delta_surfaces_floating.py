@@ -11,8 +11,9 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointDeltaSurfaceFloatingTestCase(BaseTestCase):
-    def setUp(self, function_name='get_delta_surfaces_floating'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(function_name='get_delta_surfaces_floating')
 
     # ==================================================================================================================
 
