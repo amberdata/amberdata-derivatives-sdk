@@ -1121,6 +1121,29 @@ class AmberdataDerivatives:
             }
         )
 
+    def get_volatility_variance_premium(self, currency: str, **kwargs):
+        """
+        This endpoint returns the Deribit "DVol" index, shifted to align with historical realized volatility.
+        Since option implied volatility is pricing future realized volatility, this endpoint helps users measure the
+        accuracy of such expectation. When the VRP (variance risk premium) is positive, implied volatility was higher
+        than future realized volatility, meaning options were overpriced. Vice versa when VRP was negative.
+
+        The Deribit DVol index has 30-days to maturity and the measured realized volatility uses a 30-day calculation
+        window. Realized volatility is measured using the high/low "Parkinson" volatility method.
+
+        QUERY PARAMS:
+        - currency   (string) [Required] [Examples] BTC | SOL_USDC
+        - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/volatility/variance-premium',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
     # ==================================================================================================================
 
     def __make_request(self, url_path: str, query_params: dict):

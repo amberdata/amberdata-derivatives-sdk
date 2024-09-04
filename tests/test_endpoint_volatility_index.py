@@ -11,7 +11,7 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointVolatilityIndexTestCase(BaseTestCase):
-    def setUp(self, function_name='get_volatility_index'):
+    def setUp(self):
         super().setUp(
             function_name='get_volatility_index',
             imprecise_fields=[
