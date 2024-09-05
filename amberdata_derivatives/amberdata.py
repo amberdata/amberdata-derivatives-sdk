@@ -1052,6 +1052,30 @@ class AmberdataDerivatives:
             }
         )
 
+    def get_volatility_of_volatility(self, currency: str, **kwargs):
+        """
+        This endpoint contains all the metrics useful for having an immediate overview of the options market,
+        for each active expiry. The current Mark IV is updated every minute.
+
+        These metrics are then compared according to the selected "daysBack" parameter.
+
+        All the differences are found in the columns with the indication "change" (current metrics vs days ago metrics).
+
+        QUERY PARAMS:
+        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
+        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
+        - daysBack       (date-time) [Optional] [Examples] 1 | 7 | 14
+        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/volatility/volatility-of-volatility',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
     def get_volatility_term_structures_constant(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the term structure (for exchange listed expirations) with forward volatility calculations.

@@ -10,10 +10,10 @@ from tests.error_message import ErrorMessage
 
 # ======================================================================================================================
 
-class EndpointVolatilityVariancePremiumTestCase(BaseTestCase):
+class EndpointVolatilityOfVolatilityTestCase(BaseTestCase):
     # pylint: disable-next=arguments-differ
     def setUp(self):
-        super().setUp(function_name='get_volatility_variance_premium')
+        super().setUp(function_name='get_volatility_of_volatility')
 
     # ==================================================================================================================
 
@@ -21,32 +21,24 @@ class EndpointVolatilityVariancePremiumTestCase(BaseTestCase):
         response = self.call_endpoint(currency='BTC')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=1000)
-        self.validate_response_field(response, 'exchange', 'deribit')
-        self.validate_response_field(response, 'instrument', 'btc')
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
     def test_default_timeformat_default(self):
         response = self.call_endpoint(currency='BTC')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=1000)
-        self.validate_response_field(response, 'exchange', 'deribit')
-        self.validate_response_field(response, 'instrument', 'btc')
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
     def test_default_timeformat_hr(self):
         response = self.call_endpoint(currency='BTC', timeFormat='hr')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=1000)
-        self.validate_response_field(response, 'exchange', 'deribit')
-        self.validate_response_field(response, 'instrument', 'btc')
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True)
 
     def test_default_timeformat_iso(self):
         response = self.call_endpoint(currency='BTC', timeFormat='iso')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=1000)
-        self.validate_response_field(response, 'exchange', 'deribit')
-        self.validate_response_field(response, 'instrument', 'btc')
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True)
 
     # ==================================================================================================================
