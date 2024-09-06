@@ -19,9 +19,10 @@
               "indexPrice"           : { "type" : "number" },
               "instrumentNormalized" : { "type" : "string" },
               "putCall"              : { "type" : "string" },
-              "snapshotTimestamp"    : { "type" : ["integer", "string"] }
+              "snapshotTimestamp"    : { "type" : ["integer", "string"] },
+              "strike"               : { "type" : "number" }
             },
-            "required": ["currency", "dealerNetInventory", "dealerTotalInventory", "exchange", "expirationTimestamp", "gammaLevel", "indexPrice", "instrumentNormalized", "putCall", "snapshotTimestamp"],
+            "required": ["currency", "dealerNetInventory", "dealerTotalInventory", "exchange", "expirationTimestamp", "gammaLevel", "indexPrice", "instrumentNormalized", "putCall", "snapshotTimestamp", "strike"],
             "additionalProperties": false
           }
         },

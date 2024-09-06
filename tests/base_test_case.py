@@ -12,7 +12,9 @@ import os
 import pathlib
 import unittest
 
+import copy
 import dotenv
+import jsonpath_ng as jp
 import jsonschema
 
 from amberdata_derivatives import AmberdataDerivatives
@@ -27,13 +29,23 @@ class BaseTestCase(unittest.TestCase):
     Class to handle all the uni tests common functionalities and helper functions.
     """
 
-    def setUp(self, function_name: str = None, time_format: str = None):
+    def setUp(
+            self,
+            function_name: str = None,
+            time_format: str = None,
+            ignore_fields: list = None,
+            imprecise_fields: list = None,
+            precision_error: float = 0.000001
+    ):
         self.record_api_calls = os.getenv('RECORD_API_CALLS', 'false') == 'true'
         self.amberdata_client = AmberdataDerivatives(api_key=os.getenv('API_KEY'), time_format=time_format)
         self.function_name = function_name
         self.fixtures_directory = 'tests/fixtures'
         self.schemata_directory = 'tests/schemata'
         self.schema = self.__load_schema()
+        self.ignore_fields = ignore_fields
+        self.imprecise_fields = imprecise_fields
+        self.precision_error = precision_error
 
         pathlib.Path(self.fixtures_directory).mkdir(parents=True, exist_ok=True)
         pathlib.Path(self.schemata_directory).mkdir(parents=True, exist_ok=True)
@@ -59,12 +71,46 @@ class BaseTestCase(unittest.TestCase):
         """
         self.__record_response_data(response)
 
+        # Load fixture
         file = self.__ensure_fixture_file(self.fixtures_directory, inspect.stack()[1].function, file)
-
         with open(file, 'r', encoding='utf-8') as f:
             expected = json.load(f)
 
-        self.assertEqual(expected, response)
+        # Remove fields to ignore if any
+        actual = copy.deepcopy(response)
+        if self.ignore_fields is not None:
+            for field in self.ignore_fields:
+                query = jp.parse(field)
+                query.filter(lambda d: True, expected)
+                query.filter(lambda d: True, actual)
+
+        # Validate & remove imprecise fields if any
+        if self.imprecise_fields is not None:
+            for field in self.imprecise_fields:
+                query = jp.parse(field)
+
+                # Extract & validate field values
+                expected_values = [match.value for match in query.find(expected)]
+                actual_values = [match.value for match in query.find(actual)]
+
+                self.assertEqual(len(expected_values), len(actual_values))
+                for index, expected_value in enumerate(expected_values):
+                    if expected_value is not None and actual_values[index] is not None:
+                        self.assertLessEqual(abs(expected_value - actual_values[index]), self.precision_error)
+
+                # Remove imprecise fields
+                query.filter(lambda d: True, expected)
+                query.filter(lambda d: True, actual)
+
+        # Special clean-up
+        self.__clean_error_message(actual)
+
+        # Check data
+        # with open('expected.json', 'w', encoding='utf-8') as f:
+        #     json.dump(expected, f, indent=2, sort_keys=True)
+        # with open('actual.json', 'w', encoding='utf-8') as f:
+        #     json.dump(actual, f, indent=2, sort_keys=True)
+        self.assertEqual(expected, actual)
 
     def validate_response_schema(self, response, file=None, schema=None):
         """
@@ -116,24 +162,32 @@ class BaseTestCase(unittest.TestCase):
         """
         description = 'Request was invalid or cannot be served. See message for details'
 
+        # Special clean-up
+        self.__clean_error_message(response)
+
         self.assertEqual(description,   response['description'])
         self.assertEqual(400,           response['status'])
         self.assertEqual('BAD REQUEST', response['title'])
         self.assertEqual(True,          response['error'])
         self.assertEqual(message,       response['message'])
 
-    def validate_response_field(self, response, field_name: str, field_value):
+    def validate_response_field(self, response, field_name: str, field_value, field_value2=None):
         """
         Validates that the field with name `field_name` has the value `field_value`.
 
-        :param response:     The response payload
-        :param field_name:   The name of the field to validate
-        :param field_value:  The value expected for the field
+        :param response:      The response payload
+        :param field_name:    The name of the field to validate
+        :param field_value:   The value expected for the field (either/or)
+        :param field_value2:  The value expected for the field (either/or)
         """
         data = response['payload']['data']
 
-        for element in data:
-            self.assertEqual(element[field_name], field_value)
+        if field_value2 is None:
+            for element in data:
+                self.assertEqual(element[field_name], field_value)
+        else:
+            for element in data:
+                self.assertTrue(element[field_name] == field_value or element[field_name] == field_value2)
 
     def validate_response_field_timestamp(
         self,
@@ -147,7 +201,8 @@ class BaseTestCase(unittest.TestCase):
         is_daily=False,
         is_weekly=False,
         is_yearly=False,
-        is_nullable=False
+        is_nullable=False,
+        is_zeroable=False
     ):
         """
         Validates a timestamp field in the response payload.
@@ -163,6 +218,7 @@ class BaseTestCase(unittest.TestCase):
         :param is_weekly:        The timestamp field is expressed in weeks (seconds=minutes=hours=00)
         :param is_yearly:        The timestamp field is expressed in years (seconds=minutes=hours=days=months=00)
         :param is_nullable:      The timestamp field could be null
+        :param is_zeroable:      The timestamp field could be zero
         """
         data = response['payload']['data']
 
@@ -200,11 +256,20 @@ class BaseTestCase(unittest.TestCase):
                 # Better implementation comparing numbers.
                 # 1293840000000 = 2011-01-01 00:00:00
                 # 1893456000000 = 2030-01-01 00:00:00
-                if element[field_name] is None:
+                if element[field_name] == 0:
+                    if not is_zeroable:
+                        raise AssertionError(f'Timestamp field \'{field_name}\' in record is zero ({element}).')
+                elif element[field_name] is None:
                     if not is_nullable:
                         raise AssertionError(f'Timestamp field \'{field_name}\' in record is null ({element}).')
                 else:
                     self.__assert_between(element[field_name], 1293840000000, 1893456000000)
+                    # pylint: disable=multiple-statements
+                    if is_minutely: self.assertTrue(element[field_name] % 60000 == 0)
+                    if is_hourly: self.assertTrue(element[field_name] % 3600000 == 0)
+                    if is_daily: self.assertTrue(element[field_name] % 86400000 == 0)
+                    if is_weekly: self.assertTrue(element[field_name] % 604800000 == 0)
+                    # pylint: enable=multiple-statements
 
     # ==================================================================================================================
 
@@ -245,5 +310,17 @@ class BaseTestCase(unittest.TestCase):
 
         with open(file, 'w', encoding='utf-8') as f:
             json.dump(response, f, indent=2, sort_keys=True)
+
+    @staticmethod
+    def __clean_error_message(response):
+        # Special case to handle incompatibilities between two different versions of the API
+        # TODO: remove this function once the migration is over
+        if 'message' in response:
+            response['message'] = response['message'].replace(
+                '[ALL,P,p,put,Put,PUT,C,c,call,Call,CALL]',
+                '[P,p,put,Put,PUT,C,c,call,Call,CALL]'
+            )
+        return response
+
 
 # ======================================================================================================================

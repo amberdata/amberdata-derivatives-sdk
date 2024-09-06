@@ -11,8 +11,9 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointRealizedVolatilityConesInformationTestCase(BaseTestCase):
-    def setUp(self, function_name='get_realized_volatility_cones_information'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(function_name='get_realized_volatility_cones_information')
 
     # ==================================================================================================================
 

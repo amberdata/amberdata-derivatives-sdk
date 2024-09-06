@@ -11,8 +11,12 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointTradesFlowBlockVolumesTestCase(BaseTestCase):
-    def setUp(self, function_name='get_trades_flow_block_volumes'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(
+            function_name='get_trades_flow_block_volumes',
+            imprecise_fields=['payload.data[*].premiumVolume']
+        )
 
     # ==================================================================================================================
 

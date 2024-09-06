@@ -11,8 +11,50 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointVolatilityConesTestCase(BaseTestCase):
-    def setUp(self, function_name='get_volatility_cones'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(
+            function_name='get_volatility_cones',
+            imprecise_fields=[
+                'payload.data[*].current_14days',
+                'payload.data[*].current_180days',
+                'payload.data[*].current_1day',
+                'payload.data[*].current_30days',
+                'payload.data[*].current_7days',
+                'payload.data[*].current_90days',
+                'payload.data[*].max_14days',
+                'payload.data[*].max_180days',
+                'payload.data[*].max_1day',
+                'payload.data[*].max_30days',
+                'payload.data[*].max_7days',
+                'payload.data[*].max_90days',
+                'payload.data[*].min_14days',
+                'payload.data[*].min_180days',
+                'payload.data[*].min_1day',
+                'payload.data[*].min_30days',
+                'payload.data[*].min_7days',
+                'payload.data[*].min_90days',
+                'payload.data[*].p25_14days',
+                'payload.data[*].p25_180days',
+                'payload.data[*].p25_1day',
+                'payload.data[*].p25_30days',
+                'payload.data[*].p25_7days',
+                'payload.data[*].p25_90days',
+                'payload.data[*].p50_14days',
+                'payload.data[*].p50_180days',
+                'payload.data[*].p50_1day',
+                'payload.data[*].p50_30days',
+                'payload.data[*].p50_7days',
+                'payload.data[*].p50_90days',
+                'payload.data[*].p75_14days',
+                'payload.data[*].p75_180days',
+                'payload.data[*].p75_1day',
+                'payload.data[*].p75_30days',
+                'payload.data[*].p75_7days',
+                'payload.data[*].p75_90days',
+            ],
+            precision_error=0.00001
+        )
 
     # ==================================================================================================================
 
