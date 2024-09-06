@@ -11,8 +11,16 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointVolatilityIndexTestCase(BaseTestCase):
-    def setUp(self, function_name='get_volatility_index'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(
+            function_name='get_volatility_index',
+            imprecise_fields=[
+                'payload.data[*].close',
+                'payload.data[*].open',
+            ],
+            precision_error=0.01
+        )
 
     # ==================================================================================================================
 

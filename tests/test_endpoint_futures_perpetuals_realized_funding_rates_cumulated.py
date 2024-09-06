@@ -11,8 +11,9 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointFuturesPerpetualsRealizedFundingRatesCumulatedTestCase(BaseTestCase):
-    def setUp(self, function_name='get_futures_perpetuals_realized_funding_rates_cumulated'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(function_name='get_futures_perpetuals_realized_funding_rates_cumulated')
 
     # ==================================================================================================================
 

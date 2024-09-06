@@ -11,8 +11,9 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointTradesFlowGammaExposuresSnapshotsTestCase(BaseTestCase):
-    def setUp(self, function_name='get_trades_flow_gamma_exposures_snapshots'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(function_name='get_trades_flow_gamma_exposures_snapshots')
 
     # ==================================================================================================================
 
@@ -78,9 +79,9 @@ class EndpointTradesFlowGammaExposuresSnapshotsTestCase(BaseTestCase):
         self.validate_response_400(response, 'Invalid time interval: <time_interval>.')
 
     def test_invalid_timeinterval_minutes(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', timeInterval='m')
+        response = self.call_endpoint(exchange='deribit', currency='BTC', timeInterval='minute')
         self.validate_response_data(response)
-        self.validate_response_400(response, 'Invalid time interval: m.')
+        self.validate_response_400(response, 'Invalid time interval: minute.')
 
     def test_invalid_timestamp(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='<timestamp>')

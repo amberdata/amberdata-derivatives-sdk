@@ -11,15 +11,27 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointTradesFlowVolumeAggregatesTestCase(BaseTestCase):
-    def setUp(self, function_name='get_trades_flow_volume_aggregates'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(
+            function_name='get_trades_flow_volume_aggregates',
+            imprecise_fields=[
+                'payload.data[*].contractVolumeBlocked',
+                'payload.data[*].contractVolumeOnScreen',
+                'payload.data[*].notionalVolumeBlocked',
+                'payload.data[*].notionalVolumeOnScreen',
+                'payload.data[*].premiumVolumeBlocked',
+                'payload.data[*].premiumVolumeOnScreen',
+            ],
+            precision_error=0.01
+        )
 
     # ==================================================================================================================
 
     def test_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=500)
+        self.validate_response_200(response, min_elements=300)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)

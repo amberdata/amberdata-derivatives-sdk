@@ -30,7 +30,7 @@
         "currency": "BTC",
         "exchange": "deribit",
         "notionalVolumeBlocked": null,
-        "notionalVolumeOnScreen": 106645.15400000001,
+        "notionalVolumeOnScreen": 106645.154,
         "premiumVolumeBlocked": null,
         "premiumVolumeOnScreen": 1831.9905423999999,
         "timestamp": 1711933020000
@@ -52,9 +52,9 @@
         "currency": "BTC",
         "exchange": "deribit",
         "notionalVolumeBlocked": null,
-        "notionalVolumeOnScreen": 135028.216,
+        "notionalVolumeOnScreen": 135028.21600000001,
         "premiumVolumeBlocked": null,
-        "premiumVolumeOnScreen": 3104.63823523,
+        "premiumVolumeOnScreen": 3104.6382352299997,
         "timestamp": 1711932900000
       },
       {
@@ -158,13 +158,13 @@
       },
       {
         "contractVolumeBlocked": null,
-        "contractVolumeOnScreen": 2.5000000000000004,
+        "contractVolumeOnScreen": 2.4999999999999996,
         "currency": "BTC",
         "exchange": "deribit",
         "notionalVolumeBlocked": null,
-        "notionalVolumeOnScreen": 177347.94900000002,
+        "notionalVolumeOnScreen": 177347.94899999996,
         "premiumVolumeBlocked": null,
-        "premiumVolumeOnScreen": 3769.0285724950004,
+        "premiumVolumeOnScreen": 3769.028572495,
         "timestamp": 1711932300000
       },
       {
@@ -173,14 +173,14 @@
         "currency": "BTC",
         "exchange": "deribit",
         "notionalVolumeBlocked": null,
-        "notionalVolumeOnScreen": 184441.59699999995,
+        "notionalVolumeOnScreen": 184441.59699999998,
         "premiumVolumeBlocked": null,
         "premiumVolumeOnScreen": 4164.57094095,
         "timestamp": 1711932240000
       },
       {
         "contractVolumeBlocked": null,
-        "contractVolumeOnScreen": 1.9000000000000001,
+        "contractVolumeOnScreen": 1.9,
         "currency": "BTC",
         "exchange": "deribit",
         "notionalVolumeBlocked": null,
@@ -230,7 +230,7 @@
         "notionalVolumeBlocked": null,
         "notionalVolumeOnScreen": 177624.05,
         "premiumVolumeBlocked": null,
-        "premiumVolumeOnScreen": 4045.6257201449994,
+        "premiumVolumeOnScreen": 4045.625720145,
         "timestamp": 1711931940000
       },
       {
@@ -312,13 +312,13 @@
       },
       {
         "contractVolumeBlocked": null,
-        "contractVolumeOnScreen": 6,
+        "contractVolumeOnScreen": 5.999999999999999,
         "currency": "BTC",
         "exchange": "deribit",
         "notionalVolumeBlocked": null,
-        "notionalVolumeOnScreen": 426712.196,
+        "notionalVolumeOnScreen": 426712.19600000005,
         "premiumVolumeBlocked": null,
-        "premiumVolumeOnScreen": 4471.127613201999,
+        "premiumVolumeOnScreen": 4471.127613202,
         "timestamp": 1711931460000
       },
       {
@@ -466,7 +466,7 @@
       },
       {
         "contractVolumeBlocked": null,
-        "contractVolumeOnScreen": 1.9,
+        "contractVolumeOnScreen": 1.9000000000000001,
         "currency": "BTC",
         "exchange": "deribit",
         "notionalVolumeBlocked": null,
@@ -492,7 +492,7 @@
         "currency": "BTC",
         "exchange": "deribit",
         "notionalVolumeBlocked": null,
-        "notionalVolumeOnScreen": 234848.073,
+        "notionalVolumeOnScreen": 234848.07299999997,
         "premiumVolumeBlocked": null,
         "premiumVolumeOnScreen": 5527.069295745,
         "timestamp": 1711930500000
@@ -510,7 +510,7 @@
       },
       {
         "contractVolumeBlocked": null,
-        "contractVolumeOnScreen": 2.1999999999999997,
+        "contractVolumeOnScreen": 2.2,
         "currency": "BTC",
         "exchange": "deribit",
         "notionalVolumeBlocked": null,
@@ -521,11 +521,11 @@
       },
       {
         "contractVolumeBlocked": null,
-        "contractVolumeOnScreen": 2.6000000000000005,
+        "contractVolumeOnScreen": 2.6,
         "currency": "BTC",
         "exchange": "deribit",
         "notionalVolumeBlocked": null,
-        "notionalVolumeOnScreen": 185046.50699999998,
+        "notionalVolumeOnScreen": 185046.507,
         "premiumVolumeBlocked": null,
         "premiumVolumeOnScreen": 1643.71635144,
         "timestamp": 1711930320000
@@ -536,7 +536,7 @@
         "currency": "BTC",
         "exchange": "deribit",
         "notionalVolumeBlocked": null,
-        "notionalVolumeOnScreen": 113873.294,
+        "notionalVolumeOnScreen": 113873.29400000001,
         "premiumVolumeBlocked": null,
         "premiumVolumeOnScreen": 2175.69616159,
         "timestamp": 1711930260000
@@ -580,9 +580,9 @@
         "currency": "BTC",
         "exchange": "deribit",
         "notionalVolumeBlocked": null,
-        "notionalVolumeOnScreen": 284750.87,
+        "notionalVolumeOnScreen": 284750.87000000005,
         "premiumVolumeBlocked": null,
-        "premiumVolumeOnScreen": 5488.140904239999,
+        "premiumVolumeOnScreen": 5488.140904240001,
         "timestamp": 1711930020000
       },
       {
@@ -631,7 +631,7 @@
       },
       {
         "contractVolumeBlocked": null,
-        "contractVolumeOnScreen": 34.20000000000003,
+        "contractVolumeOnScreen": 34.200000000000024,
         "currency": "BTC",
         "exchange": "deribit",
         "notionalVolumeBlocked": null,

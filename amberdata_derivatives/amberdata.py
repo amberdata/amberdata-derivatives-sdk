@@ -442,7 +442,23 @@ class AmberdataDerivatives:
 
     # ==================================================================================================================
 
-    # /derivatives/analytics/realized-volatility/annual-performance
+    def get_realized_volatility_annual_performance(self, exchange: str, pair: str, **kwargs):
+        """
+        The endpoint returns the PnL of a pair on an exchange.
+
+        QUERY PARAMS:
+        - exchange    (string) [Required] [Examples] gdax
+        - pair        (string) [Required] [Examples] btc_usd
+        - timeFormat  (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+        return self.__make_request(
+            'markets/derivatives/analytics/realized-volatility/annual-performance',
+            {
+                'exchange': exchange,
+                'pair': pair,
+                **kwargs
+            }
+        )
 
     def get_realized_volatility_cones(self, exchange: str, pair: str, **kwargs):
         """
@@ -516,8 +532,7 @@ class AmberdataDerivatives:
 
         QUERY PARAMS:
         - exchange          (string)    [Required] [Examples] deribit
-        - currency          (string)    [Required] [Examples] BTC | SOL_USDC
-        - daysToExpiration  (int32)     [Optional] [Examples] 1 | 2 | 3 | 7* | 14 | 21 | 30 | 60 | 90 | 180
+        - currency          (string)    [Required] [Examples] BTC | SOL_USDC 
         - startDate         (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate           (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat        (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
@@ -553,7 +568,27 @@ class AmberdataDerivatives:
             }
         )
 
-    # /derivatives/analytics/realized-volatility/performance-comparison
+    def get_realized_volatility_performance_comparison(self, exchange: str, pair: str, pair2: str, **kwargs):
+        """
+        This endpoint compares PnLs between two pairs.
+
+        QUERY PARAMS:
+        - exchange    (string)    [Required] [Examples] gdax
+        - pair        (string)    [Required] [Examples] btc_usd
+        - pair2       (string)    [Required] [Examples] btc_usd
+        - startDate   (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate     (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat  (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+        return self.__make_request(
+            'markets/derivatives/analytics/realized-volatility/performance-comparison',
+            {
+                'exchange': exchange,
+                'pair': pair,
+                'pair2': pair2,
+                **kwargs
+            }
+        )
 
     def get_realized_volatility_seasonality_day_of_week(self, exchange: str, pair: str, **kwargs):
         """
@@ -699,6 +734,28 @@ class AmberdataDerivatives:
 
         return self.__make_request(
             'markets/derivatives/analytics/trades-flow/gamma-exposures-snapshots',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_trades_flow_net_positioning(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the historical net positioning.
+
+        QUERY PARAMS:
+        - exchange              (string)    [Required] [Examples] deribit | okex | bybit
+        - currency              (string)    [Required] [Examples] BTC | SOL_USDC
+        - showActiveExpirations (boolean)   [Optional] [Examples] true
+        - startDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate               (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat            (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/trades-flow/net-positioning',
             {
                 'exchange': exchange,
                 'currency': currency,
@@ -995,6 +1052,30 @@ class AmberdataDerivatives:
             }
         )
 
+    def get_volatility_of_volatility(self, currency: str, **kwargs):
+        """
+        This endpoint contains all the metrics useful for having an immediate overview of the options market,
+        for each active expiry. The current Mark IV is updated every minute.
+
+        These metrics are then compared according to the selected "daysBack" parameter.
+
+        All the differences are found in the columns with the indication "change" (current metrics vs days ago metrics).
+
+        QUERY PARAMS:
+        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
+        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
+        - daysBack       (date-time) [Optional] [Examples] 1 | 7 | 14
+        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/volatility/volatility-of-volatility',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
     def get_volatility_term_structures_constant(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the term structure (for exchange listed expirations) with forward volatility calculations.
@@ -1059,6 +1140,29 @@ class AmberdataDerivatives:
             'markets/derivatives/analytics/volatility/term-structures/richness',
             {
                 'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_variance_premium(self, currency: str, **kwargs):
+        """
+        This endpoint returns the Deribit "DVol" index, shifted to align with historical realized volatility.
+        Since option implied volatility is pricing future realized volatility, this endpoint helps users measure the
+        accuracy of such expectation. When the VRP (variance risk premium) is positive, implied volatility was higher
+        than future realized volatility, meaning options were overpriced. Vice versa when VRP was negative.
+
+        The Deribit DVol index has 30-days to maturity and the measured realized volatility uses a 30-day calculation
+        window. Realized volatility is measured using the high/low "Parkinson" volatility method.
+
+        QUERY PARAMS:
+        - currency   (string) [Required] [Examples] BTC | SOL_USDC
+        - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/volatility/variance-premium',
+            {
                 'currency': currency,
                 **kwargs
             }
