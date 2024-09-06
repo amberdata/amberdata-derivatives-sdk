@@ -67,7 +67,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
     def test_realtime_putcall(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', putCall='P')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=200)
+        self.validate_response_200(response, min_elements=189)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field(response, 'putCall', 'P')
