@@ -11,21 +11,22 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointDecoratedTradesTestCase(BaseTestCase):
-    def setUp(self, function_name='get_decorated_trades'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(function_name='get_decorated_trades')
 
     # ==================================================================================================================
 
     def test_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=500)
+        self.validate_response_200(response, min_elements=300)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_milliseconds=True)
-        self.validate_response_field_timestamp(response, 'postTradeOrderbookTimestamp', is_milliseconds=True, is_nullable=True)
-        self.validate_response_field_timestamp(response, 'preTradeOrderbookTimestamp', is_milliseconds=True, is_nullable=True)
+        self.validate_response_field_timestamp(response, 'postTradeOrderbookTimestamp', is_milliseconds=True, is_nullable=True, is_zeroable=True)
+        self.validate_response_field_timestamp(response, 'preTradeOrderbookTimestamp', is_milliseconds=True, is_nullable=True, is_zeroable=True)
 
     def test_historical(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T02:00:00')

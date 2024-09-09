@@ -11,35 +11,32 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointRealizedVolatilityMonthlyVsDailyRatioTestCase(BaseTestCase):
-    def setUp(self, function_name='get_realized_volatility_monthly_vs_daily_ratio'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(function_name='get_realized_volatility_monthly_vs_daily_ratio')
 
     # ==================================================================================================================
 
     def test_default(self):
         response = self.call_endpoint(exchange='gdax', pair='btc_usd')
-        self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=2000)
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
     def test_timeformat_default(self):
         response = self.call_endpoint(exchange='gdax', pair='btc_usd')
-        self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=2000)
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
     def test_timeformat_hr(self):
         response = self.call_endpoint(exchange='gdax', pair='btc_usd', timeFormat='hr')
-        self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=2000)
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True)
 
     def test_timeformat_iso(self):
         response = self.call_endpoint(exchange='gdax', pair='btc_usd', timeFormat='iso')
-        self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=2000)
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True)

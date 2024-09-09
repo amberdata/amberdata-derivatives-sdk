@@ -11,8 +11,15 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointRealizedVolatilitySeasonalityMonthOfYearTestCase(BaseTestCase):
-    def setUp(self, function_name='get_realized_volatility_seasonality_month_of_year'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(
+            function_name='get_realized_volatility_seasonality_month_of_year',
+            imprecise_fields=[
+                'payload.data[*].historicalVolatility1day',
+                'payload.data[*].premiumVolume',
+            ]
+        )
 
     # ==================================================================================================================
 

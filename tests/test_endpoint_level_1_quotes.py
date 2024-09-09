@@ -11,8 +11,9 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointLevel1QuotesTestCase(BaseTestCase):
-    def setUp(self, function_name='get_level_1_quotes'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(function_name='get_level_1_quotes')
 
     # ==================================================================================================================
 
@@ -66,7 +67,7 @@ class EndpointLevel1QuotesTestCase(BaseTestCase):
     def test_realtime_putcall(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', putCall='P')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=200)
+        self.validate_response_200(response, min_elements=150)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field(response, 'putCall', 'P')

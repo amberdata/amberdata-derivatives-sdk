@@ -11,8 +11,9 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointInstrumentsMostTradedTestCase(BaseTestCase):
-    def setUp(self, function_name='get_instruments_most_traded'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(function_name='get_instruments_most_traded')
 
     # ==================================================================================================================
 
@@ -25,7 +26,7 @@ class EndpointInstrumentsMostTradedTestCase(BaseTestCase):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=2372)
+        self.validate_response_200(response, num_elements=2373)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
 

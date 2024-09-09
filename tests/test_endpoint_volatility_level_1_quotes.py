@@ -11,8 +11,9 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointVolatilityLevel1QuotesTestCase(BaseTestCase):
-    def setUp(self, function_name='get_volatility_level_1_quotes'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(function_name='get_volatility_level_1_quotes')
 
     # ==================================================================================================================
 

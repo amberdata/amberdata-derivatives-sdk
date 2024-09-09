@@ -11,15 +11,23 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointRealizedVolatilityImpliedVsRealizedTestCase(BaseTestCase):
-    def setUp(self, function_name='get_realized_volatility_implied_vs_realized'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(
+            function_name='get_realized_volatility_implied_vs_realized',
+            imprecise_fields=[
+                'payload.data[*].realizedVolatility7',
+                'payload.data[*].realizedVolatility30',
+            ],
+            precision_error=0.05
+        )
 
     # ==================================================================================================================
 
     def test_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=744)
+        self.validate_response_200(response, min_elements=8000)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)

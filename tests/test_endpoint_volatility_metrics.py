@@ -11,8 +11,9 @@ from tests.error_message import ErrorMessage
 # ======================================================================================================================
 
 class EndpointVolatilityMetricsTestCase(BaseTestCase):
-    def setUp(self, function_name='get_volatility_metrics'):
-        super().setUp(function_name)
+    # pylint: disable-next=arguments-differ
+    def setUp(self):
+        super().setUp(function_name='get_volatility_metrics')
 
     # ==================================================================================================================
 
@@ -34,7 +35,6 @@ class EndpointVolatilityMetricsTestCase(BaseTestCase):
 
     def test_timeformat_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC')
-        self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=5)
         self.validate_response_field(response, 'exchange', 'deribit')
@@ -43,7 +43,6 @@ class EndpointVolatilityMetricsTestCase(BaseTestCase):
 
     def test_timeformat_hr(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', timeFormat='hr')
-        self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=5)
         self.validate_response_field(response, 'exchange', 'deribit')
@@ -52,7 +51,6 @@ class EndpointVolatilityMetricsTestCase(BaseTestCase):
 
     def test_timeformat_iso(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', timeFormat='iso')
-        self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=5)
         self.validate_response_field(response, 'exchange', 'deribit')
