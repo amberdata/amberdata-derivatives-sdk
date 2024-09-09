@@ -53,11 +53,10 @@ jobs:
           echo "logfile ~/.msmtp.log" >> ~/.msmtprc
           chmod 600 ~/.msmtprc
 
-    # Temporarily disabling opsgenie while observing over the weekend that tests appear stable
-    # - name: Send email to Opsgenie on failure
-    #   if: failure()
-    #   run: |
-    #       echo "Subject: Unit Test Failure Alert" > email.txt
-    #       echo "To: 27f44c5f-27bf-4b75-a3d3-8f599d7012b3@amberdata.opsgenie.net" >> email.txt
-    #       echo "Unit tests failed for ${{ github.repository }}. Please check the details in the CI workflow." >> email.txt
-    #       msmtp --debug -a default 27f44c5f-27bf-4b75-a3d3-8f599d7012b3@amberdata.opsgenie.net < email.txt
+    - name: Send email to Opsgenie on failure
+      if: failure()
+      run: |
+          echo "Subject: Unit Test Failure Alert" > email.txt
+          echo "To: 27f44c5f-27bf-4b75-a3d3-8f599d7012b3@amberdata.opsgenie.net" >> email.txt
+          echo "Unit tests failed for ${{ github.repository }}. Please check the details in the CI workflow." >> email.txt
+          msmtp --debug -a default 27f44c5f-27bf-4b75-a3d3-8f599d7012b3@amberdata.opsgenie.net < email.txt
