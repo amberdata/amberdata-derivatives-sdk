@@ -26,7 +26,6 @@ def is_valid_url(url):
 # ======================================================================================================================
 
 class ValidateLinksTestCase(unittest.TestCase):
-    @unittest.skip("Temporarily skipping this test")
     def test_links(self):
         pass
         with open('README.md', 'r', encoding='utf-8') as f:
