@@ -19,7 +19,7 @@ class EndpointOptionsScannerTopTradesTestCase(BaseTestCase):
 
     def test_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC')
-        self.validate_response_200(response, min_elements=10)
+        self.validate_response_200(response, num_elements=10)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
@@ -63,7 +63,16 @@ class EndpointOptionsScannerTopTradesTestCase(BaseTestCase):
         self.validate_response_field(response, 'blockTradeId', None)
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
 
-    def test_historical_limit(self):
+    def test_historical_limit_high(self):
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', limit=100)
+        self.validate_response_data(response)
+        self.validate_response_schema(response, schema=self.schema)
+        self.validate_response_200(response, num_elements=100)
+        self.validate_response_field(response, 'exchange', 'deribit')
+        self.validate_response_field(response, 'currency', 'BTC')
+        self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
+
+    def test_historical_limit_low(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', limit=2)
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)

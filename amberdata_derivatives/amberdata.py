@@ -208,12 +208,12 @@ class AmberdataDerivatives:
         at any point in time. The calculation take a ratio of 7-day ATM IV versus, 30-day, 60-day. 90-day and 180-days.
 
         QUERY PARAMS:
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timestamp      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timestamp  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.get_volatility_term_structures_richness(exchange, currency, **kwargs)
 
@@ -224,11 +224,11 @@ class AmberdataDerivatives:
         We can see the RV distribution for multiple measurement windows compared to the end date.
 
         QUERY PARAMS:
-        - exchange    (string)    [Required] [Examples] gdax
-        - pair        (string)    [Required] [Examples] btc_usd
-        - startDate   (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate     (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat  (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string)    [Required] [Examples] gdax
+        - pair       (string)    [Required] [Examples] btc_usd
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.get_realized_volatility_cones(exchange, pair, **kwargs)
 
@@ -277,12 +277,12 @@ class AmberdataDerivatives:
         trades.
 
         QUERY PARAMS:
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - blockTradeId   (boolean)   [Optional] [Examples] true
-        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange     (string)    [Required] [Examples] deribit | okex | bybit
+        - currency     (string)    [Required] [Examples] BTC | SOL_USDC
+        - blockTradeId (boolean)   [Optional] [Examples] true
+        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
@@ -304,11 +304,11 @@ class AmberdataDerivatives:
         The data is returned with 15min granularity, and the default interval is 7D.
 
         QUERY PARAMS:
-        - asset            (string)    [Required] [Examples] BTC | ETH
-        - interval         (string)    [Required] [Examples] 7D | 30D | 90D |180D
-        - startDate        (string)    [Required] [Optional] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
-        - endDate          (string)    [Required] [Optional] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
-        - timeFormat       (string)    [Optional] [Optional] milliseconds | ms* | iso | iso8601 | hr
+        - asset      (string) [Required] [Examples] BTC | ETH
+        - interval   (string) [Required] [Examples] 7D | 30D | 90D |180D
+        - startDate  (string) [Required] [Optional] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - endDate    (string) [Required] [Optional] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - timeFormat (string) [Optional] [Optional] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
@@ -327,9 +327,9 @@ class AmberdataDerivatives:
         APR of the spot differential.
 
         QUERY PARAMS:
-        - asset            (string)    [Required] [Examples] BTC | ETH
-        - marginType       (string)    [Required] [Examples] coins | stables
-        - timeFormat       (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - asset      (string) [Required] [Examples] BTC | ETH
+        - marginType (string) [Required] [Examples] coins | stables
+        - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
@@ -348,10 +348,10 @@ class AmberdataDerivatives:
         The open interest is returned in raw coin amounts and millions of dollars.
 
         QUERY PARAMS:
-        - asset            (string)    [Required] [Examples] BTC | ETH
-        - startDate        (string)    [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
-        - endDate          (string)    [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
-        - timeFormat       (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - asset      (string) [Required] [Examples] BTC | ETH
+        - startDate  (string) [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - endDate    (string) [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
@@ -370,11 +370,11 @@ class AmberdataDerivatives:
         The open interest is returned in raw coin amounts and millions of dollars.
 
         QUERY PARAMS:
-        - asset            (string)    [Required] [Examples] BTC | ETH
-        - marginType       (string)    [Required] [Examples] coins | stables
-        - startDate        (string)    [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
-        - endDate          (string)    [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
-        - timeFormat       (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - asset      (string) [Required] [Examples] BTC | ETH
+        - marginType (string) [Required] [Examples] coins | stables
+        - startDate  (string) [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - endDate    (string) [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
@@ -393,10 +393,10 @@ class AmberdataDerivatives:
         The endpoint returns the USD volume in millions of dollars and the volume in units of underlying coins.
 
         QUERY PARAMS:
-        - asset            (string)    [Required] [Examples] BTC | ETH
-        - startDate        (string)    [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
-        - endDate          (string)    [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
-        - timeFormat       (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - asset      (string) [Required] [Examples] BTC | ETH
+        - startDate  (string) [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - endDate    (string) [Optional] [Examples] 1578531600 | 1578531600000 | 2020-09-01T01:00:00
+        - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
@@ -408,6 +408,68 @@ class AmberdataDerivatives:
         )
 
     # ==================================================================================================================
+
+    def get_options_scanner_block_trades(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint contains all the relevant information about the most important trades both on screen and blocked.
+
+        Besides the usual information this endpoint have some proprietary nuances that helps market watchers to read
+        the flow deeply.
+
+        Among others:
+          - "Amberdata Direction" is the metrics we developed for gauging the real initiator of a trade
+          - "Delta Hedge" highlight is a block trade contained a futures leg
+          - The information of the orderbook prior to the trade ("pre" columns) and post ("post" columns ).
+
+        It returns only active instruments.
+
+        QUERY PARAMS:
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/options-scanner/block-trades',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_options_scanner_on_screen_trades(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint contains all the relevant information about the most important trades both on screen and blocked.
+
+        Besides the usual information this endpoint have some proprietary nuances that helps market watchers to read
+        the flow deeply.
+
+        Among others:
+          - "Amberdata Direction" is the metrics we developed for gauging the real initiator of a trade
+          - "Delta Hedge" highlight is a block trade contained a futures leg
+          - The information of the orderbook prior to the trade ("pre" columns) and post ("post" columns ).
+
+        It returns only active instruments.
+
+        QUERY PARAMS:
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/options-scanner/on-screen-trades',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
 
     def get_options_scanner_top_trades(self, exchange: str, currency: str, **kwargs):
         """
@@ -424,11 +486,12 @@ class AmberdataDerivatives:
         It returns only active instruments.
 
         QUERY PARAMS:
-        - exchange            (string)    [Required] [Examples] deribit | okex | bybit
-        - currency            (string)    [Required] [Examples] BTC | SOL_USDC
-        - startDate           (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat          (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange     (string)    [Required] [Examples] deribit | okex | bybit
+        - currency     (string)    [Required] [Examples] BTC | SOL_USDC
+        - blockTradeId (boolean)   [Optional] [Examples] true | false
+        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
@@ -447,9 +510,9 @@ class AmberdataDerivatives:
         The endpoint returns the PnL of a pair on an exchange.
 
         QUERY PARAMS:
-        - exchange    (string) [Required] [Examples] gdax
-        - pair        (string) [Required] [Examples] btc_usd
-        - timeFormat  (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string) [Required] [Examples] gdax
+        - pair       (string) [Required] [Examples] btc_usd
+        - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.__make_request(
             'markets/derivatives/analytics/realized-volatility/annual-performance',
@@ -466,11 +529,11 @@ class AmberdataDerivatives:
         We can see the RV distribution for multiple measurement windows compared to the end date.
 
         QUERY PARAMS:
-        - exchange    (string)    [Required] [Examples] gdax
-        - pair        (string)    [Required] [Examples] btc_usd
-        - startDate   (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate     (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat  (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string)    [Required] [Examples] gdax
+        - pair       (string)    [Required] [Examples] btc_usd
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.__make_request(
             'markets/derivatives/analytics/realized-volatility/cones',
@@ -531,11 +594,11 @@ class AmberdataDerivatives:
         Using the daysToExpiration parameter, users can choose which "at-the-money" implied volatility to compare.
 
         QUERY PARAMS:
-        - exchange          (string)    [Required] [Examples] deribit
-        - currency          (string)    [Required] [Examples] BTC | SOL_USDC 
-        - startDate         (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate           (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat        (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string)    [Required] [Examples] deribit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.__make_request(
             'markets/derivatives/analytics/realized-volatility/implied-vs-realized',
@@ -555,9 +618,9 @@ class AmberdataDerivatives:
         and trending markets.
 
         QUERY PARAMS:
-        - exchange    (string) [Required] [Examples] gdax
-        - pair        (string) [Required] [Examples] btc_usd
-        - timeFormat  (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string) [Required] [Examples] gdax
+        - pair       (string) [Required] [Examples] btc_usd
+        - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.__make_request(
             'markets/derivatives/analytics/realized-volatility/monthly-vs-daily-ratio',
@@ -573,12 +636,12 @@ class AmberdataDerivatives:
         This endpoint compares PnLs between two pairs.
 
         QUERY PARAMS:
-        - exchange    (string)    [Required] [Examples] gdax
-        - pair        (string)    [Required] [Examples] btc_usd
-        - pair2       (string)    [Required] [Examples] btc_usd
-        - startDate   (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate     (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat  (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string)    [Required] [Examples] gdax
+        - pair       (string)    [Required] [Examples] btc_usd
+        - pair2      (string)    [Required] [Examples] btc_usd
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.__make_request(
             'markets/derivatives/analytics/realized-volatility/performance-comparison',
@@ -597,11 +660,11 @@ class AmberdataDerivatives:
         Users can view how weekend volatility compares to say, Wednesday realized volatility, etc.
 
         QUERY PARAMS:
-        - exchange    (string)    [Required] [Examples] gdax
-        - pair        (string)    [Required] [Examples] btc_usd
-        - startDate   (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate     (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat  (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string)    [Required] [Examples] gdax
+        - pair       (string)    [Required] [Examples] btc_usd
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.__make_request(
             'markets/derivatives/analytics/realized-volatility/seasonality/day-of-week',
@@ -620,11 +683,11 @@ class AmberdataDerivatives:
         Users can view how Q4 volatility compares to say, Q1 volatility, etc.
 
         QUERY PARAMS:
-        - exchange    (string)    [Required] [Examples] gdax
-        - pair        (string)    [Required] [Examples] btc_usd
-        - startDate   (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate     (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat  (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string)    [Required] [Examples] gdax
+        - pair       (string)    [Required] [Examples] btc_usd
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
         return self.__make_request(
             'markets/derivatives/analytics/realized-volatility/seasonality/month-of-year',
@@ -645,11 +708,11 @@ class AmberdataDerivatives:
         The volume is broken out by instruments for 3rd party "blockTrades" (venues such as Paradigm, GreeksLive, etc).
 
         QUERY PARAMS:
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
@@ -672,15 +735,15 @@ class AmberdataDerivatives:
         (aka "dealers") are typically the passive trade participants.
 
         QUERY PARAMS:
-        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - blockTradeId   (boolean)   [Optional] [Examples] true
-        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
-        - instrument     (string)    [Optional] [Examples] BTC-26APR24-100000-C
-        - putCall        (string)    [Optional] [Examples] C | P
-        - strike         (int32)     [Optional] [Examples] 100000 | 3500
+        - currency     (string)    [Required] [Examples] BTC | SOL_USDC
+        - exchange     (string)    [Required] [Examples] deribit | okex | bybit
+        - blockTradeId (boolean)   [Optional] [Examples] true
+        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - instrument   (string)    [Optional] [Examples] BTC-26APR24-100000-C
+        - putCall      (string)    [Optional] [Examples] C | P
+        - strike       (int32)     [Optional] [Examples] 100000 | 3500
         """
 
         return self.__make_request(
@@ -698,9 +761,9 @@ class AmberdataDerivatives:
         a 1% move in spot prices.
 
         QUERY PARAMS:
-        - exchange            (string)    [Required] [Examples] deribit | okex | bybit
-        - currency            (string)    [Required] [Examples] BTC | SOL_USDC
-        - timeFormat          (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string) [Required] [Examples] deribit | okex | bybit
+        - currency   (string) [Required] [Examples] BTC | SOL_USDC
+        - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
@@ -725,11 +788,11 @@ class AmberdataDerivatives:
         database of MMs gamma exposure.
 
         QUERY PARAMS:
-        - exchange            (string)    [Required] [Examples] deribit | okex | bybit
-        - currency            (string)    [Required] [Examples] BTC | SOL_USDC
-        - startDate           (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat          (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
@@ -807,9 +870,9 @@ class AmberdataDerivatives:
           Absolute Yield: $25/$275 Annualized Yield: $25/$275 (525,600 / minutes left until expiration
 
         QUERY PARAMS:
-        - exchange            (string)    [Required] [Examples] deribit | okex | bybit
-        - currency            (string)    [Required] [Examples] BTC | SOL_USDC
-        - timeFormat          (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string) [Required] [Examples] deribit | okex | bybit
+        - currency   (string) [Required] [Examples] BTC | SOL_USDC
+        - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
@@ -855,12 +918,12 @@ class AmberdataDerivatives:
         GreeksLive, etc).
 
         QUERY PARAMS:
-        - exchange            (string)    [Required] [Examples] deribit | okex | bybit
-        - currency            (string)    [Required] [Examples] BTC | SOL_USDC
-        - startDate           (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat          (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
-        - timeInterval        (string)    [Optional] [Examples] minute | hour | day
+        - exchange     (string)    [Required] [Examples] deribit | okex | bybit
+        - currency     (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - timeInterval (string)    [Optional] [Examples] minute | hour | day
         """
 
         return self.__make_request(
@@ -949,12 +1012,12 @@ class AmberdataDerivatives:
         Deribit developed their Bitcoin VIX called the DVOL index.
 
         QUERY PARAMS:
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timestamp      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timestamp  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
@@ -978,12 +1041,12 @@ class AmberdataDerivatives:
         and underlying spot prices.
 
         QUERY PARAMS:
-        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timestamp      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timestamp  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
@@ -1062,10 +1125,10 @@ class AmberdataDerivatives:
         All the differences are found in the columns with the indication "change" (current metrics vs days ago metrics).
 
         QUERY PARAMS:
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - daysBack       (date-time) [Optional] [Examples] 1 | 7 | 14
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - daysBack   (date-time) [Optional] [Examples] 1 | 7 | 14
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
@@ -1128,12 +1191,12 @@ class AmberdataDerivatives:
         at any point in time. The calculation take a ratio of 7-day ATM IV versus, 30-day, 60-day. 90-day and 180-days.
 
         QUERY PARAMS:
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - startDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate        (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timestamp      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timestamp  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(

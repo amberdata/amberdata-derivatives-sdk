@@ -1,0 +1,82 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "indexPrice": 61823.69333333333,
+        "netPremium": 4677030.6306,
+        "numTrades": 3,
+        "tradeAmount": 400,
+        "uniqueTrade": "[\"buy BTC-27DEC24-70000-C\"]"
+      },
+      {
+        "indexPrice": 63752.681764705885,
+        "netPremium": -1948834.5274079996,
+        "numTrades": 17,
+        "tradeAmount": 422,
+        "uniqueTrade": "[\"sell BTC-27SEP24-75000-C\",\"buy BTC-27SEP24-100000-C\"]"
+      },
+      {
+        "indexPrice": 69773.87166666666,
+        "netPremium": 8093345.0294,
+        "numTrades": 6,
+        "tradeAmount": 1000,
+        "uniqueTrade": "[\"buy BTC-28MAR25-200000-C\"]"
+      },
+      {
+        "indexPrice": 64561.16,
+        "netPremium": -2140148.419999999,
+        "numTrades": 1,
+        "tradeAmount": 800,
+        "uniqueTrade": "[\"sell BTC-27DEC24-100000-C\",\"buy BTC-27SEP24-100000-C\"]"
+      },
+      {
+        "indexPrice": 68018.12222222221,
+        "netPremium": 4634850.5078,
+        "numTrades": 9,
+        "tradeAmount": 525,
+        "uniqueTrade": "[\"buy BTC-27SEP24-90000-C\"]"
+      },
+      {
+        "indexPrice": 64502.07,
+        "netPremium": -901075.574,
+        "numTrades": 2,
+        "tradeAmount": 525,
+        "uniqueTrade": "[\"sell BTC-27SEP24-110000-C\"]"
+      },
+      {
+        "indexPrice": 63137.73142857143,
+        "netPremium": -13475023.940549998,
+        "numTrades": 7,
+        "tradeAmount": 2389,
+        "uniqueTrade": "[\"sell BTC-27SEP24-90000-C\"]"
+      },
+      {
+        "indexPrice": 70603.804,
+        "netPremium": 14669787.7372,
+        "numTrades": 5,
+        "tradeAmount": 950,
+        "uniqueTrade": "[\"buy BTC-27DEC24-100000-C\"]"
+      },
+      {
+        "indexPrice": 67074.2525,
+        "netPremium": 9020772.2451,
+        "numTrades": 4,
+        "tradeAmount": 612.5,
+        "uniqueTrade": "[\"buy BTC-27DEC24-80000-C\"]"
+      },
+      {
+        "indexPrice": 62817.79,
+        "netPremium": -5253450.26,
+        "numTrades": 1,
+        "tradeAmount": 1000,
+        "uniqueTrade": "[\"buy BTC-27SEP24-110000-C\",\"sell BTC-27DEC24-100000-C\"]"
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}
