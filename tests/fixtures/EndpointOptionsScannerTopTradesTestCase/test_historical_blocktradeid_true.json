@@ -1,0 +1,64 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "amberdataDirection": "buy",
+        "blockAmount": 50,
+        "blockTradeId": "BLOCK-135080",
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeDirection": "sell",
+        "exchangeTimestamp": 1711936362714,
+        "hedgeInstrument": null,
+        "hedgeIsBuySide": null,
+        "hedgePrice": null,
+        "hedgeVolume": null,
+        "indexPrice": 70846.2,
+        "instrument": "BTC-27SEP24-75000-P",
+        "numberOfLegs": 2,
+        "openInterestChange": 25,
+        "price": 0.1934,
+        "priceUsd": 15217.924618,
+        "sizeDelta": -8.920250000000001,
+        "sizeGamma": 0.00025,
+        "sizeTheta": -1153.69725,
+        "sizeUSD": 380448.11545,
+        "sizeVega": 5141.537499999999,
+        "tradeAmount": 25,
+        "tradeIv": 80.18
+      },
+      {
+        "amberdataDirection": "buy",
+        "blockAmount": 50,
+        "blockTradeId": "BLOCK-135080",
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeDirection": "sell",
+        "exchangeTimestamp": 1711936362714,
+        "hedgeInstrument": null,
+        "hedgeIsBuySide": null,
+        "hedgePrice": null,
+        "hedgeVolume": null,
+        "indexPrice": 70846.2,
+        "instrument": "BTC-27SEP24-75000-C",
+        "numberOfLegs": 2,
+        "openInterestChange": 25,
+        "price": 0.2402,
+        "priceUsd": 18900.442054,
+        "sizeDelta": 16.079250000000002,
+        "sizeGamma": 0.00025,
+        "sizeTheta": -1153.654,
+        "sizeUSD": 472511.05134999997,
+        "sizeVega": 5141.50675,
+        "tradeAmount": 25,
+        "tradeIv": 80.16
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}

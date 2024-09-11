@@ -1037,10 +1037,10 @@ class AmberdataDerivatives:
         All the differences are found in the columns with the indication "change" (current metrics vs days ago metrics).
 
         QUERY PARAMS:
-        - exchange       (string)    [Required] [Examples] deribit | okex | bybit
-        - currency       (string)    [Required] [Examples] BTC | SOL_USDC
-        - daysBack       (date-time) [Optional] [Examples] 1 | 7 | 14
-        - timeFormat     (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - daysBack   (date-time) [Optional] [Examples] 1 | 7 | 14
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(

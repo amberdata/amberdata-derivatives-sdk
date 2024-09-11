@@ -1,5 +1,5 @@
-# Environment file
-/.env
+# Environment files
+.env
 
 # IDEs
 /.idea/
@@ -7,5 +7,8 @@
 
 # Python
 .venv/
-/amberdata_derivatives/__pycache__/
+__pycache__/
+/amberdata_derivatives.egg-info/
+/amberdata_derivatives/__init__.pyc
 /build/
+/jupyter_notebooks/.ipynb_checkpoints/
