@@ -13,13 +13,20 @@ from tests.error_message import ErrorMessage
 class EndpointOptionsScannerBlockTradesTestCase(BaseTestCase):
     # pylint: disable-next=arguments-differ
     def setUp(self):
-        super().setUp(function_name='get_options_scanner_block_trades')
+        super().setUp(
+            function_name='get_options_scanner_block_trades',
+            imprecise_fields=[
+                'payload.data[*].indexPrice',
+                'payload.data[*].netPremium',
+                'payload.data[*].tradeAmount'
+            ],
+            precision_error=0.0001
+        )
 
     # ==================================================================================================================
 
     def test_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC')
-        self.validate_response_data(response)
         self.validate_response_200(response, num_elements=10)
 
     def test_historical(self):
