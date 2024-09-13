@@ -4,7 +4,7 @@
     "data": [
       {
         "indexPrice": 62442.28,
-        "netPremium": -16911584.621749997,
+        "netPremium": -16911584.62175,
         "numTrades": 16,
         "tradeAmount": 3364,
         "uniqueTrade": "[\"sell BTC-27SEP24-90000-C\"]"
