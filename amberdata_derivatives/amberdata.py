@@ -456,11 +456,9 @@ class AmberdataDerivatives:
         TODO.
 
         QUERY PARAMS:
-        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
-        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
-        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string) [Required] [Examples] deribit | okex | bybit
+        - currency   (string) [Required] [Examples] BTC | SOL_USDC
+        - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
@@ -505,24 +503,24 @@ class AmberdataDerivatives:
             }
         )
 
-    def get_options_scanner_top_trades_by_unique_trade(self, exchange: str, currency: str, **kwargs):
+    def get_options_scanner_top_trades_by_unique_trade(self, exchange: str, currency: str, uniqueTrade: str, **kwargs):
         """
         TODO.
 
         QUERY PARAMS:
         - exchange     (string)    [Required] [Examples] deribit | okex | bybit
         - currency     (string)    [Required] [Examples] BTC | SOL_USDC
+        - uniqueTrade  (string)    [Optional] [Examples] ...
         - blockTradeId (boolean)   [Optional] [Examples] true | false
-        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
-        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self.__make_request(
-            'markets/derivatives/analytics/options-scanner/top-trades',
+            'markets/derivatives/analytics/options-scanner/top-trades-by-unique-trade',
             {
                 'exchange': exchange,
                 'currency': currency,
+                'uniqueTrade': uniqueTrade,
                 **kwargs
             }
         )
