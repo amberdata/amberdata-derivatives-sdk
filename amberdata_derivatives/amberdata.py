@@ -411,17 +411,7 @@ class AmberdataDerivatives:
 
     def get_options_scanner_block_trades(self, exchange: str, currency: str, **kwargs):
         """
-        This endpoint contains all the relevant information about the most important trades both on screen and blocked.
-
-        Besides the usual information this endpoint have some proprietary nuances that helps market watchers to read
-        the flow deeply.
-
-        Among others:
-          - "Amberdata Direction" is the metrics we developed for gauging the real initiator of a trade
-          - "Delta Hedge" highlight is a block trade contained a futures leg
-          - The information of the orderbook prior to the trade ("pre" columns) and post ("post" columns ).
-
-        It returns only active instruments.
+        TODO.
 
         QUERY PARAMS:
         - exchange   (string)    [Required] [Examples] deribit | okex | bybit
@@ -442,17 +432,7 @@ class AmberdataDerivatives:
 
     def get_options_scanner_on_screen_trades(self, exchange: str, currency: str, **kwargs):
         """
-        This endpoint contains all the relevant information about the most important trades both on screen and blocked.
-
-        Besides the usual information this endpoint have some proprietary nuances that helps market watchers to read
-        the flow deeply.
-
-        Among others:
-          - "Amberdata Direction" is the metrics we developed for gauging the real initiator of a trade
-          - "Delta Hedge" highlight is a block trade contained a futures leg
-          - The information of the orderbook prior to the trade ("pre" columns) and post ("post" columns ).
-
-        It returns only active instruments.
+        TODO.
 
         QUERY PARAMS:
         - exchange   (string)    [Required] [Examples] deribit | okex | bybit
@@ -471,6 +451,28 @@ class AmberdataDerivatives:
             }
         )
 
+    def get_options_scanner_strikes_bought_sold(self, exchange: str, currency: str, expiration: str, **kwargs):
+        """
+        TODO.
+
+        QUERY PARAMS:
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/options-scanner/strikes-bought-sold-by-aggressors',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                'expiration': expiration,
+                **kwargs
+            }
+        )
+
     def get_options_scanner_top_trades(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint contains all the relevant information about the most important trades both on screen and blocked.
@@ -484,6 +486,28 @@ class AmberdataDerivatives:
           - The information of the orderbook prior to the trade ("pre" columns) and post ("post" columns ).
 
         It returns only active instruments.
+
+        QUERY PARAMS:
+        - exchange     (string)    [Required] [Examples] deribit | okex | bybit
+        - currency     (string)    [Required] [Examples] BTC | SOL_USDC
+        - blockTradeId (boolean)   [Optional] [Examples] true | false
+        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self.__make_request(
+            'markets/derivatives/analytics/options-scanner/top-trades',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_options_scanner_top_trades_by_unique_trade(self, exchange: str, currency: str, **kwargs):
+        """
+        TODO.
 
         QUERY PARAMS:
         - exchange     (string)    [Required] [Examples] deribit | okex | bybit
