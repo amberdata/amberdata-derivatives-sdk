@@ -6,14 +6,14 @@
         "indexPrice": 65652.9126789366,
         "netPremium": -4938534.2703305,
         "numTrades": 489,
-        "tradeAmount": 1175.7,
+        "tradeAmount": 1175.6999999999996,
         "uniqueTrade": "[\"sell BTC-27SEP24-100000-C\"]"
       },
       {
-        "indexPrice": 64733.38745454545,
-        "netPremium": -7419583.300714501,
+        "indexPrice": 64733.38745454546,
+        "netPremium": -7419583.3007145,
         "numTrades": 385,
-        "tradeAmount": 919.5,
+        "tradeAmount": 919.4999999999999,
         "uniqueTrade": "[\"sell BTC-27SEP24-75000-C\"]"
       }
     ],
