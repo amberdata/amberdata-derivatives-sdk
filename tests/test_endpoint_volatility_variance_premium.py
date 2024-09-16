@@ -33,8 +33,6 @@ class EndpointVolatilityVariancePremiumTestCase(BaseTestCase):
         self.validate_response_field(response, 'instrument', 'btc')
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
-    # TODO: This is a broken test
-    @unittest.skip("Missing validation")
     def test_default_timeformat_hr(self):
         response = self.call_endpoint(currency='BTC', timeFormat='hr')
         self.validate_response_schema(response, schema=self.schema)
