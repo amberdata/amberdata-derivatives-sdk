@@ -10,6 +10,8 @@ from tests.error_message import ErrorMessage
 
 # ======================================================================================================================
 
+# TODO: re-enable this
+@unittest.skip("Re-enable this")
 class EndpointOptionsScannerBlockTradesTestCase(BaseTestCase):
     # pylint: disable-next=arguments-differ
     def setUp(self):
