@@ -84,6 +84,20 @@ class BaseTestCase(unittest.TestCase):
                 query.filter(lambda d: True, expected)
                 query.filter(lambda d: True, actual)
 
+        # Useful for debugging
+        # path = self.fixtures_directory + '/' + type(self).__name__
+        # pathlib.Path(path).mkdir(parents=True, exist_ok=True)
+        # file = path + '/' + inspect.stack()[1].function + '.'
+        #
+        # with open(file + 'expected.json', 'w', encoding='utf-8') as f:
+        #     json.dump(expected, f, indent=2, sort_keys=True)
+        # with open(file + 'actual.json', 'w', encoding='utf-8') as f:
+        #     json.dump(actual, f, indent=2, sort_keys=True)
+
+        # Remove debugging information
+        # find tests/fixtures/ -type f -name \**.expected.json -exec rm {} \;
+        # find tests/fixtures/ -type f -name \**.actual.json   -exec rm {} \;
+
         # Validate & remove imprecise fields if any
         if self.imprecise_fields is not None:
             for field in self.imprecise_fields:
@@ -106,10 +120,6 @@ class BaseTestCase(unittest.TestCase):
         self.__clean_error_message(actual)
 
         # Check data
-        # with open('expected.json', 'w', encoding='utf-8') as f:
-        #     json.dump(expected, f, indent=2, sort_keys=True)
-        # with open('actual.json', 'w', encoding='utf-8') as f:
-        #     json.dump(actual, f, indent=2, sort_keys=True)
         self.assertEqual(expected, actual)
 
     def validate_response_schema(self, response, file=None, schema=None):
