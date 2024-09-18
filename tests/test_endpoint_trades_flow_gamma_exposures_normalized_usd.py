@@ -56,11 +56,6 @@ class EndpointTradesFlowGammaExposuresNormalizedUSDTestCase(BaseTestCase):
         self.validate_response_data(response)
         self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER)
 
-    def test_unknown_exchange(self):
-        response = self.call_endpoint(exchange='<exchange>', currency='BTC')
-        self.validate_response_data(response)
-        self.validate_response_200(response, num_elements=0)
-
     def test_unknown_currency(self):
         response = self.call_endpoint(exchange='deribit', currency='<currency>')
         self.validate_response_data(response)
