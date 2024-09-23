@@ -128,6 +128,28 @@ class EndpointTradesFlowPutCallDistributionTestCase(BaseTestCase):
         self.validate_response_field(response, 'putPremiumSold', 0)
         self.validate_response_field(response, 'putPremiumSoldExchangeDirection', 0)
 
+    def test_unknown_exchange(self):
+        response = self.call_endpoint(exchange='<exchange>', currency='BTC')
+        # TODO: API should return 404 instead
+        # self.validate_response_data(response)
+        self.validate_response_200(response, num_elements=1)
+        self.validate_response_field(response, 'callsContractsBought', 0)
+        self.validate_response_field(response, 'callsContractsBoughtExchangeDirection', 0)
+        self.validate_response_field(response, 'callsContractsSold', 0)
+        self.validate_response_field(response, 'callsContractsSoldExchangeDirection', 0)
+        self.validate_response_field(response, 'callsPremiumBought', 0)
+        self.validate_response_field(response, 'callsPremiumBoughtExchangeDirection', 0)
+        self.validate_response_field(response, 'callsPremiumSold', 0)
+        self.validate_response_field(response, 'callsPremiumSoldExchangeDirection', 0)
+        self.validate_response_field(response, 'putContractsBought', 0)
+        self.validate_response_field(response, 'putContractsBoughtExchangeDirection', 0)
+        self.validate_response_field(response, 'putContractsSold', 0)
+        self.validate_response_field(response, 'putContractsSoldExchangeDirection', 0)
+        self.validate_response_field(response, 'putPremiumBought', 0)
+        self.validate_response_field(response, 'putPremiumBoughtExchangeDirection', 0)
+        self.validate_response_field(response, 'putPremiumSold', 0)
+        self.validate_response_field(response, 'putPremiumSoldExchangeDirection', 0)
+
 
 # ======================================================================================================================
 
