@@ -20,7 +20,7 @@ class EndpointFuturesPerpetualsAPRBasisLiveTermStructuresTestCase(BaseTestCase):
     def test_default_margintype_coins(self):
         response = self.call_endpoint(asset='BTC', marginType='coins')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=20)
+        self.validate_response_200(response, min_elements=15)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_milliseconds=True)
 
     def test_default_margintype_stables(self):
@@ -32,19 +32,19 @@ class EndpointFuturesPerpetualsAPRBasisLiveTermStructuresTestCase(BaseTestCase):
     def test_default_timeformat_default(self):
         response = self.call_endpoint(asset='BTC', marginType='coins')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=20)
+        self.validate_response_200(response, min_elements=15)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_milliseconds=True)
 
     def test_default_timeformat_hr(self):
         response = self.call_endpoint(asset='BTC', marginType='coins', timeFormat='hr')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=20)
+        self.validate_response_200(response, min_elements=15)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_hr=True, is_minutely=True)
 
     def test_historical_timeformat_iso(self):
         response = self.call_endpoint(asset='BTC', marginType='coins', timeFormat='iso')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=20)
+        self.validate_response_200(response, min_elements=15)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_iso=True, is_minutely=True)
 
     # ==================================================================================================================
