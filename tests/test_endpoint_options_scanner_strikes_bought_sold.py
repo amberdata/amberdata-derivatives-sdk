@@ -43,21 +43,21 @@ class EndpointOptionsScannerStrikesBoughtSoldTestCase(BaseTestCase):
     def test_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', expiration=self.__expiration)
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=1)
+        self.validate_response_200(response, min_elements=5)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'snapshotTimestamp', is_milliseconds=True)
 
     def test_default_timeformat_hr(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', expiration=self.__expiration, timeFormat='hr')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=1)
+        self.validate_response_200(response, min_elements=5)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_hr=True)
         self.validate_response_field_timestamp(response, 'snapshotTimestamp', is_hr=True)
 
     def test_default_timeformat_iso(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', expiration=self.__expiration, timeFormat='iso')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=1)
+        self.validate_response_200(response, min_elements=5)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_iso=True)
         self.validate_response_field_timestamp(response, 'snapshotTimestamp', is_iso=True)
 
