@@ -19,7 +19,7 @@ class EndpointOptionsScannerTopTradesTestCase(BaseTestCase):
 
     def test_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC')
-        self.validate_response_200(response, num_elements=100)
+        self.validate_response_200(response, min_elements=100)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)

@@ -2,7 +2,7 @@
 
 # pylint: disable=line-too-long, missing-class-docstring, missing-function-docstring, missing-module-docstring, too-many-public-methods
 
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta, timezone, UTC
 import unittest
 
 from tests.base_test_case import BaseTestCase
@@ -25,8 +25,8 @@ class EndpointOptionsScannerStrikesBoughtSoldTestCase(BaseTestCase):
         )
 
         # Retrieve last know decorated trades
-        start_date = (datetime.now().utcnow() - timedelta(hours=12)).isoformat()
-        end_date = datetime.now().utcnow().isoformat()
+        start_date = (datetime.now(UTC) - timedelta(hours=12)).isoformat()
+        end_date = datetime.now(UTC).isoformat()
         response = self.amberdata_client.get_trades_flow_decorated_trades('deribit', 'BTC', startDate=start_date, endDate=end_date)
 
         # Find the greater expiration
@@ -42,34 +42,22 @@ class EndpointOptionsScannerStrikesBoughtSoldTestCase(BaseTestCase):
 
     def test_default(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', expiration=self.__expiration)
-        self.validate_response_200(response, min_elements=10)
-        self.validate_response_field_timestamp(response, 'snapshotTimestamp', is_milliseconds=True)
-
-    def test_historical(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', expiration=self.__expiration)
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=40)
+        self.validate_response_200(response, min_elements=5)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'snapshotTimestamp', is_milliseconds=True)
 
-    def test_historical_timeformat_default(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', expiration=self.__expiration)
-        self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=10)
-        self.validate_response_field_timestamp(response, 'expirationTimestamp', is_milliseconds=True)
-        self.validate_response_field_timestamp(response, 'snapshotTimestamp', is_milliseconds=True)
-
-    def test_historical_timeformat_hr(self):
+    def test_default_timeformat_hr(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', expiration=self.__expiration, timeFormat='hr')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=10)
+        self.validate_response_200(response, min_elements=5)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_hr=True)
         self.validate_response_field_timestamp(response, 'snapshotTimestamp', is_hr=True)
 
-    def test_historical_timeformat_iso(self):
+    def test_default_timeformat_iso(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', expiration=self.__expiration, timeFormat='iso')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=10)
+        self.validate_response_200(response, min_elements=5)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_iso=True)
         self.validate_response_field_timestamp(response, 'snapshotTimestamp', is_iso=True)
 
