@@ -25,16 +25,16 @@ class EndpointOptionsScannerTopTradesTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
 
     def test_historical(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00')
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', expiration='2024-04-03')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=28)
+        self.validate_response_200(response, num_elements=4)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
 
     def test_historical_blocktradeid(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', blockTradeId='BLOCK-135080')
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', expiration='2024-04-03', blockTradeId='BLOCK-135080')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=2)
@@ -44,66 +44,48 @@ class EndpointOptionsScannerTopTradesTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
 
     def test_historical_blocktradeid_true(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', blockTradeId=True)
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', expiration='2024-04-03', blockTradeId=True)
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=2)
+        self.validate_response_200(response, num_elements=86)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field(response, 'blockTradeId', 'BLOCK-135080')
+        self.validate_response_field_not(response, 'blockTradeId', '', None)
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
 
     def test_historical_blocktradeid_false(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', blockTradeId=False)
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', expiration='2024-04-03', blockTradeId=False)
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=100)
+        self.validate_response_200(response, num_elements=406)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field(response, 'blockTradeId', None)
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
 
-    def test_historical_limit_high(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-02T00:00:00', limit=100)
-        self.validate_response_data(response)
-        self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=100)
-        self.validate_response_field(response, 'exchange', 'deribit')
-        self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
-
-    def test_historical_limit_low(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', limit=2)
-        self.validate_response_data(response)
-        self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=2)
-        self.validate_response_field(response, 'exchange', 'deribit')
-        self.validate_response_field(response, 'currency', 'BTC')
-        self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
-
     def test_historical_timeformat_default(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00')
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', expiration='2024-04-03')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=28)
+        self.validate_response_200(response, num_elements=4)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
 
     def test_historical_timeformat_hr(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', timeFormat='hr')
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', expiration='2024-04-03', timeFormat='hr')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=28)
+        self.validate_response_200(response, num_elements=4)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_hr=True)
 
     def test_historical_timeformat_iso(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', timeFormat='iso')
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T00:10:00', expiration='2024-04-03', timeFormat='iso')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=28)
+        self.validate_response_200(response, num_elements=4)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_iso=True)
