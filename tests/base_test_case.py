@@ -199,6 +199,21 @@ class BaseTestCase(unittest.TestCase):
             for element in data:
                 self.assertTrue(element[field_name] == field_value or element[field_name] == field_value2)
 
+    def validate_response_field_not(self, response, field_name: str, *args):
+        """
+        Validates that the field with name `field_name` has the value `field_value`.
+
+        :param response:      The response payload
+        :param field_name:    The name of the field to validate
+        :param field_value:   The value expected for the field (either/or)
+        :param field_value2:  The value expected for the field (either/or)
+        """
+        data = response['payload']['data']
+
+        for element in data:
+            self.assertTrue(all(element[field_name] != arg for arg in args))
+
+
     def validate_response_field_timestamp(
         self,
         response,

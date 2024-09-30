@@ -2,7 +2,7 @@
 
 # pylint: disable=line-too-long, missing-class-docstring, missing-function-docstring, missing-module-docstring, too-many-public-methods
 
-from datetime import datetime, timedelta, timezone, UTC
+from datetime import datetime, timedelta, timezone
 import unittest
 
 from tests.base_test_case import BaseTestCase
@@ -25,8 +25,8 @@ class EndpointOptionsScannerStrikesBoughtSoldTestCase(BaseTestCase):
         )
 
         # Retrieve last know decorated trades
-        start_date = (datetime.now(UTC) - timedelta(hours=12)).isoformat()
-        end_date = datetime.now(UTC).isoformat()
+        start_date = (datetime.now().utcnow() - timedelta(hours=12)).isoformat()
+        end_date = datetime.now().utcnow().isoformat()
         response = self.amberdata_client.get_trades_flow_decorated_trades('deribit', 'BTC', startDate=start_date, endDate=end_date)
 
         # Find the greater expiration
