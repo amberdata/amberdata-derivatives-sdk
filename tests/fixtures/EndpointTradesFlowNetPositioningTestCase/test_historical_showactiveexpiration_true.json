@@ -385,6 +385,774 @@
         "indexPrice": 71296,
         "snapshotTimestamp": 1711929600000,
         "strike": "95000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "10000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71176,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "100000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71176,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "105000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71176,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "110000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71174,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "115000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71175,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "120000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "125000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71177,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "130000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "135000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "140000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "15000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71174,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "150000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71171,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "160000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71171,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "180000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "20000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "200000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "220000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71174,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "240000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "25000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71177,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "250000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "28000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "29000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71171,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "30000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71174,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "300000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "31000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "32000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "33000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "34000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71174,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "35000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71174,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "36000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "37000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "38000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "39000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "40000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "41000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "42000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "43000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "44000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "45000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "46000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "47000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71174,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "48000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "49000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "50000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71174,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "51000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "52000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "53000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "54000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "55000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71174,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "56000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "57000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71174,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "58000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71174,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "59000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71174,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "60000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71176,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "61000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "62000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "63000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71171,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "65000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71170,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "70000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71173,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "75000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71171,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "80000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71171,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "85000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71171,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "90000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 71172,
+        "snapshotTimestamp": 1711933200000,
+        "strike": "95000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70844,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "10000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70844,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "100000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70842,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "105000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70845,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "110000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70842,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "115000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70845,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "120000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70844,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "125000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70843,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "130000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "135000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70845,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "140000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70844,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "15000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70844,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "150000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70844,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "160000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70845,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "180000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70845,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "20000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70843,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "200000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70842,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "220000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70842,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "240000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70844,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "25000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70844,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "250000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70844,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "28000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70849,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "29000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70845,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "30000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70845,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "300000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "31000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "32000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "33000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "34000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "35000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "36000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "37000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "38000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "39000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70845,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "40000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "41000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "42000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70844,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "43000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70849,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "44000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70844,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "45000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "46000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "47000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "48000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "49000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70847,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "50000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70848,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "51000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70842,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "52000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70848,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "53000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "54000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70847,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "55000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70845,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "56000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70847,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "57000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70847,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "58000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "59000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "60000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70844,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "61000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70842,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "62000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70842,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "63000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70845,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "65000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70845,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "70000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70844,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "75000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70846,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "80000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70845,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "85000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70844,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "90000.0"
+      },
+      {
+        "dealerNetInventory": 0,
+        "indexPrice": 70844,
+        "snapshotTimestamp": 1711936800000,
+        "strike": "95000.0"
       }
     ],
     "metadata": {
