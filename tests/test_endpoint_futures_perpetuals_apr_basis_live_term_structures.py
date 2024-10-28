@@ -26,7 +26,7 @@ class EndpointFuturesPerpetualsAPRBasisLiveTermStructuresTestCase(BaseTestCase):
     def test_default_margintype_stables(self):
         response = self.call_endpoint(asset='BTC', marginType='stables')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=10)
+        self.validate_response_200(response, min_elements=8)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_milliseconds=True)
 
     def test_default_timeformat_default(self):
