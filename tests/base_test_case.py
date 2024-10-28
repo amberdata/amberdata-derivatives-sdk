@@ -14,7 +14,7 @@ import unittest
 
 import copy
 import dotenv
-import jsonpath_ng as jp
+import jsonpath_ng as jp # pylint: disable=import-error
 import jsonschema
 
 from amberdata_derivatives import AmberdataDerivatives
@@ -24,11 +24,13 @@ dotenv.load_dotenv()
 
 # ======================================================================================================================
 
+# pylint: disable=too-many-instance-attributes
 class BaseTestCase(unittest.TestCase):
     """
     Class to handle all the uni tests common functionalities and helper functions.
     """
 
+    # pylint: disable=too-many-arguments
     def setUp(
             self,
             function_name: str = None,
@@ -214,6 +216,7 @@ class BaseTestCase(unittest.TestCase):
             self.assertTrue(all(element[field_name] != arg for arg in args))
 
 
+    # pylint: disable=too-many-arguments, too-many-locals, too-many-branches
     def validate_response_field_timestamp(
         self,
         response,
