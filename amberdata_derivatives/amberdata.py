@@ -8,7 +8,6 @@ Module to handle Amberdata's API calls.
 
 import os
 
-import deprecation
 import dotenv
 import requests
 
