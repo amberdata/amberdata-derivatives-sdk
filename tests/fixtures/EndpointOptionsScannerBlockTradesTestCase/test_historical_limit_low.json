@@ -3,18 +3,18 @@
   "payload": {
     "data": [
       {
-        "indexPrice": 62442.28,
-        "netPremium": -16911584.62175,
-        "numTrades": 16,
-        "tradeAmount": 3364,
-        "uniqueTrade": "[\"sell BTC-27SEP24-90000-C\"]"
+        "indexPrice": 64519.268461538464,
+        "netPremium": -22320458.1866125,
+        "numTrades": 13,
+        "tradeAmount": 2650,
+        "uniqueTrade": "[\"sell BTC-27DEC24-100000-C\"]"
       },
       {
-        "indexPrice": 61478.32333333334,
-        "netPremium": -3078172.671875,
-        "numTrades": 6,
-        "tradeAmount": 1425,
-        "uniqueTrade": "[\"sell BTC-27SEP24-100000-C\"]"
+        "indexPrice": 69198.06714285715,
+        "netPremium": 15790392.602599999,
+        "numTrades": 7,
+        "tradeAmount": 1108,
+        "uniqueTrade": "[\"buy BTC-27DEC24-100000-C\"]"
       }
     ],
     "metadata": {
