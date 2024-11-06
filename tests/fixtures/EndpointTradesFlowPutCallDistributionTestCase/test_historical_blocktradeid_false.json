@@ -3,20 +3,20 @@
   "payload": {
     "data": [
       {
-        "callsContractsBought": 29559.200000000077,
-        "callsContractsBoughtExchangeDirection": 30746.800000000083,
-        "callsContractsSold": 35098.20000000016,
-        "callsContractsSoldExchangeDirection": 33910.60000000015,
+        "callsContractsBought": 29559.200000000055,
+        "callsContractsBoughtExchangeDirection": 30746.80000000005,
+        "callsContractsSold": 35098.200000000106,
+        "callsContractsSoldExchangeDirection": 33910.6000000001,
         "callsPremiumBought": 74391084.40002093,
-        "callsPremiumBoughtExchangeDirection": 68893985.82738921,
+        "callsPremiumBoughtExchangeDirection": 68893985.8273892,
         "callsPremiumSold": 69534813.0778541,
         "callsPremiumSoldExchangeDirection": 75031911.65048581,
-        "putContractsBought": 20875.500000000022,
-        "putContractsBoughtExchangeDirection": 22577.10000000003,
-        "putContractsSold": 23711.000000000065,
-        "putContractsSoldExchangeDirection": 22009.400000000034,
+        "putContractsBought": 20875.499999999996,
+        "putContractsBoughtExchangeDirection": 22577.10000000001,
+        "putContractsSold": 23711.00000000001,
+        "putContractsSoldExchangeDirection": 22009.40000000001,
         "putPremiumBought": 27013741.827031136,
-        "putPremiumBoughtExchangeDirection": 35251727.872182705,
+        "putPremiumBoughtExchangeDirection": 35251727.87218271,
         "putPremiumSold": 37280414.83419293,
         "putPremiumSoldExchangeDirection": 29042428.789041363
       }
