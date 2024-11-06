@@ -3,25 +3,25 @@
   "payload": {
     "data": [
       {
-        "contractVolumeBlocked": 943445.5999999982,
-        "contractVolumeOnScreen": 2330278.9999932833,
+        "contractVolumeBlocked": 943325.0999999982,
+        "contractVolumeOnScreen": 2330399.4999932875,
         "currency": "BTC",
         "exchange": "deribit",
-        "notionalVolumeBlocked": 54570747340.82704,
-        "notionalVolumeOnScreen": 136008914917.57832,
-        "premiumVolumeBlocked": 2515931284.3069444,
-        "premiumVolumeOnScreen": 3501506114.276516,
+        "notionalVolumeBlocked": 54565506491.64704,
+        "notionalVolumeOnScreen": 136014155766.75829,
+        "premiumVolumeBlocked": 2515812307.4219446,
+        "premiumVolumeOnScreen": 3500960749.3945146,
         "timestamp": "2024-01-01 00:00:00 000"
       },
       {
-        "contractVolumeBlocked": 3290885.5999999973,
-        "contractVolumeOnScreen": 5257684.199986935,
+        "contractVolumeBlocked": 3289675.5999999973,
+        "contractVolumeOnScreen": 5258894.1999869505,
         "currency": "BTC",
         "exchange": "deribit",
-        "notionalVolumeBlocked": 94776963976.82,
-        "notionalVolumeOnScreen": 151991538938.37988,
-        "premiumVolumeBlocked": 3165091523.7410016,
-        "premiumVolumeOnScreen": 2971396002.3930526,
+        "notionalVolumeBlocked": 94725241835.57,
+        "notionalVolumeOnScreen": 152043261079.62982,
+        "premiumVolumeBlocked": 3163072440.441002,
+        "premiumVolumeOnScreen": 2969418935.898052,
         "timestamp": "2023-01-01 00:00:00 000"
       }
     ],
