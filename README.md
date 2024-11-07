@@ -15,7 +15,7 @@ To install the latest version:
 pip install git+https://github.com/amberdata/amberdata-derivatives-sdk.git
 ```
 
-To install a specific branch:
+To install a specific version:
 ```bash
 pip install git+https://github.com/amberdata/amberdata-derivatives-sdk@1.0.5
 ```
