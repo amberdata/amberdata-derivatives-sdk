@@ -13,9 +13,13 @@
               "contractVolume" : { "type" : "number" },
               "currency"       : { "type" : "string" },
               "exchange"       : { "type" : "string" },
-              "instrument"     : { "type" : "string" }
+              "instrument"     : { "type" : "string" },
+              "maxIv"          : { "type" : ["null", "number"] },
+              "minIv"          : { "type" : ["null", "number"] },
+              "vwapIv"         : { "type" : ["null", "number"] },
+              "vwapPriceUsd"   : { "type" : ["null", "number"] }
             },
-            "required": ["contractVolume", "currency", "exchange", "instrument"],
+            "required": ["contractVolume", "currency", "exchange", "instrument", "maxIv", "minIv", "vwapIv", "vwapPriceUsd"],
             "additionalProperties": false
           }
         },
