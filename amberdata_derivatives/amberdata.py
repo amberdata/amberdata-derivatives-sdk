@@ -10,6 +10,7 @@ import os
 
 import dotenv
 import requests
+import time
 
 from amberdata_derivatives.version import __version__
 
@@ -42,6 +43,11 @@ class AmberdataDerivatives:
         }
         self.__time_format = time_format
         self.__version = __version__
+
+        # Retry configuration
+        self.__max_attempts                  = 10
+        self.__backoff_rate_limits_seconds   = 10
+        self.__backoff_server_errors_seconds =  5
 
     # ==================================================================================================================
 
@@ -1064,6 +1070,32 @@ class AmberdataDerivatives:
 
     # ==================================================================================================================
 
+    @staticmethod
+    def __download(url: str, headers: dict, max_attempts=10, backoff_rate_limits=10, backoff_server_errors=5, timeout=30):
+        # Send GET request
+        response = requests.get(url, headers=headers, timeout=timeout)
+
+        # Sleep and loop while request is rate limited or there are server errors
+        num_attempts = 0
+        while response.status_code != 200 and num_attempts < max_attempts:
+            # Rate limited - backoff by sleeping for a bit
+            if response.status_code == 429:
+                time.sleep(backoff_rate_limits)
+
+            # Server errors - backoff by sleeping for a bit
+            elif int(response.status_code / 100) == 5:
+                time.sleep(backoff_server_errors)
+
+            # Other codes (4xx for example) - no further attempts
+            else:
+                break
+
+            response = requests.get(url, headers=headers, timeout=30)
+            num_attempts += 1
+
+        # Parse response
+        return response.json()
+
     def __make_request(self, url_path: str, query_params: dict):
         """Helper method to make HTTP GET requests and parse the JSON response into a DataFrame."""
 
@@ -1077,7 +1109,12 @@ class AmberdataDerivatives:
         url = f"{self.__base_url}/{url_path}?{query_string}"
 
         # Issue REST call & parse response payload
-        response = requests.get(url, headers=self.__headers, timeout=30)
-        return response.json()
+        return self.__download(
+            url,
+            self.__headers,
+            self.__max_attempts,
+            self.__backoff_rate_limits_seconds,
+            self.__backoff_server_errors_seconds,
+        )
 
 # ======================================================================================================================
