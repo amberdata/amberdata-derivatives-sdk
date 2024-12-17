@@ -30,7 +30,6 @@ class BaseTestCase(unittest.TestCase):
     Class to handle all the uni tests common functionalities and helper functions.
     """
 
-    # pylint: disable=too-many-arguments
     def setUp(
             self,
             function_name: str = None,
