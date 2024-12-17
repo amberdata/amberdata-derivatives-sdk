@@ -31,12 +31,12 @@ class BaseTestCase(unittest.TestCase):
     """
 
     def setUp(
-            self,
-            function_name: str = None,
-            time_format: str = None,
-            ignore_fields: list = None,
-            imprecise_fields: list = None,
-            precision_error: float = 0.000001
+        self,
+        function_name    : str = None,
+        time_format      : str = None,
+        ignore_fields    : list = None,
+        imprecise_fields : list = None,
+        precision_error  : float = 0.000001
     ):
         self.record_api_calls = os.getenv('RECORD_API_CALLS', 'false') == 'true'
         self.amberdata_client = AmberdataDerivatives(api_key=os.getenv('API_KEY'), time_format=time_format)
@@ -214,22 +214,21 @@ class BaseTestCase(unittest.TestCase):
         for element in data:
             self.assertTrue(all(element[field_name] != arg for arg in args))
 
-
     # pylint: disable=too-many-arguments, too-many-locals, too-many-branches
     def validate_response_field_timestamp(
         self,
         response,
-        field_name: str,
-        is_hr=False,
-        is_iso=False,
-        is_milliseconds=False,
-        is_minutely=False,
-        is_hourly=False,
-        is_daily=False,
-        is_weekly=False,
-        is_yearly=False,
-        is_nullable=False,
-        is_zeroable=False
+        field_name      : str,
+        is_hr           : bool = False,
+        is_iso          : bool = False,
+        is_milliseconds : bool = False,
+        is_minutely     : bool = False,
+        is_hourly       : bool = False,
+        is_daily        : bool = False,
+        is_weekly       : bool = False,
+        is_yearly       : bool = False,
+        is_nullable     : bool = False,
+        is_zeroable     : bool = False
     ):
         """
         Validates a timestamp field in the response payload.
