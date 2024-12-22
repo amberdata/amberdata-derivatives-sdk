@@ -1,7 +1,7 @@
 # ======================================================================================================================
 
 """
-Module to handle all the uni tests common functionalities and helper functions.
+Module to handle all the unit tests common functionalities and helper functions.
 """
 
 # ======================================================================================================================
@@ -27,22 +27,25 @@ dotenv.load_dotenv()
 # pylint: disable=too-many-instance-attributes
 class BaseTestCase(unittest.TestCase):
     """
-    Class to handle all the uni tests common functionalities and helper functions.
+    Class to handle all the unit tests common functionalities and helper functions.
     """
 
     def setUp(
         self,
-        function_name    : str = None,
-        time_format      : str = None,
-        ignore_fields    : list = None,
-        imprecise_fields : list = None,
+        function_name    : str   = None,
+        root_directory   : str   = None,
+        time_format      : str   = None,
+        ignore_fields    : list  = None,
+        imprecise_fields : list  = None,
         precision_error  : float = 0.000001
     ):
+        root_directory = os.path.dirname(inspect.stack()[1].filename)
+
         self.record_api_calls = os.getenv('RECORD_API_CALLS', 'false') == 'true'
         self.amberdata_client = AmberdataDerivatives(api_key=os.getenv('API_KEY'), time_format=time_format)
         self.function_name = function_name
-        self.fixtures_directory = 'tests/fixtures'
-        self.schemata_directory = 'tests/schemata'
+        self.fixtures_directory = f"{root_directory}/fixtures"
+        self.schemata_directory = f"{root_directory}/schemata"
         self.schema = self.__load_schema()
         self.ignore_fields = ignore_fields
         self.imprecise_fields = imprecise_fields
