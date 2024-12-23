@@ -17,7 +17,7 @@ import dotenv
 import jsonpath_ng as jp # pylint: disable=import-error
 import jsonschema
 
-from amberdata_derivatives import AmberdataDerivatives
+from amberdata_derivatives import AmberdataDerivatives, AmberdataTradFi
 
 dotenv.load_dotenv()
 
@@ -33,7 +33,6 @@ class BaseTestCase(unittest.TestCase):
     def setUp(
         self,
         function_name    : str   = None,
-        root_directory   : str   = None,
         time_format      : str   = None,
         ignore_fields    : list  = None,
         imprecise_fields : list  = None,
@@ -42,7 +41,7 @@ class BaseTestCase(unittest.TestCase):
         root_directory = os.path.dirname(inspect.stack()[1].filename)
 
         self.record_api_calls = os.getenv('RECORD_API_CALLS', 'false') == 'true'
-        self.amberdata_client = AmberdataDerivatives(api_key=os.getenv('API_KEY'), time_format=time_format)
+        self.amberdata_client = self.__create_client(root_directory, os.getenv('API_KEY'), time_format)
         self.function_name = function_name
         self.fixtures_directory = f"{root_directory}/fixtures"
         self.schemata_directory = f"{root_directory}/schemata"
@@ -301,6 +300,15 @@ class BaseTestCase(unittest.TestCase):
                     # pylint: enable=multiple-statements
 
     # ==================================================================================================================
+
+    def __create_client(self, root_directory: str, api_key: str, time_format: str):
+        if root_directory.endswith('derivatives'):
+            return AmberdataDerivatives(api_key=api_key, time_format=time_format)
+
+        if root_directory.endswith('tradfi'):
+            return AmberdataTradFi(api_key=api_key, time_format=time_format)
+
+        raise AttributeError(f"Client not supported for test case '{root_directory}'.")
 
     def __load_schema(self, filename: str = None):
         if filename is None:
