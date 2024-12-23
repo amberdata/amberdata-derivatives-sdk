@@ -98,7 +98,7 @@ class EndpointTradesFlowDecoratedTradesTestCase(BaseTestCase):
         self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER)
 
     def test_invalid_exchange(self):
-        response = self.call_endpoint(exchange='<exchange>', currency='BTC')
+        response = self.call_endpoint(exchange='<exchange>', currency='MSTR')
         self.validate_response_data(response)
         self.validate_response_400(response, ErrorMessage.UNSUPPORTED_EXCHANGE)
 

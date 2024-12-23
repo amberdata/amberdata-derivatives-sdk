@@ -33,12 +33,12 @@ class EndpointInstrumentsMostTradedTestCase(BaseTestCase):
     # ==================================================================================================================
 
     def test_invalid_parameter(self):
-        response = self.call_endpoint(exchange='tradfi', currency='BTC', invalid='parameter')
+        response = self.call_endpoint(exchange='tradfi', currency='MSTR', invalid='parameter')
         self.validate_response_data(response)
         self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER)
 
     def test_invalid_timestamp(self):
-        response = self.call_endpoint(exchange='tradfi', currency='BTC', startDate='<timestamp>')
+        response = self.call_endpoint(exchange='tradfi', currency='MSTR', startDate='<timestamp>')
         self.validate_response_data(response)
         self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER_TIMESTAMP)
 
@@ -48,7 +48,7 @@ class EndpointInstrumentsMostTradedTestCase(BaseTestCase):
         self.validate_response_200(response, num_elements=0)
 
     def test_unknown_exchange(self):
-        response = self.call_endpoint(exchange='<exchange>', currency='BTC')
+        response = self.call_endpoint(exchange='<exchange>', currency='MSTR')
         self.validate_response_data(response)
         self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER_EXCHANGE_TRADFI)
 
