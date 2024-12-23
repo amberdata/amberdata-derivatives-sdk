@@ -1,7 +1,7 @@
 {
-  "description": "Server is currently unable to handle this request. Please try again soon",
+  "description": "Request was invalid or cannot be served. See message for details",
   "error": true,
-  "message": "",
-  "status": 500,
-  "title": "INTERNAL SERVER ERROR"
+  "message": "The argument 'strike' is not in numerical form (<strike>).",
+  "status": 400,
+  "title": "BAD REQUEST"
 }

@@ -27,7 +27,7 @@ class EndpointInstrumentsInformationTestCase(BaseTestCase):
     def test_currency(self):
         response = self.call_endpoint(currency='ETH')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response)
+        self.validate_response_200(response, min_elements=1)
         self.validate_response_field(response, 'currency', 'ETH')
         self.validate_response_field_timestamp(response, 'endDate', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'expiration', is_milliseconds=True)
@@ -35,7 +35,7 @@ class EndpointInstrumentsInformationTestCase(BaseTestCase):
     def test_exchange(self):
         response = self.call_endpoint(exchange='deribit')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response)
+        self.validate_response_200(response, min_elements=1)
         self.validate_response_field(response, 'exchange', 'deribit')
         self.validate_response_field_timestamp(response, 'endDate', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'expiration', is_milliseconds=True)
@@ -43,7 +43,7 @@ class EndpointInstrumentsInformationTestCase(BaseTestCase):
     def test_putcall(self):
         response = self.call_endpoint(putCall='P')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response)
+        self.validate_response_200(response, min_elements=1)
         self.validate_response_field(response, 'putCall', 'P')
         self.validate_response_field_timestamp(response, 'endDate', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'expiration', is_milliseconds=True)
@@ -51,7 +51,7 @@ class EndpointInstrumentsInformationTestCase(BaseTestCase):
     def test_strike(self):
         response = self.call_endpoint(strike=5000)
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response)
+        self.validate_response_200(response, min_elements=1)
         self.validate_response_field(response, 'strike', 5000)
         self.validate_response_field_timestamp(response, 'endDate', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'expiration', is_milliseconds=True)
@@ -82,19 +82,17 @@ class EndpointInstrumentsInformationTestCase(BaseTestCase):
     def test_invalid_parameter(self):
         response = self.call_endpoint(invalid='parameter')
         self.validate_response_data(response)
-        self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER)
+        self.validate_response_å400(response, ErrorMessage.INVALID_PARAMETER)
 
     def test_invalid_putcall(self):
         response = self.call_endpoint(putCall='<put_call>')
         self.validate_response_data(response)
         self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER_PUT_CALL)
 
-    # TODO: This test should fail, and not return a 500 - validation is missing in data-api
-    @unittest.skip("Missing validation")
     def test_invalid_strike(self):
         response = self.call_endpoint(strike='<strike>')
         self.validate_response_data(response)
-        self.validate_response_200(response, num_elements=0)
+        self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER_STRIKE)
 
     def test_invalid_timeformat(self):
         response = self.call_endpoint(timeFormat='<time_format>')
