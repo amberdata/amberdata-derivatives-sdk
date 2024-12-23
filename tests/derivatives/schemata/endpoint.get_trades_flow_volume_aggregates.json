@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "contractVolumeBlocked"  : { "type" : ["null",    "number"] },
+              "contractVolumeOnScreen" : { "type" : ["null",    "number"] },
+              "currency"               : { "type" : "string" },
+              "exchange"               : { "type" : "string" },
+              "notionalVolumeBlocked"  : { "type" : ["null",    "number"] },
+              "notionalVolumeOnScreen" : { "type" : ["null",    "number"] },
+              "premiumVolumeBlocked"   : { "type" : ["null",    "number"] },
+              "premiumVolumeOnScreen"  : { "type" : ["null",    "number"] },
+              "timestamp"              : { "type" : ["integer", "string"] }
+            },
+            "required": ["contractVolumeBlocked", "contractVolumeOnScreen", "currency", "exchange", "notionalVolumeBlocked", "notionalVolumeOnScreen", "premiumVolumeBlocked", "premiumVolumeOnScreen", "timestamp"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}

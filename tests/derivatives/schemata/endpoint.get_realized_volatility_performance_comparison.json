@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "timestamp"                   : { "type": ["integer", "string"] },
+              "exchange"                    : { "type": ["string"] },
+              "pair"                        : { "type": ["string"] },
+              "open"                        : { "type": ["number"] },
+              "high"                        : { "type": ["number"] },
+              "low"                         : { "type": ["number"] },
+              "close"                       : { "type": ["number"] },
+              "volume"                      : { "type": ["number"] },
+              "historicalVolatility1day"    : { "type": ["number"] },
+              "historicalVolatility2days"   : { "type": ["number"] },
+              "historicalVolatility3days"   : { "type": ["number"] },
+              "historicalVolatility7days"   : { "type": ["number"] },
+              "historicalVolatility14days"  : { "type": ["number"] },
+              "historicalVolatility21days"  : { "type": ["number"] },
+              "historicalVolatility30days"  : { "type": ["number"] },
+              "historicalVolatility60days"  : { "type": ["number"] },
+              "historicalVolatility90days"  : { "type": ["number"] },
+              "historicalVolatility180days" : { "type": ["number"] },
+              "pnl"                         : { "type": ["number"] }
+            },
+            "required": ["timestamp", "exchange", "pair", "open", "high", "low", "close", "volume", "historicalVolatility1day", "historicalVolatility2days", "historicalVolatility3days", "historicalVolatility7days", "historicalVolatility14days", "historicalVolatility21days", "historicalVolatility30days", "historicalVolatility60days", "historicalVolatility90days", "historicalVolatility180days", "pnl"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}

@@ -1,0 +1,30 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "callsContractsBought": null,
+        "callsContractsBoughtExchangeDirection": null,
+        "callsContractsSold": null,
+        "callsContractsSoldExchangeDirection": null,
+        "callsPremiumBought": null,
+        "callsPremiumBoughtExchangeDirection": null,
+        "callsPremiumSold": null,
+        "callsPremiumSoldExchangeDirection": null,
+        "putContractsBought": null,
+        "putContractsBoughtExchangeDirection": null,
+        "putContractsSold": null,
+        "putContractsSoldExchangeDirection": null,
+        "putPremiumBought": null,
+        "putPremiumBoughtExchangeDirection": null,
+        "putPremiumSold": null,
+        "putPremiumSoldExchangeDirection": null
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}

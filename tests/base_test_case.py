@@ -1,7 +1,7 @@
 # ======================================================================================================================
 
 """
-Module to handle all the uni tests common functionalities and helper functions.
+Module to handle all the unit tests common functionalities and helper functions.
 """
 
 # ======================================================================================================================
@@ -17,7 +17,7 @@ import dotenv
 import jsonpath_ng as jp # pylint: disable=import-error
 import jsonschema
 
-from amberdata_derivatives import AmberdataDerivatives
+from amberdata_derivatives import AmberdataDerivatives, AmberdataTradFi
 
 dotenv.load_dotenv()
 
@@ -27,23 +27,24 @@ dotenv.load_dotenv()
 # pylint: disable=too-many-instance-attributes
 class BaseTestCase(unittest.TestCase):
     """
-    Class to handle all the uni tests common functionalities and helper functions.
+    Class to handle all the unit tests common functionalities and helper functions.
     """
 
-    # pylint: disable=too-many-arguments
     def setUp(
-            self,
-            function_name: str = None,
-            time_format: str = None,
-            ignore_fields: list = None,
-            imprecise_fields: list = None,
-            precision_error: float = 0.000001
+        self,
+        function_name    : str   = None,
+        time_format      : str   = None,
+        ignore_fields    : list  = None,
+        imprecise_fields : list  = None,
+        precision_error  : float = 0.000001
     ):
+        root_directory = os.path.dirname(inspect.stack()[1].filename)
+
         self.record_api_calls = os.getenv('RECORD_API_CALLS', 'false') == 'true'
-        self.amberdata_client = AmberdataDerivatives(api_key=os.getenv('API_KEY'), time_format=time_format)
+        self.amberdata_client = self.__create_client(root_directory, os.getenv('API_KEY'), time_format)
         self.function_name = function_name
-        self.fixtures_directory = 'tests/fixtures'
-        self.schemata_directory = 'tests/schemata'
+        self.fixtures_directory = f"{root_directory}/fixtures"
+        self.schemata_directory = f"{root_directory}/schemata"
         self.schema = self.__load_schema()
         self.ignore_fields = ignore_fields
         self.imprecise_fields = imprecise_fields
@@ -215,22 +216,21 @@ class BaseTestCase(unittest.TestCase):
         for element in data:
             self.assertTrue(all(element[field_name] != arg for arg in args))
 
-
     # pylint: disable=too-many-arguments, too-many-locals, too-many-branches
     def validate_response_field_timestamp(
         self,
         response,
-        field_name: str,
-        is_hr=False,
-        is_iso=False,
-        is_milliseconds=False,
-        is_minutely=False,
-        is_hourly=False,
-        is_daily=False,
-        is_weekly=False,
-        is_yearly=False,
-        is_nullable=False,
-        is_zeroable=False
+        field_name      : str,
+        is_hr           : bool = False,
+        is_iso          : bool = False,
+        is_milliseconds : bool = False,
+        is_minutely     : bool = False,
+        is_hourly       : bool = False,
+        is_daily        : bool = False,
+        is_weekly       : bool = False,
+        is_yearly       : bool = False,
+        is_nullable     : bool = False,
+        is_zeroable     : bool = False
     ):
         """
         Validates a timestamp field in the response payload.
@@ -300,6 +300,15 @@ class BaseTestCase(unittest.TestCase):
                     # pylint: enable=multiple-statements
 
     # ==================================================================================================================
+
+    def __create_client(self, root_directory: str, api_key: str, time_format: str):
+        if root_directory.endswith('derivatives'):
+            return AmberdataDerivatives(api_key=api_key, time_format=time_format)
+
+        if root_directory.endswith('tradfi'):
+            return AmberdataTradFi(api_key=api_key, time_format=time_format)
+
+        raise AttributeError(f"Client not supported for test case '{root_directory}'.")
 
     def __load_schema(self, filename: str = None):
         if filename is None:

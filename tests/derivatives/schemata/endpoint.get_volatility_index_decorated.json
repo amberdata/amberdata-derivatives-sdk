@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "atm"               : { "type" : "number" },
+              "close"             : { "type" : "number" },
+              "currency"          : { "type" : "string" },
+              "daysAgo"           : { "type" : "number" },
+              "delta25RrSkew"     : { "type" : "number" },
+              "delta50"           : { "type" : "number" },
+              "deltaCall25"       : { "type" : "number" },
+              "deltaPut25"        : { "type" : "number" },
+              "exchange"          : { "type" : "string" },
+              "exchangeTimestamp" : { "type" : ["integer", "string"] },
+              "indexPrice"        : { "type" : "number" },
+              "instrument"        : { "type" : "string" },
+              "underlyingPrice"   : { "type" : "number" }
+            },
+            "required": ["atm", "close", "currency", "daysAgo", "delta25RrSkew", "delta50", "deltaCall25", "deltaPut25", "exchange", "exchangeTimestamp", "indexPrice", "instrument", "underlyingPrice"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}

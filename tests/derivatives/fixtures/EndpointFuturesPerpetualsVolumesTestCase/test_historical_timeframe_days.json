@@ -1,0 +1,332 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "exchange": "binance",
+        "timestamp": "2024-04-29 00:00:00 000",
+        "totalDailyVolume": 520927.8,
+        "totalDailyVolumeMilUSD": 31643.4,
+        "totalDailyVolumeNative": 520927.8,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "bitmex",
+        "timestamp": "2024-04-29 00:00:00 000",
+        "totalDailyVolume": 1504075190.4,
+        "totalDailyVolumeMilUSD": 658.5,
+        "totalDailyVolumeNative": 10961,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "bybit",
+        "timestamp": "2024-04-29 00:00:00 000",
+        "totalDailyVolume": 217557.5,
+        "totalDailyVolumeMilUSD": 13215.4,
+        "totalDailyVolumeNative": 217557.5,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "deribit",
+        "timestamp": "2024-04-29 00:00:00 000",
+        "totalDailyVolume": 17677.4,
+        "totalDailyVolumeMilUSD": 1076.6,
+        "totalDailyVolumeNative": 17677.4,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "ftxus",
+        "timestamp": "2024-04-29 00:00:00 000",
+        "totalDailyVolume": 0,
+        "totalDailyVolumeMilUSD": 0,
+        "totalDailyVolumeNative": 0,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "huobi",
+        "timestamp": "2024-04-29 00:00:00 000",
+        "totalDailyVolume": 30868.8,
+        "totalDailyVolumeMilUSD": 1875.3,
+        "totalDailyVolumeNative": 30868.8,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "kraken",
+        "timestamp": "2024-04-29 00:00:00 000",
+        "totalDailyVolume": 776263.8,
+        "totalDailyVolumeMilUSD": 106.2,
+        "totalDailyVolumeNative": 1748.5,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "okex",
+        "timestamp": "2024-04-29 00:00:00 000",
+        "totalDailyVolume": 64177364.3,
+        "totalDailyVolumeMilUSD": 14567.9,
+        "totalDailyVolumeNative": 239597.4,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "binance",
+        "timestamp": "2024-04-22 00:00:00 000",
+        "totalDailyVolume": 157504.4,
+        "totalDailyVolumeMilUSD": 9929.4,
+        "totalDailyVolumeNative": 157504.4,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "bitmex",
+        "timestamp": "2024-04-22 00:00:00 000",
+        "totalDailyVolume": 486567260.9,
+        "totalDailyVolumeMilUSD": 209.3,
+        "totalDailyVolumeNative": 3343.6,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "bybit",
+        "timestamp": "2024-04-22 00:00:00 000",
+        "totalDailyVolume": 59856.7,
+        "totalDailyVolumeMilUSD": 3773.5,
+        "totalDailyVolumeNative": 59856.7,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "deribit",
+        "timestamp": "2024-04-22 00:00:00 000",
+        "totalDailyVolume": 6161.1,
+        "totalDailyVolumeMilUSD": 391.9,
+        "totalDailyVolumeNative": 6161.1,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "ftxus",
+        "timestamp": "2024-04-22 00:00:00 000",
+        "totalDailyVolume": 0,
+        "totalDailyVolumeMilUSD": 0,
+        "totalDailyVolumeNative": 0,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "huobi",
+        "timestamp": "2024-04-22 00:00:00 000",
+        "totalDailyVolume": 14947.6,
+        "totalDailyVolumeMilUSD": 942.3,
+        "totalDailyVolumeNative": 14947.6,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "kraken",
+        "timestamp": "2024-04-22 00:00:00 000",
+        "totalDailyVolume": 160489.4,
+        "totalDailyVolumeMilUSD": 23.9,
+        "totalDailyVolumeNative": 379.9,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "okex",
+        "timestamp": "2024-04-22 00:00:00 000",
+        "totalDailyVolume": 19985014,
+        "totalDailyVolumeMilUSD": 4518.8,
+        "totalDailyVolumeNative": 71603,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "binance",
+        "timestamp": "2024-04-15 00:00:00 000",
+        "totalDailyVolume": 201863.6,
+        "totalDailyVolumeMilUSD": 13101.1,
+        "totalDailyVolumeNative": 201863.6,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "bitmex",
+        "timestamp": "2024-04-15 00:00:00 000",
+        "totalDailyVolume": 1163816696.4,
+        "totalDailyVolumeMilUSD": 374.7,
+        "totalDailyVolumeNative": 5871.4,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "bybit",
+        "timestamp": "2024-04-15 00:00:00 000",
+        "totalDailyVolume": 74395.3,
+        "totalDailyVolumeMilUSD": 4827.4,
+        "totalDailyVolumeNative": 74395.3,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "deribit",
+        "timestamp": "2024-04-15 00:00:00 000",
+        "totalDailyVolume": 6439.3,
+        "totalDailyVolumeMilUSD": 418.8,
+        "totalDailyVolumeNative": 6439.3,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "ftxus",
+        "timestamp": "2024-04-15 00:00:00 000",
+        "totalDailyVolume": 0,
+        "totalDailyVolumeMilUSD": 0,
+        "totalDailyVolumeNative": 0,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "huobi",
+        "timestamp": "2024-04-15 00:00:00 000",
+        "totalDailyVolume": 19281.5,
+        "totalDailyVolumeMilUSD": 1250.7,
+        "totalDailyVolumeNative": 19281.5,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "kraken",
+        "timestamp": "2024-04-15 00:00:00 000",
+        "totalDailyVolume": 380570.6,
+        "totalDailyVolumeMilUSD": 28.9,
+        "totalDailyVolumeNative": 445.5,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "okex",
+        "timestamp": "2024-04-15 00:00:00 000",
+        "totalDailyVolume": 24004078,
+        "totalDailyVolumeMilUSD": 6046.5,
+        "totalDailyVolumeNative": 93098.2,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "binance",
+        "timestamp": "2024-04-08 00:00:00 000",
+        "totalDailyVolume": 506670.5,
+        "totalDailyVolumeMilUSD": 33233.9,
+        "totalDailyVolumeNative": 506670.5,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "bitmex",
+        "timestamp": "2024-04-08 00:00:00 000",
+        "totalDailyVolume": 1925460352.9,
+        "totalDailyVolumeMilUSD": 873.4,
+        "totalDailyVolumeNative": 13333.7,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "bybit",
+        "timestamp": "2024-04-08 00:00:00 000",
+        "totalDailyVolume": 191626.3,
+        "totalDailyVolumeMilUSD": 12562.7,
+        "totalDailyVolumeNative": 191626.3,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "deribit",
+        "timestamp": "2024-04-08 00:00:00 000",
+        "totalDailyVolume": 17521.6,
+        "totalDailyVolumeMilUSD": 1156.4,
+        "totalDailyVolumeNative": 17521.6,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "ftxus",
+        "timestamp": "2024-04-08 00:00:00 000",
+        "totalDailyVolume": 0,
+        "totalDailyVolumeMilUSD": 0,
+        "totalDailyVolumeNative": 0,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "huobi",
+        "timestamp": "2024-04-08 00:00:00 000",
+        "totalDailyVolume": 19745.8,
+        "totalDailyVolumeMilUSD": 1294.8,
+        "totalDailyVolumeNative": 19745.8,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "kraken",
+        "timestamp": "2024-04-08 00:00:00 000",
+        "totalDailyVolume": 3340656,
+        "totalDailyVolumeMilUSD": 190,
+        "totalDailyVolumeNative": 2893.7,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "okex",
+        "timestamp": "2024-04-08 00:00:00 000",
+        "totalDailyVolume": 56792506,
+        "totalDailyVolumeMilUSD": 13538.5,
+        "totalDailyVolumeNative": 206213.9,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "binance",
+        "timestamp": "2024-04-01 00:00:00 000",
+        "totalDailyVolume": 215119,
+        "totalDailyVolumeMilUSD": 14949.1,
+        "totalDailyVolumeNative": 215119,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "bitmex",
+        "timestamp": "2024-04-01 00:00:00 000",
+        "totalDailyVolume": 807999583.9,
+        "totalDailyVolumeMilUSD": 360.6,
+        "totalDailyVolumeNative": 5207.5,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "bybit",
+        "timestamp": "2024-04-01 00:00:00 000",
+        "totalDailyVolume": 76310.4,
+        "totalDailyVolumeMilUSD": 5297.4,
+        "totalDailyVolumeNative": 76310.4,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "deribit",
+        "timestamp": "2024-04-01 00:00:00 000",
+        "totalDailyVolume": 6794.2,
+        "totalDailyVolumeMilUSD": 471.6,
+        "totalDailyVolumeNative": 6794.2,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "ftxus",
+        "timestamp": "2024-04-01 00:00:00 000",
+        "totalDailyVolume": 0,
+        "totalDailyVolumeMilUSD": 0,
+        "totalDailyVolumeNative": 0,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "huobi",
+        "timestamp": "2024-04-01 00:00:00 000",
+        "totalDailyVolume": 8594.6,
+        "totalDailyVolumeMilUSD": 596.3,
+        "totalDailyVolumeNative": 8594.6,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "kraken",
+        "timestamp": "2024-04-01 00:00:00 000",
+        "totalDailyVolume": 1180015.9,
+        "totalDailyVolumeMilUSD": 31.3,
+        "totalDailyVolumeNative": 451.8,
+        "underlying": "BTC"
+      },
+      {
+        "exchange": "okex",
+        "timestamp": "2024-04-01 00:00:00 000",
+        "totalDailyVolume": 23760099,
+        "totalDailyVolumeMilUSD": 6245.2,
+        "totalDailyVolumeNative": 89896.6,
+        "underlying": "BTC"
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}

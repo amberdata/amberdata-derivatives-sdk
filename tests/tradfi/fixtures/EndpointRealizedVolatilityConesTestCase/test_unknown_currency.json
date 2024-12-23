@@ -1,0 +1,45 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "current_10days": null,
+        "current_189days": null,
+        "current_21days": null,
+        "current_5days": null,
+        "current_84days": null,
+        "exchange": "tradfi",
+        "max_10days": null,
+        "max_189days": null,
+        "max_21days": null,
+        "max_5days": null,
+        "max_84days": null,
+        "min_10days": null,
+        "min_189days": null,
+        "min_21days": null,
+        "min_5days": null,
+        "min_84days": null,
+        "p25_10days": null,
+        "p25_189days": null,
+        "p25_21days": null,
+        "p25_5days": null,
+        "p25_84days": null,
+        "p50_10days": null,
+        "p50_189days": null,
+        "p50_21days": null,
+        "p50_5days": null,
+        "p50_84days": null,
+        "p75_10days": null,
+        "p75_189days": null,
+        "p75_21days": null,
+        "p75_5days": null,
+        "p75_84days": null
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}

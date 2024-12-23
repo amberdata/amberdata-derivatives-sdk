@@ -1,7 +1,0 @@
-{
-  "description": "Request was invalid or cannot be served. See message for details",
-  "error": true,
-  "message": "Invalid argument timeFormat: expected one of [nanoseconds,ns,milliseconds,ms,iso,iso8601,iso8611,human,human_readable,humanReadable,hr], found '<time_format>'.",
-  "status": 400,
-  "title": "BAD REQUEST"
-}

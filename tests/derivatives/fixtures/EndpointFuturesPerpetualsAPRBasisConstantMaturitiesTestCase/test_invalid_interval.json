@@ -1,0 +1,7 @@
+{
+  "description": "Request was invalid or cannot be served. See message for details",
+  "error": true,
+  "message": "Invalid argument interval: expected one of [7d,7D,30d,30D,90d,90D,180d,180D], found '<interval>'.",
+  "status": 400,
+  "title": "BAD REQUEST"
+}

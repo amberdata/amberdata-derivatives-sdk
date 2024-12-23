@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "atm"              : { "type": "number"  },
+              "currency"         : { "type": "string"  },
+              "daysToExpiration" : { "type": "integer" },
+              "exchange"         : { "type": "string"  },
+              "fwdAtm"           : { "type": ["null",    "number"] },
+              "timestamp"        : { "type": ["integer", "string"] }
+            },
+            "required": ["atm", "currency", "daysToExpiration", "exchange", "fwdAtm", "timestamp"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}

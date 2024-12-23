@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "indexPrice"  : { "type": "number" },
+              "netPremium"  : { "type": ["null", "number"] },
+              "numTrades"   : { "type": "number" },
+              "tradeAmount" : { "type": "number" },
+              "uniqueTrade" : { "type": "string" }
+            },
+            "required": ["indexPrice", "netPremium", "numTrades", "tradeAmount", "uniqueTrade"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}

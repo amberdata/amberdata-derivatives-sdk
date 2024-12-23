@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "closeDvol"                  : { "type": "number" },
+              "exchange"                   : { "type": "string" },
+              "historicalVolatility30days" : { "type": ["null",    "number"] },
+              "instrument"                 : { "type": "string" },
+              "timestamp"                  : { "type": ["integer", "string"] },
+              "vrp30"                      : { "type": ["null",    "number"] }
+            },
+            "required": ["closeDvol", "exchange", "historicalVolatility30days", "instrument", "timestamp", "vrp30"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}

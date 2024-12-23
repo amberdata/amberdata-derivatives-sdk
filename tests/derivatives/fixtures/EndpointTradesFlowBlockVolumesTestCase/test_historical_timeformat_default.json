@@ -1,0 +1,2244 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "contractVolume": 6.3,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712044800000,
+        "premiumVolume": 394.750081719,
+        "putCall": "P",
+        "strike": 67500
+      },
+      {
+        "contractVolume": 6.3,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712044800000,
+        "premiumVolume": 570.194562483,
+        "putCall": "P",
+        "strike": 68000
+      },
+      {
+        "contractVolume": 6.3,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712044800000,
+        "premiumVolume": 526.333442292,
+        "putCall": "C",
+        "strike": 71000
+      },
+      {
+        "contractVolume": 6.3,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712044800000,
+        "premiumVolume": 307.027841337,
+        "putCall": "C",
+        "strike": 71500
+      },
+      {
+        "contractVolume": 37.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712131200000,
+        "premiumVolume": 16369.837007999999,
+        "putCall": "P",
+        "strike": 63500
+      },
+      {
+        "contractVolume": 112.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712131200000,
+        "premiumVolume": 64073.7640135,
+        "putCall": "P",
+        "strike": 64000
+      },
+      {
+        "contractVolume": 75,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712131200000,
+        "premiumVolume": 35395.8108975,
+        "putCall": "P",
+        "strike": 64500
+      },
+      {
+        "contractVolume": 75,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712131200000,
+        "premiumVolume": 22372.193376,
+        "putCall": "P",
+        "strike": 65000
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712131200000,
+        "premiumVolume": 31106.467938,
+        "putCall": "P",
+        "strike": 67000
+      },
+      {
+        "contractVolume": 100,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712131200000,
+        "premiumVolume": 19097.133649999996,
+        "putCall": "C",
+        "strike": 67500
+      },
+      {
+        "contractVolume": 15,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712131200000,
+        "premiumVolume": 20816.72472,
+        "putCall": "C",
+        "strike": 69500
+      },
+      {
+        "contractVolume": 10,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712131200000,
+        "premiumVolume": 6245.017416,
+        "putCall": "C",
+        "strike": 71500
+      },
+      {
+        "contractVolume": 15,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712131200000,
+        "premiumVolume": 6141.230320500001,
+        "putCall": "C",
+        "strike": 72500
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712131200000,
+        "premiumVolume": 3746.59772925,
+        "putCall": "C",
+        "strike": 73000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712217600000,
+        "premiumVolume": 10953.164465625001,
+        "putCall": "P",
+        "strike": 64500
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712217600000,
+        "premiumVolume": 18997.178938625,
+        "putCall": "P",
+        "strike": 65000
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712217600000,
+        "premiumVolume": 5500.9497015,
+        "putCall": "P",
+        "strike": 65500
+      },
+      {
+        "contractVolume": 100,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712217600000,
+        "premiumVolume": 50738.041277000004,
+        "putCall": "C",
+        "strike": 68000
+      },
+      {
+        "contractVolume": 170,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 28129.160499999998,
+        "putCall": "P",
+        "strike": 60000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 3805.4972,
+        "putCall": "P",
+        "strike": 61000
+      },
+      {
+        "contractVolume": 162.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 77005.9384,
+        "putCall": "P",
+        "strike": 63000
+      },
+      {
+        "contractVolume": 125,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 55303.367925000006,
+        "putCall": "P",
+        "strike": 64000
+      },
+      {
+        "contractVolume": 64.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 56755.823827,
+        "putCall": "P",
+        "strike": 65000
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 78312.11965000001,
+        "putCall": "C",
+        "strike": 66000
+      },
+      {
+        "contractVolume": 110,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 171603.861675,
+        "putCall": "P",
+        "strike": 66000
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 4388.09865,
+        "putCall": "P",
+        "strike": 66500
+      },
+      {
+        "contractVolume": 78,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 134044.252119,
+        "putCall": "C",
+        "strike": 67000
+      },
+      {
+        "contractVolume": 37.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 31895.8935,
+        "putCall": "P",
+        "strike": 67000
+      },
+      {
+        "contractVolume": 18,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 13226.486436,
+        "putCall": "C",
+        "strike": 67500
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 33192.1553,
+        "putCall": "P",
+        "strike": 67500
+      },
+      {
+        "contractVolume": 42.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 60347.68883,
+        "putCall": "C",
+        "strike": 68000
+      },
+      {
+        "contractVolume": 47.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 138218.9437,
+        "putCall": "P",
+        "strike": 68000
+      },
+      {
+        "contractVolume": 250,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 198860.14810000005,
+        "putCall": "C",
+        "strike": 69000
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 37178.2494,
+        "putCall": "P",
+        "strike": 69000
+      },
+      {
+        "contractVolume": 171.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 184553.255382,
+        "putCall": "C",
+        "strike": 70000
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 47665.182425,
+        "putCall": "P",
+        "strike": 70000
+      },
+      {
+        "contractVolume": 138.3,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 78231.21775889999,
+        "putCall": "C",
+        "strike": 71000
+      },
+      {
+        "contractVolume": 207.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 138429.310505,
+        "putCall": "C",
+        "strike": 72000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 165159.502325,
+        "putCall": "P",
+        "strike": 72000
+      },
+      {
+        "contractVolume": 29.9,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 15671.067371999998,
+        "putCall": "C",
+        "strike": 73000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 182637.0033375,
+        "putCall": "P",
+        "strike": 73000
+      },
+      {
+        "contractVolume": 26.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 11344.802324,
+        "putCall": "C",
+        "strike": 74000
+      },
+      {
+        "contractVolume": 17.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 3163.1481599999997,
+        "putCall": "C",
+        "strike": 76000
+      },
+      {
+        "contractVolume": 21.4,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712304000000,
+        "premiumVolume": 4389.9761204,
+        "putCall": "C",
+        "strike": 78000
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712390400000,
+        "premiumVolume": 1677.7762,
+        "putCall": "P",
+        "strike": 64000
+      },
+      {
+        "contractVolume": 37.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712390400000,
+        "premiumVolume": 13754.13618975,
+        "putCall": "P",
+        "strike": 64500
+      },
+      {
+        "contractVolume": 137.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712390400000,
+        "premiumVolume": 74959.500266,
+        "putCall": "P",
+        "strike": 65000
+      },
+      {
+        "contractVolume": 62.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712390400000,
+        "premiumVolume": 28638.35829525,
+        "putCall": "P",
+        "strike": 65500
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712390400000,
+        "premiumVolume": 4977.647358124999,
+        "putCall": "P",
+        "strike": 66000
+      },
+      {
+        "contractVolume": 10,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712390400000,
+        "premiumVolume": 10336.12695,
+        "putCall": "C",
+        "strike": 66500
+      },
+      {
+        "contractVolume": 20,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712390400000,
+        "premiumVolume": 19890.684886600004,
+        "putCall": "C",
+        "strike": 67000
+      },
+      {
+        "contractVolume": 10,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712390400000,
+        "premiumVolume": 9321.0944802,
+        "putCall": "C",
+        "strike": 67500
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712390400000,
+        "premiumVolume": 4821.520939749999,
+        "putCall": "C",
+        "strike": 68500
+      },
+      {
+        "contractVolume": 30,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712390400000,
+        "premiumVolume": 16960.3884599,
+        "putCall": "C",
+        "strike": 69000
+      },
+      {
+        "contractVolume": 20,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712390400000,
+        "premiumVolume": 4637.9418998,
+        "putCall": "C",
+        "strike": 69500
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712390400000,
+        "premiumVolume": 831.29671375,
+        "putCall": "C",
+        "strike": 71000
+      },
+      {
+        "contractVolume": 10,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712476800000,
+        "premiumVolume": 3872.6196668000002,
+        "putCall": "P",
+        "strike": 65000
+      },
+      {
+        "contractVolume": 30,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712476800000,
+        "premiumVolume": 72565.38735855001,
+        "putCall": "C",
+        "strike": 65500
+      },
+      {
+        "contractVolume": 10,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712476800000,
+        "premiumVolume": 4940.9285404,
+        "putCall": "P",
+        "strike": 65500
+      },
+      {
+        "contractVolume": 30,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712476800000,
+        "premiumVolume": 60493.09228124999,
+        "putCall": "C",
+        "strike": 66000
+      },
+      {
+        "contractVolume": 15,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712476800000,
+        "premiumVolume": 16189.160952000002,
+        "putCall": "C",
+        "strike": 68000
+      },
+      {
+        "contractVolume": 10,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712476800000,
+        "premiumVolume": 16893.983414000002,
+        "putCall": "P",
+        "strike": 68000
+      },
+      {
+        "contractVolume": 10,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712476800000,
+        "premiumVolume": 20832.0230352,
+        "putCall": "P",
+        "strike": 68500
+      },
+      {
+        "contractVolume": 30,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712476800000,
+        "premiumVolume": 12017.27201175,
+        "putCall": "C",
+        "strike": 69000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712563200000,
+        "premiumVolume": 5061.07923,
+        "putCall": "P",
+        "strike": 63000
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712563200000,
+        "premiumVolume": 4590.61288125,
+        "putCall": "P",
+        "strike": 64000
+      },
+      {
+        "contractVolume": 125,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712649600000,
+        "premiumVolume": 84169.2648025,
+        "putCall": "C",
+        "strike": 72000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712649600000,
+        "premiumVolume": 19056.256689,
+        "putCall": "C",
+        "strike": 72500
+      },
+      {
+        "contractVolume": 8.4,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712736000000,
+        "premiumVolume": 11501.514851904001,
+        "putCall": "C",
+        "strike": 68000
+      },
+      {
+        "contractVolume": 8.4,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712736000000,
+        "premiumVolume": 8248.729925688,
+        "putCall": "C",
+        "strike": 68500
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712736000000,
+        "premiumVolume": 36848.296922249996,
+        "putCall": "P",
+        "strike": 69000
+      },
+      {
+        "contractVolume": 125,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712736000000,
+        "premiumVolume": 89177.6356945,
+        "putCall": "P",
+        "strike": 69500
+      },
+      {
+        "contractVolume": 8.4,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712736000000,
+        "premiumVolume": 755.1654157319999,
+        "putCall": "C",
+        "strike": 71500
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712822400000,
+        "premiumVolume": 18390.770030499996,
+        "putCall": "P",
+        "strike": 68500
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712822400000,
+        "premiumVolume": 23087.4031475,
+        "putCall": "P",
+        "strike": 69000
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712822400000,
+        "premiumVolume": 64101.421855,
+        "putCall": "P",
+        "strike": 71000
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712822400000,
+        "premiumVolume": 75325.9983,
+        "putCall": "C",
+        "strike": 72500
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712822400000,
+        "premiumVolume": 8262.786637,
+        "putCall": "C",
+        "strike": 73500
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 363.50485000000003,
+        "putCall": "P",
+        "strike": 50000
+      },
+      {
+        "contractVolume": 112.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 6306.390050000001,
+        "putCall": "P",
+        "strike": 52000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 1090.3696499999999,
+        "putCall": "P",
+        "strike": 56000
+      },
+      {
+        "contractVolume": 36,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 6323.569020000001,
+        "putCall": "P",
+        "strike": 58000
+      },
+      {
+        "contractVolume": 250,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 30581.13,
+        "putCall": "P",
+        "strike": 60000
+      },
+      {
+        "contractVolume": 59,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 35195.880335,
+        "putCall": "P",
+        "strike": 61000
+      },
+      {
+        "contractVolume": 250,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 41360.80225,
+        "putCall": "P",
+        "strike": 62000
+      },
+      {
+        "contractVolume": 165,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 92180.8004875,
+        "putCall": "P",
+        "strike": 63000
+      },
+      {
+        "contractVolume": 98.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 149812.33954999998,
+        "putCall": "P",
+        "strike": 64000
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 169204.30575,
+        "putCall": "C",
+        "strike": 65000
+      },
+      {
+        "contractVolume": 391,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 546308.408781,
+        "putCall": "P",
+        "strike": 65000
+      },
+      {
+        "contractVolume": 242.39999999999998,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 757454.8539745001,
+        "putCall": "C",
+        "strike": 66000
+      },
+      {
+        "contractVolume": 180,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 286066.69672999997,
+        "putCall": "P",
+        "strike": 66000
+      },
+      {
+        "contractVolume": 503.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 1510720.1432205,
+        "putCall": "C",
+        "strike": 67000
+      },
+      {
+        "contractVolume": 150,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 233619.311975,
+        "putCall": "P",
+        "strike": 67000
+      },
+      {
+        "contractVolume": 302.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 750261.0711849999,
+        "putCall": "C",
+        "strike": 68000
+      },
+      {
+        "contractVolume": 52.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 194096.34705749998,
+        "putCall": "P",
+        "strike": 68000
+      },
+      {
+        "contractVolume": 34,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 97064.7766175,
+        "putCall": "C",
+        "strike": 69000
+      },
+      {
+        "contractVolume": 125,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 231783.50482499998,
+        "putCall": "P",
+        "strike": 69000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 55784.448,
+        "putCall": "C",
+        "strike": 69500
+      },
+      {
+        "contractVolume": 1555.2,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 2613794.0931200003,
+        "putCall": "C",
+        "strike": 70000
+      },
+      {
+        "contractVolume": 38,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 195637.57707,
+        "putCall": "P",
+        "strike": 70000
+      },
+      {
+        "contractVolume": 30,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 47104.74144,
+        "putCall": "P",
+        "strike": 70500
+      },
+      {
+        "contractVolume": 630.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 974879.014743,
+        "putCall": "C",
+        "strike": 71000
+      },
+      {
+        "contractVolume": 147.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 242452.5716625,
+        "putCall": "P",
+        "strike": 71000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 34342.3008,
+        "putCall": "C",
+        "strike": 71500
+      },
+      {
+        "contractVolume": 310,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 570007.8362100001,
+        "putCall": "C",
+        "strike": 72000
+      },
+      {
+        "contractVolume": 230,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 436362.028015,
+        "putCall": "C",
+        "strike": 73000
+      },
+      {
+        "contractVolume": 357.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 353111.46833000006,
+        "putCall": "C",
+        "strike": 74000
+      },
+      {
+        "contractVolume": 520.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 363743.50944,
+        "putCall": "C",
+        "strike": 75000
+      },
+      {
+        "contractVolume": 305,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 179183.922395,
+        "putCall": "C",
+        "strike": 76000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 5813.523337500001,
+        "putCall": "C",
+        "strike": 78000
+      },
+      {
+        "contractVolume": 237.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 22619.1659225,
+        "putCall": "C",
+        "strike": 84000
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1712908800000,
+        "premiumVolume": 3009.32505,
+        "putCall": "C",
+        "strike": 88000
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 9890.877525,
+        "putCall": "P",
+        "strike": 54000
+      },
+      {
+        "contractVolume": 75,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 38453.2649375,
+        "putCall": "P",
+        "strike": 58000
+      },
+      {
+        "contractVolume": 415.8,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 431217.8594515,
+        "putCall": "P",
+        "strike": 60000
+      },
+      {
+        "contractVolume": 68,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 46551.4476955,
+        "putCall": "P",
+        "strike": 61000
+      },
+      {
+        "contractVolume": 7.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 11776.408019999999,
+        "putCall": "P",
+        "strike": 62000
+      },
+      {
+        "contractVolume": 32.9,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 54497.236923599994,
+        "putCall": "P",
+        "strike": 63000
+      },
+      {
+        "contractVolume": 135,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 132664.2324875,
+        "putCall": "P",
+        "strike": 64000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 56499.87755625,
+        "putCall": "P",
+        "strike": 65000
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 50104.82413125,
+        "putCall": "P",
+        "strike": 66000
+      },
+      {
+        "contractVolume": 20,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 65803.789635,
+        "putCall": "P",
+        "strike": 67000
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 232497.7597125,
+        "putCall": "C",
+        "strike": 68000
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 68783.92165,
+        "putCall": "P",
+        "strike": 68000
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 207044.36171250002,
+        "putCall": "C",
+        "strike": 69000
+      },
+      {
+        "contractVolume": 75,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 207812.6007625,
+        "putCall": "P",
+        "strike": 69000
+      },
+      {
+        "contractVolume": 100,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 269618.38682500005,
+        "putCall": "C",
+        "strike": 70000
+      },
+      {
+        "contractVolume": 37.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 178292.56605000002,
+        "putCall": "P",
+        "strike": 70000
+      },
+      {
+        "contractVolume": 124.7,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 444877.46189549996,
+        "putCall": "C",
+        "strike": 71000
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 77662.84935,
+        "putCall": "P",
+        "strike": 71000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 93741.41105,
+        "putCall": "C",
+        "strike": 72000
+      },
+      {
+        "contractVolume": 62.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 318784.88453125005,
+        "putCall": "P",
+        "strike": 72000
+      },
+      {
+        "contractVolume": 59,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 132783.284472,
+        "putCall": "C",
+        "strike": 73000
+      },
+      {
+        "contractVolume": 200,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 542945.5254449999,
+        "putCall": "C",
+        "strike": 74000
+      },
+      {
+        "contractVolume": 10,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 20079.476010000002,
+        "putCall": "C",
+        "strike": 75000
+      },
+      {
+        "contractVolume": 38,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 59776.76210800001,
+        "putCall": "C",
+        "strike": 77000
+      },
+      {
+        "contractVolume": 200,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 321894.4636,
+        "putCall": "C",
+        "strike": 78000
+      },
+      {
+        "contractVolume": 70,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1713513600000,
+        "premiumVolume": 92610.6159,
+        "putCall": "C",
+        "strike": 80000
+      },
+      {
+        "contractVolume": 37.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 6066.135075000001,
+        "putCall": "P",
+        "strike": 50000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 13384.8065125,
+        "putCall": "P",
+        "strike": 55000
+      },
+      {
+        "contractVolume": 150,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 192950.01434999995,
+        "putCall": "P",
+        "strike": 56000
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 137657.746875,
+        "putCall": "C",
+        "strike": 57000
+      },
+      {
+        "contractVolume": 37.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 17371.2049875,
+        "putCall": "P",
+        "strike": 57000
+      },
+      {
+        "contractVolume": 125,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 204350.127875,
+        "putCall": "P",
+        "strike": 58000
+      },
+      {
+        "contractVolume": 127.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 184555.03091499998,
+        "putCall": "P",
+        "strike": 60000
+      },
+      {
+        "contractVolume": 472.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 966343.1383400001,
+        "putCall": "P",
+        "strike": 61000
+      },
+      {
+        "contractVolume": 62.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 67703.0625875,
+        "putCall": "P",
+        "strike": 62000
+      },
+      {
+        "contractVolume": 172.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 233621.213555,
+        "putCall": "P",
+        "strike": 63000
+      },
+      {
+        "contractVolume": 1252.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 3809685.79759,
+        "putCall": "P",
+        "strike": 64000
+      },
+      {
+        "contractVolume": 45,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 110720.95247250001,
+        "putCall": "P",
+        "strike": 65000
+      },
+      {
+        "contractVolume": 130,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 732604.9553685,
+        "putCall": "C",
+        "strike": 66000
+      },
+      {
+        "contractVolume": 1145,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 3276048.8415324995,
+        "putCall": "P",
+        "strike": 66000
+      },
+      {
+        "contractVolume": 303.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 1641477.27028,
+        "putCall": "C",
+        "strike": 67000
+      },
+      {
+        "contractVolume": 389.4,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 2083470.8880123,
+        "putCall": "C",
+        "strike": 68000
+      },
+      {
+        "contractVolume": 172.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 464004.67794250004,
+        "putCall": "P",
+        "strike": 68000
+      },
+      {
+        "contractVolume": 181.4,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 807900.3021800001,
+        "putCall": "C",
+        "strike": 69000
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 48107.8281,
+        "putCall": "P",
+        "strike": 69000
+      },
+      {
+        "contractVolume": 391.2,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 1973534.2955999,
+        "putCall": "C",
+        "strike": 70000
+      },
+      {
+        "contractVolume": 537.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 2285898.9727,
+        "putCall": "P",
+        "strike": 70000
+      },
+      {
+        "contractVolume": 1295,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 4220246.720595,
+        "putCall": "C",
+        "strike": 71000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 110117.56575,
+        "putCall": "P",
+        "strike": 71000
+      },
+      {
+        "contractVolume": 375,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 1172032.7388535,
+        "putCall": "C",
+        "strike": 72000
+      },
+      {
+        "contractVolume": 32.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 142991.9958,
+        "putCall": "P",
+        "strike": 72000
+      },
+      {
+        "contractVolume": 338,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 843152.4581425,
+        "putCall": "C",
+        "strike": 73000
+      },
+      {
+        "contractVolume": 1192.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 3980960.4819225,
+        "putCall": "C",
+        "strike": 74000
+      },
+      {
+        "contractVolume": 703.4,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 2115584.475598,
+        "putCall": "C",
+        "strike": 75000
+      },
+      {
+        "contractVolume": 200,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 435581.4069025001,
+        "putCall": "C",
+        "strike": 76000
+      },
+      {
+        "contractVolume": 75,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 263543.642575,
+        "putCall": "C",
+        "strike": 77000
+      },
+      {
+        "contractVolume": 2318.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 5223104.062587,
+        "putCall": "C",
+        "strike": 80000
+      },
+      {
+        "contractVolume": 32.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 23773.3195875,
+        "putCall": "C",
+        "strike": 84000
+      },
+      {
+        "contractVolume": 560,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 411651.075795,
+        "putCall": "C",
+        "strike": 85000
+      },
+      {
+        "contractVolume": 200,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 141148.94170000002,
+        "putCall": "C",
+        "strike": 88000
+      },
+      {
+        "contractVolume": 35,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 13811.777279999998,
+        "putCall": "C",
+        "strike": 90000
+      },
+      {
+        "contractVolume": 22.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 11566.0979975,
+        "putCall": "C",
+        "strike": 94000
+      },
+      {
+        "contractVolume": 29.2,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 13053.0058148,
+        "putCall": "C",
+        "strike": 95000
+      },
+      {
+        "contractVolume": 383.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 63878.9712015,
+        "putCall": "C",
+        "strike": 100000
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1714118400000,
+        "premiumVolume": 1458.4666,
+        "putCall": "C",
+        "strike": 120000
+      },
+      {
+        "contractVolume": 250,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 480183.02175,
+        "putCall": "P",
+        "strike": 55000
+      },
+      {
+        "contractVolume": 7,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 19041.500799999998,
+        "putCall": "P",
+        "strike": 58000
+      },
+      {
+        "contractVolume": 300,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 3954424.4901000005,
+        "putCall": "C",
+        "strike": 60000
+      },
+      {
+        "contractVolume": 22.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 83657.82877,
+        "putCall": "P",
+        "strike": 63000
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 193998.2026375,
+        "putCall": "P",
+        "strike": 64000
+      },
+      {
+        "contractVolume": 37.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 252774.852325,
+        "putCall": "P",
+        "strike": 65000
+      },
+      {
+        "contractVolume": 415,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 2023341.7674,
+        "putCall": "P",
+        "strike": 66000
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 97955.79572499999,
+        "putCall": "C",
+        "strike": 68000
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 323492.1235,
+        "putCall": "P",
+        "strike": 68000
+      },
+      {
+        "contractVolume": 600,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 4875601.499,
+        "putCall": "C",
+        "strike": 69000
+      },
+      {
+        "contractVolume": 35,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 273222.204835,
+        "putCall": "C",
+        "strike": 71000
+      },
+      {
+        "contractVolume": 62.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 456771.445125,
+        "putCall": "C",
+        "strike": 72000
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 95752.945075,
+        "putCall": "P",
+        "strike": 72000
+      },
+      {
+        "contractVolume": 7,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 63139.306545000014,
+        "putCall": "C",
+        "strike": 73000
+      },
+      {
+        "contractVolume": 7,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 63505.702399999995,
+        "putCall": "P",
+        "strike": 73000
+      },
+      {
+        "contractVolume": 60,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 552798.59376,
+        "putCall": "P",
+        "strike": 74000
+      },
+      {
+        "contractVolume": 575,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 3270914.9532625005,
+        "putCall": "C",
+        "strike": 75000
+      },
+      {
+        "contractVolume": 250,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 1310688.1904999998,
+        "putCall": "C",
+        "strike": 77000
+      },
+      {
+        "contractVolume": 414,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 2192885.7825435,
+        "putCall": "C",
+        "strike": 80000
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 248467.05225,
+        "putCall": "C",
+        "strike": 81000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 99037.7423875,
+        "putCall": "C",
+        "strike": 82000
+      },
+      {
+        "contractVolume": 162.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 606024.4927000001,
+        "putCall": "C",
+        "strike": 84000
+      },
+      {
+        "contractVolume": 700,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 2507872.4348999998,
+        "putCall": "C",
+        "strike": 85000
+      },
+      {
+        "contractVolume": 433.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 1538789.7120669999,
+        "putCall": "C",
+        "strike": 86000
+      },
+      {
+        "contractVolume": 165,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 604424.456775,
+        "putCall": "C",
+        "strike": 90000
+      },
+      {
+        "contractVolume": 150,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 327712.5558,
+        "putCall": "C",
+        "strike": 92000
+      },
+      {
+        "contractVolume": 300,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 859610.5532999999,
+        "putCall": "C",
+        "strike": 95000
+      },
+      {
+        "contractVolume": 150,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1717142400000,
+        "premiumVolume": 335404.0086,
+        "putCall": "C",
+        "strike": 100000
+      },
+      {
+        "contractVolume": 125,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 70076.19950000002,
+        "putCall": "P",
+        "strike": 40000
+      },
+      {
+        "contractVolume": 200,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 219691.77,
+        "putCall": "P",
+        "strike": 45000
+      },
+      {
+        "contractVolume": 23,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 54995.25602999999,
+        "putCall": "P",
+        "strike": 50000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 68157.67860000001,
+        "putCall": "P",
+        "strike": 52000
+      },
+      {
+        "contractVolume": 100,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 1919839.9535,
+        "putCall": "C",
+        "strike": 55000
+      },
+      {
+        "contractVolume": 225,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 670657.8428,
+        "putCall": "P",
+        "strike": 55000
+      },
+      {
+        "contractVolume": 30,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 136893.0456,
+        "putCall": "P",
+        "strike": 58000
+      },
+      {
+        "contractVolume": 312.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 1734042.5103874998,
+        "putCall": "P",
+        "strike": 60000
+      },
+      {
+        "contractVolume": 100,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 1455439.2891000002,
+        "putCall": "C",
+        "strike": 65000
+      },
+      {
+        "contractVolume": 112.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 767184.9378125,
+        "putCall": "P",
+        "strike": 65000
+      },
+      {
+        "contractVolume": 417.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 4712533.698,
+        "putCall": "C",
+        "strike": 70000
+      },
+      {
+        "contractVolume": 200,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 1800297.6738999998,
+        "putCall": "P",
+        "strike": 70000
+      },
+      {
+        "contractVolume": 268,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 2519671.6121819997,
+        "putCall": "C",
+        "strike": 75000
+      },
+      {
+        "contractVolume": 247.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 1731614.8189625,
+        "putCall": "C",
+        "strike": 80000
+      },
+      {
+        "contractVolume": 855,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 4993078.508629999,
+        "putCall": "C",
+        "strike": 85000
+      },
+      {
+        "contractVolume": 24.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 149327.859735,
+        "putCall": "C",
+        "strike": 90000
+      },
+      {
+        "contractVolume": 337.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 1288602.830075,
+        "putCall": "C",
+        "strike": 95000
+      },
+      {
+        "contractVolume": 45,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 138720.64428,
+        "putCall": "C",
+        "strike": 100000
+      },
+      {
+        "contractVolume": 87.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 260118.61965000004,
+        "putCall": "C",
+        "strike": 110000
+      },
+      {
+        "contractVolume": 85,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1719561600000,
+        "premiumVolume": 140770.15823,
+        "putCall": "C",
+        "strike": 120000
+      },
+      {
+        "contractVolume": 8,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1727424000000,
+        "premiumVolume": 55932.117312,
+        "putCall": "P",
+        "strike": 55000
+      },
+      {
+        "contractVolume": 15,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1727424000000,
+        "premiumVolume": 104148.76852499999,
+        "putCall": "P",
+        "strike": 56000
+      },
+      {
+        "contractVolume": 10,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1727424000000,
+        "premiumVolume": 80911.98989999999,
+        "putCall": "P",
+        "strike": 58000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1727424000000,
+        "premiumVolume": 472511.05134999997,
+        "putCall": "C",
+        "strike": 75000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1727424000000,
+        "premiumVolume": 380448.11545,
+        "putCall": "P",
+        "strike": 75000
+      },
+      {
+        "contractVolume": 100,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1727424000000,
+        "premiumVolume": 1124362.251,
+        "putCall": "C",
+        "strike": 85000
+      },
+      {
+        "contractVolume": 187.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1727424000000,
+        "premiumVolume": 2089413.049075,
+        "putCall": "C",
+        "strike": 90000
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1727424000000,
+        "premiumVolume": 119759.706,
+        "putCall": "C",
+        "strike": 95000
+      },
+      {
+        "contractVolume": 55.3,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1727424000000,
+        "premiumVolume": 371708.52961,
+        "putCall": "C",
+        "strike": 110000
+      },
+      {
+        "contractVolume": 17.8,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1727424000000,
+        "premiumVolume": 113293.4845,
+        "putCall": "C",
+        "strike": 115000
+      },
+      {
+        "contractVolume": 12.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1727424000000,
+        "premiumVolume": 66990.5288,
+        "putCall": "C",
+        "strike": 120000
+      },
+      {
+        "contractVolume": 13,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1727424000000,
+        "premiumVolume": 85386.65272799999,
+        "putCall": "C",
+        "strike": 125000
+      },
+      {
+        "contractVolume": 18,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1727424000000,
+        "premiumVolume": 63311.178644,
+        "putCall": "C",
+        "strike": 140000
+      },
+      {
+        "contractVolume": 8.4,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1735286400000,
+        "premiumVolume": 22071.3619056,
+        "putCall": "P",
+        "strike": 36000
+      },
+      {
+        "contractVolume": 100,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1735286400000,
+        "premiumVolume": 1627577.705,
+        "putCall": "C",
+        "strike": 85000
+      },
+      {
+        "contractVolume": 76.4,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1735286400000,
+        "premiumVolume": 1344815.2998000002,
+        "putCall": "C",
+        "strike": 90000
+      },
+      {
+        "contractVolume": 850,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1735286400000,
+        "premiumVolume": 13287872.209999999,
+        "putCall": "C",
+        "strike": 100000
+      },
+      {
+        "contractVolume": 8.4,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1735286400000,
+        "premiumVolume": 89587.409982,
+        "putCall": "C",
+        "strike": 115000
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1735286400000,
+        "premiumVolume": 617373.316,
+        "putCall": "C",
+        "strike": 120000
+      },
+      {
+        "contractVolume": 25,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1735286400000,
+        "premiumVolume": 217133.4221,
+        "putCall": "C",
+        "strike": 130000
+      },
+      {
+        "contractVolume": 8.4,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1735286400000,
+        "premiumVolume": 68136.0301524,
+        "putCall": "C",
+        "strike": 135000
+      },
+      {
+        "contractVolume": 50,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1743148800000,
+        "premiumVolume": 522016.07600000006,
+        "putCall": "C",
+        "strike": 150000
+      },
+      {
+        "contractVolume": 1000,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "expirationTimestamp": 1743148800000,
+        "premiumVolume": 8093345.0294,
+        "putCall": "C",
+        "strike": 200000
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}

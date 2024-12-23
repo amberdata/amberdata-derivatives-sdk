@@ -1,0 +1,34 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "contractVolumeBlocked": 943325.0999999982,
+        "contractVolumeOnScreen": 2330399.499993288,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "notionalVolumeBlocked": 54565506491.64704,
+        "notionalVolumeOnScreen": 136014155766.75827,
+        "premiumVolumeBlocked": 2515812307.4219446,
+        "premiumVolumeOnScreen": 3500960749.394514,
+        "timestamp": "2024-01-01 00:00:00 000"
+      },
+      {
+        "contractVolumeBlocked": 3289613.0999999973,
+        "contractVolumeOnScreen": 5258956.699986951,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "notionalVolumeBlocked": 94723366296.445,
+        "notionalVolumeOnScreen": 152045136618.75482,
+        "premiumVolumeBlocked": 3162869340.691002,
+        "premiumVolumeOnScreen": 2969371114.1850524,
+        "timestamp": "2023-01-01 00:00:00 000"
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}

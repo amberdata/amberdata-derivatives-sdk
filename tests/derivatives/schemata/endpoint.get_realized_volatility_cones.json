@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "current_14days"  : { "type": "number" },
+              "current_180days" : { "type": "number" },
+              "current_1day"    : { "type": "number" },
+              "current_30days"  : { "type": "number" },
+              "current_7days"   : { "type": "number" },
+              "current_90days"  : { "type": "number" },
+              "exchange"        : { "type": "string" },
+              "max_14days"      : { "type": "number" },
+              "max_180days"     : { "type": "number" },
+              "max_1day"        : { "type": "number" },
+              "max_30days"      : { "type": "number" },
+              "max_7days"       : { "type": "number" },
+              "max_90days"      : { "type": "number" },
+              "min_14days"      : { "type": "number" },
+              "min_180days"     : { "type": "number" },
+              "min_1day"        : { "type": "number" },
+              "min_30days"      : { "type": "number" },
+              "min_7days"       : { "type": "number" },
+              "min_90days"      : { "type": "number" },
+              "p25_14days"      : { "type": "number" },
+              "p25_180days"     : { "type": "number" },
+              "p25_1day"        : { "type": "number" },
+              "p25_30days"      : { "type": "number" },
+              "p25_7days"       : { "type": "number" },
+              "p25_90days"      : { "type": "number" },
+              "p50_14days"      : { "type": "number" },
+              "p50_180days"     : { "type": "number" },
+              "p50_1day"        : { "type": "number" },
+              "p50_30days"      : { "type": "number" },
+              "p50_7days"       : { "type": "number" },
+              "p50_90days"      : { "type": "number" },
+              "p75_14days"      : { "type": "number" },
+              "p75_180days"     : { "type": "number" },
+              "p75_1day"        : { "type": "number" },
+              "p75_30days"      : { "type": "number" },
+              "p75_7days"       : { "type": "number" },
+              "p75_90days"      : { "type": "number" },
+              "pair"            : { "type": "string" }
+            },
+            "required": ["current_14days", "current_180days", "current_1day", "current_30days", "current_7days", "current_90days", "exchange", "max_14days", "max_180days", "max_1day", "max_30days", "max_7days", "max_90days", "min_14days", "min_180days", "min_1day", "min_30days", "min_7days", "min_90days", "p25_14days", "p25_180days", "p25_1day", "p25_30days", "p25_7days", "p25_90days", "p50_14days", "p50_180days", "p50_1day", "p50_30days", "p50_7days", "p50_90days", "p75_14days", "p75_180days", "p75_1day", "p75_30days", "p75_7days", "p75_90days", "pair"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}

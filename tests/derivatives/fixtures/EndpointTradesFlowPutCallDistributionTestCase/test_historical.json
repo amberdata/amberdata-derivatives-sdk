@@ -1,0 +1,30 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "callsContractsBought": 57,
+        "callsContractsBoughtExchangeDirection": 33.800000000000004,
+        "callsContractsSold": 13.5,
+        "callsContractsSoldExchangeDirection": 36.7,
+        "callsPremiumBought": 160666.22483173,
+        "callsPremiumBoughtExchangeDirection": 47089.3167083,
+        "callsPremiumSold": 37508.948414995,
+        "callsPremiumSoldExchangeDirection": 151085.856538425,
+        "putContractsBought": 33.300000000000004,
+        "putContractsBoughtExchangeDirection": 41.8,
+        "putContractsSold": 32.19999999999999,
+        "putContractsSoldExchangeDirection": 23.700000000000003,
+        "putPremiumBought": 22503.366990814997,
+        "putPremiumBoughtExchangeDirection": 32523.762594854998,
+        "putPremiumSold": 36311.294289686,
+        "putPremiumSoldExchangeDirection": 26290.898685646003
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}

@@ -1,0 +1,38 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "amberdataDirection": "sell",
+        "blockAmount": 100,
+        "blockTradeId": "BLOCK-138789",
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeDirection": "sell",
+        "exchangeTimestamp": 1714453459726,
+        "hedgeInstrument": null,
+        "hedgeIsBuySide": null,
+        "hedgePrice": null,
+        "hedgeVolume": null,
+        "indexPrice": 63344.59,
+        "instrument": "BTC-27SEP24-90000-C",
+        "numberOfLegs": 1,
+        "openInterestChange": -100,
+        "price": 0.0585,
+        "priceUsd": 3836.2591800000005,
+        "sizeDelta": 28.494999999999997,
+        "sizeGamma": 0.001,
+        "sizeTheta": -3037.0190000000002,
+        "sizeUSD": 383625.91800000006,
+        "sizeVega": 14275.511,
+        "tradeAmount": 100,
+        "tradeIv": 63.29
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}

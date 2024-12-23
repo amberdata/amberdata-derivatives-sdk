@@ -1,0 +1,712 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "indexPrice": 65652.91267893661,
+        "netPremium": -4938534.2703305,
+        "numTrades": 489,
+        "tradeAmount": 1175.7,
+        "uniqueTrade": "[\"sell BTC-27SEP24-100000-C\"]"
+      },
+      {
+        "indexPrice": 64733.38745454545,
+        "netPremium": -7419583.3007145,
+        "numTrades": 385,
+        "tradeAmount": 919.5,
+        "uniqueTrade": "[\"sell BTC-27SEP24-75000-C\"]"
+      },
+      {
+        "indexPrice": 64903.7842481203,
+        "netPremium": -7919805.273285001,
+        "numTrades": 532,
+        "tradeAmount": 906.5,
+        "uniqueTrade": "[\"sell BTC-27DEC24-100000-C\"]"
+      },
+      {
+        "indexPrice": 64946.29769417476,
+        "netPremium": -5987638.872519,
+        "numTrades": 412,
+        "tradeAmount": 863.6000000000001,
+        "uniqueTrade": "[\"sell BTC-27SEP24-80000-C\"]"
+      },
+      {
+        "indexPrice": 65433.50220729366,
+        "netPremium": 7472773.124596998,
+        "numTrades": 521,
+        "tradeAmount": 863.4999999999995,
+        "uniqueTrade": "[\"buy BTC-27SEP24-75000-C\"]"
+      },
+      {
+        "indexPrice": 65844.52751592358,
+        "netPremium": -3172321.9898365,
+        "numTrades": 314,
+        "tradeAmount": 684.9999999999999,
+        "uniqueTrade": "[\"sell BTC-27SEP24-90000-C\"]"
+      },
+      {
+        "indexPrice": 64723.22271634615,
+        "netPremium": 5629072.3573617,
+        "numTrades": 416,
+        "tradeAmount": 654.1999999999999,
+        "uniqueTrade": "[\"buy BTC-27DEC24-100000-C\"]"
+      },
+      {
+        "indexPrice": 64570.657287735856,
+        "netPremium": 4048200.1995080006,
+        "numTrades": 424,
+        "tradeAmount": 642.5999999999999,
+        "uniqueTrade": "[\"buy BTC-27SEP24-80000-C\"]"
+      },
+      {
+        "indexPrice": 65351.006487252125,
+        "netPremium": 2882070.049896,
+        "numTrades": 353,
+        "tradeAmount": 579.2000000000002,
+        "uniqueTrade": "[\"buy BTC-27SEP24-90000-C\"]"
+      },
+      {
+        "indexPrice": 65849.46766666668,
+        "netPremium": 2170784.8299995,
+        "numTrades": 450,
+        "tradeAmount": 512.3000000000001,
+        "uniqueTrade": "[\"buy BTC-27SEP24-100000-C\"]"
+      },
+      {
+        "indexPrice": 66709.89337423313,
+        "netPremium": -1066864.2024045,
+        "numTrades": 163,
+        "tradeAmount": 466.8,
+        "uniqueTrade": "[\"sell BTC-27SEP24-120000-C\"]"
+      },
+      {
+        "indexPrice": 65052.24032258064,
+        "netPremium": 4691098.194296,
+        "numTrades": 372,
+        "tradeAmount": 463.69999999999993,
+        "uniqueTrade": "[\"buy BTC-27SEP24-70000-C\"]"
+      },
+      {
+        "indexPrice": 64060.84514056225,
+        "netPremium": -4889979.217255,
+        "numTrades": 249,
+        "tradeAmount": 444.7,
+        "uniqueTrade": "[\"sell BTC-27DEC24-80000-C\"]"
+      },
+      {
+        "indexPrice": 64433.05913857678,
+        "netPremium": -2461243.6572745,
+        "numTrades": 267,
+        "tradeAmount": 443,
+        "uniqueTrade": "[\"sell BTC-27SEP24-85000-C\"]"
+      },
+      {
+        "indexPrice": 65035.98837545127,
+        "netPremium": -3859930.2254498997,
+        "numTrades": 277,
+        "tradeAmount": 387.2,
+        "uniqueTrade": "[\"sell BTC-27SEP24-70000-C\"]"
+      },
+      {
+        "indexPrice": 65933.72059880239,
+        "netPremium": 256996.83170250003,
+        "numTrades": 167,
+        "tradeAmount": 363.50000000000006,
+        "uniqueTrade": "[\"buy BTC-27SEP24-160000-C\"]"
+      },
+      {
+        "indexPrice": 65488.623872832366,
+        "netPremium": 3356004.3817335004,
+        "numTrades": 173,
+        "tradeAmount": 358,
+        "uniqueTrade": "[\"buy BTC-27DEC24-90000-C\"]"
+      },
+      {
+        "indexPrice": 65412.36033333333,
+        "netPremium": -2511780.83722,
+        "numTrades": 180,
+        "tradeAmount": 350.40000000000003,
+        "uniqueTrade": "[\"sell BTC-27SEP24-60000-P\"]"
+      },
+      {
+        "indexPrice": 64163.00038596491,
+        "netPremium": 4232065.5652247,
+        "numTrades": 285,
+        "tradeAmount": 348.6000000000001,
+        "uniqueTrade": "[\"buy BTC-27DEC24-80000-C\"]"
+      },
+      {
+        "indexPrice": 63745.44055276383,
+        "netPremium": 3901944.9322444997,
+        "numTrades": 199,
+        "tradeAmount": 339.9,
+        "uniqueTrade": "[\"buy BTC-27SEP24-65000-C\"]"
+      },
+      {
+        "indexPrice": 65445.153870967755,
+        "netPremium": -1349549.3514055,
+        "numTrades": 62,
+        "tradeAmount": 337.9,
+        "uniqueTrade": "[\"sell BTC-27SEP24-48000-P\"]"
+      },
+      {
+        "indexPrice": 65312.81871212122,
+        "netPremium": 529597.187011,
+        "numTrades": 132,
+        "tradeAmount": 334.6,
+        "uniqueTrade": "[\"buy BTC-27SEP24-120000-C\"]"
+      },
+      {
+        "indexPrice": 65811.56730158729,
+        "netPremium": -1471333.0834585,
+        "numTrades": 189,
+        "tradeAmount": 323.70000000000005,
+        "uniqueTrade": "[\"sell BTC-27SEP24-95000-C\"]"
+      },
+      {
+        "indexPrice": 66067.51481250001,
+        "netPremium": -830972.402418,
+        "numTrades": 160,
+        "tradeAmount": 323.1,
+        "uniqueTrade": "[\"sell BTC-27SEP24-110000-C\"]"
+      },
+      {
+        "indexPrice": 63907.86992307691,
+        "netPremium": 1115814.7240555,
+        "numTrades": 130,
+        "tradeAmount": 319.3,
+        "uniqueTrade": "[\"buy BTC-27SEP24-50000-P\"]"
+      },
+      {
+        "indexPrice": 65372.31556650245,
+        "netPremium": -3002599.8148192004,
+        "numTrades": 203,
+        "tradeAmount": 316.2,
+        "uniqueTrade": "[\"sell BTC-27DEC24-90000-C\"]"
+      },
+      {
+        "indexPrice": 63926.86499999999,
+        "netPremium": -1237294.0767992,
+        "numTrades": 146,
+        "tradeAmount": 307.40000000000003,
+        "uniqueTrade": "[\"sell BTC-27SEP24-50000-P\"]"
+      },
+      {
+        "indexPrice": 66384.40615740741,
+        "netPremium": 1466918.3090320001,
+        "numTrades": 216,
+        "tradeAmount": 300.50000000000006,
+        "uniqueTrade": "[\"buy BTC-27SEP24-95000-C\"]"
+      },
+      {
+        "indexPrice": 66108.54122093022,
+        "netPremium": -1958645.4731345,
+        "numTrades": 172,
+        "tradeAmount": 293.6,
+        "uniqueTrade": "[\"sell BTC-27DEC24-120000-C\"]"
+      },
+      {
+        "indexPrice": 66101.51696969697,
+        "netPremium": -1629954.5555784998,
+        "numTrades": 66,
+        "tradeAmount": 292.8,
+        "uniqueTrade": "[\"sell BTC-27SEP24-53000-P\"]"
+      },
+      {
+        "indexPrice": 65028.74608510639,
+        "netPremium": 1591051.7088054998,
+        "numTrades": 235,
+        "tradeAmount": 290.70000000000005,
+        "uniqueTrade": "[\"buy BTC-27SEP24-85000-C\"]"
+      },
+      {
+        "indexPrice": 64584.219352517975,
+        "netPremium": 1659065.9365090001,
+        "numTrades": 139,
+        "tradeAmount": 287.1,
+        "uniqueTrade": "[\"buy BTC-27DEC24-120000-C\"]"
+      },
+      {
+        "indexPrice": 64420.08032863848,
+        "netPremium": 4245221.971416,
+        "numTrades": 213,
+        "tradeAmount": 277.5,
+        "uniqueTrade": "[\"buy BTC-27DEC24-70000-C\"]"
+      },
+      {
+        "indexPrice": 65427.2518705036,
+        "netPremium": 1910328.635483,
+        "numTrades": 139,
+        "tradeAmount": 274.90000000000003,
+        "uniqueTrade": "[\"buy BTC-27DEC24-110000-C\"]"
+      },
+      {
+        "indexPrice": 66450.96805263158,
+        "netPremium": -394213.489848,
+        "numTrades": 190,
+        "tradeAmount": 274.90000000000003,
+        "uniqueTrade": "[\"sell BTC-27SEP24-140000-C\"]"
+      },
+      {
+        "indexPrice": 67125.70919075146,
+        "netPremium": -229601.457067,
+        "numTrades": 173,
+        "tradeAmount": 272.2000000000001,
+        "uniqueTrade": "[\"sell BTC-27SEP24-160000-C\"]"
+      },
+      {
+        "indexPrice": 64922.33378378379,
+        "netPremium": -1431653.315404,
+        "numTrades": 74,
+        "tradeAmount": 261.7,
+        "uniqueTrade": "[\"sell BTC-27SEP24-52000-P\"]"
+      },
+      {
+        "indexPrice": 66230.34293650794,
+        "netPremium": 1530895.7642275002,
+        "numTrades": 126,
+        "tradeAmount": 259.70000000000005,
+        "uniqueTrade": "[\"buy BTC-28MAR25-200000-C\"]"
+      },
+      {
+        "indexPrice": 66487.38425414365,
+        "netPremium": 326116.5162765,
+        "numTrades": 181,
+        "tradeAmount": 249.5,
+        "uniqueTrade": "[\"buy BTC-27SEP24-140000-C\"]"
+      },
+      {
+        "indexPrice": 66171.9425974026,
+        "netPremium": -2492989.6621995,
+        "numTrades": 77,
+        "tradeAmount": 221.70000000000005,
+        "uniqueTrade": "[\"sell BTC-27DEC24-85000-C\"]"
+      },
+      {
+        "indexPrice": 64308.945009901,
+        "netPremium": 3099177.5241229995,
+        "numTrades": 505,
+        "tradeAmount": 214.8000000000001,
+        "uniqueTrade": "[\"buy BTC-28MAR25-80000-C\"]"
+      },
+      {
+        "indexPrice": 65114.39681034483,
+        "netPremium": 519526.1001895,
+        "numTrades": 116,
+        "tradeAmount": 209.4,
+        "uniqueTrade": "[\"buy BTC-27DEC24-180000-C\"]"
+      },
+      {
+        "indexPrice": 63152.73527027027,
+        "netPremium": -2268197.594645,
+        "numTrades": 148,
+        "tradeAmount": 207.10000000000002,
+        "uniqueTrade": "[\"sell BTC-27SEP24-65000-C\"]"
+      },
+      {
+        "indexPrice": 66205.1820610687,
+        "netPremium": -751034.7176864999,
+        "numTrades": 131,
+        "tradeAmount": 207.1,
+        "uniqueTrade": "[\"sell BTC-27SEP24-105000-C\"]"
+      },
+      {
+        "indexPrice": 64835.65578389829,
+        "netPremium": -3081586.7707575005,
+        "numTrades": 472,
+        "tradeAmount": 204.30000000000018,
+        "uniqueTrade": "[\"sell BTC-28MAR25-80000-C\"]"
+      },
+      {
+        "indexPrice": 65419.001717171705,
+        "netPremium": -742222.1731999998,
+        "numTrades": 99,
+        "tradeAmount": 200.5,
+        "uniqueTrade": "[\"sell BTC-27DEC24-150000-C\"]"
+      },
+      {
+        "indexPrice": 65234.225479452056,
+        "netPremium": 498502.6240848,
+        "numTrades": 73,
+        "tradeAmount": 200.3,
+        "uniqueTrade": "[\"buy BTC-27DEC24-40000-P\"]"
+      },
+      {
+        "indexPrice": 65811.79543307087,
+        "netPremium": 1553648.0754595,
+        "numTrades": 127,
+        "tradeAmount": 198.6,
+        "uniqueTrade": "[\"buy BTC-27SEP24-60000-P\"]"
+      },
+      {
+        "indexPrice": 64729.109280000004,
+        "netPremium": -928032.7252974999,
+        "numTrades": 125,
+        "tradeAmount": 197.3,
+        "uniqueTrade": "[\"sell BTC-27SEP24-55000-P\"]"
+      },
+      {
+        "indexPrice": 66856.772625,
+        "netPremium": -175385.1693925,
+        "numTrades": 80,
+        "tradeAmount": 196.10000000000002,
+        "uniqueTrade": "[\"sell BTC-27DEC24-300000-C\"]"
+      },
+      {
+        "indexPrice": 65587.04971698113,
+        "netPremium": 214344.30045349998,
+        "numTrades": 106,
+        "tradeAmount": 195.29999999999998,
+        "uniqueTrade": "[\"buy BTC-27DEC24-300000-C\"]"
+      },
+      {
+        "indexPrice": 66649.1605925926,
+        "netPremium": -877266.8514579999,
+        "numTrades": 135,
+        "tradeAmount": 194.60000000000002,
+        "uniqueTrade": "[\"sell BTC-28MAR25-200000-C\"]"
+      },
+      {
+        "indexPrice": 65284.12319999999,
+        "netPremium": 2353939.2558629997,
+        "numTrades": 225,
+        "tradeAmount": 192,
+        "uniqueTrade": "[\"buy BTC-28MAR25-100000-C\"]"
+      },
+      {
+        "indexPrice": 65953.16813333334,
+        "netPremium": -269198.798344,
+        "numTrades": 150,
+        "tradeAmount": 188.90000000000003,
+        "uniqueTrade": "[\"sell BTC-28MAR25-30000-P\"]"
+      },
+      {
+        "indexPrice": 66226.58850649351,
+        "netPremium": -1450492.4384249998,
+        "numTrades": 154,
+        "tradeAmount": 188.59999999999994,
+        "uniqueTrade": "[\"sell BTC-27DEC24-110000-C\"]"
+      },
+      {
+        "indexPrice": 66264.52124293786,
+        "netPremium": -311428.07530850003,
+        "numTrades": 177,
+        "tradeAmount": 186.70000000000002,
+        "uniqueTrade": "[\"sell BTC-28MAR25-300000-C\"]"
+      },
+      {
+        "indexPrice": 64313.85795698926,
+        "netPremium": -960623.5182635,
+        "numTrades": 93,
+        "tradeAmount": 186,
+        "uniqueTrade": "[\"sell BTC-27SEP24-56000-P\"]"
+      },
+      {
+        "indexPrice": 65209.097594936706,
+        "netPremium": -1948804.286477,
+        "numTrades": 79,
+        "tradeAmount": 181.10000000000002,
+        "uniqueTrade": "[\"sell BTC-27DEC24-60000-P\"]"
+      },
+      {
+        "indexPrice": 65859.47674556213,
+        "netPremium": -2463038.5480854996,
+        "numTrades": 169,
+        "tradeAmount": 179.4,
+        "uniqueTrade": "[\"sell BTC-28MAR25-100000-C\"]"
+      },
+      {
+        "indexPrice": 67154.37346666666,
+        "netPremium": -326813.7773065,
+        "numTrades": 75,
+        "tradeAmount": 179.3,
+        "uniqueTrade": "[\"sell BTC-27DEC24-240000-C\"]"
+      },
+      {
+        "indexPrice": 65805.44670212767,
+        "netPremium": 1945589.2216315,
+        "numTrades": 94,
+        "tradeAmount": 173.8,
+        "uniqueTrade": "[\"buy BTC-27DEC24-85000-C\"]"
+      },
+      {
+        "indexPrice": 65813.52676923075,
+        "netPremium": -87091.28254900001,
+        "numTrades": 65,
+        "tradeAmount": 172.6,
+        "uniqueTrade": "[\"sell BTC-27SEP24-200000-C\"]"
+      },
+      {
+        "indexPrice": 65010.18488000001,
+        "netPremium": -2171031.9699159996,
+        "numTrades": 125,
+        "tradeAmount": 172.1,
+        "uniqueTrade": "[\"sell BTC-27DEC24-75000-C\"]"
+      },
+      {
+        "indexPrice": 63605.48406249999,
+        "netPremium": 1046682.5763478,
+        "numTrades": 64,
+        "tradeAmount": 171.4,
+        "uniqueTrade": "[\"buy BTC-27SEP24-52000-P\"]"
+      },
+      {
+        "indexPrice": 63829.29837499999,
+        "netPremium": 830550.8940221001,
+        "numTrades": 80,
+        "tradeAmount": 170,
+        "uniqueTrade": "[\"buy BTC-27SEP24-55000-P\"]"
+      },
+      {
+        "indexPrice": 66705.71802259887,
+        "netPremium": -1915464.6298904999,
+        "numTrades": 177,
+        "tradeAmount": 169.89999999999998,
+        "uniqueTrade": "[\"sell BTC-27SEP24-70000-P\"]"
+      },
+      {
+        "indexPrice": 66782.83467065867,
+        "netPremium": 803069.7905275,
+        "numTrades": 167,
+        "tradeAmount": 169.40000000000003,
+        "uniqueTrade": "[\"buy BTC-27SEP24-105000-C\"]"
+      },
+      {
+        "indexPrice": 66404.16072289157,
+        "netPremium": -1467971.5146414998,
+        "numTrades": 166,
+        "tradeAmount": 160.5,
+        "uniqueTrade": "[\"sell BTC-27SEP24-65000-P\"]"
+      },
+      {
+        "indexPrice": 66238.85555555554,
+        "netPremium": -468200.430369,
+        "numTrades": 108,
+        "tradeAmount": 160.39999999999998,
+        "uniqueTrade": "[\"sell BTC-27DEC24-180000-C\"]"
+      },
+      {
+        "indexPrice": 64672.48902097902,
+        "netPremium": -608035.9089875,
+        "numTrades": 143,
+        "tradeAmount": 159.6,
+        "uniqueTrade": "[\"sell BTC-27DEC24-140000-C\"]"
+      },
+      {
+        "indexPrice": 65625.1291891892,
+        "netPremium": 377966.66030950006,
+        "numTrades": 111,
+        "tradeAmount": 156.79999999999998,
+        "uniqueTrade": "[\"buy BTC-27DEC24-200000-C\"]"
+      },
+      {
+        "indexPrice": 64881.48366666668,
+        "netPremium": -2325238.8976000003,
+        "numTrades": 180,
+        "tradeAmount": 151.00000000000003,
+        "uniqueTrade": "[\"sell BTC-27DEC24-70000-C\"]"
+      },
+      {
+        "indexPrice": 64431.82403726708,
+        "netPremium": 1893744.4303911,
+        "numTrades": 161,
+        "tradeAmount": 147.70000000000002,
+        "uniqueTrade": "[\"buy BTC-27DEC24-75000-C\"]"
+      },
+      {
+        "indexPrice": 66445.7332,
+        "netPremium": -2163336.1753515005,
+        "numTrades": 75,
+        "tradeAmount": 138.60000000000002,
+        "uniqueTrade": "[\"sell BTC-27SEP24-60000-C\"]"
+      },
+      {
+        "indexPrice": 66086.8072519084,
+        "netPremium": -1151779.8057529998,
+        "numTrades": 131,
+        "tradeAmount": 137.9,
+        "uniqueTrade": "[\"sell BTC-27SEP24-62000-P\"]"
+      },
+      {
+        "indexPrice": 63970.62593220339,
+        "netPremium": 1080638.825489,
+        "numTrades": 118,
+        "tradeAmount": 137.3,
+        "uniqueTrade": "[\"buy BTC-27DEC24-95000-C\"]"
+      },
+      {
+        "indexPrice": 65791.88283185841,
+        "netPremium": -402190.1473155,
+        "numTrades": 113,
+        "tradeAmount": 136.79999999999998,
+        "uniqueTrade": "[\"sell BTC-27SEP24-115000-C\"]"
+      },
+      {
+        "indexPrice": 64847.24252631578,
+        "netPremium": -771694.9952560001,
+        "numTrades": 95,
+        "tradeAmount": 136.7,
+        "uniqueTrade": "[\"sell BTC-27DEC24-50000-P\"]"
+      },
+      {
+        "indexPrice": 66203.06946969697,
+        "netPremium": 258201.606951,
+        "numTrades": 132,
+        "tradeAmount": 135.89999999999995,
+        "uniqueTrade": "[\"buy BTC-27SEP24-130000-C\"]"
+      },
+      {
+        "indexPrice": 67246.0986511628,
+        "netPremium": 1210396.3535805,
+        "numTrades": 215,
+        "tradeAmount": 134.2,
+        "uniqueTrade": "[\"buy BTC-27SEP24-65000-P\"]"
+      },
+      {
+        "indexPrice": 66032.08,
+        "netPremium": -230301.76460149998,
+        "numTrades": 61,
+        "tradeAmount": 133.89999999999998,
+        "uniqueTrade": "[\"sell BTC-27SEP24-125000-C\"]"
+      },
+      {
+        "indexPrice": 64058.0248,
+        "netPremium": -1018627.4946415,
+        "numTrades": 125,
+        "tradeAmount": 132.2,
+        "uniqueTrade": "[\"sell BTC-28MAR25-50000-P\"]"
+      },
+      {
+        "indexPrice": 65738.95168831169,
+        "netPremium": -543887.656932,
+        "numTrades": 77,
+        "tradeAmount": 131,
+        "uniqueTrade": "[\"sell BTC-27DEC24-45000-P\"]"
+      },
+      {
+        "indexPrice": 68095.10720238095,
+        "netPremium": 1457179.8980979999,
+        "numTrades": 168,
+        "tradeAmount": 129.29999999999998,
+        "uniqueTrade": "[\"buy BTC-27SEP24-70000-P\"]"
+      },
+      {
+        "indexPrice": 65819.73674698795,
+        "netPremium": -276972.688449,
+        "numTrades": 83,
+        "tradeAmount": 126.60000000000001,
+        "uniqueTrade": "[\"sell BTC-27DEC24-200000-C\"]"
+      },
+      {
+        "indexPrice": 64917.139,
+        "netPremium": 1826238.1801280002,
+        "numTrades": 100,
+        "tradeAmount": 123.69999999999999,
+        "uniqueTrade": "[\"buy BTC-27SEP24-60000-C\"]"
+      },
+      {
+        "indexPrice": 64772.31833333333,
+        "netPremium": -1186380.484444,
+        "numTrades": 48,
+        "tradeAmount": 122.9,
+        "uniqueTrade": "[\"sell BTC-27DEC24-62000-P\"]"
+      },
+      {
+        "indexPrice": 65344.46833333333,
+        "netPremium": 456616.1627275,
+        "numTrades": 168,
+        "tradeAmount": 120.99999999999999,
+        "uniqueTrade": "[\"buy BTC-27SEP24-115000-C\"]"
+      },
+      {
+        "indexPrice": 64991.31185714286,
+        "netPremium": 1350022.0328819999,
+        "numTrades": 70,
+        "tradeAmount": 120.5,
+        "uniqueTrade": "[\"buy BTC-27DEC24-60000-P\"]"
+      },
+      {
+        "indexPrice": 63795.3491764706,
+        "netPremium": -1186784.7641205,
+        "numTrades": 170,
+        "tradeAmount": 120.39999999999998,
+        "uniqueTrade": "[\"sell BTC-28MAR25-120000-C\"]"
+      },
+      {
+        "indexPrice": 62905.45479166667,
+        "netPremium": -1032569.2413930001,
+        "numTrades": 48,
+        "tradeAmount": 119.69999999999999,
+        "uniqueTrade": "[\"sell BTC-27DEC24-55000-P\"]"
+      },
+      {
+        "indexPrice": 65302.5298989899,
+        "netPremium": -972445.184687,
+        "numTrades": 99,
+        "tradeAmount": 118.6,
+        "uniqueTrade": "[\"sell BTC-27DEC24-95000-C\"]"
+      },
+      {
+        "indexPrice": 66310.86931034483,
+        "netPremium": 593969.9153870001,
+        "numTrades": 58,
+        "tradeAmount": 118.3,
+        "uniqueTrade": "[\"buy BTC-27DEC24-115000-C\"]"
+      },
+      {
+        "indexPrice": 67011.39458333334,
+        "netPremium": 63563.87802859999,
+        "numTrades": 24,
+        "tradeAmount": 116.6,
+        "uniqueTrade": "[\"buy BTC-27DEC24-25000-P\"]"
+      },
+      {
+        "indexPrice": 65214.89074074073,
+        "netPremium": -28296.504404400002,
+        "numTrades": 54,
+        "tradeAmount": 116.3,
+        "uniqueTrade": "[\"sell BTC-27SEP24-240000-C\"]"
+      },
+      {
+        "indexPrice": 65405.10552631578,
+        "netPremium": 153005.5595045,
+        "numTrades": 114,
+        "tradeAmount": 116.10000000000001,
+        "uniqueTrade": "[\"buy BTC-28MAR25-300000-C\"]"
+      },
+      {
+        "indexPrice": 65151.17246153846,
+        "netPremium": 137617.54211749998,
+        "numTrades": 65,
+        "tradeAmount": 113.19999999999999,
+        "uniqueTrade": "[\"buy BTC-27DEC24-240000-C\"]"
+      },
+      {
+        "indexPrice": 65554.9652,
+        "netPremium": 587970.6855179999,
+        "numTrades": 50,
+        "tradeAmount": 109.7,
+        "uniqueTrade": "[\"buy BTC-27DEC24-50000-P\"]"
+      },
+      {
+        "indexPrice": 65803.19494949495,
+        "netPremium": 1608427.9815104997,
+        "numTrades": 99,
+        "tradeAmount": 109.3,
+        "uniqueTrade": "[\"buy BTC-28MAR25-90000-C\"]"
+      },
+      {
+        "indexPrice": 65937.76031746033,
+        "netPremium": 908680.4467610001,
+        "numTrades": 126,
+        "tradeAmount": 109.2,
+        "uniqueTrade": "[\"buy BTC-27SEP24-62000-P\"]"
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}

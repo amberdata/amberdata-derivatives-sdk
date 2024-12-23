@@ -1,0 +1,64 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "atm180days": 78.17154693603516,
+        "atm30days": 70.54167938232422,
+        "atm60days": 73.0343017578125,
+        "atm7days": 63.09156036376953,
+        "atm90days": 75.16527557373047,
+        "counter": 10,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "ratio": 9.078939758920267,
+        "richness": 0.9078939758920267,
+        "timestamp": "2024-04-05T00:00:00.000Z"
+      },
+      {
+        "atm180days": 78.35186004638672,
+        "atm30days": 70.710693359375,
+        "atm60days": 73.34562683105469,
+        "atm7days": 64.43814849853516,
+        "atm90days": 75.25164031982422,
+        "counter": 10,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "ratio": 9.145987157996027,
+        "richness": 0.9145987157996027,
+        "timestamp": "2024-04-04T00:00:00.000Z"
+      },
+      {
+        "atm180days": 79.86881256103516,
+        "atm30days": 72.9396743774414,
+        "atm60days": 74.97410583496094,
+        "atm7days": 69.90302276611328,
+        "atm90days": 77.13240814208984,
+        "counter": 10,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "ratio": 9.380449315162462,
+        "richness": 0.9380449315162462,
+        "timestamp": "2024-04-03T00:00:00.000Z"
+      },
+      {
+        "atm180days": 79.67308044433594,
+        "atm30days": 72.49835968017578,
+        "atm60days": 74.70201873779297,
+        "atm7days": 65.22647857666016,
+        "atm90days": 76.75155639648438,
+        "counter": 10,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "ratio": 9.140634965126814,
+        "richness": 0.9140634965126815,
+        "timestamp": "2024-04-02T00:00:00.000Z"
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}

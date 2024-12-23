@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "callsContractsBought"                  : { "type" : "number" },
+              "callsContractsBoughtExchangeDirection" : { "type" : "number" },
+              "callsContractsSold"                    : { "type" : "number" },
+              "callsContractsSoldExchangeDirection"   : { "type" : "number" },
+              "callsPremiumBought"                    : { "type" : "number" },
+              "callsPremiumBoughtExchangeDirection"   : { "type" : "number" },
+              "callsPremiumSold"                      : { "type" : "number" },
+              "callsPremiumSoldExchangeDirection"     : { "type" : "number" },
+              "putContractsBought"                    : { "type" : "number" },
+              "putContractsBoughtExchangeDirection"   : { "type" : "number" },
+              "putContractsSold"                      : { "type" : "number" },
+              "putContractsSoldExchangeDirection"     : { "type" : "number" },
+              "putPremiumBought"                      : { "type" : "number" },
+              "putPremiumBoughtExchangeDirection"     : { "type" : "number" },
+              "putPremiumSold"                        : { "type" : "number" },
+              "putPremiumSoldExchangeDirection"       : { "type" : "number" }
+            },
+            "required": ["callsContractsBought", "callsContractsBoughtExchangeDirection", "callsContractsSold", "callsContractsSoldExchangeDirection", "callsPremiumBought", "callsPremiumBoughtExchangeDirection", "callsPremiumSold", "callsPremiumSoldExchangeDirection", "putContractsBought", "putContractsBoughtExchangeDirection", "putContractsSold", "putContractsSoldExchangeDirection", "putPremiumBought", "putPremiumBoughtExchangeDirection", "putPremiumSold", "putPremiumSoldExchangeDirection"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}

@@ -1,0 +1,252 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "close": 73.80999755859375,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 23:00:00 000",
+        "high": 73.87,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 73.66,
+        "open": 73.66000366210938
+      },
+      {
+        "close": 73.66000366210938,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 22:00:00 000",
+        "high": 73.7,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 73.5,
+        "open": 73.5
+      },
+      {
+        "close": 73.5,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 21:00:00 000",
+        "high": 73.77,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 73.49,
+        "open": 73.7699966430664
+      },
+      {
+        "close": 73.7699966430664,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 20:00:00 000",
+        "high": 74.01,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 73.75,
+        "open": 73.98999786376953
+      },
+      {
+        "close": 73.98999786376953,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 19:00:00 000",
+        "high": 74.14,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 73.91,
+        "open": 74.05000305175781
+      },
+      {
+        "close": 74.05000305175781,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 18:00:00 000",
+        "high": 74.12,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 73.94,
+        "open": 73.98999786376953
+      },
+      {
+        "close": 73.98999786376953,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 17:00:00 000",
+        "high": 74.16,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 73.97,
+        "open": 74.13999938964844
+      },
+      {
+        "close": 74.13999938964844,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 16:00:00 000",
+        "high": 74.7,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 74.14,
+        "open": 74.62000274658203
+      },
+      {
+        "close": 74.62000274658203,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 15:00:00 000",
+        "high": 74.62,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 74.5,
+        "open": 74.54000091552734
+      },
+      {
+        "close": 74.54000091552734,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 14:00:00 000",
+        "high": 75.93,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 74.54,
+        "open": 75.93000030517578
+      },
+      {
+        "close": 75.91999816894531,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 13:00:00 000",
+        "high": 76.29,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 75.89,
+        "open": 76.19999694824219
+      },
+      {
+        "close": 76.19999694824219,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 12:00:00 000",
+        "high": 76.24,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 76.12,
+        "open": 76.19000244140625
+      },
+      {
+        "close": 76.19000244140625,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 11:00:00 000",
+        "high": 76.34,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 76.19,
+        "open": 76.27999877929688
+      },
+      {
+        "close": 76.27999877929688,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 10:00:00 000",
+        "high": 76.29,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 76.04,
+        "open": 76.06999969482422
+      },
+      {
+        "close": 76.06999969482422,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 09:00:00 000",
+        "high": 76.3,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 76.07,
+        "open": 76.16000366210938
+      },
+      {
+        "close": 76.16000366210938,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 08:00:00 000",
+        "high": 76.32,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 76.1,
+        "open": 76.31999969482422
+      },
+      {
+        "close": 76.31999969482422,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 07:00:00 000",
+        "high": 76.66,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 76.32,
+        "open": 76.66000366210938
+      },
+      {
+        "close": 76.66000366210938,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 06:00:00 000",
+        "high": 76.72,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 76.3,
+        "open": 76.30000305175781
+      },
+      {
+        "close": 76.30000305175781,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 05:00:00 000",
+        "high": 76.4,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 76.09,
+        "open": 76.2300033569336
+      },
+      {
+        "close": 76.2300033569336,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 04:00:00 000",
+        "high": 76.4,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 76.2,
+        "open": 76.4000015258789
+      },
+      {
+        "close": 76.4000015258789,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 03:00:00 000",
+        "high": 76.5,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 76.39,
+        "open": 76.45999908447266
+      },
+      {
+        "close": 76.45999908447266,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 02:00:00 000",
+        "high": 76.53,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 76.43,
+        "open": 76.5199966430664
+      },
+      {
+        "close": 76.5199966430664,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 01:00:00 000",
+        "high": 76.74,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 76.52,
+        "open": 76.68000030517578
+      },
+      {
+        "close": 76.66999816894531,
+        "currency": "BTC",
+        "exchange": "deribit",
+        "exchangeTimestamp": "2024-04-01 00:00:00 000",
+        "high": 76.83,
+        "instrument": "DERIBIT_BTC_DVOL_INDEX",
+        "low": 76.63,
+        "open": 76.63999938964844
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}
