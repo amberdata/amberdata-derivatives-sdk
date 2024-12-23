@@ -1171,8 +1171,8 @@ class AmberdataTradFi(_AmberdataBase):
         Users can also pass additional parameters to filter to a more narrow subset of tradable instruments.
 
         QUERY PARAMS:
-        - exchange   (string)    [Optional] [Examples] deribit | okex | bybit
-        - currency   (string)    [Optional] [Examples] BTC | SOL_USDC
+        - exchange   (string)    [Optional] [Examples] tradfi
+        - currency   (string)    [Optional] [Examples] MSTR
         - putCall    (string)    [Optional] [Examples] C | P
         - strike     (int32)     [Optional] [Examples] 100000 | 3500
         - timestamp  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
@@ -1193,8 +1193,8 @@ class AmberdataTradFi(_AmberdataBase):
         trades.
 
         QUERY PARAMS:
-        - exchange     (string)    [Required] [Examples] deribit | okex | bybit
-        - currency     (string)    [Required] [Examples] BTC | SOL_USDC
+        - exchange     (string)    [Required] [Examples] tradfi
+        - currency     (string)    [Required] [Examples] MSTR
         - blockTradeId (boolean)   [Optional] [Examples] true
         - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
@@ -1212,14 +1212,13 @@ class AmberdataTradFi(_AmberdataBase):
 
     # ==================================================================================================================
 
-    def get_realized_volatility_cones(self, exchange: str, pair: str, **kwargs):
+    def get_realized_volatility_cones(self, currency: str, **kwargs):
         """
         The endpoint returns the percentile distribution of realized volatility for a specific spot trading pair.
         We can see the RV distribution for multiple measurement windows compared to the end date.
 
         QUERY PARAMS:
-        - exchange   (string)    [Required] [Examples] gdax
-        - pair       (string)    [Required] [Examples] btc_usd
+        - currency   (string)    [Required] [Examples] MSTR
         - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
@@ -1227,23 +1226,19 @@ class AmberdataTradFi(_AmberdataBase):
         return self._make_request(
             'markets/derivatives/analytics/realized-volatility/cones/tradfi',
             {
-                'exchange': exchange,
-                'pair': pair,
+                'currency': currency,
                 **kwargs
             }
         )
 
-    # ==================================================================================================================
-
-    def get_realized_volatility_implied_vs_realized(self, exchange: str, currency: str, **kwargs):
+    def get_realized_volatility_implied_vs_realized(self, currency: str, **kwargs):
         """
         This endpoint returns the close-to-close hourly realized volatility for 7-days and 30-days.
 
         Using the daysToExpiration parameter, users can choose which "at-the-money" implied volatility to compare.
 
         QUERY PARAMS:
-        - exchange   (string)    [Required] [Examples] deribit
-        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - currency   (string)    [Required] [Examples] MSTR
         - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
@@ -1251,7 +1246,6 @@ class AmberdataTradFi(_AmberdataBase):
         return self._make_request(
             'markets/derivatives/analytics/realized-volatility/implied-vs-realized/tradfi',
             {
-                'exchange': exchange,
                 'currency': currency,
                 **kwargs
             }
