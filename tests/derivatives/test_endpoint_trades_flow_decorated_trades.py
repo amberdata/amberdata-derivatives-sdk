@@ -143,12 +143,10 @@ class EndpointTradesFlowDecoratedTradesTestCase(BaseTestCase):
         self.validate_response_data(response)
         self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER_PUT_CALL)
 
-    # TODO: This test should fail, and not return a 500 - validation is missing in data-api
-    @unittest.skip("Missing validation")
     def test_invalid_strike(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', strike='<strike>')
         self.validate_response_data(response)
-        self.validate_response_200(response, num_elements=0)
+        self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER_STRIKE)
 
     def test_invalid_timestamp(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='<timestamp>')
