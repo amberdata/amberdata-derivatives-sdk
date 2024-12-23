@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "currency"                    : { "type": "string" },
+              "delta"                       : { "type": ["null",    "number"] },
+              "exchange"                    : { "type": "string" },
+              "exchangeTimestamp"           : { "type": ["integer", "string"] },
+              "expirationTimestamp"         : { "type": ["integer", "string"] },
+              "gamma"                       : { "type": ["null",    "number"] },
+              "instrument"                  : { "type": "string" },
+              "instrumentNormalized"        : { "type": "string" },
+              "postTradeAskPrice"           : { "type": ["null",    "number"] },
+              "postTradeBidPrice"           : { "type": ["null",    "number"] },
+              "postTradeMarkIv"             : { "type": ["null",    "number"] },
+              "postTradeMarkPrice"          : { "type": ["null",    "number"] },
+              "preTradeAskIv"               : { "type": ["null",    "number"] },
+              "preTradeAskPrice"            : { "type": ["null",    "number"] },
+              "preTradeAskVolume"           : { "type": ["null",    "number"] },
+              "preTradeBidIv"               : { "type": ["null",    "number"] },
+              "preTradeBidPrice"            : { "type": ["null",    "number"] },
+              "preTradeBidVolume"           : { "type": ["null",    "number"] },
+              "preTradeMidIv"               : { "type": ["null",    "number"] },
+              "preTradeMidPrice"            : { "type": ["null",    "number"] },
+              "priceUsd"                    : { "type": "number" },
+              "putCall"                     : { "type": "string" },
+              "rho"                         : { "type": ["null",    "number"] },
+              "strike"                      : { "type": "number" },
+              "theta"                       : { "type": ["null",    "number"] },
+              "tradeAmount"                 : { "type": "number" },
+              "tradeId"                     : { "type": ["null",    "string"] },
+              "tradeIv"                     : { "type": ["null",    "number"] },
+              "underlyingPrice"             : { "type": ["null",    "number"] },
+              "vega"                        : { "type": ["null",    "number"] },
+              "volume24h"                   : { "type": ["null",    "number"] }
+            },
+            "required": ["currency", "delta", "exchange", "exchangeTimestamp", "expirationTimestamp", "gamma", "instrument", "instrumentNormalized", "postTradeAskPrice", "postTradeBidPrice", "postTradeMarkIv", "postTradeMarkPrice", "preTradeAskIv", "preTradeAskPrice", "preTradeAskVolume", "preTradeBidIv", "preTradeBidPrice", "preTradeBidVolume", "preTradeMidIv", "preTradeMidPrice", "priceUsd", "putCall", "rho", "strike", "theta", "tradeAmount", "tradeId", "tradeIv", "underlyingPrice", "vega", "volume24h"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}
