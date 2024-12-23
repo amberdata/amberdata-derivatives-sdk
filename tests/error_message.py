@@ -14,6 +14,7 @@ class ErrorMessage:
     """
 
     INVALID_PARAMETER = "Parameter 'invalid' is not supported."
+    INVALID_PARAMETER_EXCHANGE_TRADFI = "Invalid argument exchange: expected one of [tradfi,TRADFI], found '<exchange>'."
     INVALID_PARAMETER_INTERVAL = "Invalid argument interval: expected one of [7d,7D,30d,30D,90d,90D,180d,180D], found '<interval>'."
     INVALID_PARAMETER_MARGIN_TYPE = "Invalid argument marginType: expected one of [coins,stables], found '<margin_type>'."
     INVALID_PARAMETER_PUT_CALL = "Invalid argument putCall: expected one of [P,p,put,Put,PUT,C,c,call,Call,CALL], found '<put_call>'."
