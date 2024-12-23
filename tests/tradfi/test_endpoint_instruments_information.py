@@ -50,13 +50,12 @@ class EndpointInstrumentsInformationTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'endDate', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'expiration', is_milliseconds=True)
 
-    # TODO: bug in the API
     def test_strike(self):
-        response = self.call_endpoint(timestamp='2024-12-01', strike=5000)
+        response = self.call_endpoint(timestamp='2024-12-01', strike='12')
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_data(response)
-        self.validate_response_200(response, min_elements=1)
-        self.validate_response_field(response, 'strike', 5000)
+        self.validate_response_200(response, num_elements=66)
+        self.validate_response_field(response, 'strike', 12)
         self.validate_response_field_timestamp(response, 'endDate', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'expiration', is_milliseconds=True)
 
