@@ -1256,7 +1256,7 @@ class AmberdataTradFi(_AmberdataBase):
 
     # ==================================================================================================================
 
-    def get_trades_flow_decorated_trades(self, exchange: str, currency: str, **kwargs):
+    def get_trades_flow_decorated_trades(self, currency: str, **kwargs):
         """
         This endpoint returns option "times and sales" data that's decorated with pre-trade level-1 orderbook data and
         post-trade level-1 data.
@@ -1267,8 +1267,7 @@ class AmberdataTradFi(_AmberdataBase):
         (aka "dealers") are typically the passive trade participants.
 
         QUERY PARAMS:
-        - currency     (string)    [Required] [Examples] BTC | SOL_USDC
-        - exchange     (string)    [Required] [Examples] deribit | okex | bybit
+        - currency     (string)    [Required] [Examples] MSTR
         - blockTradeId (boolean)   [Optional] [Examples] true
         - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
@@ -1281,13 +1280,12 @@ class AmberdataTradFi(_AmberdataBase):
         return self._make_request(
             'markets/derivatives/analytics/trades-flow/decorated-trades/tradfi',
             {
-                'exchange': exchange,
                 'currency': currency,
                 **kwargs
             }
         )
 
-    def get_trades_flow_options_yields(self, exchange: str, currency: str, **kwargs):
+    def get_trades_flow_options_yields(self, currency: str, **kwargs):
         """
         The “Covered Call” strategy assumes the trader is long exactly one unit of underlying asset after proceeds from
         selling their call.
@@ -1308,7 +1306,6 @@ class AmberdataTradFi(_AmberdataBase):
           Absolute Yield: $25/$275 Annualized Yield: $25/$275 (525,600 / minutes left until expiration
 
         QUERY PARAMS:
-        - exchange   (string) [Required] [Examples] deribit | okex | bybit
         - currency   (string) [Required] [Examples] BTC | SOL_USDC
         - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
@@ -1316,13 +1313,12 @@ class AmberdataTradFi(_AmberdataBase):
         return self._make_request(
             'markets/derivatives/analytics/trades-flow/options-yields/tradfi',
             {
-                'exchange': exchange,
                 'currency': currency,
                 **kwargs
             }
         )
 
-    def get_trades_flow_volume_aggregates(self, exchange: str, currency: str, **kwargs):
+    def get_trades_flow_volume_aggregates(self, currency: str, **kwargs):
         """
         This endpoint returns the total traded options volume for a selected exchange and a selected underlying
         currency.
@@ -1331,7 +1327,6 @@ class AmberdataTradFi(_AmberdataBase):
         GreeksLive, etc).
 
         QUERY PARAMS:
-        - exchange     (string)    [Required] [Examples] deribit | okex | bybit
         - currency     (string)    [Required] [Examples] BTC | SOL_USDC
         - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
@@ -1342,7 +1337,6 @@ class AmberdataTradFi(_AmberdataBase):
         return self._make_request(
             'markets/derivatives/analytics/trades-flow/volume-aggregates/tradfi',
             {
-                'exchange': exchange,
                 'currency': currency,
                 **kwargs
             }
@@ -1353,7 +1347,7 @@ class AmberdataTradFi(_AmberdataBase):
 
     # ==================================================================================================================
 
-    def get_volatility_delta_surfaces_constant(self, exchange: str, currency: str, **kwargs):
+    def get_volatility_delta_surfaces_constant(self, currency: str, **kwargs):
         """
         This endpoint returns the option delta surface with constant maturities.
 
@@ -1368,7 +1362,6 @@ class AmberdataTradFi(_AmberdataBase):
         frame window to get the next n days/hours/minutes of data.
 
         QUERY PARAMS:
-        - exchange              (string)    [Required] [Examples] deribit | okex | bybit
         - currency              (string)    [Required] [Examples] BTC | SOL_USDC
         - startDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate               (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
@@ -1381,13 +1374,12 @@ class AmberdataTradFi(_AmberdataBase):
         return self._make_request(
             'markets/derivatives/analytics/volatility/delta-surfaces/constant/tradfi',
             {
-                'exchange': exchange,
                 'currency': currency,
                 **kwargs
             }
         )
 
-    def get_volatility_delta_surfaces_floating(self, exchange: str, currency: str, **kwargs):
+    def get_volatility_delta_surfaces_floating(self, currency: str, **kwargs):
         """
         This endpoint returns the option delta surface with floating maturities (exchange listed expirations).
 
@@ -1402,7 +1394,6 @@ class AmberdataTradFi(_AmberdataBase):
         frame window to get the next n days/hours/minutes of data.
 
         QUERY PARAMS:
-        - exchange              (string)    [Required] [Examples] deribit | okex | bybit
         - currency              (string)    [Required] [Examples] BTC | SOL_USDC
         - startDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - endDate               (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
@@ -1415,7 +1406,6 @@ class AmberdataTradFi(_AmberdataBase):
         return self._make_request(
             'markets/derivatives/analytics/volatility/delta-surfaces/floating/tradfi',
             {
-                'exchange': exchange,
                 'currency': currency,
                 **kwargs
             }
