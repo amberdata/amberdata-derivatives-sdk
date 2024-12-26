@@ -778,7 +778,7 @@ class AmberdataDerivatives(_AmberdataBase):
         proceeds = $25 Trader positioning in underlying after short call proceeds = $500 (one whole unit)
 
         RETURN CALCULATIONS
-          Absolute Yield: $25/$475 Annualized Yield: $25/$475 (525,600 / minutes left until expiration
+          Absolute Yield: $25/$475 Annualized Yield: $25/$475 (525,600 / minutes left until expiration)
 
         The “Cash Secured Put” yield assumes the trader maintains enough cash on hand AFTER proceeds from selling
         the put.
@@ -787,7 +787,7 @@ class AmberdataDerivatives(_AmberdataBase):
         AFTER short put proceeds = $300 (100% cash secured)
 
         RETURN CALCULATIONS
-          Absolute Yield: $25/$275 Annualized Yield: $25/$275 (525,600 / minutes left until expiration
+          Absolute Yield: $25/$275 Annualized Yield: $25/$275 (525,600 / minutes left until expiration)
 
         QUERY PARAMS:
         - exchange   (string) [Required] [Examples] deribit | okex | bybit
@@ -1059,6 +1059,119 @@ class AmberdataDerivatives(_AmberdataBase):
             }
         )
 
+    def get_volatility_svi_altcoins(self, currency: str, **kwargs):
+        """
+        This endpoint provides a very novel endpoint. We bootstrap volatility curves for altcoins without a listed
+        options market. This is a complex volatility model bootstrap that provides theoretical marks for assets without
+        actively traded options yet.
+
+        Exchanges, OTC desks and buy-side clients use this endpoint to find fair value for these "tail" assets.
+
+        The model calibrates every 24hr hours for 7-dte and 30-dte expirations.
+
+        QUERY PARAMS:
+        - currency   (string)  [Required] [Examples] BTC | SOL_USDC
+        - signature  (string)  [Optional] [Examples] ECDSA
+        - sviFormat  (string)  [Optional] [Examples] DTU | TAU
+        - timeFormat (string)  [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/volatility/svi-altcoins',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_svi_altcoins_table(self, currency: str, **kwargs):
+        """
+        This endpoint provides a very novel endpoint. We bootstrap volatility curves for altcoins without a listed
+        options market. This is a complex volatility model bootstrap that provides theoretical marks for assets without
+        actively traded options yet.
+
+        Exchanges, OTC desks and buy-side clients use this endpoint to find fair value for these "tail" assets.
+
+        The model calibrates every 24hr hours for 7-dte and 30-dte expirations.
+
+        QUERY PARAMS:
+        - timeFormat (string)  [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/volatility/svi-altcoins-table',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_svi_altcoins_strikes(self, currency: str, **kwargs):
+        """
+        TThis endpoint provides theoretical synthetic options with various strikes and option marks. We use the SVI
+        Altcoin parameters from bootstrapped volatility surface and convert them into a list of synthetic option
+        instruments, in order to easily represent theoretically tradable instruments.
+
+        Exchanges, OTC desks and buy-side clients use this endpoint to find fair value for these "tail" assets.
+
+        The model calibrates every 24hr hours for 7-dte and 30-dte expirations.
+
+        QUERY PARAMS:
+        - currency   (string)  [Required] [Examples] BTC | SOL_USDC
+        - timeFormat (string)  [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/volatility/svi-altcoins-strikes',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_svi_minutely(self, currency: str, **kwargs):
+        """
+        This endpoint provides calibrated SVI (Stochastic Volatility Inspired) parameters for BTC and ETH options traded
+        on Deribit, with 5-minute granularity. Offering a timely calibration view of the volatility surface.
+
+        QUERY PARAMS:
+        - currency   (string)  [Required] [Examples] BTC | SOL_USDC
+        - signature  (string)  [Optional] [Examples] ECDSA
+        - sviFormat  (string)  [Optional] [Examples] DTU | TAU
+        - timeFormat (string)  [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/volatility/svi-minutely',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_svi_historical(self, currency: str, **kwargs):
+        """
+        This endpoint provides calibrated SVI (Stochastic Volatility Inspired) parameters for BTC and ETH options traded
+        on Deribit, with hourly granularity. The data covers each hour from April 1, 2019, to the present, offering a
+        historical view of volatility surface calibrations for these assets.
+
+        QUERY PARAMS:
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - sviFormat  (string)    [Optional] [Examples] DTU | TAU
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/volatility/svi-hourly',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
     def get_volatility_term_structures_constant(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint returns the term structure (for exchange listed expirations) with forward volatility calculations.
@@ -1163,15 +1276,12 @@ class AmberdataTradFi(_AmberdataBase):
 
     def get_instruments_information(self, **kwargs):
         """
-        Given an exchange parameter and underlying currency (ex: deribit, BTC) this endpoint retrieves a list of all
-        available active instruments.
+        This endpoint returns all available exchanges, currencies and option instruments. If a timestamp is used we can
+        then filter the information for historical data.
 
-        Users can pass a “timestamp” parameter to view the available active instruments at some point in the past.
-
-        Users can also pass additional parameters to filter to a more narrow subset of tradable instruments.
+        USA Trading hours are 14:30:00 - 21:00:00 UTC (9:30a-4pm ET)
 
         QUERY PARAMS:
-        - exchange   (string)    [Optional] [Examples] tradfi
         - currency   (string)    [Optional] [Examples] MSTR
         - putCall    (string)    [Optional] [Examples] C | P
         - strike     (int32)     [Optional] [Examples] 100000 | 3500
@@ -1188,9 +1298,12 @@ class AmberdataTradFi(_AmberdataBase):
 
     def get_instruments_most_traded(self, exchange: str, currency: str, **kwargs):
         """
-        This endpoint returns the most traded instruments on a selected exchange for a selected underlying currency,
-        for a given date range. Users can filter out select trade types: "ALL" trades, "Block" trades and "Non-Block"
-        trades.
+        This endpoint returns the most traded instruments on a selected exchange for a selected underlying currency, for
+        a given date range.
+
+        This endpoint also returns the VWAP (Volume-Weighted-Average-Price) and VWAP of implied volatility.
+        The calculation for VWAP uses each available trade, weighted by contract sizes and applied to Price USD and/or
+        Implied Volatility, for the given date range.
 
         QUERY PARAMS:
         - exchange     (string)    [Required] [Examples] tradfi
@@ -1214,8 +1327,8 @@ class AmberdataTradFi(_AmberdataBase):
 
     def get_realized_volatility_cones(self, currency: str, **kwargs):
         """
-        The endpoint returns the percentile distribution of realized volatility for a specific spot trading pair.
-        We can see the RV distribution for multiple measurement windows compared to the end date.
+        The endpoint returns the percentile distribution of realized volatility for a specific spot trading pair. We can
+        see the RV distribution for multiple measurement windows compared to the end date.
 
         QUERY PARAMS:
         - currency   (string)    [Required] [Examples] MSTR
@@ -1233,9 +1346,12 @@ class AmberdataTradFi(_AmberdataBase):
 
     def get_realized_volatility_implied_vs_realized(self, currency: str, **kwargs):
         """
-        This endpoint returns the close-to-close hourly realized volatility for 7-days and 30-days.
+        This endpoint returns the close-to-close daily realized volatility for 5-days and 21-days. Using the
+        daysToExpiration parameter, users can choose which "at-the-money" implied volatility to compare.
 
-        Using the daysToExpiration parameter, users can choose which "at-the-money" implied volatility to compare.
+        Implied Volatility is returned on an hourly interval.
+
+        USA Trading hours are 14:30:00 - 21:00:00 UTC (9:30a-4pm ET).
 
         QUERY PARAMS:
         - currency   (string)    [Required] [Examples] MSTR
@@ -1256,10 +1372,7 @@ class AmberdataTradFi(_AmberdataBase):
     def get_trades_flow_decorated_trades(self, currency: str, **kwargs):
         """
         This endpoint returns option "times and sales" data that's decorated with pre-trade level-1 orderbook data and
-        post-trade level-1 data.
-
-        This is the core dataset of the Amberdata direction and GEX "Gamma Exposure" analysis.
-
+        post-trdae level-1 data. This is the core dataset of the Amberdata direction and GEX "Gamma Exposure" analysis.
         We use this orderbook impact to analyze the true aggressor of every trade, while assuming that market-makers
         (aka "dealers") are typically the passive trade participants.
 
@@ -1291,7 +1404,7 @@ class AmberdataTradFi(_AmberdataBase):
         proceeds = $25 Trader positioning in underlying after short call proceeds = $500 (one whole unit)
 
         RETURN CALCULATIONS
-          Absolute Yield: $25/$475 Annualized Yield: $25/$475 (525,600 / minutes left until expiration
+          Absolute Yield: $25/$475 Annualized Yield: $25/$475 (525,600 / minutes left until expiration)
 
         The “Cash Secured Put” yield assumes the trader maintains enough cash on hand AFTER proceeds from selling
         the put.
@@ -1300,7 +1413,7 @@ class AmberdataTradFi(_AmberdataBase):
         AFTER short put proceeds = $300 (100% cash secured)
 
         RETURN CALCULATIONS
-          Absolute Yield: $25/$275 Annualized Yield: $25/$275 (525,600 / minutes left until expiration
+          Absolute Yield: $25/$275 Annualized Yield: $25/$275 (525,600 / minutes left until expiration)
 
         QUERY PARAMS:
         - currency   (string) [Required] [Examples] BTC | SOL_USDC
@@ -1345,7 +1458,10 @@ class AmberdataTradFi(_AmberdataBase):
         """
         This endpoint returns the option delta surface with constant maturities.
 
+        USA Trading hours are 14:30:00 - 21:00:00 UTC (9:30a-4pm ET).
+
         Time Range Limit: The timeInterval supports minute, hour, day.
+
         Due to the density of data, historical time ranges (difference between startDate and endDate) are limited to the
         following call sizes:
           - 1 year of daily data
@@ -1378,6 +1494,7 @@ class AmberdataTradFi(_AmberdataBase):
         This endpoint returns the option delta surface with floating maturities (exchange listed expirations).
 
         Time Range Limit: The timeInterval supports minute, hour, day.
+
         Due to the density of data, historical time ranges (difference between startDate and endDate) are limited to the
         following call sizes:
           - 1 year of daily data
@@ -1409,11 +1526,11 @@ class AmberdataTradFi(_AmberdataBase):
         """
         This endpoint returns the “Level 1” option chain with associated volatilities, greeks and underlying prices.
         This is the core underlying options data for many analytics.
-        Although this data streams to Amberdata every 100ms this endpoint returns the first observation for each
-        instrument in 1-minute, 1-hour or 1-day intervals.
 
         Note: Due to the density of data historical date ranges are limited to 60x 1-minute or 24x 1 hour intervals,
         per call. If no date range is passed, the most recent option chain will be returned.
+
+        USA Trading hours are 14:30:00 - 21:00:00 UTC (9:30a-4pm ET).
 
         QUERY PARAMS:
         - currency     (string)    [Required] [Examples] BTC | SOL_USDC
@@ -1437,12 +1554,12 @@ class AmberdataTradFi(_AmberdataBase):
 
     def get_volatility_metrics(self, currency: str, **kwargs):
         """
-        This endpoint contains all the metrics useful for having an immediate overview of the options market,
-        for each active expiry. The current Mark IV is updated every minute.
+        This endpoint contains all the metrics useful for having an immediate overview of the options market, for each
+        active expiry. The current Mark IV is updated every minute. These metrics are then compared according to the
+        selected "daysBack" parameter. All the differences are found in the columns with the indication "change"
+        (current metrics vs 24hr ago).
 
-        These metrics are then compared according to the selected "daysBack" parameter.
-
-        All the differences are found in the columns with the indication "change" (current metrics vs days ago metrics).
+        USA Trading hours are 14:30:00 - 21:00:00 UTC (9:30a-4pm ET).
 
         QUERY PARAMS:
         - currency   (string)    [Required] [Examples] BTC | SOL_USDC
@@ -1460,7 +1577,10 @@ class AmberdataTradFi(_AmberdataBase):
 
     def get_volatility_term_structures_constant(self, currency: str, **kwargs):
         """
-        This endpoint returns the term structure (for exchange listed expirations) with forward volatility calculations.
+        This endpoint returns the term structure (for exchange listed expirations) with forward volatility calculations,
+        for constant "daysToExpiration" maturities.
+
+        USA Trading hours are 14:30:00 - 21:00:00 UTC (9:30a-4pm ET).
 
         QUERY PARAMS:
         - currency   (string)    [Required] [Examples] BTC | SOL_USDC
