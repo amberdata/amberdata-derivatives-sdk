@@ -62,12 +62,7 @@ class EndpointVolatilityDeltaSurfaceFloatingTestCase(BaseTestCase):
         self.validate_response_field(response, 'exchange', 'tradfi')
         self.validate_response_field(response, 'currency', 'MSTR')
 
-        data = response['payload']['data']
-        for i, element in enumerate(data):
-            for key in element:
-                if type(element[key]) is str:
-                    data[i][key] = element[key].replace('20:00:00', '00:00:00')
-
+        self.truncate_timestamp_fields_to_midnight(response, ['timestamp'])
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_daily=True)
 
     def test_historical_timeinterval_hours(self):

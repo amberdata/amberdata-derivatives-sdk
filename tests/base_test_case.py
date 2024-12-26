@@ -65,6 +65,29 @@ class BaseTestCase(unittest.TestCase):
 
     # ==================================================================================================================
 
+    @staticmethod
+    def truncate_timestamp_fields_to_midnight(response, timestamp_fields: list[str]):
+        """
+        Truncates timestamp fields to midnight if the hours are 20:00:00.
+
+        :param response:         The response payload
+        :param timestamp_fields: List of field names to truncated - all if not specified
+        """
+        data = response['payload']['data']
+
+        if timestamp_fields is None:
+            for i, element in enumerate(data):
+                for key in element:
+                    if isinstance(element[key], str):
+                        data[i][key] = element[key].replace('20:00:00', '00:00:00')
+        else:
+            for i, element in enumerate(data):
+                for key in timestamp_fields:
+                    if isinstance(element[key], str):
+                        data[i][key] = element[key].replace('20:00:00', '00:00:00')
+
+    # ==================================================================================================================
+
     def validate_response_data(self, response, file=None):
         """
         Validates that the response payload matches the expected fixture.

@@ -63,12 +63,7 @@ class EndpointVolatilityDeltaSurfaceConstantTestCase(BaseTestCase):
         self.validate_response_field(response, 'exchange', 'tradfi')
         self.validate_response_field(response, 'currency', 'MSTR')
 
-        data = response['payload']['data']
-        for i, element in enumerate(data):
-            for key in element:
-                if type(element[key]) is str:
-                    data[i][key] = element[key].replace('20:00:00', '00:00:00')
-
+        self.truncate_timestamp_fields_to_midnight(response, ['timestamp'])
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_daily=True)
 
     def test_historical_timeinterval_hours(self):
@@ -91,25 +86,25 @@ class EndpointVolatilityDeltaSurfaceConstantTestCase(BaseTestCase):
 
     # ==================================================================================================================
 
-    # def test_invalid_parameter(self):
-    #     response = self.call_endpoint(currency='MSTR', invalid='parameter')
-    #     self.validate_response_data(response)
-    #     self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER)
-    #
-    # def test_invalid_exchange(self):
-    #     response = self.call_endpoint(exchange='<exchange>', currency='MSTR')
-    #     self.validate_response_data(response)
-    #     self.validate_response_400(response, ErrorMessage.UNSUPPORTED_EXCHANGE)
-    #
-    # def test_invalid_timestamp(self):
-    #     response = self.call_endpoint(currency='MSTR', startDate='<timestamp>')
-    #     self.validate_response_data(response)
-    #     self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER_TIMESTAMP)
-    #
-    # def test_unknown_currency(self):
-    #     response = self.call_endpoint(currency='<currency>')
-    #     self.validate_response_data(response)
-    #     self.validate_response_200(response, num_elements=0)
+    def test_invalid_parameter(self):
+        response = self.call_endpoint(currency='MSTR', invalid='parameter')
+        self.validate_response_data(response)
+        self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER)
+
+    def test_invalid_exchange(self):
+        response = self.call_endpoint(exchange='<exchange>', currency='MSTR')
+        self.validate_response_data(response)
+        self.validate_response_400(response, ErrorMessage.UNSUPPORTED_EXCHANGE)
+
+    def test_invalid_timestamp(self):
+        response = self.call_endpoint(currency='MSTR', startDate='<timestamp>')
+        self.validate_response_data(response)
+        self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER_TIMESTAMP)
+
+    def test_unknown_currency(self):
+        response = self.call_endpoint(currency='<currency>')
+        self.validate_response_data(response)
+        self.validate_response_200(response, num_elements=0)
 
 
 # ======================================================================================================================
