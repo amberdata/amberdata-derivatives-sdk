@@ -46,6 +46,7 @@ class _AmberdataBase:
             'accept'             : 'application/json',
             'Accept-Encoding'    : 'gzip',
             'x-api-key'          : api_key,
+            'x-amberdata-secret' : os.getenv('SECRET_LOCAL'),
             'x-amberdata-client' : 'python-sdk-' + __version__,
         }
 
@@ -123,6 +124,10 @@ class _AmberdataBase:
         url = f"{self.__base_url}/{url_path}?{query_string}"
 
         # Issue REST call & parse response payload
+        print('')
+        print('==================================================')
+        print(url)
+        print('==================================================')
         return self.__download(
             url,
             self.__headers,
@@ -1251,9 +1256,6 @@ class AmberdataTradFi(_AmberdataBase):
             }
         )
 
-    def get_realized_volatility_volatility(self):
-        return None
-
     # ==================================================================================================================
 
     def get_trades_flow_decorated_trades(self, currency: str, **kwargs):
@@ -1341,9 +1343,6 @@ class AmberdataTradFi(_AmberdataBase):
                 **kwargs
             }
         )
-
-    def get_trades_flow_volumes(self):
-        return None
 
     # ==================================================================================================================
 
@@ -1440,9 +1439,6 @@ class AmberdataTradFi(_AmberdataBase):
                 **kwargs
             }
         )
-
-    def get_volatility_fixed_strikes(self):
-        return None
 
     def get_volatility_metrics(self, currency: str, **kwargs):
         """

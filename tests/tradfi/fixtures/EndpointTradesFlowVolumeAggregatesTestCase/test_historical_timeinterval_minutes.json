@@ -7,7 +7,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 56805818.75305176,
-        "premiumVolume": 19487.71001000001,
+        "premiumVolume": 19487.710010000003,
         "timestamp": "2024-11-29 16:04:00 000"
       },
       {
@@ -15,7 +15,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 81564172.65625,
-        "premiumVolume": 36865.34015000003,
+        "premiumVolume": 36865.340149999996,
         "timestamp": "2024-11-29 16:03:00 000"
       },
       {
@@ -23,7 +23,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 73166251.30310059,
-        "premiumVolume": 55342.74997000002,
+        "premiumVolume": 55342.74997,
         "timestamp": "2024-11-29 16:02:00 000"
       },
       {
@@ -31,7 +31,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 86427674.41711426,
-        "premiumVolume": 40405.64004999999,
+        "premiumVolume": 40405.64005000001,
         "timestamp": "2024-11-29 16:01:00 000"
       },
       {
@@ -39,7 +39,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 107520881.14013672,
-        "premiumVolume": 41363.309969999995,
+        "premiumVolume": 41363.30996999999,
         "timestamp": "2024-11-29 16:00:00 000"
       },
       {
@@ -151,7 +151,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 50433215.54260254,
-        "premiumVolume": 18752.3005,
+        "premiumVolume": 18752.300500000005,
         "timestamp": "2024-11-29 15:46:00 000"
       },
       {
@@ -159,7 +159,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 52849480.59692383,
-        "premiumVolume": 14071.070020000014,
+        "premiumVolume": 14071.070020000003,
         "timestamp": "2024-11-29 15:45:00 000"
       },
       {
@@ -167,7 +167,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 56240920.26672363,
-        "premiumVolume": 27858.790129999987,
+        "premiumVolume": 27858.79013000001,
         "timestamp": "2024-11-29 15:44:00 000"
       },
       {
@@ -175,7 +175,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 69959704.11987305,
-        "premiumVolume": 25392.209899999998,
+        "premiumVolume": 25392.20989999999,
         "timestamp": "2024-11-29 15:43:00 000"
       },
       {
@@ -183,7 +183,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 73071366.94641113,
-        "premiumVolume": 16810.959980000014,
+        "premiumVolume": 16810.959980000003,
         "timestamp": "2024-11-29 15:42:00 000"
       },
       {
@@ -191,7 +191,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 54598444.89135742,
-        "premiumVolume": 26695.66986999998,
+        "premiumVolume": 26695.669870000012,
         "timestamp": "2024-11-29 15:41:00 000"
       },
       {
@@ -199,7 +199,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 76843290.66772461,
-        "premiumVolume": 43554.23002000005,
+        "premiumVolume": 43554.23002000002,
         "timestamp": "2024-11-29 15:40:00 000"
       },
       {
@@ -207,7 +207,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 114850990.41137695,
-        "premiumVolume": 52187.21007000001,
+        "premiumVolume": 52187.21007000003,
         "timestamp": "2024-11-29 15:39:00 000"
       },
       {
@@ -215,7 +215,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 120855034.56115723,
-        "premiumVolume": 86781.18993999998,
+        "premiumVolume": 86781.18994,
         "timestamp": "2024-11-29 15:38:00 000"
       },
       {
@@ -223,7 +223,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 89547787.6586914,
-        "premiumVolume": 21588.35995000001,
+        "premiumVolume": 21588.359950000005,
         "timestamp": "2024-11-29 15:37:00 000"
       },
       {
@@ -231,7 +231,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 120511064.95361328,
-        "premiumVolume": 40303.98005000003,
+        "premiumVolume": 40303.98005000002,
         "timestamp": "2024-11-29 15:36:00 000"
       },
       {
@@ -239,7 +239,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 175946300.44555664,
-        "premiumVolume": 119517.20008000017,
+        "premiumVolume": 119517.20008000007,
         "timestamp": "2024-11-29 15:35:00 000"
       },
       {
@@ -255,7 +255,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 80044754.60510254,
-        "premiumVolume": 19767.07000999999,
+        "premiumVolume": 19767.070010000003,
         "timestamp": "2024-11-29 15:33:00 000"
       },
       {
@@ -263,7 +263,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 110333024.38049316,
-        "premiumVolume": 30994.72999000001,
+        "premiumVolume": 30994.729990000018,
         "timestamp": "2024-11-29 15:32:00 000"
       },
       {
@@ -271,7 +271,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 189955048.0041504,
-        "premiumVolume": 68816.32995,
+        "premiumVolume": 68816.32994999998,
         "timestamp": "2024-11-29 15:31:00 000"
       },
       {
@@ -279,7 +279,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 137366461.41967773,
-        "premiumVolume": 39034.39002999999,
+        "premiumVolume": 39034.390029999995,
         "timestamp": "2024-11-29 15:30:00 000"
       },
       {
@@ -287,7 +287,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 354475448.47106934,
-        "premiumVolume": 84873.65008000006,
+        "premiumVolume": 84873.65008000005,
         "timestamp": "2024-11-29 15:29:00 000"
       },
       {
@@ -295,7 +295,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 284410548.18115234,
-        "premiumVolume": 105266.36986000008,
+        "premiumVolume": 105266.36985999998,
         "timestamp": "2024-11-29 15:28:00 000"
       },
       {
@@ -303,7 +303,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 90373098.04992676,
-        "premiumVolume": 27000.869919999994,
+        "premiumVolume": 27000.869920000005,
         "timestamp": "2024-11-29 15:27:00 000"
       },
       {
@@ -319,7 +319,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 80531242.74597168,
-        "premiumVolume": 29369.240030000026,
+        "premiumVolume": 29369.240030000004,
         "timestamp": "2024-11-29 15:25:00 000"
       },
       {
@@ -327,7 +327,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 78323868.06945801,
-        "premiumVolume": 32618.780210000004,
+        "premiumVolume": 32618.78020999999,
         "timestamp": "2024-11-29 15:24:00 000"
       },
       {
@@ -343,7 +343,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 182647005.31921387,
-        "premiumVolume": 62390.57999999995,
+        "premiumVolume": 62390.579999999936,
         "timestamp": "2024-11-29 15:22:00 000"
       },
       {
@@ -359,7 +359,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 105199889.8223877,
-        "premiumVolume": 56553.49981000002,
+        "premiumVolume": 56553.49981000001,
         "timestamp": "2024-11-29 15:20:00 000"
       },
       {
@@ -367,7 +367,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 109565710.15625,
-        "premiumVolume": 40021.090069999984,
+        "premiumVolume": 40021.09006999999,
         "timestamp": "2024-11-29 15:19:00 000"
       },
       {
@@ -391,7 +391,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 65566954.92553711,
-        "premiumVolume": 18537.310060000003,
+        "premiumVolume": 18537.310060000007,
         "timestamp": "2024-11-29 15:16:00 000"
       },
       {
@@ -519,7 +519,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 170283624.54833984,
-        "premiumVolume": 86810.66004999982,
+        "premiumVolume": 86810.66004999985,
         "timestamp": "2024-11-29 15:00:00 000"
       }
     ],

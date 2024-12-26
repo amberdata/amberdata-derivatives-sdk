@@ -10,19 +10,19 @@
           "items": {
             "type": "object",
             "properties": {
-              "atm10"                      : { "type" : "number" },
-              "atm189"                     : { "type" : "number" },
-              "atm21"                      : { "type" : "number" },
-              "atm63"                      : { "type" : "number" },
-              "atm84"                      : { "type" : "number" },
+              "atm10"                      : { "type" : ["null", "number"] },
+              "atm189"                     : { "type" : ["null", "number"] },
+              "atm21"                      : { "type" : ["null", "number"] },
+              "atm63"                      : { "type" : ["null", "number"] },
+              "atm84"                      : { "type" : ["null", "number"] },
               "currency"                   : { "type" : "string" },
               "exchange"                   : { "type" : "string" },
-              "indexPrice"                 : { "type" : "number" },
+              "indexPrice"                 : { "type" : ["null", "number"] },
               "lnReturn"                   : { "type" : "number" },
               "realizedVolatility21"       : { "type" : "number" },
               "realizedVolatility5"        : { "type" : "number" },
-              "timestamp"                  : { "type" : ["integer", "string"] },
-              "timestampImpliedVolatility" : { "type" : ["integer", "string"] }
+              "timestamp"                  : { "type" : [        "integer", "string"] },
+              "timestampImpliedVolatility" : { "type" : ["null", "integer", "string"] }
             },
             "required": ["currency", "realizedVolatility21", "realizedVolatility5", "timestamp", "timestampImpliedVolatility"],
             "additionalProperties": false
