@@ -1444,7 +1444,7 @@ class AmberdataTradFi(_AmberdataBase):
     def get_volatility_fixed_strikes(self):
         return None
 
-    def get_volatility_metrics(self, exchange: str, currency: str, **kwargs):
+    def get_volatility_metrics(self, currency: str, **kwargs):
         """
         This endpoint contains all the metrics useful for having an immediate overview of the options market,
         for each active expiry. The current Mark IV is updated every minute.
@@ -1454,7 +1454,6 @@ class AmberdataTradFi(_AmberdataBase):
         All the differences are found in the columns with the indication "change" (current metrics vs days ago metrics).
 
         QUERY PARAMS:
-        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
         - currency   (string)    [Required] [Examples] BTC | SOL_USDC
         - daysBack   (date-time) [Optional] [Examples] 1 | 7 | 14
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
@@ -1463,7 +1462,6 @@ class AmberdataTradFi(_AmberdataBase):
         return self._make_request(
             'markets/derivatives/analytics/volatility/metrics/tradfi',
             {
-                'exchange': exchange,
                 'currency': currency,
                 **kwargs
             }
