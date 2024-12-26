@@ -1467,12 +1467,11 @@ class AmberdataTradFi(_AmberdataBase):
             }
         )
 
-    def get_volatility_term_structures_constant(self, exchange: str, currency: str, **kwargs):
+    def get_volatility_term_structures_constant(self, currency: str, **kwargs):
         """
         This endpoint returns the term structure (for exchange listed expirations) with forward volatility calculations.
 
         QUERY PARAMS:
-        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
         - currency   (string)    [Required] [Examples] BTC | SOL_USDC
         - timestamp  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
@@ -1481,7 +1480,6 @@ class AmberdataTradFi(_AmberdataBase):
         return self._make_request(
             'markets/derivatives/analytics/volatility/term-structures/forward-volatility/constant/tradfi',
             {
-                'exchange': exchange,
                 'currency': currency,
                 **kwargs
             }

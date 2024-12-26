@@ -1,0 +1,92 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "atm": 149.28,
+        "currency": "MSTR",
+        "daysToExpiration": 5,
+        "exchange": "tradfi",
+        "fwdAtm": null,
+        "timestamp": "2024-11-29 18:00:00 000"
+      },
+      {
+        "atm": 161.37,
+        "currency": "MSTR",
+        "daysToExpiration": 10,
+        "exchange": "tradfi",
+        "fwdAtm": 172.61,
+        "timestamp": "2024-11-29 18:00:00 000"
+      },
+      {
+        "atm": 163.29,
+        "currency": "MSTR",
+        "daysToExpiration": 21,
+        "exchange": "tradfi",
+        "fwdAtm": 165.02,
+        "timestamp": "2024-11-29 18:00:00 000"
+      },
+      {
+        "atm": 161.68,
+        "currency": "MSTR",
+        "daysToExpiration": 42,
+        "exchange": "tradfi",
+        "fwdAtm": 160.06,
+        "timestamp": "2024-11-29 18:00:00 000"
+      },
+      {
+        "atm": 157.73,
+        "currency": "MSTR",
+        "daysToExpiration": 63,
+        "exchange": "tradfi",
+        "fwdAtm": 149.5,
+        "timestamp": "2024-11-29 18:00:00 000"
+      },
+      {
+        "atm": 155.56,
+        "currency": "MSTR",
+        "daysToExpiration": 84,
+        "exchange": "tradfi",
+        "fwdAtm": 148.88,
+        "timestamp": "2024-11-29 18:00:00 000"
+      },
+      {
+        "atm": 150,
+        "currency": "MSTR",
+        "daysToExpiration": 126,
+        "exchange": "tradfi",
+        "fwdAtm": 138.2,
+        "timestamp": "2024-11-29 18:00:00 000"
+      },
+      {
+        "atm": 142.33,
+        "currency": "MSTR",
+        "daysToExpiration": 189,
+        "exchange": "tradfi",
+        "fwdAtm": 125.61,
+        "timestamp": "2024-11-29 18:00:00 000"
+      },
+      {
+        "atm": 134.11,
+        "currency": "MSTR",
+        "daysToExpiration": 252,
+        "exchange": "tradfi",
+        "fwdAtm": 105.69,
+        "timestamp": "2024-11-29 18:00:00 000"
+      },
+      {
+        "atm": 113.99,
+        "currency": "MSTR",
+        "daysToExpiration": 504,
+        "exchange": "tradfi",
+        "fwdAtm": 89.46,
+        "timestamp": "2024-11-29 18:00:00 000"
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}
