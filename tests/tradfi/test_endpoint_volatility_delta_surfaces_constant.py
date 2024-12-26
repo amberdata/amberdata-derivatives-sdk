@@ -20,13 +20,13 @@ class EndpointVolatilityDeltaSurfaceConstantTestCase(BaseTestCase):
 
     # ==================================================================================================================
 
-    # def test_default(self):
-    #     response = self.call_endpoint(exchange='deribit', currency='BTC')
-    #     self.validate_response_schema(response, schema=self.schema)
-    #     self.validate_response_200(response, min_elements=10)
-    #     self.validate_response_field(response, 'exchange', 'deribit')
-    #     self.validate_response_field(response, 'currency', 'BTC')
-    #     self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
+    def test_default(self):
+        response = self.call_endpoint(currency='MSTR')
+        self.validate_response_schema(response, schema=self.schema)
+        self.validate_response_200(response, min_elements=10)
+        self.validate_response_field(response, 'exchange', 'tradfi')
+        self.validate_response_field(response, 'currency', 'MSTR')
+        self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
     def test_historical_timeformat_default(self):
         response = self.call_endpoint(currency='MSTR', startDate='2024-12-20T00:00:00', endDate='2024-12-21T00:00:00')

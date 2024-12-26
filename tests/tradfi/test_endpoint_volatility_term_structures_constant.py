@@ -75,7 +75,6 @@ class EndpointVolatilityTermStructuresConstantTestCase(BaseTestCase):
         self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER_EXCHANGE_TRADFI)
 
 
-
 # ======================================================================================================================
 
 if __name__ == '__main__':

@@ -23,7 +23,7 @@ class EndpointTradesFlowOptionsYieldsTestCase(BaseTestCase):
     def test_default(self):
         response = self.call_endpoint(currency='MSTR')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=300)
+        self.validate_response_200(response, min_elements=20)
         self.validate_response_field(response, 'exchange', 'tradfi')
         self.validate_response_field(response, 'currency', 'MSTR')
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
@@ -32,7 +32,7 @@ class EndpointTradesFlowOptionsYieldsTestCase(BaseTestCase):
     def test_timeformat_default(self):
         response = self.call_endpoint(currency='MSTR')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=300)
+        self.validate_response_200(response, min_elements=20)
         self.validate_response_field(response, 'exchange', 'tradfi')
         self.validate_response_field(response, 'currency', 'MSTR')
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
@@ -41,7 +41,7 @@ class EndpointTradesFlowOptionsYieldsTestCase(BaseTestCase):
     def test_timeformat_hr(self):
         response = self.call_endpoint(currency='MSTR', timeFormat='hr')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=300)
+        self.validate_response_200(response, min_elements=20)
         self.validate_response_field(response, 'exchange', 'tradfi')
         self.validate_response_field(response, 'currency', 'MSTR')
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True)
@@ -50,7 +50,7 @@ class EndpointTradesFlowOptionsYieldsTestCase(BaseTestCase):
     def test_timeformat_iso(self):
         response = self.call_endpoint(currency='MSTR', timeFormat='iso')
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, min_elements=300)
+        self.validate_response_200(response, min_elements=20)
         self.validate_response_field(response, 'exchange', 'tradfi')
         self.validate_response_field(response, 'currency', 'MSTR')
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True)

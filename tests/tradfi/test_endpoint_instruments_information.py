@@ -40,7 +40,6 @@ class EndpointInstrumentsInformationTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'endDate', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'expiration', is_milliseconds=True)
 
-    # TODO: bug in the API
     def test_putcall(self):
         response = self.call_endpoint(timestamp='2024-12-01', putCall='P')
         self.validate_response_schema(response, schema=self.schema)

@@ -17,7 +17,7 @@ class EndpointTradesFlowDecoratedTradesTestCase(BaseTestCase):
 
     # ==================================================================================================================
 
-    # TODO: API returns nothing on the week-ends
+    # TODO: API returns no records
     def test_default(self):
         response = self.call_endpoint(currency='MSTR')
         self.validate_response_schema(response, schema=self.schema)
@@ -37,7 +37,6 @@ class EndpointTradesFlowDecoratedTradesTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'exchangeTimestamp', is_milliseconds=True)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_milliseconds=True)
 
-    # TODO: bug in the API
     def test_historical_putcall(self):
         response = self.call_endpoint(currency='MSTR', putCall='C', startDate='2024-12-20T15:00:00', endDate='2024-12-20T15:01:00')
         self.validate_response_data(response)

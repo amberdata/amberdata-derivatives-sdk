@@ -1251,9 +1251,6 @@ class AmberdataTradFi(_AmberdataBase):
             }
         )
 
-    def get_realized_volatility_volatility(self):
-        return None
-
     # ==================================================================================================================
 
     def get_trades_flow_decorated_trades(self, currency: str, **kwargs):
@@ -1341,9 +1338,6 @@ class AmberdataTradFi(_AmberdataBase):
                 **kwargs
             }
         )
-
-    def get_trades_flow_volumes(self):
-        return None
 
     # ==================================================================================================================
 
@@ -1440,9 +1434,6 @@ class AmberdataTradFi(_AmberdataBase):
                 **kwargs
             }
         )
-
-    def get_volatility_fixed_strikes(self):
-        return None
 
     def get_volatility_metrics(self, currency: str, **kwargs):
         """

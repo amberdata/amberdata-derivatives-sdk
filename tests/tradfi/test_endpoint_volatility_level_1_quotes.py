@@ -17,13 +17,13 @@ class EndpointVolatilityLevel1QuotesTestCase(BaseTestCase):
 
     # ==================================================================================================================
 
-    # def test_default(self):
-    #     response = self.call_endpoint(currency='MSTR')
-    #     self.validate_response_schema(response, schema=self.schema)
-    #     self.validate_response_200(response, min_elements=50)
-    #     self.validate_response_field(response, 'exchange', 'tradfi')
-    #     self.validate_response_field(response, 'currency', 'MSTR')
-    #     self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
+    def test_default(self):
+        response = self.call_endpoint(currency='MSTR')
+        self.validate_response_schema(response, schema=self.schema)
+        self.validate_response_200(response, min_elements=50)
+        self.validate_response_field(response, 'exchange', 'tradfi')
+        self.validate_response_field(response, 'currency', 'MSTR')
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
     def test_historical(self):
         response = self.call_endpoint(currency='MSTU', instrument='MSTU-27DEC24-1-P', startDate='2024-12-23T17:00:00', endDate='2024-12-23T18:00:00')
