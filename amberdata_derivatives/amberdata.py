@@ -1411,7 +1411,7 @@ class AmberdataTradFi(_AmberdataBase):
             }
         )
 
-    def get_volatility_level_1_quotes(self, exchange: str, currency: str, **kwargs):
+    def get_volatility_level_1_quotes(self, currency: str, **kwargs):
         """
         This endpoint returns the “Level 1” option chain with associated volatilities, greeks and underlying prices.
         This is the core underlying options data for many analytics.
@@ -1422,7 +1422,6 @@ class AmberdataTradFi(_AmberdataBase):
         per call. If no date range is passed, the most recent option chain will be returned.
 
         QUERY PARAMS:
-        - exchange     (string)    [Required] [Examples] deribit | okex | bybit
         - currency     (string)    [Required] [Examples] BTC | SOL_USDC
         - instrument   (string)    [Optional] [Examples] BTC-26APR24-100000-C
         - isAtm        (boolean)   [Optional] [Examples] TRUE | FALSE
@@ -1437,7 +1436,6 @@ class AmberdataTradFi(_AmberdataBase):
         return self._make_request(
             'markets/derivatives/analytics/volatility/level-1-quotes/tradfi',
             {
-                'exchange': exchange,
                 'currency': currency,
                 **kwargs
             }
