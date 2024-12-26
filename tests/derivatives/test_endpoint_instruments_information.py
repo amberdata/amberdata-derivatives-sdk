@@ -82,7 +82,7 @@ class EndpointInstrumentsInformationTestCase(BaseTestCase):
     def test_invalid_parameter(self):
         response = self.call_endpoint(invalid='parameter')
         self.validate_response_data(response)
-        self.validate_response_å400(response, ErrorMessage.INVALID_PARAMETER)
+        self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER)
 
     def test_invalid_putcall(self):
         response = self.call_endpoint(putCall='<put_call>')
