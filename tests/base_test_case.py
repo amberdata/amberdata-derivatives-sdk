@@ -209,7 +209,7 @@ class BaseTestCase(unittest.TestCase):
 
     def validate_response_field(self, response, field_name: str, field_value, field_value2=None):
         """
-        Validates that the field with name `field_name` has the value `field_value`.
+        Validates that the field with name `field_name` has the value `field_value` or `field_value2` if specified.
 
         :param response:      The response payload
         :param field_name:    The name of the field to validate
@@ -227,7 +227,7 @@ class BaseTestCase(unittest.TestCase):
 
     def validate_response_field_not(self, response, field_name: str, *args):
         """
-        Validates that the field with name `field_name` has the value `field_value`.
+        Validates that the field with name `field_name` does not match any values specified.
 
         :param response:      The response payload
         :param field_name:    The name of the field to validate
