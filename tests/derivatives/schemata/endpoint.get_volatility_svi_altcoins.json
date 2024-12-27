@@ -10,17 +10,17 @@
           "items": {
             "type": "object",
             "properties": {
-              "currency"                 : { "type": "string"  },
-              "daysToExpiration"         : { "type": "number"  },
-              "expiry"                   : { "type": "string"  },
-              "forwardDifference"        : { "type": "number"  },
-              "indexPrice"               : { "type": "number"  },
-              "sviA"                     : { "type": "number"  },
-              "sviB"                     : { "type": "number"  },
-              "sviM"                     : { "type": "number"  },
-              "sviRho"                   : { "type": "number"  },
-              "sviSigma"                 : { "type": "number"  },
-              "timestamp"                : { "type": ["integer", "string"] }
+              "currency"          : { "type": "string"  },
+              "daysToExpiration"  : { "type": "number"  },
+              "expiry"            : { "type": "string"  },
+              "forwardDifference" : { "type": "number"  },
+              "indexPrice"        : { "type": "number"  },
+              "sviA"              : { "type": "number"  },
+              "sviB"              : { "type": "number"  },
+              "sviM"              : { "type": "number"  },
+              "sviRho"            : { "type": "number"  },
+              "sviSigma"          : { "type": "number"  },
+              "timestamp"         : { "type": ["integer", "string"] }
             },
             "required": ["currency", "daysToExpiration", "expiry", "forwardDifference", "indexPrice", "sviA", "sviB", "sviM", "sviRho", "sviSigma", "timestamp"],
             "additionalProperties": false
