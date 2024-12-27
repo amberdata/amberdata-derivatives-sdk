@@ -1084,7 +1084,7 @@ class AmberdataDerivatives(_AmberdataBase):
             }
         )
 
-    def get_volatility_svi_altcoins_table(self, currency: str, **kwargs):
+    def get_volatility_svi_altcoins_table(self, **kwargs):
         """
         This endpoint provides a very novel endpoint. We bootstrap volatility curves for altcoins without a listed
         options market. This is a complex volatility model bootstrap that provides theoretical marks for assets without
@@ -1101,7 +1101,6 @@ class AmberdataDerivatives(_AmberdataBase):
         return self._make_request(
             'markets/derivatives/analytics/volatility/svi-altcoins-table',
             {
-                'currency': currency,
                 **kwargs
             }
         )
@@ -1149,7 +1148,7 @@ class AmberdataDerivatives(_AmberdataBase):
             }
         )
 
-    def get_volatility_svi_historical(self, currency: str, **kwargs):
+    def get_volatility_svi_historical(self, exchange: str, currency: str, **kwargs):
         """
         This endpoint provides calibrated SVI (Stochastic Volatility Inspired) parameters for BTC and ETH options traded
         on Deribit, with hourly granularity. The data covers each hour from April 1, 2019, to the present, offering a
@@ -1167,6 +1166,7 @@ class AmberdataDerivatives(_AmberdataBase):
         return self._make_request(
             'markets/derivatives/analytics/volatility/svi-hourly',
             {
+                'exchange': exchange,
                 'currency': currency,
                 **kwargs
             }

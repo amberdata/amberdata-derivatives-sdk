@@ -14,6 +14,7 @@ class ErrorMessage:
     """
 
     INVALID_PARAMETER = "Parameter 'invalid' is not supported."
+    INVALID_PARAMETER_CURRENCY_SVI = "Invalid argument currency: expected one of [BTC,btc,ETH,eth], found '<currency>'."
     INVALID_PARAMETER_EXCHANGE_TRADFI = "Invalid argument exchange: expected one of [tradfi,TRADFI], found '<exchange>'."
     INVALID_PARAMETER_INTERVAL = "Invalid argument interval: expected one of [7d,7D,30d,30D,90d,90D,180d,180D], found '<interval>'."
     INVALID_PARAMETER_IS_ATM = "Invalid argument 'isAtm': expected boolean, found '<is_atm>'."
