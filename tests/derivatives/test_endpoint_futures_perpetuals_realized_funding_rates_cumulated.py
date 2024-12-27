@@ -69,7 +69,7 @@ class EndpointFuturesPerpetualsRealizedFundingRatesCumulatedTestCase(BaseTestCas
     def test_invalid_parameter(self):
         response = self.call_endpoint(asset='BTC', marginType='coins', invalid='parameter')
         self.validate_response_data(response)
-        self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER)
+        self.validate_response_400(response, ErrorMessage.UNSUPPORTED_PARAMETER_INVALID)
 
     def test_invalid_margintype(self):
         response = self.call_endpoint(asset='BTC', marginType='<margin_type>')

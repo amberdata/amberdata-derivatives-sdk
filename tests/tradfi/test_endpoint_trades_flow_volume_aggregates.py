@@ -123,12 +123,12 @@ class EndpointTradesFlowVolumeAggregatesTestCase(BaseTestCase):
     def test_invalid_parameter(self):
         response = self.call_endpoint(currency='MSTR', invalid='parameter')
         self.validate_response_data(response)
-        self.validate_response_400(response, ErrorMessage.INVALID_PARAMETER)
+        self.validate_response_400(response, ErrorMessage.UNSUPPORTED_PARAMETER_INVALID)
 
     def test_invalid_exchange(self):
         response = self.call_endpoint(exchange='<exchange>', currency='BTC')
         self.validate_response_data(response)
-        self.validate_response_400(response, ErrorMessage.UNSUPPORTED_EXCHANGE)
+        self.validate_response_400(response, ErrorMessage.UNSUPPORTED_PARAMETER_EXCHANGE)
 
     def test_invalid_timestamp(self):
         response = self.call_endpoint(currency='MSTR', startDate='<timestamp>')
