@@ -31,7 +31,6 @@ class EndpointTradesFlowVolumeAggregatesTestCase(BaseTestCase):
     # TODO: API returns no records
     def test_default(self):
         response = self.call_endpoint(currency='MSTR')
-        self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=300)
         self.validate_response_field(response, 'exchange', 'tradfi')

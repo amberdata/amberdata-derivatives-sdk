@@ -63,6 +63,10 @@ amberdata_client.get_volatility_term_structures_constant(currency='BTC', exchang
 python3 -m unittest -v tests/*.py
 ```
 
+Additional packages needed to run the unit tests:
+-  `jsonpath_ng`
+-  `jsonschema`
+
 ## Linting
 
 ```python
