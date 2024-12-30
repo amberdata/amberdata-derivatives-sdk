@@ -7,7 +7,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 405484798.2696533,
-        "premiumVolume": 193464.7501499999,
+        "premiumVolume": 193464.75015000024,
         "timestamp": "2024-11-29 16:00:00 000"
       },
       {
@@ -15,7 +15,7 @@
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 6110106138.378906,
-        "premiumVolume": 2778196.1922800103,
+        "premiumVolume": 2778196.1922800043,
         "timestamp": "2024-11-29 15:00:00 000"
       }
     ],
