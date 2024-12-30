@@ -29,6 +29,13 @@ amberdata_client = AmberdataDerivatives(api_key='<Enter your API key here>')
 amberdata_client.get_volatility_term_structures_constant(currency='BTC', exchange='deribit')
 ```
 
+```python
+from amberdata_tradfi import AmberdataTradFi
+
+amberdata_client = AmberdataTradFi(api_key='<Enter your API key here>')
+amberdata_client.get_volatility_term_structures_constant(currency='MSTR')
+```
+
 Rather than hardcoding the API key, it can be stored in an environment file and loaded dynamically at runtime.
 
 ```bash
