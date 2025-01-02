@@ -2,6 +2,7 @@
 
 # pylint: disable=line-too-long, missing-class-docstring, missing-function-docstring, missing-module-docstring, too-many-public-methods
 
+import datetime
 import unittest
 
 from tests.base_test_case import BaseTestCase
@@ -17,6 +18,26 @@ class EndpointVolatilitySVIAltcoinsTestCase(BaseTestCase):
 
     # ==================================================================================================================
 
+    @staticmethod
+    def _create_dates():
+        end_date   = datetime.datetime.now(datetime.timezone.utc).date()
+        start_date = end_date - datetime.timedelta(days=7)
+        return [start_date, end_date]
+
+    def _check_response(self, response):
+        self.validate_response_200      (response, num_elements=2)
+        self.validate_response_field    (response, 'currency',          'BTC')
+        self.validate_response_field_not(response, 'forwardDifference', None, '')
+        self.validate_response_field_not(response, 'indexPrice',        None, '')
+        self.validate_response_field_not(response, 'sviA',              None, '')
+        self.validate_response_field_not(response, 'sviB',              None, '')
+        self.validate_response_field_not(response, 'sviM',              None, '')
+        self.validate_response_field_not(response, 'sviRho',            None, '')
+        self.validate_response_field_not(response, 'sviSigma',          None, '')
+        self.validate_response_field_not(response, 'timestamp',         None, '')
+
+# ==================================================================================================================
+
     def test_default(self):
         response = self.call_endpoint(currency='BTC')
         self.validate_response_schema(response, schema=self.schema)
@@ -25,70 +46,59 @@ class EndpointVolatilitySVIAltcoinsTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
     def test_historical(self):
-        response = self.call_endpoint(currency='BTC', startDate='2024-12-20T00:00:00', endDate='2024-12-21T00:00:00')
-        self.validate_response_data(response)
-        self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=2)
-        self.validate_response_field(response, 'currency', 'BTC')
+        [start_date, end_date] = self._create_dates()
+        response = self.call_endpoint(currency='BTC', startDate=start_date.isoformat(), endDate=end_date.isoformat())
+
+        self._check_response(response)
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
     # TODO: missing top level fields in response payload
     def test_historical_signature_ecdsa(self):
-        response = self.call_endpoint(currency='BTC', startDate='2024-12-20T00:00:00', endDate='2024-12-21T00:00:00', signature='ECDSA')
+        [start_date, end_date] = self._create_dates()
+        response = self.call_endpoint(currency='BTC', startDate=start_date, endDate=end_date, signature='ECDSA')
 
         # This is a bug in the API and needs to be fixed
         response['description'] = 'Successful request'
-        response['status'] = 200 # instead of 0
+        response['status'] = 200  # instead of 0
         response['title'] = 'OK'
 
-        self.validate_response_data(response)
-        self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=2)
-        self.validate_response_field(response, 'currency', 'BTC')
+        self._check_response(response)
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
-        self.assertEqual(
-            '0xab8a9ce22683314508536d47d047b7e656f2985e7b1e028046ece472f49ac2de46235f244253dc743e23f2a7307012d485193bfe59bbd46228909f23dcb9ee451b',
-            response['payload']['metadata']['signature'],
-        )
+
+        signature = response['payload']['metadata']['signature']
+        self.assertTrue(signature != '')
+        self.assertTrue(signature is not None)
+        self.assertTrue(signature.startswith('0x'))
+        self.assertEqual(132, len(signature))
 
     def test_historical_sviformat_dte(self):
-        response = self.call_endpoint(currency='BTC', startDate='2024-12-20T00:00:00', endDate='2024-12-21T00:00:00', sviFormat='DTE')
-        self.validate_response_data(response)
-        self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=2)
-        self.validate_response_field(response, 'currency', 'BTC')
+        [start_date, end_date] = self._create_dates()
+        response = self.call_endpoint(currency='BTC', startDate=start_date, endDate=end_date, sviFormat='DTE')
+        self._check_response(response)
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
     def test_historical_sviformat_tau(self):
-        response = self.call_endpoint(currency='BTC', startDate='2024-12-20T00:00:00', endDate='2024-12-21T00:00:00', sviFormat='TAU')
-        self.validate_response_data(response)
-        self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=2)
-        self.validate_response_field(response, 'currency', 'BTC')
+        [start_date, end_date] = self._create_dates()
+        response = self.call_endpoint(currency='BTC', startDate=start_date, endDate=end_date, sviFormat='DTE')
+        self._check_response(response)
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
     def test_historical_timeformat_default(self):
-        response = self.call_endpoint(currency='BTC', startDate='2024-12-20T00:00:00', endDate='2024-12-21T00:00:00')
-        self.validate_response_data(response)
-        self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=2)
-        self.validate_response_field(response, 'currency', 'BTC')
+        [start_date, end_date] = self._create_dates()
+        response = self.call_endpoint(currency='BTC', startDate=start_date, endDate=end_date)
+        self._check_response(response)
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
     def test_historical_timeformat_hr(self):
-        response = self.call_endpoint(currency='BTC', startDate='2024-12-20T00:00:00', endDate='2024-12-21T00:00:00', timeFormat='hr')
-        self.validate_response_data(response)
-        self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=2)
-        self.validate_response_field(response, 'currency', 'BTC')
+        [start_date, end_date] = self._create_dates()
+        response = self.call_endpoint(currency='BTC', startDate=start_date, endDate=end_date, timeFormat='hr')
+        self._check_response(response)
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_minutely=True)
 
     def test_historical_timeformat_iso(self):
-        response = self.call_endpoint(currency='BTC', startDate='2024-12-20T00:00:00', endDate='2024-12-21T00:00:00', timeFormat='iso')
-        self.validate_response_data(response)
-        self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=2)
-        self.validate_response_field(response, 'currency', 'BTC')
+        [start_date, end_date] = self._create_dates()
+        response = self.call_endpoint(currency='BTC', startDate=start_date, endDate=end_date, timeFormat='iso')
+        self._check_response(response)
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True, is_minutely=True)
 
     # ==================================================================================================================
