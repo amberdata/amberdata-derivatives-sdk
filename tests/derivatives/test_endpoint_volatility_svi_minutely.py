@@ -37,8 +37,12 @@ class EndpointVolatilitySVIMinutelyTestCase(BaseTestCase):
         self.validate_response_200(response, min_elements=5)
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
-        self.assertNotEqual('',   response['payload']['metadata']['signature'])
-        self.assertNotEqual(None, response['payload']['metadata']['signature'])
+
+        signature = response['payload']['metadata']['signature']
+        self.assertNotEqual('',   signature)
+        self.assertNotEqual(None, signature)
+        self.assertTrue(signature.startswith('0x'))
+        self.assertEqual(132, len(signature))
 
     def test_default_sviformat_dte(self):
         response = self.call_endpoint(currency='BTC', sviFormat='DTE')

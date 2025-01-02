@@ -66,8 +66,8 @@ class EndpointVolatilitySVIAltcoinsTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
         signature = response['payload']['metadata']['signature']
-        self.assertTrue(signature != '')
-        self.assertTrue(signature is not None)
+        self.assertNotEqual('',   signature)
+        self.assertNotEqual(None, signature)
         self.assertTrue(signature.startswith('0x'))
         self.assertEqual(132, len(signature))
 
