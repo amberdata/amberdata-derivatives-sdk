@@ -136,7 +136,11 @@ class BaseTestCase(unittest.TestCase):
                 self.assertEqual(len(expected_values), len(actual_values))
                 for index, expected_value in enumerate(expected_values):
                     if expected_value is not None and actual_values[index] is not None:
-                        self.assertLessEqual(abs(expected_value - actual_values[index]), self.precision_error, f"field={field}, index={index}")
+                        self.assertLessEqual(
+                            abs(expected_value - actual_values[index]),
+                            self.precision_error,
+                            f"field={field}, index={index}",
+                    )
 
                 # Remove imprecise fields
                 query.filter(lambda d: True, expected)
