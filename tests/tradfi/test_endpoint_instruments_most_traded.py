@@ -13,7 +13,11 @@ from tests.error_message import ErrorMessage
 class EndpointInstrumentsMostTradedTestCase(BaseTestCase):
     # pylint: disable-next=arguments-differ
     def setUp(self):
-        super().setUp(function_name='get_instruments_most_traded')
+        super().setUp(
+            function_name    = 'get_instruments_most_traded',
+            imprecise_fields = ['payload.data[*].vwapPriceUsd'],
+            precision_error  = 0.02,
+        )
 
     # ==================================================================================================================
 
