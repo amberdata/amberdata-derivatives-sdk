@@ -35,6 +35,7 @@
               "expirationTimestamp" : { "type": ["integer", "string"] },
               "indexPrice"          : { "type": "number"  },
               "multiplier"          : { "type": "number"  },
+              "openInterest"        : { "type": ["null",    "number"] },
               "timestamp"           : { "type": ["integer", "string"] },
               "underlyingRate"      : { "type": "number"  }
             },
