@@ -48,20 +48,12 @@ class EndpointVolatilitySVIAltcoinsTestCase(BaseTestCase):
     def test_historical(self):
         [start_date, end_date] = self._create_dates()
         response = self.call_endpoint(currency='BTC', startDate=start_date.isoformat(), endDate=end_date.isoformat())
-
         self._check_response(response)
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
-    # TODO: missing top level fields in response payload
     def test_historical_signature_ecdsa(self):
         [start_date, end_date] = self._create_dates()
         response = self.call_endpoint(currency='BTC', startDate=start_date, endDate=end_date, signature='ECDSA')
-
-        # This is a bug in the API and needs to be fixed
-        response['description'] = 'Successful request'
-        response['status'] = 200  # instead of 0
-        response['title'] = 'OK'
-
         self._check_response(response)
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 

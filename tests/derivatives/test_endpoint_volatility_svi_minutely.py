@@ -24,15 +24,8 @@ class EndpointVolatilitySVIMinutelyTestCase(BaseTestCase):
         self.validate_response_field(response, 'currency', 'BTC')
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
-    # TODO: missing top level fields in response payload
     def test_default_signature_ecdsa(self):
         response = self.call_endpoint(currency='BTC', signature='ECDSA')
-
-        # This is a bug in the API and needs to be fixed
-        response['description'] = 'Successful request'
-        response['status'] = 200 # instead of 0
-        response['title'] = 'OK'
-
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=5)
         self.validate_response_field(response, 'currency', 'BTC')
