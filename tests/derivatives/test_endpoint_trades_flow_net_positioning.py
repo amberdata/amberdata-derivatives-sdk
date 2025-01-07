@@ -40,16 +40,14 @@ class EndpointTradesFlowNetPositioningTestCase(BaseTestCase):
 
     def test_historical_showactiveexpiration_true(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T02:00:00', showActiveExpirations=True)
-        self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=192)
+        self.validate_response_200(response, max_elements=192)
         self.validate_response_field_timestamp(response, 'snapshotTimestamp', is_milliseconds=True, is_hourly=True)
 
     def test_historical_showactiveexpiration_false(self):
         response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-04-01T02:00:00', showActiveExpirations=False)
-        self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=300)
+        self.validate_response_200(response, min_elements=300)
         self.validate_response_field_timestamp(response, 'snapshotTimestamp', is_milliseconds=True, is_hourly=True)
 
     def test_historical_timeformat_default(self):

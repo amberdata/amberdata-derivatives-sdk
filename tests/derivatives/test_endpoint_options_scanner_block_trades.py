@@ -30,7 +30,7 @@ class EndpointOptionsScannerBlockTradesTestCase(BaseTestCase):
         self.validate_response_200(response, num_elements=100)
 
     def test_historical(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00')
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00', expiration='2024-12-01T00:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=34)
@@ -38,31 +38,31 @@ class EndpointOptionsScannerBlockTradesTestCase(BaseTestCase):
     # TODO: re-enable this
     @unittest.skip("Re-enable this")
     def test_historical_limit_high(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-06-01T00:00:00', limit=100)
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-06-01T00:00:00', limit=100, expiration='2024-12-01T00:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=100)
 
     def test_historical_limit_low(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-06-01T00:00:00', limit=2)
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-06-01T00:00:00', limit=2, expiration='2024-12-01T00:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=2)
 
     def test_historical_timeformat_default(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00')
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00', expiration='2024-12-01T00:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=34)
 
     def test_historical_timeformat_hr(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00', timeFormat='hr')
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00', timeFormat='hr', expiration='2024-12-01T00:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=34)
 
     def test_historical_timeformat_iso(self):
-        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00', timeFormat='iso')
+        response = self.call_endpoint(exchange='deribit', currency='BTC', startDate='2024-04-01T00:00:00', endDate='2024-05-01T00:00:00', timeFormat='iso', expiration='2024-12-01T00:00:00')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, num_elements=34)
