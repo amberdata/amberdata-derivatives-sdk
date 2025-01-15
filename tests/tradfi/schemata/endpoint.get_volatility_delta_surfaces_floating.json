@@ -37,7 +37,7 @@
               "multiplier"          : { "type": "number"  },
               "openInterest"        : { "type": ["null",    "number"] },
               "timestamp"           : { "type": ["integer", "string"] },
-              "underlyingRate"      : { "type": "number"  }
+              "underlyingRate"      : { "type": ["null",    "number"] }
             },
             "required": ["atm", "currency", "daysToExpiration", "deltaCall05", "deltaCall10", "deltaCall15", "deltaCall20", "deltaCall25", "deltaCall30", "deltaCall35", "deltaCall40", "deltaCall45", "deltaPut05", "deltaPut10", "deltaPut15", "deltaPut20", "deltaPut25", "deltaPut30", "deltaPut35", "deltaPut40", "deltaPut45", "exchange", "expirationTimestamp", "indexPrice", "multiplier", "openInterest", "timestamp", "underlyingRate"],
             "additionalProperties": false
