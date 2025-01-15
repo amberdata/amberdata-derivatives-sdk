@@ -24,7 +24,6 @@ class EndpointRealizedVolatilityImpliedVsRealizedTestCase(BaseTestCase):
 
     # ==================================================================================================================
 
-    # TODO: incomplete records?
     def test_default(self):
         response = self.call_endpoint(currency='MSTR')
         self.validate_response_schema(response, schema=self.schema)
