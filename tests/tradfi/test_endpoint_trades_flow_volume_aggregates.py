@@ -28,7 +28,6 @@ class EndpointTradesFlowVolumeAggregatesTestCase(BaseTestCase):
 
     # ==================================================================================================================
 
-    # TODO: API returns no records
     def test_default(self):
         response = self.call_endpoint(currency='MSTR')
         self.validate_response_schema(response, schema=self.schema)
@@ -86,7 +85,7 @@ class EndpointTradesFlowVolumeAggregatesTestCase(BaseTestCase):
         response = self.call_endpoint(currency='MSTR', startDate='2024-11-29T15:00:00', endDate='2024-11-29T16:00:00', timeFormat='hr', timeInterval='h')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=2)
+        self.validate_response_200(response, num_elements=1)
         self.validate_response_field(response, 'exchange', 'tradfi')
         self.validate_response_field(response, 'currency', 'MSTR')
         self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_hourly=True)

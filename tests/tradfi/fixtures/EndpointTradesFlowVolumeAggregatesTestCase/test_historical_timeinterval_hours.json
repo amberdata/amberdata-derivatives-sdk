@@ -3,19 +3,11 @@
   "payload": {
     "data": [
       {
-        "contractVolume": 10136,
-        "currency": "MSTR",
-        "exchange": "tradfi",
-        "notionalVolume": 405484798.2696533,
-        "premiumVolume": 193464.75015000024,
-        "timestamp": "2024-11-29 16:00:00 000"
-      },
-      {
         "contractVolume": 149182,
         "currency": "MSTR",
         "exchange": "tradfi",
         "notionalVolume": 6110106138.378906,
-        "premiumVolume": 2778196.1922800043,
+        "premiumVolume": 2778196.192279966,
         "timestamp": "2024-11-29 15:00:00 000"
       }
     ],
