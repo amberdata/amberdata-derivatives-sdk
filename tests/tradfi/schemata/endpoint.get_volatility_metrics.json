@@ -19,6 +19,7 @@
               "currency"              : { "type" : "string" },
               "daysToExpiration"      : { "type" : "number" },
               "exchange"              : { "type" : "string" },
+              "expirationTimestamp"   : { "type": [ "null", "integer", "string" ] },
               "indexPrice"            : { "type" : "number" },
               "indexPriceChange"      : { "type" : "number" },
               "riskReversal10"        : { "type" : "number" },
@@ -26,7 +27,7 @@
               "riskReversal20"        : { "type" : "number" },
               "riskReversal20Change"  : { "type" : "number" }
             },
-            "required": ["atm", "atmChange" ,"butterfly10", "butterfly10Change", "butterfly20", "butterfly20Change", "currency", "daysToExpiration", "exchange", "indexPrice", "indexPriceChange", "riskReversal10", "riskReversal10Change", "riskReversal20", "riskReversal20Change"],
+            "required": ["atm", "atmChange" ,"butterfly10", "butterfly10Change", "butterfly20", "butterfly20Change", "currency", "daysToExpiration", "exchange", "expirationTimestamp","indexPrice", "indexPriceChange", "riskReversal10", "riskReversal10Change", "riskReversal20", "riskReversal20Change"],
             "additionalProperties": false
           }
         },
