@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "atm"              : { "type": "number"  },
+              "currency"         : { "type": "string"  },
+              "daysToExpiration" : { "type": "integer" },
+              "deltaCall10"      : { "type": ["null",    "number"] },
+              "deltaCall20"      : { "type": ["null",    "number"] },
+              "deltaCall30"      : { "type": ["null",    "number"] },
+              "deltaCall40"      : { "type": ["null",    "number"] },
+              "deltaPut10"       : { "type": ["null",    "number"] },
+              "deltaPut20"       : { "type": ["null",    "number"] },
+              "deltaPut30"       : { "type": ["null",    "number"] },
+              "deltaPut40"       : { "type": ["null",    "number"] },
+              "exchange"         : { "type": "string"  },
+              "indexPrice"       : { "type": "number"  },
+              "multiplier"       : { "type": "number"  },
+              "timestamp"        : { "type": ["integer", "string"] }
+            },
+            "required": ["atm", "currency", "daysToExpiration", "deltaCall10", "deltaCall20", "deltaCall30", "deltaCall40", "deltaPut10", "deltaPut20", "deltaPut30", "deltaPut40", "exchange", "indexPrice", "multiplier", "timestamp"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}

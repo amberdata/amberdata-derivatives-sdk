@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "atm"                  : { "type": "number" },
+              "currency"             : { "type": "string" },
+              "daysToExpiration"     : { "type": "number" },
+              "deltaCall10"          : { "type": "number" },
+              "deltaCall20"          : { "type": "number" },
+              "deltaCall30"          : { "type": "number" },
+              "deltaCall40"          : { "type": "number" },
+              "deltaPut10"           : { "type": "number" },
+              "deltaPut20"           : { "type": "number" },
+              "deltaPut30"           : { "type": "number" },
+              "deltaPut40"           : { "type": "number" },
+              "expiry"               : { "type": "string"  },
+              "garch30"              : { "type": "number" },
+              "garch7"               : { "type": "number" },
+              "garch90"              : { "type": "number" },
+              "garchVolatility"      : { "type": "number" },
+              "medianSpotVolatility" : { "type": "number" },
+              "skew20Delta"          : { "type": "number" },
+              "timestamp"            : { "type": ["number", "string"] },
+              "universe"             : { "type": ["array"], "items": { "type": "string" } }
+            },
+            "required": ["atm", "currency", "daysToExpiration", "deltaCall10", "deltaCall20", "deltaCall30", "deltaCall40", "deltaPut10", "deltaPut20", "deltaPut30", "deltaPut40", "garch30", "garch7", "garch90", "garchVolatility", "medianSpotVolatility", "skew20Delta", "timestamp", "universe"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version" : { "type": "string" },
+            "signature"   : { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}

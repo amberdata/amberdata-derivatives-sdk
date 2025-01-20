@@ -1,0 +1,142 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "currency": "BTC",
+        "daysToExpiration": 0.003643835734014642,
+        "expirationTimestamp": "2024-12-21",
+        "forwardDifference": 81.55469,
+        "indexPrice": 97393.078125,
+        "sviA": -0.00027139143623314716,
+        "sviB": 0.022709749523468176,
+        "sviM": -0.0012151527917012572,
+        "sviRho": -0.20871154963970184,
+        "sviSigma": 0.062619149684906,
+        "timestamp": 1734652800000
+      },
+      {
+        "currency": "BTC",
+        "daysToExpiration": 0.006383561434811108,
+        "expirationTimestamp": "2024-12-22",
+        "forwardDifference": 123.67969,
+        "indexPrice": 97393.078125,
+        "sviA": -0.0035713209263096906,
+        "sviB": 0.04002326809457447,
+        "sviM": -0.022659730166196823,
+        "sviRho": -0.2572146952152252,
+        "sviSigma": 0.13270704448223114,
+        "timestamp": 1734652800000
+      },
+      {
+        "currency": "BTC",
+        "daysToExpiration": 0.02008219157179741,
+        "expirationTimestamp": "2024-12-27",
+        "forwardDifference": 334.3047,
+        "indexPrice": 97393.078125,
+        "sviA": -0.05319736974685203,
+        "sviB": 0.12771743600981497,
+        "sviM": -0.04521222785115242,
+        "sviRho": -0.15778008103370667,
+        "sviSigma": 0.46441662311553955,
+        "timestamp": 1734652800000
+      },
+      {
+        "currency": "BTC",
+        "daysToExpiration": 0.039260273763578234,
+        "expirationTimestamp": "2025-01-03",
+        "forwardDifference": 586.28906,
+        "indexPrice": 97393.078125,
+        "sviA": -0.02396658269813929,
+        "sviB": 0.11952652255526716,
+        "sviM": -0.12575021386146545,
+        "sviRho": -0.39115986227989197,
+        "sviSigma": 0.317842572927475,
+        "timestamp": 1734652800000
+      },
+      {
+        "currency": "BTC",
+        "daysToExpiration": 0.05843835595535905,
+        "expirationTimestamp": "2025-01-10",
+        "forwardDifference": 838.41406,
+        "indexPrice": 97393.078125,
+        "sviA": -0.010013103292932047,
+        "sviB": 0.09858465871429746,
+        "sviM": -0.07315248996019363,
+        "sviRho": -0.2316388338804245,
+        "sviSigma": 0.28709056973457336,
+        "timestamp": 1734652800000
+      },
+      {
+        "currency": "BTC",
+        "daysToExpiration": 0.11597260775631421,
+        "expirationTimestamp": "2025-01-31",
+        "forwardDifference": 1595.3594,
+        "indexPrice": 97393.078125,
+        "sviA": -0.030207530640033328,
+        "sviB": 0.1719534691929455,
+        "sviM": -0.1573420912027359,
+        "sviRho": -0.3252776265144348,
+        "sviSigma": 0.4218877851963043,
+        "timestamp": 1734652800000
+      },
+      {
+        "currency": "BTC",
+        "daysToExpiration": 0.1926849365234375,
+        "expirationTimestamp": "2025-02-28",
+        "forwardDifference": 2565.5,
+        "indexPrice": 97393.078125,
+        "sviA": -0.022468578050347784,
+        "sviB": 0.20234770269598812,
+        "sviM": -0.21233099699020386,
+        "sviRho": -0.3553144633769989,
+        "sviSigma": 0.4733916223049164,
+        "timestamp": 1734652800000
+      },
+      {
+        "currency": "BTC",
+        "daysToExpiration": 0.2693972652905608,
+        "expirationTimestamp": "2025-03-28",
+        "forwardDifference": 3536.1484,
+        "indexPrice": 97393.078125,
+        "sviA": -0.05075132172030813,
+        "sviB": 0.24907713381604754,
+        "sviM": -0.21919049322605133,
+        "sviRho": -0.2943888008594513,
+        "sviSigma": 0.6097812652587891,
+        "timestamp": 1734652800000
+      },
+      {
+        "currency": "BTC",
+        "daysToExpiration": 0.5187123337837115,
+        "expirationTimestamp": "2025-06-27",
+        "forwardDifference": 6476.25,
+        "indexPrice": 97393.078125,
+        "sviA": 0.05688810828803619,
+        "sviB": 0.2516969802675828,
+        "sviM": -0.2537621855735779,
+        "sviRho": -0.3225708603858948,
+        "sviSigma": 0.5639390349388123,
+        "timestamp": 1734652800000
+      },
+      {
+        "currency": "BTC",
+        "daysToExpiration": 0.7680273604719606,
+        "expirationTimestamp": "2025-09-26",
+        "forwardDifference": 9284,
+        "indexPrice": 97393.078125,
+        "sviA": 0.13876344631714457,
+        "sviB": 0.27723098365522547,
+        "sviM": -0.3624895513057709,
+        "sviRho": -0.37917670607566833,
+        "sviSigma": 0.5899209976196289,
+        "timestamp": 1734652800000
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}

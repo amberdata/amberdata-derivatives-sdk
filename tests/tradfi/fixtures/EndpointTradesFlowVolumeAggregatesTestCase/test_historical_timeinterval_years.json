@@ -1,0 +1,20 @@
+{
+  "description": "Successful request",
+  "payload": {
+    "data": [
+      {
+        "contractVolume": 149182,
+        "currency": "MSTR",
+        "exchange": "tradfi",
+        "notionalVolume": 6110106138.378906,
+        "premiumVolume": 2778196.192279966,
+        "timestamp": "2024-01-01 00:00:00 000"
+      }
+    ],
+    "metadata": {
+      "api-version": "2023-09-30"
+    }
+  },
+  "status": 200,
+  "title": "OK"
+}

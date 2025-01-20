@@ -17,7 +17,7 @@ pip install git+https://github.com/amberdata/amberdata-derivatives-sdk.git
 
 To install a specific version:
 ```bash
-pip install git+https://github.com/amberdata/amberdata-derivatives-sdk@1.0.5
+pip install git+https://github.com/amberdata/amberdata-derivatives-sdk@1.0.8
 ```
 
 ## Integration
@@ -27,6 +27,13 @@ from amberdata_derivatives import AmberdataDerivatives
 
 amberdata_client = AmberdataDerivatives(api_key='<Enter your API key here>')
 amberdata_client.get_volatility_term_structures_constant(currency='BTC', exchange='deribit')
+```
+
+```python
+from amberdata_tradfi import AmberdataTradFi
+
+amberdata_client = AmberdataTradFi(api_key='<Enter your API key here>')
+amberdata_client.get_volatility_term_structures_constant(currency='MSTR')
 ```
 
 Rather than hardcoding the API key, it can be stored in an environment file and loaded dynamically at runtime.
@@ -62,6 +69,10 @@ amberdata_client.get_volatility_term_structures_constant(currency='BTC', exchang
 ```python
 python3 -m unittest -v tests/*.py
 ```
+
+Additional packages needed to run the unit tests:
+-  `jsonpath_ng`
+-  `jsonschema`
 
 ## Linting
 

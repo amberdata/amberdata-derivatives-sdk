@@ -1,0 +1,7 @@
+{
+  "description": "Request was invalid or cannot be served. See message for details",
+  "error": true,
+  "message": "The argument 'strike' is not in numerical form (<strike>).",
+  "status": 400,
+  "title": "BAD REQUEST"
+}

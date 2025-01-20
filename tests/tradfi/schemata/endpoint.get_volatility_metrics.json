@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "atm"                   : { "type" : "number" },
+              "atmChange"             : { "type" : "number" },
+              "butterfly10"           : { "type" : "number" },
+              "butterfly10Change"     : { "type" : "number" },
+              "butterfly20"           : { "type" : "number" },
+              "butterfly20Change"     : { "type" : "number" },
+              "currency"              : { "type" : "string" },
+              "daysToExpiration"      : { "type" : "number" },
+              "exchange"              : { "type" : "string" },
+              "expirationTimestamp"   : { "type": [ "null", "integer", "string" ] },
+              "indexPrice"            : { "type" : "number" },
+              "indexPriceChange"      : { "type" : "number" },
+              "riskReversal10"        : { "type" : "number" },
+              "riskReversal10Change"  : { "type" : "number" },
+              "riskReversal20"        : { "type" : "number" },
+              "riskReversal20Change"  : { "type" : "number" }
+            },
+            "required": ["atm", "atmChange" ,"butterfly10", "butterfly10Change", "butterfly20", "butterfly20Change", "currency", "daysToExpiration", "exchange", "expirationTimestamp","indexPrice", "indexPriceChange", "riskReversal10", "riskReversal10Change", "riskReversal20", "riskReversal20Change"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}

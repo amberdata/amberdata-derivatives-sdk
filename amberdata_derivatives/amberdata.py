@@ -6,6 +6,7 @@ Module to handle Amberdata's API calls.
 
 # ======================================================================================================================
 
+import time
 import os
 
 import dotenv
@@ -18,13 +19,19 @@ dotenv.load_dotenv()
 
 # ======================================================================================================================
 
-# pylint: disable=too-many-lines, too-many-public-methods
-class AmberdataDerivatives:
+class _AmberdataBase:
     """
     Main class to handle Amberdata's API calls.
     """
 
-    def __init__(self, api_key: str, time_format: str = None):
+    def __init__(
+        self,
+        api_key               : str,
+        time_format           : str = None,
+        max_attempts          : int = 10,
+        backoff_rate_limits   : int = 10,
+        backoff_server_errors : int = 5,
+    ):
         """
         Initializes the SDK.
 
@@ -33,17 +40,32 @@ class AmberdataDerivatives:
         - time_format (string) [Optional] The default time format for all the endpoints (ms | iso | hr).
         """
 
+        # API configuration
         self.__base_url = os.getenv('API_URL', 'https://api.amberdata.com')
         self.__headers = {
-            'accept':             'application/json',
-            'Accept-Encoding':    'gzip',
-            'x-api-key':          api_key,
-            'x-amberdata-client': 'python-sdk-' + __version__,
+            'accept'             : 'application/json',
+            'Accept-Encoding'    : 'gzip',
+            'x-api-key'          : api_key,
+            'x-amberdata-client' : 'python-sdk-' + __version__,
         }
+
+        # Arguments configuration
         self.__time_format = time_format
         self.__version = __version__
 
+        # Retry configuration
+        self.__max_attempts                  = max_attempts
+        self.__backoff_rate_limits_seconds   = backoff_rate_limits
+        self.__backoff_server_errors_seconds = backoff_server_errors
+
     # ==================================================================================================================
+
+    def get_time_format(self):
+        """
+        Retrieves the default value for time_format.
+        """
+
+        return self.__time_format
 
     def get_version(self):
         """
@@ -51,6 +73,72 @@ class AmberdataDerivatives:
         """
 
         return self.__version
+
+    # ==================================================================================================================
+
+    @staticmethod
+    def __download(
+        url                   : str,
+        headers               : dict,
+        max_attempts          : int = 10,
+        backoff_rate_limits   : int = 10,
+        backoff_server_errors : int = 5,
+        timeout               : int = 30,
+    ):
+        num_attempts = 0
+        iterate      = True
+        response     = None
+
+        while iterate and num_attempts < max_attempts:
+            # Send GET request
+            response = requests.get(url, headers=headers, timeout=timeout)
+
+            # Rate limited - backoff by sleeping for a bit
+            if response.status_code == 429:
+                time.sleep(backoff_rate_limits)
+
+            # Server errors - backoff by sleeping for a bit
+            elif int(response.status_code / 100) == 5:
+                time.sleep(backoff_server_errors)
+
+            # Other codes (4xx for example) - no further attempts
+            else:
+                iterate = False
+
+            num_attempts += 1
+
+        # Parse response
+        return response.json()
+
+    def _make_request(self, url_path: str, query_params: dict):
+        """Helper method to make HTTP GET requests and parse the JSON response into a DataFrame."""
+
+        # Add default parameters
+        if self.__time_format is not None:
+            if 'timeFormat' not in query_params:
+                query_params['timeFormat'] = self.__time_format
+
+        # Build query and URL
+        query_string = '&'.join([f"{key}={value}" for key, value in query_params.items()])
+        url = f"{self.__base_url}/{url_path}?{query_string}"
+
+        # Issue REST call & parse response payload
+        return self.__download(
+            url,
+            self.__headers,
+            self.__max_attempts,
+            self.__backoff_rate_limits_seconds,
+            self.__backoff_server_errors_seconds,
+        )
+
+
+# ======================================================================================================================
+
+# pylint: disable=too-many-lines, too-many-public-methods
+class AmberdataDerivatives(_AmberdataBase):
+    """
+    Main class to handle Amberdata's API calls.
+    """
 
     # ==================================================================================================================
 
@@ -72,7 +160,7 @@ class AmberdataDerivatives:
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/instruments/information',
             {
                 **kwargs
@@ -94,7 +182,7 @@ class AmberdataDerivatives:
         - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/instruments/most-traded',
             {
                 'exchange': exchange,
@@ -120,7 +208,7 @@ class AmberdataDerivatives:
         - timeFormat (string) [Optional] [Optional] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/futures-perpetuals/apr-basis/constant-maturities',
             {
                 'asset': asset,
@@ -141,7 +229,7 @@ class AmberdataDerivatives:
         - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/futures-perpetuals/apr-basis/live-term-structures',
             {
                 'asset': asset,
@@ -163,7 +251,7 @@ class AmberdataDerivatives:
         - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/futures-perpetuals/open-interest-total',
             {
                 'asset': asset,
@@ -186,7 +274,7 @@ class AmberdataDerivatives:
         - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/futures-perpetuals/realized-funding-rates-cumulated',
             {
                 'asset': asset,
@@ -208,7 +296,7 @@ class AmberdataDerivatives:
         - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/futures-perpetuals/volumes',
             {
                 'asset': asset,
@@ -230,7 +318,7 @@ class AmberdataDerivatives:
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/options-scanner/block-trades',
             {
                 'exchange': exchange,
@@ -251,7 +339,7 @@ class AmberdataDerivatives:
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/options-scanner/on-screen-trades',
             {
                 'exchange': exchange,
@@ -270,7 +358,7 @@ class AmberdataDerivatives:
         - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/options-scanner/strikes-bought-sold-by-aggressors',
             {
                 'exchange': exchange,
@@ -303,7 +391,7 @@ class AmberdataDerivatives:
         - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/options-scanner/top-trades',
             {
                 'exchange': exchange,
@@ -312,6 +400,7 @@ class AmberdataDerivatives:
             }
         )
 
+    # pylint: disable=invalid-name # Disable warning about `uniqueTrade` because this is the name as expected in the API
     def get_options_scanner_top_trades_by_unique_trade(self, exchange: str, currency: str, uniqueTrade: str, **kwargs):
         """
         TODO.
@@ -324,7 +413,7 @@ class AmberdataDerivatives:
         - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/options-scanner/top-trades-by-unique-trade',
             {
                 'exchange': exchange,
@@ -345,7 +434,7 @@ class AmberdataDerivatives:
         - pair       (string) [Required] [Examples] btc_usd
         - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/realized-volatility/annual-performance',
             {
                 'exchange': exchange,
@@ -366,7 +455,7 @@ class AmberdataDerivatives:
         - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/realized-volatility/cones',
             {
                 'exchange': exchange,
@@ -386,7 +475,7 @@ class AmberdataDerivatives:
         - exchange   (string) [Required] [Examples] binance | bithumb | ...
         - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/realized-volatility/cones/information',
             {
                 'exchange': exchange,
@@ -408,7 +497,7 @@ class AmberdataDerivatives:
         - pair2      (string) [Required] [Examples] btc_usd
         - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/realized-volatility/correlation-beta',
             {
                 'exchange': exchange,
@@ -431,7 +520,7 @@ class AmberdataDerivatives:
         - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/realized-volatility/implied-vs-realized',
             {
                 'exchange': exchange,
@@ -453,7 +542,7 @@ class AmberdataDerivatives:
         - pair       (string) [Required] [Examples] btc_usd
         - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/realized-volatility/monthly-vs-daily-ratio',
             {
                 'exchange': exchange,
@@ -474,7 +563,7 @@ class AmberdataDerivatives:
         - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/realized-volatility/performance-comparison',
             {
                 'exchange': exchange,
@@ -497,7 +586,7 @@ class AmberdataDerivatives:
         - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/realized-volatility/seasonality/day-of-week',
             {
                 'exchange': exchange,
@@ -520,7 +609,7 @@ class AmberdataDerivatives:
         - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/realized-volatility/seasonality/month-of-year',
             {
                 'exchange': exchange,
@@ -546,7 +635,7 @@ class AmberdataDerivatives:
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/trades-flow/block-volumes',
             {
                 'exchange': exchange,
@@ -577,7 +666,7 @@ class AmberdataDerivatives:
         - strike       (int32)     [Optional] [Examples] 100000 | 3500
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/trades-flow/decorated-trades',
             {
                 'exchange': exchange,
@@ -597,7 +686,7 @@ class AmberdataDerivatives:
         - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/trades-flow/gamma-exposures/normalized-usd',
             {
                 'exchange': exchange,
@@ -626,7 +715,7 @@ class AmberdataDerivatives:
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/trades-flow/gamma-exposures-snapshots',
             {
                 'exchange': exchange,
@@ -648,7 +737,7 @@ class AmberdataDerivatives:
         - timeFormat            (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/trades-flow/net-positioning',
             {
                 'exchange': exchange,
@@ -671,7 +760,7 @@ class AmberdataDerivatives:
         - timeFormat            (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/trades-flow/net-volumes',
             {
                 'exchange': exchange,
@@ -689,7 +778,7 @@ class AmberdataDerivatives:
         proceeds = $25 Trader positioning in underlying after short call proceeds = $500 (one whole unit)
 
         RETURN CALCULATIONS
-          Absolute Yield: $25/$475 Annualized Yield: $25/$475 (525,600 / minutes left until expiration
+          Absolute Yield: $25/$475 Annualized Yield: $25/$475 (525,600 / minutes left until expiration)
 
         The “Cash Secured Put” yield assumes the trader maintains enough cash on hand AFTER proceeds from selling
         the put.
@@ -698,7 +787,7 @@ class AmberdataDerivatives:
         AFTER short put proceeds = $300 (100% cash secured)
 
         RETURN CALCULATIONS
-          Absolute Yield: $25/$275 Annualized Yield: $25/$275 (525,600 / minutes left until expiration
+          Absolute Yield: $25/$275 Annualized Yield: $25/$275 (525,600 / minutes left until expiration)
 
         QUERY PARAMS:
         - exchange   (string) [Required] [Examples] deribit | okex | bybit
@@ -706,7 +795,7 @@ class AmberdataDerivatives:
         - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/trades-flow/options-yields',
             {
                 'exchange': exchange,
@@ -731,7 +820,7 @@ class AmberdataDerivatives:
         - timeFormat          (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/trades-flow/put-call-distribution',
             {
                 'exchange': exchange,
@@ -757,7 +846,7 @@ class AmberdataDerivatives:
         - timeInterval (string)    [Optional] [Examples] minute | hour | day
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/trades-flow/volume-aggregates',
             {
                 'exchange': exchange,
@@ -793,7 +882,7 @@ class AmberdataDerivatives:
         - timeFormat            (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/volatility/delta-surfaces/constant',
             {
                 'exchange': exchange,
@@ -827,7 +916,7 @@ class AmberdataDerivatives:
         - timeFormat            (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/volatility/delta-surfaces/floating',
             {
                 'exchange': exchange,
@@ -851,7 +940,7 @@ class AmberdataDerivatives:
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/volatility/index',
             {
                 'exchange': exchange,
@@ -880,7 +969,7 @@ class AmberdataDerivatives:
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/volatility/index-decorated',
             {
                 'exchange': exchange,
@@ -912,7 +1001,7 @@ class AmberdataDerivatives:
         - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/volatility/level-1-quotes',
             {
                 'exchange': exchange,
@@ -937,7 +1026,7 @@ class AmberdataDerivatives:
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/volatility/metrics',
             {
                 'exchange': exchange,
@@ -962,9 +1051,122 @@ class AmberdataDerivatives:
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/volatility/volatility-of-volatility',
             {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_svi_altcoins(self, currency: str, **kwargs):
+        """
+        This endpoint provides a very novel endpoint. We bootstrap volatility curves for altcoins without a listed
+        options market. This is a complex volatility model bootstrap that provides theoretical marks for assets without
+        actively traded options yet.
+
+        Exchanges, OTC desks and buy-side clients use this endpoint to find fair value for these "tail" assets.
+
+        The model calibrates every 24hr hours for 7-dte and 30-dte expirations.
+
+        QUERY PARAMS:
+        - currency   (string)  [Required] [Examples] BTC | SOL_USDC
+        - signature  (string)  [Optional] [Examples] ECDSA
+        - sviFormat  (string)  [Optional] [Examples] DTU | TAU
+        - timeFormat (string)  [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/volatility/svi-altcoins',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_svi_altcoins_table(self, **kwargs):
+        """
+        This endpoint provides a very novel endpoint. We bootstrap volatility curves for altcoins without a listed
+        options market. This is a complex volatility model bootstrap that provides theoretical marks for assets without
+        actively traded options yet.
+
+        Exchanges, OTC desks and buy-side clients use this endpoint to find fair value for these "tail" assets.
+
+        The model calibrates every 24hr hours for 7-dte and 30-dte expirations.
+
+        QUERY PARAMS:
+        - timeFormat (string)  [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/volatility/svi-altcoins-table',
+            {
+                **kwargs
+            }
+        )
+
+    def get_volatility_svi_altcoins_strikes(self, currency: str, **kwargs):
+        """
+        TThis endpoint provides theoretical synthetic options with various strikes and option marks. We use the SVI
+        Altcoin parameters from bootstrapped volatility surface and convert them into a list of synthetic option
+        instruments, in order to easily represent theoretically tradable instruments.
+
+        Exchanges, OTC desks and buy-side clients use this endpoint to find fair value for these "tail" assets.
+
+        The model calibrates every 24hr hours for 7-dte and 30-dte expirations.
+
+        QUERY PARAMS:
+        - currency   (string)  [Required] [Examples] BTC | SOL_USDC
+        - timeFormat (string)  [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/volatility/svi-altcoins-strikes',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_svi_minutely(self, currency: str, **kwargs):
+        """
+        This endpoint provides calibrated SVI (Stochastic Volatility Inspired) parameters for BTC and ETH options traded
+        on Deribit, with 5-minute granularity. Offering a timely calibration view of the volatility surface.
+
+        QUERY PARAMS:
+        - currency   (string)  [Required] [Examples] BTC | SOL_USDC
+        - signature  (string)  [Optional] [Examples] ECDSA
+        - sviFormat  (string)  [Optional] [Examples] DTU | TAU
+        - timeFormat (string)  [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/volatility/svi-minutely',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_svi_historical(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint provides calibrated SVI (Stochastic Volatility Inspired) parameters for BTC and ETH options traded
+        on Deribit, with hourly granularity. The data covers each hour from April 1, 2019, to the present, offering a
+        historical view of volatility surface calibrations for these assets.
+
+        QUERY PARAMS:
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - sviFormat  (string)    [Optional] [Examples] DTU | TAU
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/volatility/svi-hourly',
+            {
+                'exchange': exchange,
                 'currency': currency,
                 **kwargs
             }
@@ -981,7 +1183,7 @@ class AmberdataDerivatives:
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/volatility/term-structures/forward-volatility/constant',
             {
                 'exchange': exchange,
@@ -1001,7 +1203,7 @@ class AmberdataDerivatives:
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/volatility/term-structures/forward-volatility/floating',
             {
                 'exchange': exchange,
@@ -1030,7 +1232,7 @@ class AmberdataDerivatives:
         - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/volatility/term-structures/richness',
             {
                 'exchange': exchange,
@@ -1054,8 +1256,111 @@ class AmberdataDerivatives:
         - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
-        return self.__make_request(
+        return self._make_request(
             'markets/derivatives/analytics/volatility/variance-premium',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+
+# ======================================================================================================================
+
+class AmberdataTradFi(_AmberdataBase):
+    """
+    Main class to handle Amberdata's API calls.
+    """
+
+    # ==================================================================================================================
+
+    def get_instruments_information(self, **kwargs):
+        """
+        This endpoint returns all available exchanges, currencies and option instruments. If a timestamp is used we can
+        then filter the information for historical data.
+
+        USA Trading hours are 14:30:00 - 21:00:00 UTC (9:30a-4pm ET)
+
+        QUERY PARAMS:
+        - currency   (string)    [Optional] [Examples] MSTR
+        - putCall    (string)    [Optional] [Examples] C | P
+        - strike     (int32)     [Optional] [Examples] 100000 | 3500
+        - timestamp  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/instruments/information/tradfi',
+            {
+                **kwargs
+            }
+        )
+
+    def get_instruments_most_traded(self, exchange: str, currency: str, **kwargs):
+        """
+        This endpoint returns the most traded instruments on a selected exchange for a selected underlying currency, for
+        a given date range.
+
+        This endpoint also returns the VWAP (Volume-Weighted-Average-Price) and VWAP of implied volatility.
+        The calculation for VWAP uses each available trade, weighted by contract sizes and applied to Price USD and/or
+        Implied Volatility, for the given date range.
+
+        QUERY PARAMS:
+        - exchange     (string)    [Required] [Examples] tradfi
+        - currency     (string)    [Required] [Examples] MSTR
+        - blockTradeId (boolean)   [Optional] [Examples] true
+        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/instruments/most-traded/tradfi',
+            {
+                'exchange': exchange,
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    # ==================================================================================================================
+
+    def get_realized_volatility_cones(self, currency: str, **kwargs):
+        """
+        The endpoint returns the percentile distribution of realized volatility for a specific spot trading pair. We can
+        see the RV distribution for multiple measurement windows compared to the end date.
+
+        QUERY PARAMS:
+        - currency   (string)    [Required] [Examples] MSTR
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+        return self._make_request(
+            'markets/derivatives/analytics/realized-volatility/cones/tradfi',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_realized_volatility_implied_vs_realized(self, currency: str, **kwargs):
+        """
+        This endpoint returns the close-to-close daily realized volatility for 5-days and 21-days. Using the
+        daysToExpiration parameter, users can choose which "at-the-money" implied volatility to compare.
+
+        Implied Volatility is returned on an hourly interval.
+
+        USA Trading hours are 14:30:00 - 21:00:00 UTC (9:30a-4pm ET).
+
+        QUERY PARAMS:
+        - currency   (string)    [Required] [Examples] MSTR
+        - startDate  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+        return self._make_request(
+            'markets/derivatives/analytics/realized-volatility/implied-vs-realized/tradfi',
             {
                 'currency': currency,
                 **kwargs
@@ -1064,20 +1369,231 @@ class AmberdataDerivatives:
 
     # ==================================================================================================================
 
-    def __make_request(self, url_path: str, query_params: dict):
-        """Helper method to make HTTP GET requests and parse the JSON response into a DataFrame."""
+    def get_trades_flow_decorated_trades(self, currency: str, **kwargs):
+        """
+        This endpoint returns option "times and sales" data that's decorated with pre-trade level-1 orderbook data and
+        post-trdae level-1 data. This is the core dataset of the Amberdata direction and GEX "Gamma Exposure" analysis.
+        We use this orderbook impact to analyze the true aggressor of every trade, while assuming that market-makers
+        (aka "dealers") are typically the passive trade participants.
 
-        # Add default parameters
-        if self.__time_format is not None:
-            if 'timeFormat' not in query_params:
-                query_params['timeFormat'] = self.__time_format
+        QUERY PARAMS:
+        - currency     (string)    [Required] [Examples] MSTR
+        - blockTradeId (boolean)   [Optional] [Examples] true
+        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - instrument   (string)    [Optional] [Examples] BTC-26APR24-100000-C
+        - putCall      (string)    [Optional] [Examples] C | P
+        - strike       (int32)     [Optional] [Examples] 100000 | 3500
+        """
 
-        # Build query and URL
-        query_string = '&'.join([f"{key}={value}" for key, value in query_params.items()])
-        url = f"{self.__base_url}/{url_path}?{query_string}"
+        return self._make_request(
+            'markets/derivatives/analytics/trades-flow/decorated-trades/tradfi',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
 
-        # Issue REST call & parse response payload
-        response = requests.get(url, headers=self.__headers, timeout=30)
-        return response.json()
+    def get_trades_flow_options_yields(self, currency: str, **kwargs):
+        """
+        The “Covered Call” strategy assumes the trader is long exactly one unit of underlying asset after proceeds from
+        selling their call.
+
+        Example: Underlying price = $500, Trader position in underlying before selling the call = $475 Short $700 call
+        proceeds = $25 Trader positioning in underlying after short call proceeds = $500 (one whole unit)
+
+        RETURN CALCULATIONS
+          Absolute Yield: $25/$475 Annualized Yield: $25/$475 (525,600 / minutes left until expiration)
+
+        The “Cash Secured Put” yield assumes the trader maintains enough cash on hand AFTER proceeds from selling
+        the put.
+
+        Example: Trader’s cash position BEFORE selling put = $275 Short $300 Put Proceeds = $25 Trader cash balance
+        AFTER short put proceeds = $300 (100% cash secured)
+
+        RETURN CALCULATIONS
+          Absolute Yield: $25/$275 Annualized Yield: $25/$275 (525,600 / minutes left until expiration)
+
+        QUERY PARAMS:
+        - currency   (string) [Required] [Examples] BTC | SOL_USDC
+        - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/trades-flow/options-yields/tradfi',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_trades_flow_volume_aggregates(self, currency: str, **kwargs):
+        """
+        This endpoint returns the total traded options volume for a selected exchange and a selected underlying
+        currency.
+
+        The volume is broken out between onScreen exchange volume and 3rd party "blockTrades" (venues such as Paradigm,
+        GreeksLive, etc).
+
+        QUERY PARAMS:
+        - currency     (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - timeInterval (string)    [Optional] [Examples] minute | hour | day
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/trades-flow/volume-aggregates/tradfi',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    # ==================================================================================================================
+
+    def get_volatility_delta_surfaces_constant(self, currency: str, **kwargs):
+        """
+        This endpoint returns the option delta surface with constant maturities.
+
+        USA Trading hours are 14:30:00 - 21:00:00 UTC (9:30a-4pm ET).
+
+        Time Range Limit: The timeInterval supports minute, hour, day.
+
+        Due to the density of data, historical time ranges (difference between startDate and endDate) are limited to the
+        following call sizes:
+          - 1 year of daily data
+          - 90 days of hourly data
+          - 1 hour of minutely data
+
+        In order to get more than the maximum allowed, you can use the startDate & endDate parameters to move the time
+        frame window to get the next n days/hours/minutes of data.
+
+        QUERY PARAMS:
+        - currency              (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate               (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - daysToExpirationStart (int32)     [Optional] [Examples] 0 | 7 | 60
+        - daysToExpirationEnd   (int32)     [Optional] [Examples] 1 | 30 | 180
+        - timeInterval          (string)    [Optional] [Examples] minute | hour | day
+        - timeFormat            (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/volatility/delta-surfaces/constant/tradfi',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_delta_surfaces_floating(self, currency: str, **kwargs):
+        """
+        This endpoint returns the option delta surface with floating maturities (exchange listed expirations).
+
+        Time Range Limit: The timeInterval supports minute, hour, day.
+
+        Due to the density of data, historical time ranges (difference between startDate and endDate) are limited to the
+        following call sizes:
+          - 1 year of daily data
+          - 90 days of hourly data
+          - 1 hour of minutely data
+
+        In order to get more than the maximum allowed, you can use the startDate & endDate parameters to move the time
+        frame window to get the next n days/hours/minutes of data.
+
+        QUERY PARAMS:
+        - currency              (string)    [Required] [Examples] BTC | SOL_USDC
+        - startDate             (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate               (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - daysToExpirationStart (int32)     [Optional] [Examples] 0 | 7 | 60
+        - daysToExpirationEnd   (int32)     [Optional] [Examples] 1 | 30 | 180
+        - timeInterval          (string)    [Optional] [Examples] minute | hour | day
+        - timeFormat            (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/volatility/delta-surfaces/floating/tradfi',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_level_1_quotes(self, currency: str, **kwargs):
+        """
+        This endpoint returns the “Level 1” option chain with associated volatilities, greeks and underlying prices.
+        This is the core underlying options data for many analytics.
+
+        Note: Due to the density of data historical date ranges are limited to 60x 1-minute or 24x 1 hour intervals,
+        per call. If no date range is passed, the most recent option chain will be returned.
+
+        USA Trading hours are 14:30:00 - 21:00:00 UTC (9:30a-4pm ET).
+
+        QUERY PARAMS:
+        - currency     (string)    [Required] [Examples] BTC | SOL_USDC
+        - instrument   (string)    [Optional] [Examples] BTC-26APR24-100000-C
+        - isAtm        (boolean)   [Optional] [Examples] TRUE | FALSE
+        - putCall      (string)    [Optional] [Examples] C | P
+        - startDate    (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate      (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - strike       (int32)     [Optional] [Examples] 100000 | 3500
+        - timeInterval (string)    [Optional] [Examples] minute | hour | day
+        - timeFormat   (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/volatility/level-1-quotes/tradfi',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_metrics(self, currency: str, **kwargs):
+        """
+        This endpoint contains all the metrics useful for having an immediate overview of the options market, for each
+        active expiry. The current Mark IV is updated every minute. These metrics are then compared according to the
+        selected "daysBack" parameter. All the differences are found in the columns with the indication "change"
+        (current metrics vs 24hr ago).
+
+        USA Trading hours are 14:30:00 - 21:00:00 UTC (9:30a-4pm ET).
+
+        QUERY PARAMS:
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - daysBack   (date-time) [Optional] [Examples] 1 | 7 | 14
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/volatility/metrics/tradfi',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
+
+    def get_volatility_term_structures_constant(self, currency: str, **kwargs):
+        """
+        This endpoint returns the term structure (for exchange listed expirations) with forward volatility calculations,
+        for constant "daysToExpiration" maturities.
+
+        USA Trading hours are 14:30:00 - 21:00:00 UTC (9:30a-4pm ET).
+
+        QUERY PARAMS:
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - timestamp  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/derivatives/analytics/volatility/term-structures/forward-volatility/constant/tradfi',
+            {
+                'currency': currency,
+                **kwargs
+            }
+        )
 
 # ======================================================================================================================

@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "atm10"                      : { "type" : ["null", "number"] },
+              "atm189"                     : { "type" : ["null", "number"] },
+              "atm21"                      : { "type" : ["null", "number"] },
+              "atm63"                      : { "type" : ["null", "number"] },
+              "atm84"                      : { "type" : ["null", "number"] },
+              "currency"                   : { "type" : "string" },
+              "exchange"                   : { "type" : "string" },
+              "indexPrice"                 : { "type" : ["null", "number"] },
+              "lnReturn"                   : { "type" : "number" },
+              "realizedVolatility21"       : { "type" : "number" },
+              "realizedVolatility5"        : { "type" : "number" },
+              "timestamp"                  : { "type" : [        "integer", "string"] },
+              "timestampImpliedVolatility" : { "type" : ["null", "integer", "string"] }
+            },
+            "required": ["currency", "realizedVolatility21", "realizedVolatility5", "timestamp", "timestampImpliedVolatility"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version": { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}

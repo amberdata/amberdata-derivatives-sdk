@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "description": { "type": "string" },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "askIv"            : { "type": "number" },
+              "bidIv"            : { "type": "number" },
+              "daysToExpiration" : { "type": "number" },
+              "indexPrice"       : { "type": "number" },
+              "markIv"           : { "type": "number" },
+              "strike"           : { "type": "number" },
+              "timestamp"        : { "type": ["integer", "string"] },
+              "underlyingPrice"  : { "type": "number" }
+            },
+            "required": ["askIv", "bidIv", "daysToExpiration", "indexPrice", "markIv", "strike", "timestamp", "underlyingPrice"],
+            "additionalProperties": false
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "api-version" : { "type": "string" },
+            "signature"   : { "type": "string" }
+          },
+          "required": ["api-version"],
+          "additionalProperties": false
+        }
+      }
+    },
+    "status" : { "type": "integer" },
+    "title"  : { "type": "string"  }
+  },
+  "required": ["description", "payload", "status", "title"],
+  "additionalProperties": false
+}

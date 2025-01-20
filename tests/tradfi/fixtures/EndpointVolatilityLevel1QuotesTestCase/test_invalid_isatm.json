@@ -1,0 +1,7 @@
+{
+  "description": "Request was invalid or cannot be served. See message for details",
+  "error": true,
+  "message": "Invalid argument 'isAtm': expected boolean, found '<is_atm>'.",
+  "status": 400,
+  "title": "BAD REQUEST"
+}

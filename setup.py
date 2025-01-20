@@ -51,9 +51,9 @@ setup(
     license='Apache License',
     url='https://github.com/amberdata/amberdata-derivatives-sdk',
     install_requires=[
-        'deprecation',
-        'python-dotenv',
-        'requests'
+        'deprecation ~= 2.1.0',
+        'python-dotenv ~= 1.0.1',
+        'requests ~= 2.32.3'
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
