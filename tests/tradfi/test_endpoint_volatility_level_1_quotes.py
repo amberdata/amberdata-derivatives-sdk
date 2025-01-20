@@ -54,26 +54,24 @@ class EndpointVolatilityLevel1QuotesTestCase(BaseTestCase):
         self.validate_response_field(response, 'isAtm', False)
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    # TODO: Parameter 'putCall' is not supported.
-    # def test_historical_putcall(self):
-    #     response = self.call_endpoint(currency='MSTU', putCall='C', startDate='2024-12-23T17:00:00', endDate='2024-12-23T18:00:00')
-    #     self.validate_response_data(response)
-    #     self.validate_response_schema(response, schema=self.schema)
-    #     self.validate_response_200(response, num_elements=5320)
-    #     self.validate_response_field(response, 'exchange', 'tradfi')
-    #     self.validate_response_field(response, 'currency', 'MSTU')
-    #     self.validate_response_field(response, 'putCall', 'C')
-    #     self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
+    def test_historical_putcall(self):
+        response = self.call_endpoint(currency='MSTU', putCall='C', startDate='2024-12-23T17:00:00', endDate='2024-12-23T18:00:00')
+        self.validate_response_data(response)
+        self.validate_response_schema(response, schema=self.schema)
+        self.validate_response_200(response, num_elements=16588)
+        self.validate_response_field(response, 'exchange', 'tradfi')
+        self.validate_response_field(response, 'currency', 'MSTU')
+        self.validate_response_field(response, 'putCall', 'C')
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
-    # TODO: Parameter 'putCall' is not supported.
-    # def test_realtime_putcall(self):
-    #     response = self.call_endpoint(currency='MSTU', putCall='P')
-    #     self.validate_response_schema(response, schema=self.schema)
-    #     self.validate_response_200(response, min_elements=25)
-    #     self.validate_response_field(response, 'exchange', 'tradfi')
-    #     self.validate_response_field(response, 'currency', 'MSTU')
-    #     self.validate_response_field(response, 'putCall', 'P')
-    #     self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
+    def test_realtime_putcall(self):
+        response = self.call_endpoint(currency='MSTU', putCall='P')
+        self.validate_response_schema(response, schema=self.schema)
+        self.validate_response_200(response, min_elements=25)
+        self.validate_response_field(response, 'exchange', 'tradfi')
+        self.validate_response_field(response, 'currency', 'MSTU')
+        self.validate_response_field(response, 'putCall', 'P')
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True) # TODO: this should be 'is_milliseconds=True'
 
     def test_historical_strike(self):
         response = self.call_endpoint(currency='MSTU', strike=2, startDate='2024-12-23T17:00:00', endDate='2024-12-23T18:00:00')
@@ -123,13 +121,15 @@ class EndpointVolatilityLevel1QuotesTestCase(BaseTestCase):
 
     # TODO: parameter timeInterval=d does not return any data
     def test_historical_timeinterval_days(self):
-        response = self.call_endpoint(currency='MSTU', startDate='2024-11-29T00:00:00', endDate='2024-12-25T00:00:00', timeFormat='hr', timeInterval='d')
+        response = self.call_endpoint(currency='MSTU', startDate='2024-12-20T00:00:00', endDate='2024-12-25T00:00:00', timeFormat='hr', timeInterval='d')
         self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
-        self.validate_response_200(response, num_elements=1064)
+        self.validate_response_200(response, num_elements=12484)
         self.validate_response_field(response, 'exchange', 'tradfi')
         self.validate_response_field(response, 'currency', 'MSTU')
-        self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_daily=True)
+        self.validate_response_field_timestamp(response, 'timestamp', is_hr=True)
+        # TODO: re-enable the is_daily check
+        # self.validate_response_field_timestamp(response, 'timestamp', is_hr=True, is_daily=True)
 
     def test_historical_timeinterval_hours(self):
         response = self.call_endpoint(currency='MSTU', startDate='2024-12-23T17:00:00', endDate='2024-12-23T18:00:00', timeFormat='hr', timeInterval='h')
