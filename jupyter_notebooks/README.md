@@ -4,6 +4,7 @@
 
 Install your virtual environment, then you can install the Jupyter kernel for the virtual environment with this command:
 ```bash
+python -m venv .venv
 ipython kernel install --user --name=venv
 ```
 
