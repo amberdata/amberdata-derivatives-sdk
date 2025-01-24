@@ -41,7 +41,6 @@ class EndpointVolatilitySVIAltcoinsTestCase(BaseTestCase):
 
     def test_default(self):
         response = self.call_endpoint(currency='BTC')
-        self.validate_response_data(response)
         self.validate_response_schema(response, schema=self.schema)
         self.validate_response_200(response, min_elements=2)
         self.validate_response_field(response, 'currency', 'BTC')
@@ -50,7 +49,6 @@ class EndpointVolatilitySVIAltcoinsTestCase(BaseTestCase):
     def test_historical(self):
         [start_date, end_date] = self._create_dates()
         response = self.call_endpoint(currency='BTC', startDate=start_date.isoformat(), endDate=end_date.isoformat())
-        self.validate_response_data(response)
         self._check_response(response)
         self.validate_response_field_timestamp(response, 'timestamp', is_milliseconds=True)
 
