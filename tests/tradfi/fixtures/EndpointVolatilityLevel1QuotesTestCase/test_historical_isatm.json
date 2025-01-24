@@ -23,8 +23,6 @@
         "markIv": 155.21,
         "markPrice": 0.77017,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00071,
         "strike": 11.3,
@@ -32,9 +30,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.315,
         "underlyingRate": null,
-        "vega": 0.00486,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00486
       },
       {
         "ask": 0.75,
@@ -57,8 +53,6 @@
         "markIv": 155.97,
         "markPrice": 0.74609,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00054,
         "strike": 11.3,
@@ -66,9 +60,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.315,
         "underlyingRate": null,
-        "vega": 0.00485,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00485
       },
       {
         "ask": 1.35,
@@ -91,8 +83,6 @@
         "markIv": 168.01,
         "markPrice": 1.3601,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00187,
         "strike": 11.3,
@@ -100,9 +90,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.265,
         "underlyingRate": null,
-        "vega": 0.00752,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00752
       },
       {
         "ask": 1.3,
@@ -125,8 +113,6 @@
         "markIv": 168.55,
         "markPrice": 1.22749,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00117,
         "strike": 11.3,
@@ -134,9 +120,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.315,
         "underlyingRate": null,
-        "vega": 0.00752,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00752
       },
       {
         "ask": 2.15,
@@ -159,8 +143,6 @@
         "markIv": 180.38,
         "markPrice": 1.85241,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00323,
         "strike": 11.3,
@@ -168,9 +150,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.29,
         "underlyingRate": null,
-        "vega": 0.00963,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00963
       },
       {
         "ask": 1.8,
@@ -193,8 +173,6 @@
         "markIv": 179.45,
         "markPrice": 1.6611,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00189,
         "strike": 11.3,
@@ -202,9 +180,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.265,
         "underlyingRate": null,
-        "vega": 0.00964,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00964
       },
       {
         "ask": 2.25,
@@ -227,8 +203,6 @@
         "markIv": 186.12,
         "markPrice": 2.21972,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00464,
         "strike": 11.3,
@@ -236,9 +210,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.315,
         "underlyingRate": null,
-        "vega": 0.0113,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0113
       },
       {
         "ask": 2.2,
@@ -261,8 +233,6 @@
         "markIv": 186.54,
         "markPrice": 2.0649,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.0026,
         "strike": 11.3,
@@ -270,9 +240,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.265,
         "underlyingRate": null,
-        "vega": 0.01132,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01132
       },
       {
         "ask": 3.5,
@@ -295,8 +263,6 @@
         "markIv": 195.31,
         "markPrice": 2.6427,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00604,
         "strike": 11.3,
@@ -304,9 +270,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.315,
         "underlyingRate": null,
-        "vega": 0.01239,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01239
       },
       {
         "ask": 2.75,
@@ -329,8 +293,6 @@
         "markIv": 196.98,
         "markPrice": 2.40339,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00299,
         "strike": 11.3,
@@ -338,9 +300,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.01243,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01243
       },
       {
         "ask": 3.1,
@@ -363,8 +323,6 @@
         "markIv": 205.21,
         "markPrice": 2.8351,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00708,
         "strike": 11,
@@ -372,9 +330,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.255,
         "underlyingRate": null,
-        "vega": 0.01341,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01341
       },
       {
         "ask": 3.3,
@@ -397,8 +353,6 @@
         "markIv": 206.18,
         "markPrice": 2.94225,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.0037,
         "strike": 11,
@@ -406,9 +360,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.315,
         "underlyingRate": null,
-        "vega": 0.01344,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01344
       },
       {
         "ask": 3.5,
@@ -431,8 +383,6 @@
         "markIv": 202.35,
         "markPrice": 3.34173,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00971,
         "strike": 11,
@@ -440,9 +390,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.265,
         "underlyingRate": null,
-        "vega": 0.01632,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01632
       },
       {
         "ask": 4.2,
@@ -465,8 +413,6 @@
         "markIv": 205.1,
         "markPrice": 3.727,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00591,
         "strike": 11,
@@ -474,9 +420,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.315,
         "underlyingRate": null,
-        "vega": 0.01631,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01631
       },
       {
         "ask": 4.4,
@@ -499,8 +443,6 @@
         "markIv": 202.56,
         "markPrice": 4.27646,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.01568,
         "strike": 11.3,
@@ -508,9 +450,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.265,
         "underlyingRate": null,
-        "vega": 0.01926,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01926
       },
       {
         "ask": 4.7,
@@ -533,8 +473,6 @@
         "markIv": 201.24,
         "markPrice": 4.1983,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00739,
         "strike": 11.3,
@@ -542,9 +480,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.315,
         "underlyingRate": null,
-        "vega": 0.01928,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01928
       },
       {
         "ask": 5.9,
@@ -567,8 +503,6 @@
         "markIv": 201.35,
         "markPrice": 5.75122,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.0325,
         "strike": 11.3,
@@ -576,9 +510,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.265,
         "underlyingRate": null,
-        "vega": 0.02404,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02404
       },
       {
         "ask": 6.1,
@@ -601,8 +533,6 @@
         "markIv": 200.89,
         "markPrice": 5.73486,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.01154,
         "strike": 11.3,
@@ -610,9 +540,7 @@
         "timestamp": "2024-12-23T18:00:00.000Z",
         "underlyingPrice": 11.315,
         "underlyingRate": null,
-        "vega": 0.02406,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02406
       },
       {
         "ask": 0.75,
@@ -635,8 +563,6 @@
         "markIv": 152.21,
         "markPrice": 0.73164,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00071,
         "strike": 11.3,
@@ -644,9 +570,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.37,
         "underlyingRate": null,
-        "vega": 0.00487,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00487
       },
       {
         "ask": 0.8,
@@ -669,8 +593,6 @@
         "markIv": 154.09,
         "markPrice": 0.73725,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00054,
         "strike": 11.3,
@@ -678,9 +600,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.315,
         "underlyingRate": null,
-        "vega": 0.00485,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00485
       },
       {
         "ask": 1.35,
@@ -703,8 +623,6 @@
         "markIv": 166.04,
         "markPrice": 1.3226,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00186,
         "strike": 11.3,
@@ -712,9 +630,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.00753,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00753
       },
       {
         "ask": 1.35,
@@ -737,8 +653,6 @@
         "markIv": 165.05,
         "markPrice": 1.22429,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00118,
         "strike": 11.3,
@@ -746,9 +660,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.00753,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00753
       },
       {
         "ask": 1.85,
@@ -771,8 +683,6 @@
         "markIv": 178.5,
         "markPrice": 1.80088,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00322,
         "strike": 11.3,
@@ -780,9 +690,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.37,
         "underlyingRate": null,
-        "vega": 0.00965,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00965
       },
       {
         "ask": 1.8,
@@ -805,8 +713,6 @@
         "markIv": 179.26,
         "markPrice": 1.69302,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00191,
         "strike": 11.3,
@@ -814,9 +720,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.00966,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00966
       },
       {
         "ask": 2.25,
@@ -839,8 +743,6 @@
         "markIv": 185.7,
         "markPrice": 2.21108,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00462,
         "strike": 11.3,
@@ -848,9 +750,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.01132,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01132
       },
       {
         "ask": 2.2,
@@ -873,8 +773,6 @@
         "markIv": 185.7,
         "markPrice": 2.09056,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00262,
         "strike": 11.3,
@@ -882,9 +780,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.01134,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01134
       },
       {
         "ask": 3.3,
@@ -907,8 +803,6 @@
         "markIv": 196.32,
         "markPrice": 2.6344,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00603,
         "strike": 11.3,
@@ -916,9 +810,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.345,
         "underlyingRate": null,
-        "vega": 0.0124,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0124
       },
       {
         "ask": 4.3,
@@ -941,8 +833,6 @@
         "markIv": 196.47,
         "markPrice": 2.4313,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00301,
         "strike": 11.3,
@@ -950,9 +840,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.01243,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01243
       },
       {
         "ask": 3.1,
@@ -975,8 +863,6 @@
         "markIv": 209.38,
         "markPrice": 2.8344,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00697,
         "strike": 11,
@@ -984,9 +870,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.37,
         "underlyingRate": null,
-        "vega": 0.01343,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01343
       },
       {
         "ask": 3.6,
@@ -1009,8 +893,6 @@
         "markIv": 212.37,
         "markPrice": 3.0864,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00375,
         "strike": 11,
@@ -1018,9 +900,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.37,
         "underlyingRate": null,
-        "vega": 0.01346,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01346
       },
       {
         "ask": 3.5,
@@ -1043,8 +923,6 @@
         "markIv": 203.54,
         "markPrice": 3.34285,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00966,
         "strike": 11,
@@ -1052,9 +930,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.01638,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01638
       },
       {
         "ask": 4,
@@ -1077,8 +953,6 @@
         "markIv": 201.26,
         "markPrice": 3.6775,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00597,
         "strike": 11,
@@ -1086,9 +960,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.345,
         "underlyingRate": null,
-        "vega": 0.01638,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01638
       },
       {
         "ask": 4.4,
@@ -1111,8 +983,6 @@
         "markIv": 202.47,
         "markPrice": 4.25802,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.01565,
         "strike": 11.3,
@@ -1120,9 +990,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.0193,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0193
       },
       {
         "ask": 4.4,
@@ -1145,8 +1013,6 @@
         "markIv": 201.94,
         "markPrice": 4.2539,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00742,
         "strike": 11.3,
@@ -1154,9 +1020,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.37,
         "underlyingRate": null,
-        "vega": 0.01931,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01931
       },
       {
         "ask": 5.9,
@@ -1179,8 +1043,6 @@
         "markIv": 201.96,
         "markPrice": 5.76072,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.03228,
         "strike": 11.3,
@@ -1188,9 +1050,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.02418,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02418
       },
       {
         "ask": 6.1,
@@ -1213,8 +1073,6 @@
         "markIv": 201.43,
         "markPrice": 5.7612,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.01178,
         "strike": 11.3,
@@ -1222,9 +1080,7 @@
         "timestamp": "2024-12-23T17:55:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.02417,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02417
       },
       {
         "ask": 0.8,
@@ -1247,8 +1103,6 @@
         "markIv": 155.42,
         "markPrice": 0.7591,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00068,
         "strike": 11.3,
@@ -1256,9 +1110,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.345,
         "underlyingRate": null,
-        "vega": 0.00489,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00489
       },
       {
         "ask": 0.85,
@@ -1281,8 +1133,6 @@
         "markIv": 155.68,
         "markPrice": 0.7732,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00057,
         "strike": 11.3,
@@ -1290,9 +1140,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.00489,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00489
       },
       {
         "ask": 1.35,
@@ -1315,8 +1163,6 @@
         "markIv": 172.82,
         "markPrice": 1.36085,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00181,
         "strike": 11.3,
@@ -1324,9 +1170,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.35,
         "underlyingRate": null,
-        "vega": 0.00758,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00758
       },
       {
         "ask": 1.35,
@@ -1349,8 +1193,6 @@
         "markIv": 173.39,
         "markPrice": 1.2788,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00123,
         "strike": 11.3,
@@ -1358,9 +1200,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.345,
         "underlyingRate": null,
-        "vega": 0.00758,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00758
       },
       {
         "ask": 1.85,
@@ -1383,8 +1223,6 @@
         "markIv": 179.53,
         "markPrice": 1.80856,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00317,
         "strike": 11.3,
@@ -1392,9 +1230,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.375,
         "underlyingRate": null,
-        "vega": 0.0097,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0097
       },
       {
         "ask": 1.85,
@@ -1417,8 +1253,6 @@
         "markIv": 179.53,
         "markPrice": 1.72592,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00195,
         "strike": 11.3,
@@ -1426,9 +1260,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.375,
         "underlyingRate": null,
-        "vega": 0.00971,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00971
       },
       {
         "ask": 2.25,
@@ -1451,8 +1283,6 @@
         "markIv": 186.17,
         "markPrice": 2.19192,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00457,
         "strike": 11.3,
@@ -1460,9 +1290,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.375,
         "underlyingRate": null,
-        "vega": 0.01138,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01138
       },
       {
         "ask": 2.25,
@@ -1485,8 +1313,6 @@
         "markIv": 186.05,
         "markPrice": 2.1356,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00267,
         "strike": 11.3,
@@ -1494,9 +1320,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.385,
         "underlyingRate": null,
-        "vega": 0.01139,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01139
       },
       {
         "ask": 3.6,
@@ -1519,8 +1343,6 @@
         "markIv": 209.75,
         "markPrice": 2.77736,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00599,
         "strike": 11.3,
@@ -1528,9 +1350,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.375,
         "underlyingRate": null,
-        "vega": 0.01244,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01244
       },
       {
         "ask": 2.75,
@@ -1553,8 +1373,6 @@
         "markIv": 203.88,
         "markPrice": 2.5277,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00307,
         "strike": 11.3,
@@ -1562,9 +1380,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.345,
         "underlyingRate": null,
-        "vega": 0.01247,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01247
       },
       {
         "ask": 5.1,
@@ -1587,8 +1403,6 @@
         "markIv": 207.48,
         "markPrice": 2.8043,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00669,
         "strike": 11,
@@ -1596,9 +1410,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.345,
         "underlyingRate": null,
-        "vega": 0.01354,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01354
       },
       {
         "ask": 4.7,
@@ -1621,8 +1433,6 @@
         "markIv": 210.8,
         "markPrice": 3.068,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00388,
         "strike": 11,
@@ -1630,9 +1440,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.345,
         "underlyingRate": null,
-        "vega": 0.01355,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01355
       },
       {
         "ask": 3.5,
@@ -1655,8 +1463,6 @@
         "markIv": 198.39,
         "markPrice": 3.24302,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00961,
         "strike": 11,
@@ -1664,9 +1470,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.375,
         "underlyingRate": null,
-        "vega": 0.01644,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01644
       },
       {
         "ask": 4,
@@ -1689,8 +1493,6 @@
         "markIv": 200.16,
         "markPrice": 3.6762,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00603,
         "strike": 11,
@@ -1698,9 +1500,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.01643,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01643
       },
       {
         "ask": 4.6,
@@ -1723,8 +1523,6 @@
         "markIv": 202.37,
         "markPrice": 4.24827,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.01561,
         "strike": 11.3,
@@ -1732,9 +1530,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.355,
         "underlyingRate": null,
-        "vega": 0.01937,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01937
       },
       {
         "ask": 4.8,
@@ -1757,8 +1553,6 @@
         "markIv": 202.28,
         "markPrice": 4.2455,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00748,
         "strike": 11.3,
@@ -1766,9 +1560,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.355,
         "underlyingRate": null,
-        "vega": 0.01938,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01938
       },
       {
         "ask": 5.9,
@@ -1791,8 +1583,6 @@
         "markIv": 201.13,
         "markPrice": 5.71232,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.03222,
         "strike": 11.3,
@@ -1800,9 +1590,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.375,
         "underlyingRate": null,
-        "vega": 0.02426,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02426
       },
       {
         "ask": 6.2,
@@ -1825,8 +1613,6 @@
         "markIv": 201.58,
         "markPrice": 5.803,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.01189,
         "strike": 11.3,
@@ -1834,9 +1620,7 @@
         "timestamp": "2024-12-23T17:50:00.000Z",
         "underlyingPrice": 11.355,
         "underlyingRate": null,
-        "vega": 0.02424,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02424
       },
       {
         "ask": 0.75,
@@ -1859,8 +1643,6 @@
         "markIv": 156.41,
         "markPrice": 0.75862,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00074,
         "strike": 11.4,
@@ -1868,9 +1650,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.475,
         "underlyingRate": null,
-        "vega": 0.00491,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00491
       },
       {
         "ask": 0.85,
@@ -1893,8 +1673,6 @@
         "markIv": 156.15,
         "markPrice": 0.7935,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00054,
         "strike": 11.4,
@@ -1902,9 +1680,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.485,
         "underlyingRate": null,
-        "vega": 0.00491,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00491
       },
       {
         "ask": 1.4,
@@ -1927,8 +1703,6 @@
         "markIv": 165.63,
         "markPrice": 1.30281,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00189,
         "strike": 11.4,
@@ -1936,9 +1710,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.475,
         "underlyingRate": null,
-        "vega": 0.0076,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0076
       },
       {
         "ask": 1.4,
@@ -1961,8 +1733,6 @@
         "markIv": 168.04,
         "markPrice": 1.27254,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.0012,
         "strike": 11.4,
@@ -1970,9 +1740,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.475,
         "underlyingRate": null,
-        "vega": 0.0076,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0076
       },
       {
         "ask": 1.85,
@@ -1995,8 +1763,6 @@
         "markIv": 180.61,
         "markPrice": 1.8268,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00328,
         "strike": 11.4,
@@ -2004,9 +1770,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.485,
         "underlyingRate": null,
-        "vega": 0.00972,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00972
       },
       {
         "ask": 1.85,
@@ -2029,8 +1793,6 @@
         "markIv": 180.54,
         "markPrice": 1.76117,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00192,
         "strike": 11.4,
@@ -2038,9 +1800,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.485,
         "underlyingRate": null,
-        "vega": 0.00973,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00973
       },
       {
         "ask": 2.25,
@@ -2063,8 +1823,6 @@
         "markIv": 186.16,
         "markPrice": 2.2053,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00469,
         "strike": 11.4,
@@ -2072,9 +1830,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.485,
         "underlyingRate": null,
-        "vega": 0.01141,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01141
       },
       {
         "ask": 2.25,
@@ -2097,8 +1853,6 @@
         "markIv": 186.06,
         "markPrice": 2.15286,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00266,
         "strike": 11.4,
@@ -2106,9 +1860,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.475,
         "underlyingRate": null,
-        "vega": 0.01142,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01142
       },
       {
         "ask": 3.4,
@@ -2131,8 +1883,6 @@
         "markIv": 210.97,
         "markPrice": 2.80295,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00606,
         "strike": 11.4,
@@ -2140,9 +1890,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.485,
         "underlyingRate": null,
-        "vega": 0.01254,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01254
       },
       {
         "ask": 3.7,
@@ -2165,8 +1913,6 @@
         "markIv": 201.68,
         "markPrice": 2.5592,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00311,
         "strike": 11.4,
@@ -2174,9 +1920,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.475,
         "underlyingRate": null,
-        "vega": 0.01257,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01257
       },
       {
         "ask": 3,
@@ -2199,8 +1943,6 @@
         "markIv": 208.68,
         "markPrice": 2.75659,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00638,
         "strike": 11,
@@ -2208,9 +1950,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.485,
         "underlyingRate": null,
-        "vega": 0.01354,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01354
       },
       {
         "ask": 3.4,
@@ -2233,8 +1973,6 @@
         "markIv": 210.41,
         "markPrice": 3.1808,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00395,
         "strike": 11,
@@ -2242,9 +1980,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.485,
         "underlyingRate": null,
-        "vega": 0.01354,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01354
       },
       {
         "ask": 3.5,
@@ -2267,8 +2003,6 @@
         "markIv": 203.54,
         "markPrice": 3.2969,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00959,
         "strike": 11,
@@ -2276,9 +2010,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.475,
         "underlyingRate": null,
-        "vega": 0.01643,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01643
       },
       {
         "ask": 4.8,
@@ -2301,8 +2033,6 @@
         "markIv": 203.21,
         "markPrice": 3.7923,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00626,
         "strike": 11,
@@ -2310,9 +2040,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.465,
         "underlyingRate": null,
-        "vega": 0.01642,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01642
       },
       {
         "ask": 4.4,
@@ -2335,8 +2063,6 @@
         "markIv": 201.98,
         "markPrice": 4.26692,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.01577,
         "strike": 11.4,
@@ -2344,9 +2070,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.485,
         "underlyingRate": null,
-        "vega": 0.01943,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01943
       },
       {
         "ask": 4.4,
@@ -2369,8 +2093,6 @@
         "markIv": 202.7,
         "markPrice": 4.2662,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00748,
         "strike": 11.4,
@@ -2378,9 +2100,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.4,
         "underlyingRate": null,
-        "vega": 0.01947,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01947
       },
       {
         "ask": 6,
@@ -2403,8 +2123,6 @@
         "markIv": 201.65,
         "markPrice": 5.7725,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.03257,
         "strike": 11.4,
@@ -2412,9 +2130,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.485,
         "underlyingRate": null,
-        "vega": 0.02432,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02432
       },
       {
         "ask": 6.7,
@@ -2437,8 +2153,6 @@
         "markIv": 201.81,
         "markPrice": 5.88022,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.01187,
         "strike": 11.4,
@@ -2446,9 +2160,7 @@
         "timestamp": "2024-12-23T17:45:00.000Z",
         "underlyingPrice": 11.475,
         "underlyingRate": null,
-        "vega": 0.0243,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0243
       },
       {
         "ask": 0.85,
@@ -2471,8 +2183,6 @@
         "markIv": 159.06,
         "markPrice": 0.79305,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00075,
         "strike": 11.4,
@@ -2480,9 +2190,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.43,
         "underlyingRate": null,
-        "vega": 0.0049,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0049
       },
       {
         "ask": 0.85,
@@ -2505,8 +2213,6 @@
         "markIv": 159.06,
         "markPrice": 0.77979,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00054,
         "strike": 11.4,
@@ -2514,9 +2220,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.43,
         "underlyingRate": null,
-        "vega": 0.0049,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0049
       },
       {
         "ask": 1.55,
@@ -2539,8 +2243,6 @@
         "markIv": 167.78,
         "markPrice": 1.3402,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00191,
         "strike": 11.4,
@@ -2548,9 +2250,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.42,
         "underlyingRate": null,
-        "vega": 0.00759,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00759
       },
       {
         "ask": 1.35,
@@ -2573,8 +2273,6 @@
         "markIv": 167.79,
         "markPrice": 1.242,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.0012,
         "strike": 11.4,
@@ -2582,9 +2280,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.415,
         "underlyingRate": null,
-        "vega": 0.00759,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00759
       },
       {
         "ask": 1.9,
@@ -2607,8 +2303,6 @@
         "markIv": 180.83,
         "markPrice": 1.84787,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00331,
         "strike": 11.4,
@@ -2616,9 +2310,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.43,
         "underlyingRate": null,
-        "vega": 0.00969,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00969
       },
       {
         "ask": 1.85,
@@ -2641,8 +2333,6 @@
         "markIv": 180.83,
         "markPrice": 1.73979,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.0019,
         "strike": 11.4,
@@ -2650,9 +2340,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.43,
         "underlyingRate": null,
-        "vega": 0.0097,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0097
       },
       {
         "ask": 2.3,
@@ -2675,8 +2363,6 @@
         "markIv": 187.23,
         "markPrice": 2.23269,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00471,
         "strike": 11.4,
@@ -2684,9 +2370,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.43,
         "underlyingRate": null,
-        "vega": 0.01139,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01139
       },
       {
         "ask": 2.25,
@@ -2709,8 +2393,6 @@
         "markIv": 187.23,
         "markPrice": 2.14892,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00265,
         "strike": 11.4,
@@ -2718,9 +2400,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.43,
         "underlyingRate": null,
-        "vega": 0.01141,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01141
       },
       {
         "ask": 3.4,
@@ -2743,8 +2423,6 @@
         "markIv": 198.25,
         "markPrice": 2.6517,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.0061,
         "strike": 11.4,
@@ -2752,9 +2430,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.43,
         "underlyingRate": null,
-        "vega": 0.0125,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0125
       },
       {
         "ask": 4.2,
@@ -2777,8 +2453,6 @@
         "markIv": 200.28,
         "markPrice": 2.5259,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00306,
         "strike": 11.4,
@@ -2786,9 +2460,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.42,
         "underlyingRate": null,
-        "vega": 0.01253,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01253
       },
       {
         "ask": 3,
@@ -2811,8 +2483,6 @@
         "markIv": 211.75,
         "markPrice": 2.80384,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00656,
         "strike": 11,
@@ -2820,9 +2490,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.415,
         "underlyingRate": null,
-        "vega": 0.01349,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01349
       },
       {
         "ask": 4.2,
@@ -2845,8 +2513,6 @@
         "markIv": 211.4,
         "markPrice": 3.18029,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00387,
         "strike": 11,
@@ -2854,9 +2520,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.42,
         "underlyingRate": null,
-        "vega": 0.0135,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0135
       },
       {
         "ask": 3.5,
@@ -2879,8 +2543,6 @@
         "markIv": 204.01,
         "markPrice": 3.31244,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00967,
         "strike": 11,
@@ -2888,9 +2550,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.43,
         "underlyingRate": null,
-        "vega": 0.01637,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01637
       },
       {
         "ask": 3.9,
@@ -2913,8 +2573,6 @@
         "markIv": 201.49,
         "markPrice": 3.74607,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00597,
         "strike": 11,
@@ -2922,9 +2580,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.415,
         "underlyingRate": null,
-        "vega": 0.01636,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01636
       },
       {
         "ask": 4.5,
@@ -2947,8 +2603,6 @@
         "markIv": 203.12,
         "markPrice": 4.30541,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.01586,
         "strike": 11.4,
@@ -2956,9 +2610,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.43,
         "underlyingRate": null,
-        "vega": 0.01936,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01936
       },
       {
         "ask": 4.9,
@@ -2981,8 +2633,6 @@
         "markIv": 202.77,
         "markPrice": 4.2799,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00741,
         "strike": 11.4,
@@ -2990,9 +2640,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.42,
         "underlyingRate": null,
-        "vega": 0.01938,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01938
       },
       {
         "ask": 6,
@@ -3015,8 +2663,6 @@
         "markIv": 201.68,
         "markPrice": 5.7903,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.03261,
         "strike": 11.4,
@@ -3024,9 +2670,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.43,
         "underlyingRate": null,
-        "vega": 0.02424,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02424
       },
       {
         "ask": 6.1,
@@ -3049,8 +2693,6 @@
         "markIv": 201.86,
         "markPrice": 5.826,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.0118,
         "strike": 11.4,
@@ -3058,9 +2700,7 @@
         "timestamp": "2024-12-23T17:40:00.000Z",
         "underlyingPrice": 11.415,
         "underlyingRate": null,
-        "vega": 0.02423,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02423
       },
       {
         "ask": 0.8,
@@ -3083,8 +2723,6 @@
         "markIv": 160.82,
         "markPrice": 0.75991,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00068,
         "strike": 11.3,
@@ -3092,9 +2730,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.405,
         "underlyingRate": null,
-        "vega": 0.00491,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00491
       },
       {
         "ask": 0.85,
@@ -3117,8 +2753,6 @@
         "markIv": 160.74,
         "markPrice": 0.81587,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00058,
         "strike": 11.3,
@@ -3126,9 +2760,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.39,
         "underlyingRate": null,
-        "vega": 0.00491,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00491
       },
       {
         "ask": 3.7,
@@ -3151,8 +2783,6 @@
         "markIv": 167.18,
         "markPrice": 1.2912,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.0018,
         "strike": 11.3,
@@ -3160,9 +2790,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.385,
         "underlyingRate": null,
-        "vega": 0.00761,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00761
       },
       {
         "ask": 1.4,
@@ -3185,8 +2813,6 @@
         "markIv": 167.12,
         "markPrice": 1.27465,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00126,
         "strike": 11.3,
@@ -3194,9 +2820,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.395,
         "underlyingRate": null,
-        "vega": 0.00761,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00761
       },
       {
         "ask": 1.95,
@@ -3219,8 +2843,6 @@
         "markIv": 181.52,
         "markPrice": 1.82339,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00318,
         "strike": 11.3,
@@ -3228,9 +2850,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.385,
         "underlyingRate": null,
-        "vega": 0.00972,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00972
       },
       {
         "ask": 1.9,
@@ -3253,8 +2873,6 @@
         "markIv": 181.46,
         "markPrice": 1.7819,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00195,
         "strike": 11.3,
@@ -3262,9 +2880,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.435,
         "underlyingRate": null,
-        "vega": 0.00972,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00972
       },
       {
         "ask": 2.25,
@@ -3287,8 +2903,6 @@
         "markIv": 187.74,
         "markPrice": 2.1932,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00455,
         "strike": 11.3,
@@ -3296,9 +2910,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.39,
         "underlyingRate": null,
-        "vega": 0.0114,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0114
       },
       {
         "ask": 2.25,
@@ -3321,8 +2933,6 @@
         "markIv": 187.92,
         "markPrice": 2.16755,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00271,
         "strike": 11.3,
@@ -3330,9 +2940,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.375,
         "underlyingRate": null,
-        "vega": 0.01142,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01142
       },
       {
         "ask": 3.6,
@@ -3355,8 +2963,6 @@
         "markIv": 199.47,
         "markPrice": 2.64357,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00597,
         "strike": 11.3,
@@ -3364,9 +2970,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.355,
         "underlyingRate": null,
-        "vega": 0.01248,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01248
       },
       {
         "ask": 2.95,
@@ -3389,8 +2993,6 @@
         "markIv": 199.41,
         "markPrice": 2.5136,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.0031,
         "strike": 11.3,
@@ -3398,9 +3000,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.375,
         "underlyingRate": null,
-        "vega": 0.01251,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01251
       },
       {
         "ask": 3.2,
@@ -3423,8 +3023,6 @@
         "markIv": 210.12,
         "markPrice": 2.77721,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00633,
         "strike": 11,
@@ -3432,9 +3030,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.455,
         "underlyingRate": null,
-        "vega": 0.01357,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01357
       },
       {
         "ask": 3.2,
@@ -3457,8 +3053,6 @@
         "markIv": 211.86,
         "markPrice": 3.1445,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00399,
         "strike": 11,
@@ -3466,9 +3060,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.375,
         "underlyingRate": null,
-        "vega": 0.01358,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01358
       },
       {
         "ask": 3.5,
@@ -3491,8 +3083,6 @@
         "markIv": 203.31,
         "markPrice": 3.3017,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00962,
         "strike": 11,
@@ -3500,9 +3090,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.455,
         "underlyingRate": null,
-        "vega": 0.01645,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01645
       },
       {
         "ask": 3.9,
@@ -3525,8 +3113,6 @@
         "markIv": 202.11,
         "markPrice": 3.74184,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00601,
         "strike": 11,
@@ -3534,9 +3120,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.415,
         "underlyingRate": null,
-        "vega": 0.01644,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01644
       },
       {
         "ask": 4.4,
@@ -3559,8 +3143,6 @@
         "markIv": 203.55,
         "markPrice": 4.26814,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.01562,
         "strike": 11.3,
@@ -3568,9 +3150,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.355,
         "underlyingRate": null,
-        "vega": 0.0194,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0194
       },
       {
         "ask": 4.9,
@@ -3593,8 +3173,6 @@
         "markIv": 203.41,
         "markPrice": 4.2832,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.0075,
         "strike": 11.3,
@@ -3602,9 +3180,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.01941,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01941
       },
       {
         "ask": 5.9,
@@ -3627,8 +3203,6 @@
         "markIv": 202.52,
         "markPrice": 5.75011,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.03231,
         "strike": 11.3,
@@ -3636,9 +3210,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.355,
         "underlyingRate": null,
-        "vega": 0.02424,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02424
       },
       {
         "ask": 6.1,
@@ -3661,8 +3233,6 @@
         "markIv": 202.28,
         "markPrice": 5.83495,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.01178,
         "strike": 11.3,
@@ -3670,9 +3240,7 @@
         "timestamp": "2024-12-23T17:35:00.000Z",
         "underlyingPrice": 11.36,
         "underlyingRate": null,
-        "vega": 0.02412,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02412
       },
       {
         "ask": 0.85,
@@ -3695,8 +3263,6 @@
         "markIv": 159.28,
         "markPrice": 0.77982,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00072,
         "strike": 11.4,
@@ -3704,9 +3270,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.465,
         "underlyingRate": null,
-        "vega": 0.00495,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00495
       },
       {
         "ask": 0.85,
@@ -3729,8 +3293,6 @@
         "markIv": 159.67,
         "markPrice": 0.80109,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00056,
         "strike": 11.4,
@@ -3738,9 +3300,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.46,
         "underlyingRate": null,
-        "vega": 0.00494,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00494
       },
       {
         "ask": 1.35,
@@ -3763,8 +3323,6 @@
         "markIv": 165.94,
         "markPrice": 1.29741,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00187,
         "strike": 11.4,
@@ -3772,9 +3330,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.47,
         "underlyingRate": null,
-        "vega": 0.00764,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00764
       },
       {
         "ask": 1.65,
@@ -3797,8 +3353,6 @@
         "markIv": 166.21,
         "markPrice": 1.26088,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00123,
         "strike": 11.4,
@@ -3806,9 +3360,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.455,
         "underlyingRate": null,
-        "vega": 0.00764,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00764
       },
       {
         "ask": 2,
@@ -3831,8 +3383,6 @@
         "markIv": 182.4,
         "markPrice": 1.8568,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00325,
         "strike": 11.4,
@@ -3840,9 +3390,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.47,
         "underlyingRate": null,
-        "vega": 0.00976,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00976
       },
       {
         "ask": 1.9,
@@ -3865,8 +3413,6 @@
         "markIv": 182.62,
         "markPrice": 1.7802,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00194,
         "strike": 11.4,
@@ -3874,9 +3420,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.485,
         "underlyingRate": null,
-        "vega": 0.00977,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00977
       },
       {
         "ask": 2.3,
@@ -3899,8 +3443,6 @@
         "markIv": 188.27,
         "markPrice": 2.22449,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00467,
         "strike": 11.4,
@@ -3908,9 +3450,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.48,
         "underlyingRate": null,
-        "vega": 0.01144,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01144
       },
       {
         "ask": 2.25,
@@ -3933,8 +3473,6 @@
         "markIv": 188.25,
         "markPrice": 2.17776,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00267,
         "strike": 11.4,
@@ -3942,9 +3480,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.455,
         "underlyingRate": null,
-        "vega": 0.01146,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01146
       },
       {
         "ask": 3.5,
@@ -3967,8 +3503,6 @@
         "markIv": 199.68,
         "markPrice": 2.64555,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00603,
         "strike": 11.4,
@@ -3976,9 +3510,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.51,
         "underlyingRate": null,
-        "vega": 0.01258,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01258
       },
       {
         "ask": 3,
@@ -4001,8 +3533,6 @@
         "markIv": 199.49,
         "markPrice": 2.5505,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00314,
         "strike": 11.4,
@@ -4010,9 +3540,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.495,
         "underlyingRate": null,
-        "vega": 0.01261,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01261
       },
       {
         "ask": 2.95,
@@ -4035,8 +3563,6 @@
         "markIv": 210.99,
         "markPrice": 2.76749,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00618,
         "strike": 11,
@@ -4044,9 +3570,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.485,
         "underlyingRate": null,
-        "vega": 0.0136,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0136
       },
       {
         "ask": 4.2,
@@ -4069,8 +3593,6 @@
         "markIv": 213.88,
         "markPrice": 3.2414,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.0041,
         "strike": 11,
@@ -4078,9 +3600,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.455,
         "underlyingRate": null,
-        "vega": 0.0136,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0136
       },
       {
         "ask": 3.5,
@@ -4103,8 +3623,6 @@
         "markIv": 203.5,
         "markPrice": 3.30296,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.0097,
         "strike": 11,
@@ -4112,9 +3630,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.455,
         "underlyingRate": null,
-        "vega": 0.0164,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0164
       },
       {
         "ask": 4.3,
@@ -4137,8 +3653,6 @@
         "markIv": 202.5,
         "markPrice": 3.7868,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00584,
         "strike": 11,
@@ -4146,9 +3660,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.47,
         "underlyingRate": null,
-        "vega": 0.0164,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0164
       },
       {
         "ask": 4.4,
@@ -4171,8 +3683,6 @@
         "markIv": 203.23,
         "markPrice": 4.2848,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.01589,
         "strike": 11.4,
@@ -4180,9 +3690,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.515,
         "underlyingRate": null,
-        "vega": 0.01945,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01945
       },
       {
         "ask": 4.5,
@@ -4205,8 +3713,6 @@
         "markIv": 202.71,
         "markPrice": 4.3102,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00743,
         "strike": 11.4,
@@ -4214,9 +3720,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.475,
         "underlyingRate": null,
-        "vega": 0.01946,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01946
       },
       {
         "ask": 6,
@@ -4239,8 +3743,6 @@
         "markIv": 202.21,
         "markPrice": 5.78951,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.03262,
         "strike": 11.4,
@@ -4248,9 +3750,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.51,
         "underlyingRate": null,
-        "vega": 0.02434,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02434
       },
       {
         "ask": 6.2,
@@ -4273,8 +3773,6 @@
         "markIv": 202.63,
         "markPrice": 5.86984,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.01183,
         "strike": 11.4,
@@ -4282,9 +3780,7 @@
         "timestamp": "2024-12-23T17:30:00.000Z",
         "underlyingPrice": 11.46,
         "underlyingRate": null,
-        "vega": 0.02433,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02433
       },
       {
         "ask": 0.9,
@@ -4307,8 +3803,6 @@
         "markIv": 159.95,
         "markPrice": 0.83482,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00076,
         "strike": 11.5,
@@ -4316,9 +3810,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.475,
         "underlyingRate": null,
-        "vega": 0.00497,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00497
       },
       {
         "ask": 0.8,
@@ -4341,8 +3833,6 @@
         "markIv": 160.79,
         "markPrice": 0.74495,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00055,
         "strike": 11.5,
@@ -4350,9 +3840,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.43,
         "underlyingRate": null,
-        "vega": 0.00496,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00496
       },
       {
         "ask": 1.4,
@@ -4375,8 +3863,6 @@
         "markIv": 174.23,
         "markPrice": 1.4294,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00193,
         "strike": 11.5,
@@ -4384,9 +3870,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.45,
         "underlyingRate": null,
-        "vega": 0.00767,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00767
       },
       {
         "ask": 1.35,
@@ -4409,8 +3893,6 @@
         "markIv": 174.42,
         "markPrice": 1.2655,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00122,
         "strike": 11.5,
@@ -4418,9 +3900,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.43,
         "underlyingRate": null,
-        "vega": 0.00767,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00767
       },
       {
         "ask": 2.1,
@@ -4443,8 +3923,6 @@
         "markIv": 180.91,
         "markPrice": 1.90586,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00332,
         "strike": 11.5,
@@ -4452,9 +3930,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.45,
         "underlyingRate": null,
-        "vega": 0.00981,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00981
       },
       {
         "ask": 1.85,
@@ -4477,8 +3953,6 @@
         "markIv": 180.89,
         "markPrice": 1.70711,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00194,
         "strike": 11.5,
@@ -4486,9 +3960,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.45,
         "underlyingRate": null,
-        "vega": 0.00982,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00982
       },
       {
         "ask": 2.35,
@@ -4511,8 +3983,6 @@
         "markIv": 188.09,
         "markPrice": 2.29717,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00477,
         "strike": 11.5,
@@ -4520,9 +3990,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.46,
         "underlyingRate": null,
-        "vega": 0.01148,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01148
       },
       {
         "ask": 2.2,
@@ -4545,8 +4013,6 @@
         "markIv": 188.44,
         "markPrice": 2.13103,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00264,
         "strike": 11.5,
@@ -4554,9 +4020,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.45,
         "underlyingRate": null,
-        "vega": 0.0115,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0115
       },
       {
         "ask": 3.3,
@@ -4579,8 +4043,6 @@
         "markIv": 207.83,
         "markPrice": 2.7956,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00609,
         "strike": 11.5,
@@ -4588,9 +4050,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.515,
         "underlyingRate": null,
-        "vega": 0.01266,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01266
       },
       {
         "ask": 3.7,
@@ -4613,8 +4073,6 @@
         "markIv": 202.61,
         "markPrice": 2.5403,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00318,
         "strike": 11.5,
@@ -4622,9 +4080,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.445,
         "underlyingRate": null,
-        "vega": 0.01269,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01269
       },
       {
         "ask": 4.3,
@@ -4647,8 +4103,6 @@
         "markIv": 211.4,
         "markPrice": 3.05961,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00652,
         "strike": 11.5,
@@ -4656,9 +4110,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.515,
         "underlyingRate": null,
-        "vega": 0.01399,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01399
       },
       {
         "ask": 3.2,
@@ -4681,8 +4133,6 @@
         "markIv": 210.61,
         "markPrice": 3.0293,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00444,
         "strike": 11.5,
@@ -4690,9 +4140,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.445,
         "underlyingRate": null,
-        "vega": 0.01398,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01398
       },
       {
         "ask": 3.5,
@@ -4715,8 +4163,6 @@
         "markIv": 204.15,
         "markPrice": 3.3281,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00975,
         "strike": 11,
@@ -4724,9 +4170,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.43,
         "underlyingRate": null,
-        "vega": 0.0164,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0164
       },
       {
         "ask": 4,
@@ -4749,8 +4193,6 @@
         "markIv": 202.34,
         "markPrice": 3.7625,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00577,
         "strike": 11,
@@ -4758,9 +4200,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.445,
         "underlyingRate": null,
-        "vega": 0.0164,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0164
       },
       {
         "ask": 4.5,
@@ -4783,8 +4223,6 @@
         "markIv": 203.38,
         "markPrice": 4.381,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.01625,
         "strike": 11.5,
@@ -4792,9 +4230,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.46,
         "underlyingRate": null,
-        "vega": 0.01951,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01951
       },
       {
         "ask": 4.8,
@@ -4817,8 +4253,6 @@
         "markIv": 203.31,
         "markPrice": 4.2635,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00736,
         "strike": 11.5,
@@ -4826,9 +4260,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.46,
         "underlyingRate": null,
-        "vega": 0.01954,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01954
       },
       {
         "ask": 6.1,
@@ -4851,8 +4283,6 @@
         "markIv": 202.98,
         "markPrice": 5.89603,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.03308,
         "strike": 11.5,
@@ -4860,9 +4290,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.44,
         "underlyingRate": null,
-        "vega": 0.02443,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02443
       },
       {
         "ask": 6.6,
@@ -4885,8 +4313,6 @@
         "markIv": 202.72,
         "markPrice": 5.8455,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.01173,
         "strike": 11.5,
@@ -4894,9 +4320,7 @@
         "timestamp": "2024-12-23T17:25:00.000Z",
         "underlyingPrice": 11.46,
         "underlyingRate": null,
-        "vega": 0.02445,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02445
       },
       {
         "ask": 0.85,
@@ -4919,8 +4343,6 @@
         "markIv": 164.59,
         "markPrice": 0.8214,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00077,
         "strike": 11.4,
@@ -4928,9 +4350,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.44,
         "underlyingRate": null,
-        "vega": 0.00492,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00492
       },
       {
         "ask": 0.85,
@@ -4953,8 +4373,6 @@
         "markIv": 164.93,
         "markPrice": 0.809,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00054,
         "strike": 11.4,
@@ -4962,9 +4380,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.425,
         "underlyingRate": null,
-        "vega": 0.00492,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00492
       },
       {
         "ask": 1.35,
@@ -4987,8 +4403,6 @@
         "markIv": 169.25,
         "markPrice": 1.32402,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00187,
         "strike": 11.4,
@@ -4996,9 +4410,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.475,
         "underlyingRate": null,
-        "vega": 0.00764,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00764
       },
       {
         "ask": 1.35,
@@ -5021,8 +4433,6 @@
         "markIv": 171.62,
         "markPrice": 1.29033,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.0012,
         "strike": 11.4,
@@ -5030,9 +4440,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.435,
         "underlyingRate": null,
-        "vega": 0.00759,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00759
       },
       {
         "ask": 1.9,
@@ -5055,8 +4463,6 @@
         "markIv": 180.19,
         "markPrice": 1.8338,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00331,
         "strike": 11.4,
@@ -5064,9 +4470,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.445,
         "underlyingRate": null,
-        "vega": 0.00971,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00971
       },
       {
         "ask": 1.85,
@@ -5089,8 +4493,6 @@
         "markIv": 180.46,
         "markPrice": 1.7414,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00193,
         "strike": 11.4,
@@ -5098,9 +4500,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.425,
         "underlyingRate": null,
-        "vega": 0.00972,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00972
       },
       {
         "ask": 2.3,
@@ -5123,8 +4523,6 @@
         "markIv": 186.81,
         "markPrice": 2.22469,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00468,
         "strike": 11.4,
@@ -5132,9 +4530,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.475,
         "underlyingRate": null,
-        "vega": 0.01144,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01144
       },
       {
         "ask": 2.25,
@@ -5157,8 +4553,6 @@
         "markIv": 186.81,
         "markPrice": 2.15647,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00265,
         "strike": 11.4,
@@ -5166,9 +4560,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.475,
         "underlyingRate": null,
-        "vega": 0.01146,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01146
       },
       {
         "ask": 4.5,
@@ -5191,8 +4583,6 @@
         "markIv": 202.25,
         "markPrice": 2.68902,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00598,
         "strike": 11.4,
@@ -5200,9 +4590,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.415,
         "underlyingRate": null,
-        "vega": 0.01257,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01257
       },
       {
         "ask": 3.5,
@@ -5225,8 +4613,6 @@
         "markIv": 202.25,
         "markPrice": 2.5738,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00319,
         "strike": 11.4,
@@ -5234,9 +4620,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.415,
         "underlyingRate": null,
-        "vega": 0.01259,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01259
       },
       {
         "ask": 3.3,
@@ -5259,8 +4643,6 @@
         "markIv": 209.54,
         "markPrice": 2.73742,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00601,
         "strike": 11,
@@ -5268,9 +4650,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.435,
         "underlyingRate": null,
-        "vega": 0.01359,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01359
       },
       {
         "ask": 3.4,
@@ -5293,8 +4673,6 @@
         "markIv": 207.53,
         "markPrice": 3.1982,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00452,
         "strike": 11,
@@ -5302,9 +4680,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.435,
         "underlyingRate": null,
-        "vega": 0.01364,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01364
       },
       {
         "ask": 3.5,
@@ -5327,8 +4703,6 @@
         "markIv": 203.38,
         "markPrice": 3.3213,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00989,
         "strike": 11,
@@ -5336,9 +4710,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.435,
         "underlyingRate": null,
-        "vega": 0.01627,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01627
       },
       {
         "ask": 3.9,
@@ -5361,8 +4733,6 @@
         "markIv": 203.91,
         "markPrice": 3.7595,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.0056,
         "strike": 11,
@@ -5370,9 +4740,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.435,
         "underlyingRate": null,
-        "vega": 0.01628,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01628
       },
       {
         "ask": 4.5,
@@ -5395,8 +4763,6 @@
         "markIv": 202.78,
         "markPrice": 4.30868,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.01606,
         "strike": 11.4,
@@ -5404,9 +4770,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.475,
         "underlyingRate": null,
-        "vega": 0.01943,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01943
       },
       {
         "ask": 4.4,
@@ -5429,8 +4793,6 @@
         "markIv": 202.58,
         "markPrice": 4.2669,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00736,
         "strike": 11.4,
@@ -5438,9 +4800,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.475,
         "underlyingRate": null,
-        "vega": 0.01946,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01946
       },
       {
         "ask": 6,
@@ -5463,8 +4823,6 @@
         "markIv": 202.29,
         "markPrice": 5.80902,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.03276,
         "strike": 11.4,
@@ -5472,9 +4830,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.475,
         "underlyingRate": null,
-        "vega": 0.02433,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02433
       },
       {
         "ask": 6.2,
@@ -5497,8 +4853,6 @@
         "markIv": 201.93,
         "markPrice": 5.7941,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.01162,
         "strike": 11.4,
@@ -5506,9 +4860,7 @@
         "timestamp": "2024-12-23T17:20:00.000Z",
         "underlyingPrice": 11.415,
         "underlyingRate": null,
-        "vega": 0.02422,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02422
       },
       {
         "ask": 0.85,
@@ -5531,8 +4883,6 @@
         "markIv": 164.7,
         "markPrice": 0.82112,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00074,
         "strike": 11.3,
@@ -5540,9 +4890,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.00491,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00491
       },
       {
         "ask": 0.85,
@@ -5565,8 +4913,6 @@
         "markIv": 164.7,
         "markPrice": 0.80296,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00055,
         "strike": 11.3,
@@ -5574,9 +4920,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.00491,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00491
       },
       {
         "ask": 1.4,
@@ -5599,8 +4943,6 @@
         "markIv": 173.41,
         "markPrice": 1.36392,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00188,
         "strike": 11.3,
@@ -5608,9 +4950,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.00757,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00757
       },
       {
         "ask": 1.35,
@@ -5633,8 +4973,6 @@
         "markIv": 175.3,
         "markPrice": 1.3035,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00122,
         "strike": 11.3,
@@ -5642,9 +4980,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.32,
         "underlyingRate": null,
-        "vega": 0.00757,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00757
       },
       {
         "ask": 1.9,
@@ -5667,8 +5003,6 @@
         "markIv": 183.6,
         "markPrice": 1.84887,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00323,
         "strike": 11.3,
@@ -5676,9 +5010,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.00968,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00968
       },
       {
         "ask": 1.85,
@@ -5701,8 +5033,6 @@
         "markIv": 183.6,
         "markPrice": 1.76752,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00197,
         "strike": 11.3,
@@ -5710,9 +5040,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.00969,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00969
       },
       {
         "ask": 2.3,
@@ -5735,8 +5063,6 @@
         "markIv": 187.81,
         "markPrice": 2.2319,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00467,
         "strike": 11.3,
@@ -5744,9 +5070,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.32,
         "underlyingRate": null,
-        "vega": 0.01131,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01131
       },
       {
         "ask": 2.2,
@@ -5769,8 +5093,6 @@
         "markIv": 187.71,
         "markPrice": 2.12934,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00261,
         "strike": 11.3,
@@ -5778,9 +5100,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.01133,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01133
       },
       {
         "ask": 4.9,
@@ -5803,8 +5123,6 @@
         "markIv": 198.39,
         "markPrice": 2.5997,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00579,
         "strike": 11.3,
@@ -5812,9 +5130,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.01251,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01251
       },
       {
         "ask": 5,
@@ -5837,8 +5153,6 @@
         "markIv": 198.39,
         "markPrice": 2.5273,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00323,
         "strike": 11.3,
@@ -5846,9 +5160,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.01253,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01253
       },
       {
         "ask": 2.8,
@@ -5871,8 +5183,6 @@
         "markIv": 213.43,
         "markPrice": 2.8138,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00588,
         "strike": 11,
@@ -5880,9 +5190,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.32,
         "underlyingRate": null,
-        "vega": 0.0137,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0137
       },
       {
         "ask": 3.5,
@@ -5905,8 +5213,6 @@
         "markIv": 206.61,
         "markPrice": 3.1498,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.0045,
         "strike": 11,
@@ -5914,9 +5220,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.01362,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01362
       },
       {
         "ask": 3.5,
@@ -5939,8 +5243,6 @@
         "markIv": 203.96,
         "markPrice": 3.36968,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00982,
         "strike": 11,
@@ -5948,9 +5250,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.01624,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01624
       },
       {
         "ask": 4.6,
@@ -5973,8 +5273,6 @@
         "markIv": 203.96,
         "markPrice": 3.6818,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00568,
         "strike": 11,
@@ -5982,9 +5280,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.01624,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01624
       },
       {
         "ask": 4.6,
@@ -6007,8 +5303,6 @@
         "markIv": 202.39,
         "markPrice": 4.2615,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.0159,
         "strike": 11.3,
@@ -6016,9 +5310,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.01922,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01922
       },
       {
         "ask": 4.7,
@@ -6041,8 +5333,6 @@
         "markIv": 202.54,
         "markPrice": 4.2237,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00728,
         "strike": 11.3,
@@ -6050,9 +5340,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.32,
         "underlyingRate": null,
-        "vega": 0.01924,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01924
       },
       {
         "ask": 5.9,
@@ -6075,8 +5363,6 @@
         "markIv": 201.31,
         "markPrice": 5.74092,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.03249,
         "strike": 11.3,
@@ -6084,9 +5370,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.02403,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02403
       },
       {
         "ask": 6,
@@ -6109,8 +5393,6 @@
         "markIv": 201.36,
         "markPrice": 5.7476,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.01155,
         "strike": 11.3,
@@ -6118,9 +5400,7 @@
         "timestamp": "2024-12-23T17:15:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.02404,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02404
       },
       {
         "ask": 0.85,
@@ -6143,8 +5423,6 @@
         "markIv": 163.22,
         "markPrice": 0.8129,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00073,
         "strike": 11.3,
@@ -6152,9 +5430,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.33,
         "underlyingRate": null,
-        "vega": 0.00493,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00493
       },
       {
         "ask": 0.85,
@@ -6177,8 +5453,6 @@
         "markIv": 163.51,
         "markPrice": 0.8055,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00056,
         "strike": 11.3,
@@ -6186,9 +5460,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.34,
         "underlyingRate": null,
-        "vega": 0.00493,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00493
       },
       {
         "ask": 2,
@@ -6211,8 +5483,6 @@
         "markIv": 172.58,
         "markPrice": 1.3581,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00185,
         "strike": 11.3,
@@ -6220,9 +5490,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.00759,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00759
       },
       {
         "ask": 2.15,
@@ -6245,8 +5513,6 @@
         "markIv": 172.74,
         "markPrice": 1.2892,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00124,
         "strike": 11.3,
@@ -6254,9 +5520,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.33,
         "underlyingRate": null,
-        "vega": 0.00759,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00759
       },
       {
         "ask": 1.85,
@@ -6279,8 +5543,6 @@
         "markIv": 183.24,
         "markPrice": 1.798,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.0032,
         "strike": 11.3,
@@ -6288,9 +5550,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.43,
         "underlyingRate": null,
-        "vega": 0.00972,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00972
       },
       {
         "ask": 1.85,
@@ -6313,8 +5573,6 @@
         "markIv": 182.62,
         "markPrice": 1.76582,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.002,
         "strike": 11.3,
@@ -6322,9 +5580,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.33,
         "underlyingRate": null,
-        "vega": 0.00972,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00972
       },
       {
         "ask": 2.25,
@@ -6347,8 +5603,6 @@
         "markIv": 188.13,
         "markPrice": 2.23719,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00463,
         "strike": 11.3,
@@ -6356,9 +5610,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.33,
         "underlyingRate": null,
-        "vega": 0.01136,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01136
       },
       {
         "ask": 2.25,
@@ -6381,8 +5633,6 @@
         "markIv": 187.78,
         "markPrice": 2.1573,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00261,
         "strike": 11.3,
@@ -6390,9 +5640,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.38,
         "underlyingRate": null,
-        "vega": 0.01133,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01133
       },
       {
         "ask": 3.3,
@@ -6415,8 +5663,6 @@
         "markIv": 197.16,
         "markPrice": 2.55728,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00579,
         "strike": 11.3,
@@ -6424,9 +5670,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.38,
         "underlyingRate": null,
-        "vega": 0.01251,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01251
       },
       {
         "ask": 2.85,
@@ -6449,8 +5693,6 @@
         "markIv": 200.33,
         "markPrice": 2.6297,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00323,
         "strike": 11.3,
@@ -6458,9 +5700,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.435,
         "underlyingRate": null,
-        "vega": 0.01257,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01257
       },
       {
         "ask": 3.7,
@@ -6483,8 +5723,6 @@
         "markIv": 215.06,
         "markPrice": 2.8129,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00602,
         "strike": 11,
@@ -6492,9 +5730,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.385,
         "underlyingRate": null,
-        "vega": 0.01365,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01365
       },
       {
         "ask": 3.8,
@@ -6517,8 +5753,6 @@
         "markIv": 207.43,
         "markPrice": 3.17318,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.0045,
         "strike": 11,
@@ -6526,9 +5760,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.33,
         "underlyingRate": null,
-        "vega": 0.01362,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01362
       },
       {
         "ask": 3.5,
@@ -6551,8 +5783,6 @@
         "markIv": 209.49,
         "markPrice": 3.4198,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00963,
         "strike": 11,
@@ -6560,9 +5790,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.42,
         "underlyingRate": null,
-        "vega": 0.01642,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01642
       },
       {
         "ask": 4.3,
@@ -6585,8 +5813,6 @@
         "markIv": 207.62,
         "markPrice": 3.76181,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00617,
         "strike": 11,
@@ -6594,9 +5820,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.01641,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01641
       },
       {
         "ask": 4.8,
@@ -6619,8 +5843,6 @@
         "markIv": 203.14,
         "markPrice": 4.28546,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.01577,
         "strike": 11.3,
@@ -6628,9 +5850,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.33,
         "underlyingRate": null,
-        "vega": 0.01931,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01931
       },
       {
         "ask": 4.5,
@@ -6653,8 +5873,6 @@
         "markIv": 203.07,
         "markPrice": 4.2158,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00739,
         "strike": 11.3,
@@ -6662,9 +5880,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.325,
         "underlyingRate": null,
-        "vega": 0.01932,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01932
       },
       {
         "ask": 5.9,
@@ -6687,8 +5903,6 @@
         "markIv": 201.36,
         "markPrice": 5.72719,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.03249,
         "strike": 11.3,
@@ -6696,9 +5910,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.38,
         "underlyingRate": null,
-        "vega": 0.02403,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02403
       },
       {
         "ask": 6.1,
@@ -6721,8 +5933,6 @@
         "markIv": 201.36,
         "markPrice": 5.79458,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.01155,
         "strike": 11.3,
@@ -6730,9 +5940,7 @@
         "timestamp": "2024-12-23T17:10:00.000Z",
         "underlyingPrice": 11.38,
         "underlyingRate": null,
-        "vega": 0.02404,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02404
       },
       {
         "ask": 0.85,
@@ -6755,8 +5963,6 @@
         "markIv": 163.32,
         "markPrice": 0.79767,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00066,
         "strike": 11.3,
@@ -6764,9 +5970,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.00495,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00495
       },
       {
         "ask": 0.9,
@@ -6789,8 +5993,6 @@
         "markIv": 163.32,
         "markPrice": 0.81993,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00061,
         "strike": 11.3,
@@ -6798,9 +6000,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.00494,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00494
       },
       {
         "ask": 1.35,
@@ -6823,8 +6023,6 @@
         "markIv": 168.62,
         "markPrice": 1.3074,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00176,
         "strike": 11.3,
@@ -6832,9 +6030,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.00766,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00766
       },
       {
         "ask": 1.4,
@@ -6857,8 +6053,6 @@
         "markIv": 168.65,
         "markPrice": 1.28143,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00131,
         "strike": 11.3,
@@ -6866,9 +6060,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.00766,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00766
       },
       {
         "ask": 2.2,
@@ -6891,8 +6083,6 @@
         "markIv": 179.23,
         "markPrice": 1.7827,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00309,
         "strike": 11.3,
@@ -6900,9 +6090,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.00981,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00981
       },
       {
         "ask": 1.85,
@@ -6925,8 +6113,6 @@
         "markIv": 179.26,
         "markPrice": 1.75826,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00209,
         "strike": 11.3,
@@ -6934,9 +6120,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.00981,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00981
       },
       {
         "ask": 2.25,
@@ -6959,8 +6143,6 @@
         "markIv": 187.19,
         "markPrice": 2.20392,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00451,
         "strike": 11.3,
@@ -6968,9 +6150,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.01147,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01147
       },
       {
         "ask": 2.25,
@@ -6993,8 +6173,6 @@
         "markIv": 187.19,
         "markPrice": 2.15098,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00275,
         "strike": 11.3,
@@ -7002,9 +6180,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.01148,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01148
       },
       {
         "ask": 3.3,
@@ -7027,8 +6203,6 @@
         "markIv": 198.9,
         "markPrice": 2.59589,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00579,
         "strike": 11.3,
@@ -7036,9 +6210,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.01266,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01266
       },
       {
         "ask": 2.75,
@@ -7061,8 +6233,6 @@
         "markIv": 198.9,
         "markPrice": 2.55394,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00329,
         "strike": 11.3,
@@ -7070,9 +6240,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.01268,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01268
       },
       {
         "ask": 3.4,
@@ -7095,8 +6263,6 @@
         "markIv": 201.8,
         "markPrice": 2.65394,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.0061,
         "strike": 11,
@@ -7104,9 +6270,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.01366,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01366
       },
       {
         "ask": 3.2,
@@ -7129,8 +6293,6 @@
         "markIv": 201.43,
         "markPrice": 3.07545,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00433,
         "strike": 11,
@@ -7138,9 +6300,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.36,
         "underlyingRate": null,
-        "vega": 0.01366,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01366
       },
       {
         "ask": 3.5,
@@ -7163,8 +6323,6 @@
         "markIv": 200.89,
         "markPrice": 3.2853,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00954,
         "strike": 11,
@@ -7172,9 +6330,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.01656,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01656
       },
       {
         "ask": 3.9,
@@ -7197,8 +6353,6 @@
         "markIv": 200.89,
         "markPrice": 3.70227,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.0062,
         "strike": 11,
@@ -7206,9 +6360,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.01655,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01655
       },
       {
         "ask": 4.4,
@@ -7231,8 +6383,6 @@
         "markIv": 202.56,
         "markPrice": 4.25643,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.01578,
         "strike": 11.3,
@@ -7240,9 +6390,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.01948,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01948
       },
       {
         "ask": 4.8,
@@ -7265,8 +6413,6 @@
         "markIv": 202.56,
         "markPrice": 4.25004,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00747,
         "strike": 11.3,
@@ -7274,9 +6420,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.0195,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0195
       },
       {
         "ask": 5.9,
@@ -7299,8 +6443,6 @@
         "markIv": 201.28,
         "markPrice": 5.71323,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.03228,
         "strike": 11.3,
@@ -7308,9 +6450,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.02439,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02439
       },
       {
         "ask": 6.1,
@@ -7333,8 +6473,6 @@
         "markIv": 201.28,
         "markPrice": 5.8266,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.01192,
         "strike": 11.3,
@@ -7342,9 +6480,7 @@
         "timestamp": "2024-12-23T17:05:00.000Z",
         "underlyingPrice": 11.365,
         "underlyingRate": null,
-        "vega": 0.02438,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.02438
       },
       {
         "ask": 0.9,
@@ -7367,8 +6503,6 @@
         "markIv": 159.38,
         "markPrice": 0.85004,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00078,
         "strike": 11.6,
@@ -7376,9 +6510,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.56,
         "underlyingRate": null,
-        "vega": 0.00504,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00504
       },
       {
         "ask": 0.85,
@@ -7401,8 +6533,6 @@
         "markIv": 158.31,
         "markPrice": 0.7659,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00055,
         "strike": 11.6,
@@ -7410,9 +6540,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.57,
         "underlyingRate": null,
-        "vega": 0.00504,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00504
       },
       {
         "ask": 2,
@@ -7435,8 +6563,6 @@
         "markIv": 170.69,
         "markPrice": 1.407,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00195,
         "strike": 11.6,
@@ -7444,9 +6570,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.555,
         "underlyingRate": null,
-        "vega": 0.00776,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00776
       },
       {
         "ask": 2.3,
@@ -7469,8 +6593,6 @@
         "markIv": 170.2,
         "markPrice": 1.26962,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00125,
         "strike": 11.6,
@@ -7478,9 +6600,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.555,
         "underlyingRate": null,
-        "vega": 0.00776,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00776
       },
       {
         "ask": 1.95,
@@ -7503,8 +6623,6 @@
         "markIv": 182.26,
         "markPrice": 1.90074,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00335,
         "strike": 11.6,
@@ -7512,9 +6630,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.57,
         "underlyingRate": null,
-        "vega": 0.00993,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00993
       },
       {
         "ask": 2.4,
@@ -7537,8 +6653,6 @@
         "markIv": 180.98,
         "markPrice": 1.7612,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00203,
         "strike": 11.6,
@@ -7546,9 +6660,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.555,
         "underlyingRate": null,
-        "vega": 0.00993,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.00993
       },
       {
         "ask": 2.35,
@@ -7571,8 +6683,6 @@
         "markIv": 187.35,
         "markPrice": 2.3116,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.0048,
         "strike": 11.6,
@@ -7580,9 +6690,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.55,
         "underlyingRate": null,
-        "vega": 0.01161,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01161
       },
       {
         "ask": 2.25,
@@ -7605,8 +6713,6 @@
         "markIv": 186.65,
         "markPrice": 2.1464,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00271,
         "strike": 11.6,
@@ -7614,9 +6720,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.57,
         "underlyingRate": null,
-        "vega": 0.01163,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01163
       },
       {
         "ask": 3.6,
@@ -7639,8 +6743,6 @@
         "markIv": 198.47,
         "markPrice": 2.70241,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00611,
         "strike": 11.6,
@@ -7648,9 +6750,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.575,
         "underlyingRate": null,
-        "vega": 0.01283,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01283
       },
       {
         "ask": 5,
@@ -7673,8 +6773,6 @@
         "markIv": 196.81,
         "markPrice": 2.5152,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00325,
         "strike": 11.6,
@@ -7682,9 +6780,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.555,
         "underlyingRate": null,
-        "vega": 0.01286,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01286
       },
       {
         "ask": 5.2,
@@ -7707,8 +6803,6 @@
         "markIv": 208.33,
         "markPrice": 2.998,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00666,
         "strike": 11.5,
@@ -7716,9 +6810,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.555,
         "underlyingRate": null,
-        "vega": 0.01402,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01402
       },
       {
         "ask": 3.1,
@@ -7741,8 +6833,6 @@
         "markIv": 207.32,
         "markPrice": 3.06435,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00408,
         "strike": 11.5,
@@ -7750,9 +6840,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.555,
         "underlyingRate": null,
-        "vega": 0.01402,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01402
       },
       {
         "ask": 3.4,
@@ -7775,8 +6863,6 @@
         "markIv": 200.21,
         "markPrice": 3.1857,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.00954,
         "strike": 11,
@@ -7784,9 +6870,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.66,
         "underlyingRate": null,
-        "vega": 0.01656,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01656
       },
       {
         "ask": 4,
@@ -7809,8 +6893,6 @@
         "markIv": 200.16,
         "markPrice": 3.8097,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00607,
         "strike": 11,
@@ -7818,9 +6900,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.555,
         "underlyingRate": null,
-        "vega": 0.01651,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01651
       },
       {
         "ask": 4.6,
@@ -7843,8 +6923,6 @@
         "markIv": 201.74,
         "markPrice": 4.39753,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.01642,
         "strike": 11.6,
@@ -7852,9 +6930,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.555,
         "underlyingRate": null,
-        "vega": 0.01968,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.01968
       },
       {
         "ask": 4.5,
@@ -7877,8 +6953,6 @@
         "markIv": 201.58,
         "markPrice": 4.2423,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.00742,
         "strike": 11.6,
@@ -7886,9 +6960,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.55,
         "underlyingRate": null,
-        "vega": 0.0197,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0197
       },
       {
         "ask": 6.1,
@@ -7911,8 +6983,6 @@
         "markIv": 201.58,
         "markPrice": 5.9093,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "P",
         "rho": -0.03327,
         "strike": 11.6,
@@ -7920,9 +6990,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.565,
         "underlyingRate": null,
-        "vega": 0.0247,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0247
       },
       {
         "ask": 6.2,
@@ -7945,8 +7013,6 @@
         "markIv": 200.38,
         "markPrice": 5.85776,
         "multiplier": 100,
-        "openInterest": null,
-        "openInterestUSD": null,
         "putCall": "C",
         "rho": 0.01194,
         "strike": 11.6,
@@ -7954,9 +7020,7 @@
         "timestamp": "2024-12-23T17:00:00.000Z",
         "underlyingPrice": 11.585,
         "underlyingRate": null,
-        "vega": 0.0247,
-        "volume": null,
-        "volumeUSD": null
+        "vega": 0.0247
       }
     ],
     "metadata": {

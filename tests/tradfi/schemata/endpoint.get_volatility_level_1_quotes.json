@@ -30,8 +30,6 @@
               "markIv"                   : { "type": "number"  },
               "markPrice"                : { "type": ["null",    "number"] },
               "multiplier"               : { "type": "integer" },
-              "openInterest"             : { "type": ["null",    "number"] },
-              "openInterestUSD"          : { "type": ["null",    "number"] },
               "putCall"                  : { "type": "string"  },
               "rho"                      : { "type": ["null",    "number"] },
               "strike"                   : { "type": "number"  },
@@ -39,11 +37,9 @@
               "timestamp"                : { "type": ["integer", "string"] },
               "underlyingPrice"          : { "type": "number"  },
               "underlyingRate"           : { "type": ["null",    "number"] },
-              "vega"                     : { "type": ["null",    "number"] },
-              "volume"                   : { "type": ["null",    "number"] },
-              "volumeUSD"                : { "type": ["null",    "number"] }
+              "vega"                     : { "type": ["null",    "number"] }
             },
-            "required": ["ask", "askIv", "askVolume", "bid", "bidIv", "bidVolume", "currency", "delta", "exchange", "exchangeTimestamp", "expirationTimestamp", "gamma", "instrument", "instrumentNormalized", "isAtm", "isCarryForward", "isExchangeProvidedGreeks", "markIv", "markPrice", "multiplier", "openInterest", "openInterestUSD", "putCall", "rho", "strike", "theta", "timestamp", "underlyingPrice", "underlyingRate", "volume", "volumeUSD"],
+            "required": ["ask", "askIv", "askVolume", "bid", "bidIv", "bidVolume", "currency", "delta", "exchange", "exchangeTimestamp", "expirationTimestamp", "gamma", "instrument", "instrumentNormalized", "isAtm", "isCarryForward", "isExchangeProvidedGreeks", "markIv", "markPrice", "multiplier", "putCall", "rho", "strike", "theta", "timestamp", "underlyingPrice", "underlyingRate"],
             "additionalProperties": false
           }
         },
