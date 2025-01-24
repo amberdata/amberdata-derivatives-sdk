@@ -28,7 +28,6 @@
         "expirationTimestamp": "2024-12-13 00:00:00 000",
         "indexPrice": 399.66062286069655,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.05341
       },
@@ -58,7 +57,6 @@
         "expirationTimestamp": "2024-12-20 00:00:00 000",
         "indexPrice": 399.6939803658537,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.05328000000000001
       },
@@ -88,7 +86,6 @@
         "expirationTimestamp": "2024-12-27 00:00:00 000",
         "indexPrice": 399.65301896774196,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.05309
       },
@@ -118,7 +115,6 @@
         "expirationTimestamp": "2025-01-03 00:00:00 000",
         "indexPrice": 399.65376067741937,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.05288
       },
@@ -148,7 +144,6 @@
         "expirationTimestamp": "2025-01-10 00:00:00 000",
         "indexPrice": 399.65488216,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.05263
       },
@@ -178,7 +173,6 @@
         "expirationTimestamp": "2025-01-17 00:00:00 000",
         "indexPrice": 399.69942499999996,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.05238
       },
@@ -208,7 +202,6 @@
         "expirationTimestamp": "2025-01-24 00:00:00 000",
         "indexPrice": 399.46975760000004,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.05212
       },
@@ -238,7 +231,6 @@
         "expirationTimestamp": "2025-02-21 00:00:00 000",
         "indexPrice": 399.6420455492424,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.05123
       },
@@ -268,7 +260,6 @@
         "expirationTimestamp": "2025-03-21 00:00:00 000",
         "indexPrice": 399.5668697154471,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.05034
       },
@@ -298,7 +289,6 @@
         "expirationTimestamp": "2025-04-17 00:00:00 000",
         "indexPrice": 399.62234830434784,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.04946
       },
@@ -328,7 +318,6 @@
         "expirationTimestamp": "2025-06-20 00:00:00 000",
         "indexPrice": 399.67083532520326,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.04786
       },
@@ -358,7 +347,6 @@
         "expirationTimestamp": "2025-07-18 00:00:00 000",
         "indexPrice": 399.5311308947368,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.04743
       },
@@ -388,7 +376,6 @@
         "expirationTimestamp": "2025-09-19 00:00:00 000",
         "indexPrice": 399.60378308943086,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.04673
       },
@@ -418,7 +405,6 @@
         "expirationTimestamp": "2025-12-19 00:00:00 000",
         "indexPrice": 399.6011227797203,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.04599
       },
@@ -448,7 +434,6 @@
         "expirationTimestamp": "2026-01-16 00:00:00 000",
         "indexPrice": 399.59679845360824,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.04578
       },
@@ -478,7 +463,6 @@
         "expirationTimestamp": "2026-06-18 00:00:00 000",
         "indexPrice": 399.60395820921985,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.04485
       },
@@ -508,7 +492,6 @@
         "expirationTimestamp": "2026-12-18 00:00:00 000",
         "indexPrice": 399.5023365833333,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.04434
       },
@@ -538,7 +521,6 @@
         "expirationTimestamp": "2027-01-15 00:00:00 000",
         "indexPrice": 399.63118101626014,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-06 20:00:00 000",
         "underlyingRate": 0.04428
       },
@@ -568,7 +550,6 @@
         "expirationTimestamp": "2024-12-06 00:00:00 000",
         "indexPrice": 385.2504884550562,
         "multiplier": 100,
-        "openInterest": 388328,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.05358
       },
@@ -598,7 +579,6 @@
         "expirationTimestamp": "2024-12-13 00:00:00 000",
         "indexPrice": 385.2144886280488,
         "multiplier": 100,
-        "openInterest": 128890,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.05355
       },
@@ -628,7 +608,6 @@
         "expirationTimestamp": "2024-12-20 00:00:00 000",
         "indexPrice": 385.2043817378049,
         "multiplier": 100,
-        "openInterest": 269872,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.05341
       },
@@ -658,7 +637,6 @@
         "expirationTimestamp": "2024-12-27 00:00:00 000",
         "indexPrice": 385.2046355161291,
         "multiplier": 100,
-        "openInterest": 73040,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.05323
       },
@@ -688,7 +666,6 @@
         "expirationTimestamp": "2025-01-03 00:00:00 000",
         "indexPrice": 385.2099747741936,
         "multiplier": 100,
-        "openInterest": 21863,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.05301
       },
@@ -718,7 +695,6 @@
         "expirationTimestamp": "2025-01-10 00:00:00 000",
         "indexPrice": 385.18646512,
         "multiplier": 100,
-        "openInterest": 1925,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.05275
       },
@@ -748,7 +724,6 @@
         "expirationTimestamp": "2025-01-17 00:00:00 000",
         "indexPrice": 385.21669375000005,
         "multiplier": 100,
-        "openInterest": 692910,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.05248
       },
@@ -778,7 +753,6 @@
         "expirationTimestamp": "2025-01-24 00:00:00 000",
         "indexPrice": 385.2481981034483,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.05222
       },
@@ -808,7 +782,6 @@
         "expirationTimestamp": "2025-02-21 00:00:00 000",
         "indexPrice": 385.2271202840909,
         "multiplier": 100,
-        "openInterest": 186789,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.05134
       },
@@ -838,7 +811,6 @@
         "expirationTimestamp": "2025-03-21 00:00:00 000",
         "indexPrice": 385.1905744308943,
         "multiplier": 100,
-        "openInterest": 68756,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.05046
       },
@@ -868,7 +840,6 @@
         "expirationTimestamp": "2025-04-17 00:00:00 000",
         "indexPrice": 385.1915263478261,
         "multiplier": 100,
-        "openInterest": 52943,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.04957
       },
@@ -898,7 +869,6 @@
         "expirationTimestamp": "2025-06-20 00:00:00 000",
         "indexPrice": 385.18894829268294,
         "multiplier": 100,
-        "openInterest": 49310,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.0479
       },
@@ -928,7 +898,6 @@
         "expirationTimestamp": "2025-07-18 00:00:00 000",
         "indexPrice": 385.1630292105263,
         "multiplier": 100,
-        "openInterest": 7338,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.047409999999999994
       },
@@ -958,7 +927,6 @@
         "expirationTimestamp": "2025-09-19 00:00:00 000",
         "indexPrice": 385.181263902439,
         "multiplier": 100,
-        "openInterest": 24439,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.04659
       },
@@ -988,7 +956,6 @@
         "expirationTimestamp": "2025-12-19 00:00:00 000",
         "indexPrice": 385.22564603146856,
         "multiplier": 100,
-        "openInterest": 155587,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.04574
       },
@@ -1018,7 +985,6 @@
         "expirationTimestamp": "2026-01-16 00:00:00 000",
         "indexPrice": 385.23368494845363,
         "multiplier": 100,
-        "openInterest": 242074,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.04551
       },
@@ -1048,7 +1014,6 @@
         "expirationTimestamp": "2026-06-18 00:00:00 000",
         "indexPrice": 385.23849228723407,
         "multiplier": 100,
-        "openInterest": 113761,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.04455
       },
@@ -1078,7 +1043,6 @@
         "expirationTimestamp": "2026-12-18 00:00:00 000",
         "indexPrice": 385.22600755555555,
         "multiplier": 100,
-        "openInterest": 1858,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.04393
       },
@@ -1108,7 +1072,6 @@
         "expirationTimestamp": "2027-01-15 00:00:00 000",
         "indexPrice": 385.2230152032521,
         "multiplier": 100,
-        "openInterest": 35976,
         "timestamp": "2024-12-05 20:00:00 000",
         "underlyingRate": 0.04386
       },
@@ -1138,7 +1101,6 @@
         "expirationTimestamp": "2024-12-06 00:00:00 000",
         "indexPrice": 388.14789210674155,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.05043
       },
@@ -1168,7 +1130,6 @@
         "expirationTimestamp": "2024-12-13 00:00:00 000",
         "indexPrice": 388.1341089375,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.05047
       },
@@ -1198,7 +1159,6 @@
         "expirationTimestamp": "2024-12-20 00:00:00 000",
         "indexPrice": 388.12542661585366,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.05046
       },
@@ -1228,7 +1188,6 @@
         "expirationTimestamp": "2024-12-27 00:00:00 000",
         "indexPrice": 388.145661483871,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.0504
       },
@@ -1258,7 +1217,6 @@
         "expirationTimestamp": "2025-01-03 00:00:00 000",
         "indexPrice": 388.17728745161287,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.0503
       },
@@ -1288,7 +1246,6 @@
         "expirationTimestamp": "2025-01-10 00:00:00 000",
         "indexPrice": 388.1863972,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.05016
       },
@@ -1318,7 +1275,6 @@
         "expirationTimestamp": "2025-01-17 00:00:00 000",
         "indexPrice": 388.15074664473684,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.05002
       },
@@ -1348,7 +1304,6 @@
         "expirationTimestamp": "2025-02-21 00:00:00 000",
         "indexPrice": 388.19367102272724,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.04945
       },
@@ -1378,7 +1333,6 @@
         "expirationTimestamp": "2025-03-21 00:00:00 000",
         "indexPrice": 388.1643875203252,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.0491
       },
@@ -1408,7 +1362,6 @@
         "expirationTimestamp": "2025-04-17 00:00:00 000",
         "indexPrice": 388.15865369565216,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.048760000000000005
       },
@@ -1438,7 +1391,6 @@
         "expirationTimestamp": "2025-06-20 00:00:00 000",
         "indexPrice": 388.1533939837399,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.04792
       },
@@ -1468,7 +1420,6 @@
         "expirationTimestamp": "2025-07-18 00:00:00 000",
         "indexPrice": 388.1772888947369,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.047569999999999994
       },
@@ -1498,7 +1449,6 @@
         "expirationTimestamp": "2025-09-19 00:00:00 000",
         "indexPrice": 388.1973756504065,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.04683
       },
@@ -1528,7 +1478,6 @@
         "expirationTimestamp": "2025-12-19 00:00:00 000",
         "indexPrice": 388.2238873251748,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.04596
       },
@@ -1558,7 +1507,6 @@
         "expirationTimestamp": "2026-01-16 00:00:00 000",
         "indexPrice": 388.2370142955327,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.04574
       },
@@ -1588,7 +1536,6 @@
         "expirationTimestamp": "2026-06-18 00:00:00 000",
         "indexPrice": 388.2251376241135,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.04486
       },
@@ -1618,7 +1565,6 @@
         "expirationTimestamp": "2026-12-18 00:00:00 000",
         "indexPrice": 388.2652716666666,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.04426
       },
@@ -1648,7 +1594,6 @@
         "expirationTimestamp": "2027-01-15 00:00:00 000",
         "indexPrice": 388.26068609756095,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-04 20:00:00 000",
         "underlyingRate": 0.04419
       },
@@ -1678,7 +1623,6 @@
         "expirationTimestamp": "2024-12-06 00:00:00 000",
         "indexPrice": 375.4919847752809,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.05023
       },
@@ -1708,7 +1652,6 @@
         "expirationTimestamp": "2024-12-13 00:00:00 000",
         "indexPrice": 375.48013159375,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.05025999999999999
       },
@@ -1738,7 +1681,6 @@
         "expirationTimestamp": "2024-12-20 00:00:00 000",
         "indexPrice": 375.559458597561,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.050249999999999996
       },
@@ -1768,7 +1710,6 @@
         "expirationTimestamp": "2024-12-27 00:00:00 000",
         "indexPrice": 375.49095877419353,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.0502
       },
@@ -1798,7 +1739,6 @@
         "expirationTimestamp": "2025-01-03 00:00:00 000",
         "indexPrice": 375.4810386451613,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.0501
       },
@@ -1828,7 +1768,6 @@
         "expirationTimestamp": "2025-01-10 00:00:00 000",
         "indexPrice": 375.59980848,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.04996
       },
@@ -1858,7 +1797,6 @@
         "expirationTimestamp": "2025-01-17 00:00:00 000",
         "indexPrice": 375.5418152138158,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.04982
       },
@@ -1888,7 +1826,6 @@
         "expirationTimestamp": "2025-02-21 00:00:00 000",
         "indexPrice": 375.58227232954545,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.04929
       },
@@ -1918,7 +1855,6 @@
         "expirationTimestamp": "2025-03-21 00:00:00 000",
         "indexPrice": 375.55397276422764,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.04897000000000001
       },
@@ -1948,7 +1884,6 @@
         "expirationTimestamp": "2025-04-17 00:00:00 000",
         "indexPrice": 375.5409695652174,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.04864999999999999
       },
@@ -1978,7 +1913,6 @@
         "expirationTimestamp": "2025-06-20 00:00:00 000",
         "indexPrice": 375.5363310569106,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.04787
       },
@@ -2008,7 +1942,6 @@
         "expirationTimestamp": "2025-07-18 00:00:00 000",
         "indexPrice": 375.5674906842105,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.04753000000000001
       },
@@ -2038,7 +1971,6 @@
         "expirationTimestamp": "2025-09-19 00:00:00 000",
         "indexPrice": 375.5787113414635,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.04681
       },
@@ -2068,7 +2000,6 @@
         "expirationTimestamp": "2025-12-19 00:00:00 000",
         "indexPrice": 375.63096641608394,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.04592
       },
@@ -2098,7 +2029,6 @@
         "expirationTimestamp": "2026-01-16 00:00:00 000",
         "indexPrice": 375.6602536082474,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.04569
       },
@@ -2128,7 +2058,6 @@
         "expirationTimestamp": "2026-06-18 00:00:00 000",
         "indexPrice": 375.6918906028369,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.04471
       },
@@ -2158,7 +2087,6 @@
         "expirationTimestamp": "2026-12-18 00:00:00 000",
         "indexPrice": 375.7504836666667,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.04404
       },
@@ -2188,7 +2116,6 @@
         "expirationTimestamp": "2027-01-15 00:00:00 000",
         "indexPrice": 375.7187855691057,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-03 20:00:00 000",
         "underlyingRate": 0.04396
       },
@@ -2218,7 +2145,6 @@
         "expirationTimestamp": "2024-12-06 00:00:00 000",
         "indexPrice": 381.1842720505618,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.05049000000000001
       },
@@ -2248,7 +2174,6 @@
         "expirationTimestamp": "2024-12-13 00:00:00 000",
         "indexPrice": 381.16872053124996,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.0505
       },
@@ -2278,7 +2203,6 @@
         "expirationTimestamp": "2024-12-20 00:00:00 000",
         "indexPrice": 381.1716176829268,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.05048
       },
@@ -2308,7 +2232,6 @@
         "expirationTimestamp": "2024-12-27 00:00:00 000",
         "indexPrice": 381.15819541935485,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.05042
       },
@@ -2338,7 +2261,6 @@
         "expirationTimestamp": "2025-01-03 00:00:00 000",
         "indexPrice": 381.20921219354835,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.05032
       },
@@ -2368,7 +2290,6 @@
         "expirationTimestamp": "2025-01-10 00:00:00 000",
         "indexPrice": 381.19914116,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.05019
       },
@@ -2398,7 +2319,6 @@
         "expirationTimestamp": "2025-01-17 00:00:00 000",
         "indexPrice": 381.2315723519737,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.05006
       },
@@ -2428,7 +2348,6 @@
         "expirationTimestamp": "2025-02-21 00:00:00 000",
         "indexPrice": 381.1919248295454,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.04949
       },
@@ -2458,7 +2377,6 @@
         "expirationTimestamp": "2025-03-21 00:00:00 000",
         "indexPrice": 381.19148524390243,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.0491
       },
@@ -2488,7 +2406,6 @@
         "expirationTimestamp": "2025-04-17 00:00:00 000",
         "indexPrice": 381.1763272608695,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.04872
       },
@@ -2518,7 +2435,6 @@
         "expirationTimestamp": "2025-06-20 00:00:00 000",
         "indexPrice": 381.20388479674796,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.04782999999999999
       },
@@ -2548,7 +2464,6 @@
         "expirationTimestamp": "2025-07-18 00:00:00 000",
         "indexPrice": 381.18884352631574,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.04746
       },
@@ -2578,7 +2493,6 @@
         "expirationTimestamp": "2025-09-19 00:00:00 000",
         "indexPrice": 381.1571566260162,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.04667
       },
@@ -2608,7 +2522,6 @@
         "expirationTimestamp": "2025-12-19 00:00:00 000",
         "indexPrice": 381.24327034965034,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.04573
       },
@@ -2638,7 +2551,6 @@
         "expirationTimestamp": "2026-01-16 00:00:00 000",
         "indexPrice": 381.23919238831616,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.04549
       },
@@ -2668,7 +2580,6 @@
         "expirationTimestamp": "2026-06-18 00:00:00 000",
         "indexPrice": 381.2283696808511,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.04456
       },
@@ -2698,7 +2609,6 @@
         "expirationTimestamp": "2026-12-18 00:00:00 000",
         "indexPrice": 381.21822133333336,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.04404
       },
@@ -2728,7 +2638,6 @@
         "expirationTimestamp": "2027-01-15 00:00:00 000",
         "indexPrice": 381.2095117479675,
         "multiplier": 100,
-        "openInterest": null,
         "timestamp": "2024-12-02 20:00:00 000",
         "underlyingRate": 0.04399
       }
