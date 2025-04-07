@@ -790,9 +790,10 @@ class AmberdataDerivatives(_AmberdataBase):
           Absolute Yield: $25/$275 Annualized Yield: $25/$275 (525,600 / minutes left until expiration)
 
         QUERY PARAMS:
-        - exchange   (string) [Required] [Examples] deribit | okex | bybit
-        - currency   (string) [Required] [Examples] BTC | SOL_USDC
-        - timeFormat (string) [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - exchange   (string)    [Required] [Examples] deribit | okex | bybit
+        - currency   (string)    [Required] [Examples] BTC | SOL_USDC
+        - timestamp  (date-time) [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:14:00
+        - timeFormat (string)    [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
         """
 
         return self._make_request(
