@@ -56,6 +56,16 @@ class EndpointTradesFlowOptionsYieldsTestCase(BaseTestCase):
         self.validate_response_field_timestamp(response, 'timestamp', is_iso=True)
         self.validate_response_field_timestamp(response, 'expirationTimestamp', is_iso=True)
 
+    def test_timestamp(self):
+        response = self.call_endpoint(exchange='deribit', currency='BTC', timeFormat='iso', timestamp="2024-04-04")
+        self.validate_response_schema(response, schema=self.schema)
+        self.validate_response_200(response, min_elements=300)
+        self.validate_response_field(response, 'exchange', 'deribit')
+        self.validate_response_field(response, 'currency', 'BTC')
+        self.validate_response_field(response, 'timestamp', '2024-04-05T00:00:00.000Z')
+        self.validate_response_field_timestamp(response, 'timestamp', is_iso=True)
+        self.validate_response_field_timestamp(response, 'expirationTimestamp', is_iso=True)
+
     # ==================================================================================================================
 
     def test_invalid_parameter(self):
