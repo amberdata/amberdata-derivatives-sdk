@@ -1597,4 +1597,31 @@ class AmberdataTradFi(_AmberdataBase):
             }
         )
 
+    def get_spot_analytics_trade_vwap(self, pair: str, exchange: str, startDate: str, endDate: str, orderSizeCategoryUsd: str, **kwargs):
+        """
+        This endpoint returns the Volume Weighted Average Price for BTC/USDT and other pairs 
+        on a crypto exchange calculated every minute.
+
+        QUERY PARAMS:
+        - pair                   (string)     [Required] [Examples] BTC_USD 
+        - exchange               (string)     [Optional] [Examples] gdax | okex | binance
+        - startDate              (date-time)  [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate                (date-time)  [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeInterval           (string)     [Optional] [Examples] minute | hour | day
+        - timeFormat             (string)     [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - orderSizeCategoryUsd   (string)     [Required] [Examples] 0 | 1k | 10k | 100k | All 
+        """
+
+        return self._make_request(
+            'markets/spot/analytics/trade/vwap',
+            {
+                'pair': pair,
+                'exchange': exchange,
+                'startDate': startDate,
+                'endDate': endDate,
+                'orderSizeCategoryUsd': orderSizeCategoryUsd,
+                **kwargs
+            }
+        )
+
 # ======================================================================================================================
