@@ -1,0 +1,11 @@
+{
+  "description": "The endpoint returns the trade information for all pairs for a given exchange",
+  "payload": {
+    "data": [],
+    "metadata": {
+      "api-version": "1.0.0"
+    }
+  },
+  "status": 200,
+  "title": "Success"
+} 

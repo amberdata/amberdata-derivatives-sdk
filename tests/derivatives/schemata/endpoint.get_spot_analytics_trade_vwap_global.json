@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {
+      "description": { "type": "string" },
+      "payload": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "exchangeCount"       : { "type" : "integer" },
+                "exchangeComposite"   : { "type" : "string" },
+                "pair"                : { "type" : "string" },
+                "timestamp"           : { "type" : ["integer", "string"] },
+                "totalVolumeUSD"      : { "type" : "number" },
+                "twap"                : { "type" : "number" },
+                "vwap"                : { "type" : "number" }
+              },
+              "required": ["exchangeCount", "exchangeComposite", "pair", "timestamp", "totalVolumeUSD", "twap", "vwap"],
+              "additionalProperties": false
+            }
+          },
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "api-version": { "type": "string" }
+            },
+            "required": ["api-version"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "status" : { "type": "integer" },
+      "title"  : { "type": "string"  }
+    },
+    "required": ["description", "payload", "status", "title"],
+    "additionalProperties": false
+} 

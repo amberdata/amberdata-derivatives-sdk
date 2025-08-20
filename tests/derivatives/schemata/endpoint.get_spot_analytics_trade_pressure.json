@@ -1,0 +1,46 @@
+{
+    "type": "object",
+    "properties": {
+      "description": { "type": "string" },
+      "payload": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "timestamp"             : { "type" : ["integer", "string"] },
+                "exchange"              : { "type" : "string" },
+                "pair"                  : { "type" : "string" },
+                "orderSizeCategoryUsd"  : { "type" : "string" },
+                "totalVolumeCoin"       : { "type" : "number" },
+                "netBuyVolumeCoin"      : { "type" : "number" },
+                "totalVolumeUsd"        : { "type" : "number" },
+                "netBuyVolumeUsd"       : { "type" : "number" },
+                "netBuyTradeCount"      : { "type" : "number" },
+                "open"                  : { "type" : "number" },
+                "high"                  : { "type" : "number" },
+                "low"                   : { "type" : "number" },
+                "close"                 : { "type" : "number" }
+              },
+              "required": ["timestamp", "exchange", "pair", "orderSizeCategoryUsd", "totalVolumeCoin", "netBuyVolumeCoin", "totalVolumeUsd", "netBuyVolumeUsd", "netBuyTradeCount", "open", "high", "low", "close"],
+              "additionalProperties": false
+            }
+          },
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "api-version": { "type": "string" }
+            },
+            "required": ["api-version"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "status" : { "type": "integer" },
+      "title"  : { "type": "string"  }
+    },
+    "required": ["description", "payload", "status", "title"],
+    "additionalProperties": false
+} 

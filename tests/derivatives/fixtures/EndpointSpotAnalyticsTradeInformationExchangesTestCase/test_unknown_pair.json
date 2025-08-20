@@ -1,0 +1,11 @@
+{
+  "description": "Spot trade information by exchanges",
+  "payload": {
+    "data": [],
+    "metadata": {
+      "api-version": "1.0.0"
+    }
+  },
+  "status": 200,
+  "title": "Success"
+} 

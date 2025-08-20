@@ -1,0 +1,21 @@
+{
+  "description": "Global Vwap and Twap for Spot analytics",
+  "payload": {
+    "data": [
+      {
+        "exchangeCount": 3,
+        "exchangeComposite": "gdax",
+        "pair": "btc_usd",
+        "timestamp": 1735689600000,
+        "totalVolumeUSD": 1250000.50,
+        "twap": 45000.25,
+        "vwap": 45100.75
+      }
+    ],
+    "metadata": {
+      "api-version": "1.0.0"
+    }
+  },
+  "status": 200,
+  "title": "Success"
+} 

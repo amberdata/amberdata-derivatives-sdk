@@ -1,0 +1,8 @@
+{
+  "description": "Bad Request",
+  "payload": {
+    "error": "Unsupported parameter: invalid"
+  },
+  "status": 400,
+  "title": "Bad Request"
+} 

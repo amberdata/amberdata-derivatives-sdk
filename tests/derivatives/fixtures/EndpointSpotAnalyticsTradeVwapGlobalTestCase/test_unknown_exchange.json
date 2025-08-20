@@ -1,0 +1,11 @@
+{
+  "description": "Global Vwap and Twap for Spot analytics",
+  "payload": {
+    "data": [],
+    "metadata": {
+      "api-version": "1.0.0"
+    }
+  },
+  "status": 200,
+  "title": "Success"
+} 

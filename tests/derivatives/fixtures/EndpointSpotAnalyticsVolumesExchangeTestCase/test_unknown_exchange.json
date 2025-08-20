@@ -1,0 +1,11 @@
+{
+  "description": "The endpoint returns spot analytics exchange volumes",
+  "payload": {
+    "data": [],
+    "metadata": {
+      "api-version": "1.0.0"
+    }
+  },
+  "status": 200,
+  "title": "Success"
+} 

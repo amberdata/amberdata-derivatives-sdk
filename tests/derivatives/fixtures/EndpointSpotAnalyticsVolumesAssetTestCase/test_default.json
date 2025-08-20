@@ -1,0 +1,18 @@
+{
+  "description": "The endpoint returns spot analytics asset volumes",
+  "payload": {
+    "data": [
+      {
+        "exchange": "gdax",
+        "timestamp": 1735689600000,
+        "volumeUSD": 1250000.50,
+        "volumeUSDBillions": 1.25
+      }
+    ],
+    "metadata": {
+      "api-version": "1.0.0"
+    }
+  },
+  "status": 200,
+  "title": "Success"
+} 

@@ -1,0 +1,24 @@
+{
+  "description": "Spot trade information by exchanges",
+  "payload": {
+    "data": [
+      {
+        "exchange": "gdax",
+        "pair": "BTC_USD",
+        "startDate": 1735689600000,
+        "endDate": 1735776000000
+      },
+      {
+        "exchange": "binance",
+        "pair": "BTC_USD",
+        "startDate": 1735689600000,
+        "endDate": 1735776000000
+      }
+    ],
+    "metadata": {
+      "api-version": "1.0.0"
+    }
+  },
+  "status": 200,
+  "title": "Success"
+} 

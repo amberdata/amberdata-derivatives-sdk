@@ -1,0 +1,27 @@
+{
+  "description": "The endpoint returns spot analytics net trading pressure",
+  "payload": {
+    "data": [
+      {
+        "timestamp": 1735689600000,
+        "exchange": "gdax",
+        "pair": "BTC_USD",
+        "orderSizeCategoryUsd": "All",
+        "totalVolumeCoin": 27.75,
+        "netBuyVolumeCoin": 15.25,
+        "totalVolumeUsd": 1250000.50,
+        "netBuyVolumeUsd": 687500.25,
+        "netBuyTradeCount": 1250,
+        "open": 45000.00,
+        "high": 45200.00,
+        "low": 44800.00,
+        "close": 45100.00
+      }
+    ],
+    "metadata": {
+      "api-version": "1.0.0"
+    }
+  },
+  "status": 200,
+  "title": "Success"
+} 

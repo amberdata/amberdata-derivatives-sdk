@@ -1624,4 +1624,174 @@ class AmberdataTradFi(_AmberdataBase):
             }
         )
 
+    def get_spot_analytics_trade_vwap_global(self, pair: str, exchange: str, startDate: str, endDate: str, **kwargs):
+        """
+        Global Vwap and Twap for Spot analytics.
+
+        QUERY PARAMS:
+        - pair                   (string)     [Required] [Examples] BTC_USD 
+        - exchange               (string)     [Optional] [Examples] gdax | okex | binance
+        - startDate              (date-time)  [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate                (date-time)  [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeInterval           (string)     [Optional] [Examples] minute | hour | day
+        - timeFormat             (string)     [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/spot/analytics/trade/vwap/global',
+            {
+                'pair': pair,
+                'exchange': exchange,
+                'startDate': startDate,
+                'endDate': endDate,
+                **kwargs
+            }
+        )
+
+    def get_spot_analytics_volumes_exchange(self, pair: str, exchange: str, startDate: str, endDate: str, orderSizeCategoryUsd: str, **kwargs):
+        """
+        The endpoint returns spot analytics exchange volumes.
+
+        QUERY PARAMS:
+        - pair                   (string)     [Required] [Examples] BTC_USD 
+        - exchange               (string)     [Optional] [Examples] gdax | okex | binance
+        - startDate              (date-time)  [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate                (date-time)  [Required] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeInterval           (string)     [Optional] [Examples] minute | hour | day
+        - timeFormat             (string)     [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - orderSizeCategoryUsd   (string)     [Required] [Examples] 0 | 1k | 10k | 100k | All 
+        """
+
+        return self._make_request(
+            'markets/spot/analytics/volumes/exchange',
+            {
+                'pair': pair,
+                'exchange': exchange,
+                'startDate': startDate,
+                'endDate': endDate,
+                'orderSizeCategoryUsd': orderSizeCategoryUsd,
+                **kwargs
+            }
+        )
+
+    def get_spot_analytics_volumes_asset(self, asset: str, quoteAssetIncluded: bool, exchange: str, startDate: str, endDate: str, orderSizeCategoryUsd: str, pair: str, **kwargs):
+        """
+        The endpoint returns spot analytics asset volumes.
+
+        QUERY PARAMS:
+        - asset                   (string)    [Required] [Examples] BTC 
+        - quoteAssetIncluded     (boolean)    [Required] [Examples] true | false
+        - exchange               (string)     [Required] [Examples] gdax | okex | binance
+        - startDate              (date-time)  [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate                (date-time)  [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeInterval           (string)     [Optional] [Examples] minute | hour | day
+        - timeFormat             (string)     [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - orderSizeCategoryUsd   (string)     [Required] [Examples] 0 | 1k | 10k | 100k | All 
+        - pair                   (string)     [Optional] [Examples] BTC_USD 
+        """
+
+        return self._make_request(
+            'markets/spot/analytics/volumes/asset',
+            {
+                'asset': asset,
+                'quoteAssetIncluded': quoteAssetIncluded,
+                'pair': pair,
+                'exchange': exchange,
+                'startDate': startDate,
+                'endDate': endDate,
+                'orderSizeCategoryUsd': orderSizeCategoryUsd,
+                **kwargs
+            }
+        )
+
+    def get_spot_analytics_trade_pressure(self, pair: str, fuzzyMatch: bool, exchange: str, startDate: str, endDate: str, orderSizeCategoryUsd: str, **kwargs):
+        """
+        The endpoint returns spot analytics net trading pressure.
+
+        QUERY PARAMS:
+        - pair                   (string)     [Required] [Examples] BTC_USD
+        - fuzzyMatch             (boolean)    [Optional] [Examples] true | false
+        - exchange               (string)     [Optional] [Examples] gdax | okex | binance
+        - startDate              (date-time)  [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate                (date-time)  [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeInterval           (string)     [Optional] [Examples] minute | hour | day
+        - timeFormat             (string)     [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - orderSizeCategoryUsd   (string)     [Optional] [Examples] 0 | 1k | 10k | 100k | All 
+        """
+
+        return self._make_request(
+            'markets/spot/analytics/trade/pressure',
+            {
+                'pair': pair,
+                'fuzzyMatch': fuzzyMatch,
+                'exchange': exchange,
+                'startDate': startDate,
+                'endDate': endDate,
+                'orderSizeCategoryUsd': orderSizeCategoryUsd,
+                **kwargs
+            }
+        )
+
+    def get_spot_analytics_trade_frequency(self, pair: str, fuzzyMatch: bool, exchange: str, startDate: str, endDate: str, orderSizeCategoryUsd: str, **kwargs):
+        """
+        The endpoint returns spot analytics trade frequency metrics.
+
+        QUERY PARAMS:
+        - pair                   (string)     [Required] [Examples] BTC_USD
+        - fuzzyMatch             (boolean)    [Optional] [Examples] true | false
+        - exchange               (string)     [Optional] [Examples] gdax | okex | binance
+        - startDate              (date-time)  [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - endDate                (date-time)  [Optional] [Examples] 1578531600 | 1578531600000 | 2024-04-03T08:00:00
+        - timeInterval           (string)     [Optional] [Examples] minute | hour | day
+        - timeFormat             (string)     [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        - orderSizeCategoryUsd   (string)     [Optional] [Examples] 0 | 1k | 10k | 100k | All 
+        """
+
+        return self._make_request(
+            'markets/spot/analytics/trade/frequency',
+            {
+                'pair': pair,
+                'fuzzyMatch': fuzzyMatch,
+                'exchange': exchange,
+                'startDate': startDate,
+                'endDate': endDate,
+                'orderSizeCategoryUsd': orderSizeCategoryUsd,
+                **kwargs
+            }
+        )
+
+    def get_spot_analytics_trade_information_exchanges(self, pair: str, **kwargs):
+        """
+        Spot trade information by exchanges.
+
+        QUERY PARAMS:
+        - pair                   (string)     [Required] [Examples] BTC_USD
+        - timeFormat             (string)     [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/spot/analytics/trade/information/exchanges',
+            {
+                'pair': pair,
+                **kwargs
+            }
+        )
+
+    def get_spot_analytics_trade_information_pairs(self, exchange: str, **kwargs):
+        """
+        The endpoint returns the trade information for all pairs for a given exchange.
+
+        QUERY PARAMS:
+        - exchange               (string)     [Optional] [Examples] gdax
+        - timeFormat             (string)     [Optional] [Defaults] milliseconds | ms* | iso | iso8601 | hr
+        """
+
+        return self._make_request(
+            'markets/spot/analytics/trade/information/pairs',
+            {
+                'exchange': exchange,
+                **kwargs
+            }
+        )
+
 # ======================================================================================================================
